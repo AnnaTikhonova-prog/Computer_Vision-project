@@ -1,0 +1,10 @@
+# Install the PyTorch build appropriate for your platform first if necessary:
+# https://pytorch.org/get-started/locally/
+torch>=2.1
+torchvision>=0.16
+pandas>=2.0
+Pillow>=10.0
+PyYAML>=6.0
+jupyter>=1.0
+matplotlib>=3.7
+seaborn>=0.13

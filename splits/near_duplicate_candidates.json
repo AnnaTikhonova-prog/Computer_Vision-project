@@ -1,0 +1,553 @@
+{
+  "automatic_removal": false,
+  "candidates": [
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_120",
+      "image_id_b": "Russian_Blue_226",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_120",
+      "image_id_b": "Siamese_233",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_120",
+      "image_id_b": "beagle_56",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_133",
+      "image_id_b": "Siamese_151",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_136",
+      "image_id_b": "Russian_Blue_166",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_140",
+      "image_id_b": "samoyed_83",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_147",
+      "image_id_b": "Sphynx_172",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_196",
+      "image_id_b": "beagle_7",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 0,
+      "image_id_a": "Birman_199",
+      "image_id_b": "Birman_25",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_6",
+      "image_id_b": "beagle_7",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Birman_68",
+      "image_id_b": "British_Shorthair_116",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 3,
+      "image_id_a": "British_Shorthair_117",
+      "image_id_b": "beagle_95",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_117",
+      "image_id_b": "pug_9",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_121",
+      "image_id_b": "Russian_Blue_168",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_135",
+      "image_id_b": "pug_185",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_135",
+      "image_id_b": "samoyed_26",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_137",
+      "image_id_b": "British_Shorthair_187",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_137",
+      "image_id_b": "pug_9",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_153",
+      "image_id_b": "British_Shorthair_2",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_155",
+      "image_id_b": "British_Shorthair_22",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 0,
+      "image_id_a": "British_Shorthair_160",
+      "image_id_b": "British_Shorthair_278",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_167",
+      "image_id_b": "samoyed_158",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_173",
+      "image_id_b": "samoyed_188",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_174",
+      "image_id_b": "British_Shorthair_195",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_174",
+      "image_id_b": "Maine_Coon_66",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 0,
+      "image_id_a": "British_Shorthair_186",
+      "image_id_b": "British_Shorthair_271",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 2,
+      "image_id_a": "British_Shorthair_187",
+      "image_id_b": "pug_9",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_213",
+      "image_id_b": "Russian_Blue_12",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_22",
+      "image_id_b": "British_Shorthair_61",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 2,
+      "image_id_a": "British_Shorthair_22",
+      "image_id_b": "Maine_Coon_67",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_273",
+      "image_id_b": "Russian_Blue_32",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_273",
+      "image_id_b": "Russian_Blue_59",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_57",
+      "image_id_b": "British_Shorthair_58",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_61",
+      "image_id_b": "Maine_Coon_67",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "British_Shorthair_67",
+      "image_id_b": "Maine_Coon_42",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_67",
+      "image_id_b": "Russian_Blue_75",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "British_Shorthair_67",
+      "image_id_b": "samoyed_188",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 3,
+      "image_id_a": "British_Shorthair_88",
+      "image_id_b": "american_bulldog_103",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Maine_Coon_140",
+      "image_id_b": "samoyed_141",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Maine_Coon_140",
+      "image_id_b": "samoyed_194",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Maine_Coon_149",
+      "image_id_b": "samoyed_10",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Maine_Coon_180",
+      "image_id_b": "Maine_Coon_33",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Maine_Coon_180",
+      "image_id_b": "beagle_184",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Maine_Coon_180",
+      "image_id_b": "samoyed_188",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 3,
+      "image_id_a": "Maine_Coon_180",
+      "image_id_b": "samoyed_194",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Maine_Coon_253",
+      "image_id_b": "beagle_184",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Maine_Coon_42",
+      "image_id_b": "samoyed_188",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Russian_Blue_160",
+      "image_id_b": "pug_185",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Russian_Blue_168",
+      "image_id_b": "beagle_138",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 3,
+      "image_id_a": "Russian_Blue_211",
+      "image_id_b": "Russian_Blue_237",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Russian_Blue_211",
+      "image_id_b": "beagle_95",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Russian_Blue_211",
+      "image_id_b": "pug_9",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Russian_Blue_237",
+      "image_id_b": "beagle_203",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Russian_Blue_45",
+      "image_id_b": "Sphynx_144",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Russian_Blue_64",
+      "image_id_b": "samoyed_76",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Sphynx_139",
+      "image_id_b": "samoyed_21",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Sphynx_152",
+      "image_id_b": "beagle_118",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Sphynx_152",
+      "image_id_b": "beagle_54",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Sphynx_158",
+      "image_id_b": "samoyed_69",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Sphynx_18",
+      "image_id_b": "beagle_17",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Sphynx_18",
+      "image_id_b": "beagle_183",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Sphynx_18",
+      "image_id_b": "samoyed_188",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Sphynx_18",
+      "image_id_b": "samoyed_194",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "Sphynx_73",
+      "image_id_b": "samoyed_117",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "Sphynx_95",
+      "image_id_b": "american_bulldog_21",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "american_bulldog_103",
+      "image_id_b": "pug_7",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 3,
+      "image_id_a": "american_bulldog_139",
+      "image_id_b": "american_bulldog_5",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "american_bulldog_28",
+      "image_id_b": "pug_106",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "beagle_118",
+      "image_id_b": "beagle_166",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_118",
+      "image_id_b": "beagle_56",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_118",
+      "image_id_b": "pug_133",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_118",
+      "image_id_b": "samoyed_194",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_165",
+      "image_id_b": "samoyed_188",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "beagle_17",
+      "image_id_b": "beagle_183",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_17",
+      "image_id_b": "samoyed_194",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_178",
+      "image_id_b": "samoyed_190",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_183",
+      "image_id_b": "samoyed_188",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 3,
+      "image_id_a": "beagle_183",
+      "image_id_b": "samoyed_194",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_54",
+      "image_id_b": "samoyed_188",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "beagle_95",
+      "image_id_b": "pug_9",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "pug_122",
+      "image_id_b": "pug_147",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "pug_133",
+      "image_id_b": "samoyed_194",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "pug_177",
+      "image_id_b": "pug_188",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 2,
+      "image_id_a": "pug_185",
+      "image_id_b": "samoyed_26",
+      "same_class": false
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "samoyed_102",
+      "image_id_b": "samoyed_69",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 3,
+      "image_id_a": "samoyed_121",
+      "image_id_b": "samoyed_72",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "samoyed_141",
+      "image_id_b": "samoyed_194",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 5,
+      "image_id_a": "samoyed_188",
+      "image_id_b": "samoyed_189",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 2,
+      "image_id_a": "samoyed_188",
+      "image_id_b": "samoyed_194",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 4,
+      "image_id_a": "samoyed_21",
+      "image_id_b": "samoyed_37",
+      "same_class": true
+    },
+    {
+      "hamming_distance": 1,
+      "image_id_a": "samoyed_23",
+      "image_id_b": "samoyed_24",
+      "same_class": true
+    }
+  ],
+  "max_hamming_distance": 5,
+  "method": "8x8 grayscale average hash"
+}

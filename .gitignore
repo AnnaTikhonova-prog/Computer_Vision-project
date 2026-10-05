@@ -1,0 +1,18 @@
+# Local data and generated preparation artifacts
+data/
+artifacts/
+reports/
+splits/v*/
+splits/*.tmp
+
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# IDEs
+.idea/
+.vscode/
