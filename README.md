@@ -6,8 +6,8 @@ experiment condition or run model training.
 
 ## Fixed subset and labels
 
-`splits/class_mapping.json` is the sole class mapping. Its labels are stable
-and contiguous from 0 to 9:
+`splits/v2/class_mapping.json` is the active class mapping. Its labels are
+stable and contiguous from 0 to 9:
 
 | Label | Project name | Official annotation prefix |
 | ---: | --- | --- |
@@ -35,11 +35,27 @@ the ResNet50 preprocessing contract.
 
 ```powershell
 py -3 -m pip install -r requirements.txt
-py -3 scripts/prepare_oxford_pets.py --download
+py -3 scripts/prepare_oxford_pets.py --download-only
 ```
 
-The second command downloads the two archives from the official Oxford URL to
-`data/oxford-iiit-pet/`, verifies every selected annotated image, and writes:
+The second command downloads and extracts the two official archives from the
+official Oxford URL to `data/oxford-iiit-pet/`. It does **not** generate,
+replace, or otherwise touch frozen manifests. A fresh clone then uses the
+committed active `splits/v2` manifests directly.
+
+For a fresh clone, the complete read-only data workflow after installation is:
+
+```powershell
+py -3 scripts/prepare_oxford_pets.py --download-only
+py -3 scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
+py -3 -m jupyter notebook notebooks/eda_oxford_pets.ipynb
+```
+
+The download-only and verification commands do not regenerate or overwrite the
+committed active manifests; the notebook reads them through `configs/data.yaml`.
+
+Generating a manifest is an explicit, versioned action. The preparation
+command verifies every selected annotated image and writes:
 
 ```text
 splits/
@@ -64,11 +80,11 @@ Oxford-IIIT Pet benchmark split. `split_report.json` records real class counts,
 targets, and any small deviations caused by a manually confirmed duplicate
 group.
 
-Preparation never overwrites a frozen manifest. To create an explicit new
-version, use a new output directory:
+Preparation never overwrites a frozen manifest. To create a future explicit
+new version, use a new output directory:
 
 ```powershell
-py -3 scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v2 --seed 42
+py -3 scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v3 --seed 42
 ```
 
 The active configuration uses the reviewed `splits/v2` manifests: 1,399 train,
@@ -82,7 +98,7 @@ nothing. If review confirms a group, save it as
 version; confirmed groups are kept in one split.
 
 ```powershell
-py -3 scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v2 --confirmed-groups confirmed_duplicates.json
+py -3 scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v3 --confirmed-groups confirmed_duplicates.json
 ```
 
 Exact RGB duplicates are different: preparation hashes decoded RGB bytes plus
@@ -92,13 +108,14 @@ the discarded entries and reasons in `integrity_report.json` and
 
 ## Validate frozen artifacts
 
-Run this after preparation. It re-decodes each file, recomputes hashes, checks
+Run this after download on a fresh clone, or after preparation of a new split.
+It re-decodes each file, recomputes hashes, checks
 the mapping and all cross-split ID/path/content-hash intersections. The two
 flags additionally check the loader contract and regenerate manifests in a
 temporary directory for a bytewise reproducibility comparison.
 
 ```powershell
-py -3 scripts/verify_data.py --check-loaders --check-reproducibility
+py -3 scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
 ```
 
 Use the EDA only after manifests are frozen:
@@ -163,6 +180,7 @@ modify the frozen manifests.
 and the mapping and cannot regenerate or edit them.
 
 ```python
+import torch
 import yaml
 from src.dataset import get_loaders
 

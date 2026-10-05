@@ -4,7 +4,9 @@
 The command consumes the official ``annotations/trainval.txt`` and
 ``annotations/test.txt`` together; its 70/15/15 partition is therefore a
 custom split, not the Oxford-IIIT Pet benchmark partition.  It never mutates
-an existing manifest. Use a new ``--output-dir`` when creating a new version.
+an existing manifest. Use ``--download-only`` to fetch the official archives
+without reading or writing any manifests. Use a new ``--output-dir`` when
+creating a new version.
 """
 
 from __future__ import annotations
@@ -277,6 +279,10 @@ def ensure_new_output(output_dir: Path) -> None:
 def prepare(args: argparse.Namespace) -> None:
     dataset_root = args.dataset_root.resolve()
     output_dir = args.output_dir.resolve()
+    if args.download_only:
+        download_dataset(dataset_root)
+        print(json.dumps({"dataset_root": str(dataset_root), "download_only": True}, indent=2))
+        return
     if args.download:
         download_dataset(dataset_root)
     if not MAPPING_SOURCE.is_file():
@@ -359,6 +365,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--near-duplicate-distance", type=int, default=5)
     parser.add_argument("--confirmed-groups", type=Path, help="JSON {'groups': [[image_id, ...], ...]} approved after manual review")
     parser.add_argument("--download", action="store_true", help="Download official images and annotations before preparation")
+    parser.add_argument("--download-only", action="store_true", help="Download official images and annotations without generating manifests")
     return parser.parse_args()
 
 
