@@ -1,7 +1,7 @@
 # Data-only configuration shared by all C0--C3 experiments.
 # dataset_root is intentionally local and is not committed with the raw data.
 dataset_root: data/oxford-iiit-pet
-split_dir: splits
+split_dir: splits/v2
 batch_size: 32
 num_workers: 4
 augment: true

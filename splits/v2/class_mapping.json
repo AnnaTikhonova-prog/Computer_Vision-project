@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "description": "Fixed labels for the 10-breed Oxford-IIIT Pet subset. official_class_name is verified against annotation image IDs during preparation.",
+  "classes": [
+    {"label": 0, "class_name": "British Shorthair", "official_class_name": "British_Shorthair"},
+    {"label": 1, "class_name": "Russian Blue", "official_class_name": "Russian_Blue"},
+    {"label": 2, "class_name": "Siamese", "official_class_name": "Siamese"},
+    {"label": 3, "class_name": "Birman", "official_class_name": "Birman"},
+    {"label": 4, "class_name": "American Bulldog", "official_class_name": "american_bulldog"},
+    {"label": 5, "class_name": "Pug", "official_class_name": "pug"},
+    {"label": 6, "class_name": "Sphynx", "official_class_name": "Sphynx"},
+    {"label": 7, "class_name": "Maine Coon", "official_class_name": "Maine_Coon"},
+    {"label": 8, "class_name": "Beagle", "official_class_name": "beagle"},
+    {"label": 9, "class_name": "Samoyed", "official_class_name": "samoyed"}
+  ]
+}

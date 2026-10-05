@@ -2,99 +2,124 @@
 
 **Project:** Fine-tuning depth on a small dataset: where does unfreezing stop paying off?
 
+**Team:**
 
-**Team:** 
-+ Tikhonova Anna (Team Lead) 
-+ Pyanov Georgij (Data Engineer) 
-+ Fadeeva Albina (ML Engineer) 
-+ Kirillov Maksim (ML Engineer)
+- Tikhonova Anna (Team Lead)
+- Pyanov Georgij (Data Engineer)
+- Fadeeva Albina (ML Engineer)
+- Kirillov Maksim (ML Engineer)
 
 ---
 
 ## 1. Project scope
 
-**Objective.** Where is the cutoff at which unfreezing more layers of a pretrained ResNet50 stops helping on a small image-classification dataset? We treat fine-tuning depth as a single controlled experimental factor and measure its effect on a 10-breed subset of Oxford-IIIT Pet.
+**Objective.** The project studies how ResNet50 fine-tuning depth affects a small, fixed image-classification task. The controlled factor is the set of unfrozen ResNet50 blocks; all conditions use the same data version, preprocessing policy, optimizer family, and evaluation protocol.
 
-**Exact task:** single-label image classification over 10 pet breeds.
+**Exact task.** Single-label classification over ten Oxford-IIIT Pet breeds:
 
-**Experimental settings:** four conditions forming an "unfreezing ladder" 
+- British Shorthair, Russian Blue, Siamese, Birman, American Bulldog;
+- Pug, Sphynx, Maine Coon, Beagle, Samoyed.
 
-| Condition | Trainable parameters | Role |
+**Experimental settings.** The four conditions form an unfreezing ladder. Parameter values below are approximate; exact trainable counts will be computed programmatically for the replaced 10-class head and the selected BatchNorm policy before experiments.
+
+| Condition | Trainable components | Approximate role |
 |---|---|---|
-| **C0 — Frozen** | classification head only (~20K params) | Baseline |
-| **C1 — layer4** | head + layer4 (~15M) | Ladder step |
-| **C2 — layer3+4** | head + layer3 + layer4 (~24M) | Ladder step |
-| **C3 — Full fine-tuning** | all ~25.5M params | Second compared condition |
+| **C0 — Frozen** | New classification head only | ≈20K; baseline |
+| **C1 — layer4** | Head + `layer4` | ≈15M; first unfreezing step |
+| **C2 — layer3+4** | Head + `layer3` + `layer4` | ≈22–24M; intermediate step |
+| **C3 — Full fine-tuning** | All ResNet50 blocks + head | ≈25M; full adaptation |
 
-**Hypothesis (falsifiable):** on ~1,400 training images, full fine-tuning is not the optimum and an intermediate unfreezing depth gives a better trade-off between domain adaptation and overfitting. Testable implication: validation macro-F1 as a function of unfreezing depth peaks at an intermediate point rather than at either extreme.
+**Hypothesis.** On this small fixed dataset, an intermediate fine-tuning depth may offer the best validation trade-off between adaptation and overfitting. Full fine-tuning may also be the best condition; that is an admissible result. Four conditions do not establish a universal fine-tuning cutoff.
 
-**Secondary question:** which breed pairs actually dominate the errors under every strategy — and whether these are the presumed visually similar pairs (failure analysis).
+**Secondary question.** Which breed pairs dominate observed errors under each trained condition? Presumed visual similarities are hypotheses for later failure analysis, not conclusions made before evaluation.
 
 ## 2. Dataset preparation
 
-- **Dataset:** Oxford-IIIT Pet Dataset (https://www.robots.ox.ac.uk/~vgg/data/pets/) — 37 cat and dog breeds, ~7,400 images, public, no registration required.
-- **Selected subset:** 10 breeds, ~200 images per breed (~2,000 total). Three pairs are included as *presumed* hard cases (visually similar breeds); whether they actually dominate the errors will be determined from the results, not assumed in advance:
-  - British Shorthair ↔ Russian Blue (solid-grey cats)
-  - Siamese ↔ Birman (colorpoint cats)
-  - American Bulldog ↔ Pug (stocky, short-muzzled dogs)
-  - plus four high-contrast breeds: Sphynx, Maine Coon, Beagle, Samoyed.
-- **Preprocessing:** validation and test use the standard preprocessing shipped with the chosen pretrained weights (`IMAGENET1K_V2`: resize 256 → center crop 224 → ImageNet mean/std normalization). Train-time augmentation: RandomResizedCrop, horizontal flip, color jitter; with `augment: false` the train split receives the same deterministic preprocessing as val/test.
-- **Split:** stratified train/validation/test **70/15/15** (~1,400 / ~300 / ~300 images), generated once with seed 42 by a dedicated command (`python -m src.prepare_splits`) and frozen into `splits/{train,val,test}.csv`. Training code only reads these CSVs and never recreates or re-splits the data. All four conditions use identical split files.
-- **Leakage prevention:** the test set is loaded exactly once for the final evaluation of frozen models. All hyperparameter decisions use the validation split only.
+### Frozen dataset and split
+
+The source is Oxford-IIIT Pet. The active reviewed dataset version is `splits/v2` and contains **1,999** valid annotated RGB images: **1,399 train**, **300 validation**, and **300 test**. British Shorthair, Russian Blue, Birman, American Bulldog, Pug, Sphynx, Maine Coon, Beagle, and Samoyed each have 140/30/30 train/validation/test examples; Siamese has 139/30/30.
+
+The split is a custom stratified 70/15/15 split with `split_seed=42`, made over the union of official `trainval.txt` and `test.txt` annotations. It is therefore **not** an evaluation on the official Oxford-IIIT Pet benchmark split. `splits/class_mapping.json` fixes labels 0–9 for every consumer of the data.
+
+Committed manifests are read as-is; loaders do not recreate a split. The data-preparation command is:
+
+```powershell
+py -3 scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits --seed 42
+```
+
+The command refuses to overwrite frozen manifests. A new split version must be an explicit action in a new output directory, for example `--output-dir splits/v2`.
+
+The preparation workflow records RGB decoding failures, exact-duplicate groups, perceptual-hash candidates, and split deviations. It checks decoded RGB content with image dimensions in the exact hash, uses the fixed 0–9 mapping, and verifies no train/validation/test overlap by image ID, relative path, or `content_hash`.
+
+The 91 perceptual-hash candidates have completed manual review: 84 are `different images`, 3 are `duplicate`, and 4 are `near-duplicate`; none remains `uncertain`. Seven confirmed candidate pairs form six transitive groups. Two confirmed groups crossed v1 splits (`Birman_199`/`Birman_25` and `British_Shorthair_186`/`British_Shorthair_271`), so `splits/v2` was created with all confirmed groups assigned wholly to one split. V1 was retained unchanged and no photographs were removed. V2 passed RGB/hash integrity, ID/path/content-hash disjointness, class-presence, confirmed-group, reproducibility, and DataLoader-contract checks.
+
+### Preprocessing and EDA
+
+All inputs are full RGB photographs. Segmentation masks and head bounding boxes are not used.
+
+Validation and test, and train when `augment=false`, use `ResNet50_Weights.IMAGENET1K_V2.transforms()` as the deterministic preprocessing source: resize the shorter side to 232, center crop to 224, convert to a tensor, then apply ImageNet normalization. Train shuffling remains enabled when `augment=false`.
+
+With `augment=true`, train uses:
+
+1. `RandomResizedCrop(224, scale=(0.7, 1.0), ratio=(0.75, 1.3333))` without first stretching the image to a square;
+2. `RandomHorizontalFlip(p=0.5)`;
+3. `ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.02)`;
+4. tensor conversion and ImageNet normalization.
+
+The EDA notebook reads the active split from `configs/data.yaml` and has saved executed outputs for integrity reports, class distributions, split-overlap checks, image dimensions/aspect ratios, and original plus augmented **train** examples for every class. It was executed against `splits/v2` without modifying frozen manifests. EDA and duplicate review are data-integrity activities only and must not be used to choose model settings.
 
 ## 3. Experimental plan
 
-**Model:** ResNet50 with ImageNet weights (`torchvision`, `IMAGENET1K_V2`); the classifier head is replaced with `Linear(2048 → 10)`.
+### Training and controlled comparison
 
-**Compared approaches:** the four conditions C0–C3 above. They differ in  unfreezing depth. The ladder doubles as the required ablation: C0 to C3 is a systematic sweep over the controlled factor.
+All C0–C3 runs use ImageNet-pretrained ResNet50 with a replaced `Linear(2048 → 10)` head, AdamW, batch size 32, cross-entropy loss, at most 30 epochs, and early stopping on validation macro-F1 with patience 5.
 
-**Training strategy (identical across conditions):** AdamW optimizer; batch size 32; up to 30 epochs; early stopping on validation macro-F1 (patience 5); cross-entropy loss; one shared `train.py` — conditions differ only via a YAML config. Two details fixed in advance: (a) **BatchNorm layers stay frozen** (eval mode, ImageNet running statistics) in every unfrozen condition — with batch 32, updating BN statistics is a known hidden cause of fine-tuning degradation; (b) each condition is trained with **3 seeds {42, 43, 44}** and reported as mean ± std, so that a difference between conditions is never read off a single run.
+`split_seed=42` is fixed independently from the run seed. Each condition is run with training seeds `{42, 43, 44}`; the run seed is passed to loaders as `training_seed`. Before every run, Python, NumPy, and PyTorch are seeded. For a given seed, all compared conditions start from identical pretrained weights and identical new-head initialization.
 
-**Determinism:** seed everything (Python/NumPy/PyTorch), `torch.backends.cudnn.deterministic=True`, `benchmark=False`, seeded DataLoader generator and `worker_init_fn` — a repeated run of the same config must reproduce the same history.
+For every C0–C3 condition, the learning-rate candidates `{1e-3, 1e-4, 1e-5}` are evaluated for all three seeds. One learning rate per condition is selected from the **mean validation macro-F1**. The three checkpoints from the chosen learning rate are retained for final evaluation; every run selects its own checkpoint using validation data, and no single “best seed” is selected.
 
-**Fair-comparison protocol:** for each condition, the learning rate is selected from {1e-3, 1e-4} on the validation split, so no condition loses merely because of an unsuitable LR. This is the only tuned hyperparameter; the grid is deliberately coarse because the val split is small (~300 images) and we do not want to overfit it.
+BatchNorm running statistics are fixed through eval mode for all C0–C3 runs. BatchNorm affine `weight` and `bias` parameters are trainable only when their block is unfrozen. The training loop must restore this BatchNorm eval policy after `model.train()`; running statistics are not described as trainable parameters.
 
-**Additional ablation (pre-committed):** conditions **C0 and C3** (the two ends of the ladder) are re-run with augmentation switched off (`augment: false`, deterministic weight-provided preprocessing). The ablation targets are fixed in advance — not chosen after seeing results — to avoid post-hoc selection.
+The augmentation ablation is pre-specified for C0 and C3. Its `augment=false` runs use the same selected learning rate and the same three seeds as their corresponding augmentation-on condition; no new learning-rate search is performed. This isolates the effect of augmentation while holding other choices fixed.
 
-**Evaluation metrics:**
+### Interpretation and uncertainty
 
-| Metric | Role |
-|---|---|
-| **Macro-F1** (primary) | Comparison across conditions; equal weight per breed, sensitive to similar-pair errors |
-| Accuracy | Secondary, interpretability |
-| Per-class F1 + confusion matrix | Localization of confused breed pairs per condition |
-| Validation loss / training curves | Diagnostics: "frozen underfits" vs "full FT overfits" |
-| Training time + inference latency (ms/img) | Practical trade-off; required by the guideline |
-| ≥3 failure cases with Grad-CAM | Qualitative analysis with explained causes |
+Results are reported as mean ± standard deviation across the three retained checkpoints/seeds. This is a descriptive estimate of training variability, not a claim of statistical significance. Conclusions are limited to these ten classes, this fixed custom split, ResNet50, and the evaluated settings. A full fine-tuning win is compatible with the hypothesis; results from four conditions do not establish a general cutoff.
 
-**Significance criterion:** differences between conditions are read from 3 seeds as mean ± std; a macro-F1 difference counts as meaningful when it exceeds the across-seed spread and is confirmed at the per-class level. With ~300 val/test images, 1 p.p. ≈ 3 images — this is stated honestly as a limitation, and single-seed differences are never interpreted.
+### Test protocol and pipeline order
+
+The test set is not used to select classes, preprocessing, hyperparameters, checkpoints, seeds, or later training. Test-file integrity checks are allowed. Error analysis after final evaluation is allowed but must not change models or training choices.
+
+The required order is:
+
+1. complete data review and freeze the split version;
+2. train C0–C3 and select learning rates using validation only;
+3. run the C0/C3 augmentation ablation;
+4. freeze all configurations and checkpoints;
+5. evaluate all planned variants and seeds once on test;
+6. perform failure analysis without modifying models.
+
+Preliminary comparisons are validation-only. Final test evaluation includes macro-F1, accuracy, per-class F1, a confusion matrix, and planned failure-analysis material.
 
 ## 4. Implementation plan
 
-**Pipeline steps:**
-1. Download and verify the dataset; select the 10-breed subset; generate and freeze the stratified splits (CSV manifests).
-2. `src/dataset.py` — Dataset/DataLoader with preprocessing and a config-controllable augmentation pipeline.
-3. `src/train.py` — shared training engine: per-epoch history (CSV), best checkpoint by val macro-F1, early stopping, full determinism (seeded loaders, cudnn deterministic), unfreeze-depth as a config parameter, BatchNorm kept frozen in all conditions.
-4. Train conditions C0–C3 (two per ML engineer, in parallel), each with 3 seeds; LR selection on val.
-5. `src/evaluate.py` — single evaluation script producing macro-F1, accuracy, confusion matrix (PNG), per-class F1 (CSV), and latency for any checkpoint. All reported numbers come from this script only.
-6. One-time test evaluation of all frozen conditions; comparison table and figures (mean ± std across seeds).
-7. Pre-committed augmentation ablation on C0 and C3 (augment on/off).
-8. Failure analysis: export misclassified test images grouped by true→predicted breed pair; inspect ≥3 representative cases with Grad-CAM and explain causes.
-9. Runtime measurements (training time per condition, inference latency, memory).
-10. Two-page technical summary, reproducibility check from a fresh clone, demo preparation.
+1. Maintain the reviewed `splits/v2` manifests and repeat the documented integrity checks after any explicitly approved future split version.
+2. Use `src/dataset.py` as the shared, read-only Dataset/DataLoader interface; it consumes only the committed mapping and manifests.
+3. Implement the shared `train.py` with per-epoch history, checkpoint selection by validation macro-F1, configured unfreezing depth, deterministic run setup, and BatchNorm policy restoration.
+4. Run the C0–C3 learning-rate protocol and the fixed augmentation ablation.
+5. Implement one `evaluate.py` that reports all final metrics and persists evaluation artifacts.
+6. Measure the primary computational trade-offs—training time and peak GPU memory—on the same hardware and under identical measurement settings. Inference latency is a supplementary metric because the architecture is unchanged and freezing is not assumed to accelerate inference.
+7. Complete test evaluation, error analysis, the technical summary, and a fresh-clone reproducibility check.
 
-**Libraries and resources:** PyTorch + torchvision (pretrained ResNet50, `IMAGENET1K_V2`), scikit-learn (metrics), pandas (splits and results), matplotlib/seaborn (figures), Grad-CAM via `pytorch-grad-cam` or manual hooks, PyYAML (configs). 
-
-**Reproducibility:** pinned `requirements.txt`, README with exact install/download/train/evaluate commands, fixed seeds, frozen splits and configs in the repository; the final check is a fresh-clone run reproducing the reported numbers.
+The current `requirements.txt` uses `>=` constraints; it is not a pinned environment. Before final experiments, exact compatible package versions, PyTorch/CUDA details, device information, and runtime environment must be recorded and frozen. Mean ± standard deviation always refers to all three checkpoints/runs selected by the protocol, not a single best-seed checkpoint.
 
 ## 5. Team responsibilities
 
-| Member          | Role | Responsibility |
-|-----------------|---|---|
-| Tikhonova Anna  | Team Lead | Single `evaluate.py`; failure analysis with Grad-CAM; two-page summary; demo and slides; repository integration and final reproducibility check |
-| Pyanov Georgij  | Data Engineer | Dataset download and verification; breed subset selection; frozen stratified splits; `src/dataset.py`; README/requirements; runtime measurements; error-image export |
-| Fadeeva Albina  | ML Engineer | `src/train.py` (sole owner); conditions C0 (frozen) and C1 (layer4), 3 seeds each: training, LR selection on val, checkpoints and histories |
-| Kirillov Maksim | ML Engineer | `src/gradcam.py` (sole owner); conditions C2 (layer3+4) and C3 (full FT), 3 seeds each; augmentation ablation on C0 and C3 |
+| Member | Role | Responsibility |
+|---|---|---|
+| Tikhonova Anna | Team Lead | Single `evaluate.py`; failure analysis with Grad-CAM; two-page summary; demo and slides; repository integration and final reproducibility check |
+| Pyanov Georgij | Data Engineer | Dataset download and verification; breed subset selection; frozen stratified splits; `src/dataset.py`; README/requirements; runtime measurements; error-image export |
+| Fadeeva Albina | ML Engineer | `src/train.py` (sole owner); conditions C0 and C1, three seeds each: training, validation LR selection, checkpoints, and histories |
+| Kirillov Maksim | ML Engineer | `src/gradcam.py` (sole owner); conditions C2 and C3, three seeds each; augmentation ablation on C0 and C3 |
 
-**Working agreements:** one shared `train.py` owned by ML Engineer 1 (no forks — conditions differ only via config); splits frozen after week 1; metrics are produced only by the lead's `evaluate.py`; the test set is opened exactly once; every run logs its config and git commit hash; weekly 30-minute sync before each Tuesday milestone.
-
+**Working agreements.** One shared `train.py` has no condition-specific forks; conditions differ only through configuration. The split version is frozen before training, metrics are produced only by the lead’s `evaluate.py`, every run logs its configuration and Git commit hash, and the team synchronizes before Tuesday milestones.

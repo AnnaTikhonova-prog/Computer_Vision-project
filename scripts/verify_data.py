@@ -81,6 +81,34 @@ def assert_disjoint(manifests: dict[str, list[dict[str, str]]]) -> None:
                 raise AssertionError(f"{field} overlap between {first}/{second}: {example}")
 
 
+def assert_all_classes_present(manifests: dict[str, list[dict[str, str]]]) -> None:
+    expected = set(range(10))
+    for split, rows in manifests.items():
+        present = {int(row["label"]) for row in rows}
+        if present != expected:
+            raise AssertionError(f"{split} does not contain every class 0..9; missing={sorted(expected - present)}")
+
+
+def assert_confirmed_groups_do_not_cross(manifests: dict[str, list[dict[str, str]]], groups_path: Path) -> None:
+    """Ensure manually confirmed duplicate/near-duplicate groups are split-safe."""
+    if not groups_path.is_file():
+        raise FileNotFoundError(f"Confirmed-groups file is missing: {groups_path}")
+    payload = json.loads(groups_path.read_text(encoding="utf-8"))
+    groups = payload.get("groups")
+    if not isinstance(groups, list):
+        raise AssertionError(f"{groups_path} must contain a 'groups' list")
+    locations = {row["image_id"]: split for split, rows in manifests.items() for row in rows}
+    for index, group in enumerate(groups):
+        if not isinstance(group, list) or len(group) < 2:
+            raise AssertionError(f"Invalid confirmed group {index} in {groups_path}")
+        unknown = sorted(set(group) - set(locations))
+        if unknown:
+            raise AssertionError(f"Confirmed group {index} references unknown image IDs: {unknown}")
+        locations_in_group = {locations[image_id] for image_id in group}
+        if len(locations_in_group) != 1:
+            raise AssertionError(f"Confirmed group {index} crosses splits: {group}")
+
+
 def load_yaml_config(path: Path) -> dict[str, Any]:
     try:
         import yaml
@@ -89,12 +117,13 @@ def load_yaml_config(path: Path) -> dict[str, Any]:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
-def check_loaders(config_path: Path, manifests: dict[str, list[dict[str, str]]], split_dir: Path) -> None:
+def check_loaders(config_path: Path, manifests: dict[str, list[dict[str, str]]], split_dir: Path, dataset_root: Path) -> None:
     import torch
     from src.dataset import get_loaders
 
     config = load_yaml_config(config_path)
     config["split_dir"] = str(split_dir)
+    config["dataset_root"] = str(dataset_root)
     config["num_workers"] = 0  # deterministic, in-process contract check
     before = {path: hashlib.sha256(path.read_bytes()).hexdigest() for path in split_dir.glob("*.csv")}
     loaders = get_loaders(config)
@@ -161,6 +190,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dataset-root", type=Path, default=PROJECT_ROOT / "data" / "oxford-iiit-pet")
     parser.add_argument("--split-dir", type=Path, default=PROJECT_ROOT / "splits")
     parser.add_argument("--config", type=Path, default=PROJECT_ROOT / "configs" / "data.yaml")
+    parser.add_argument("--confirmed-groups", type=Path, help="Confirmed-groups JSON; defaults to <split-dir>/confirmed_groups_applied.json")
     parser.add_argument("--check-loaders", action="store_true")
     parser.add_argument("--check-reproducibility", action="store_true")
     return parser.parse_args()
@@ -171,8 +201,10 @@ def main() -> None:
     mapping = read_mapping(args.split_dir)
     manifests = {name: read_manifest(args.split_dir / f"{name}.csv", args.dataset_root, mapping) for name in ("train", "val", "test")}
     assert_disjoint(manifests)
+    assert_all_classes_present(manifests)
+    assert_confirmed_groups_do_not_cross(manifests, args.confirmed_groups or args.split_dir / "confirmed_groups_applied.json")
     if args.check_loaders:
-        check_loaders(args.config, manifests, args.split_dir)
+        check_loaders(args.config, manifests, args.split_dir, args.dataset_root)
     if args.check_reproducibility:
         check_reproducibility(args.dataset_root, args.split_dir)
     print(json.dumps({"status": "ok", "split_sizes": {name: len(rows) for name, rows in manifests.items()}, "loader_checks": args.check_loaders, "reproducibility_check": args.check_reproducibility}, indent=2))

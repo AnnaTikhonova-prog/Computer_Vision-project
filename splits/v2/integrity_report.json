@@ -1,0 +1,30 @@
+{
+  "annotation_candidates": 1999,
+  "counts_after_exact_dedup": {
+    "American Bulldog": 200,
+    "Beagle": 200,
+    "Birman": 200,
+    "British Shorthair": 200,
+    "Maine Coon": 200,
+    "Pug": 200,
+    "Russian Blue": 200,
+    "Samoyed": 200,
+    "Siamese": 199,
+    "Sphynx": 200
+  },
+  "counts_before_exact_dedup": {
+    "American Bulldog": 200,
+    "Beagle": 200,
+    "Birman": 200,
+    "British Shorthair": 200,
+    "Maine Coon": 200,
+    "Pug": 200,
+    "Russian Blue": 200,
+    "Samoyed": 200,
+    "Siamese": 199,
+    "Sphynx": 200
+  },
+  "excluded": [],
+  "retained_after_exact_dedup": 1999,
+  "valid_decoded": 1999
+}

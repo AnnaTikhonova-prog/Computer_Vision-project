@@ -71,6 +71,10 @@ version, use a new output directory:
 py -3 scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v2 --seed 42
 ```
 
+The active configuration uses the reviewed `splits/v2` manifests: 1,399 train,
+300 validation, and 300 test samples. Every class has 140/30/30 samples except
+Siamese, which has 139/30/30.
+
 `near_duplicate_candidates.json` is only a review queue based on an 8×8
 grayscale average-hash Hamming distance (default at most 5). It removes
 nothing. If review confirms a group, save it as
@@ -128,21 +132,29 @@ CSV in a spreadsheet, or record one decision reproducibly:
 py -3 scripts/review_near_duplicates.py --set-decision "Birman_120__Russian_Blue_226" "different images" --notes "Distinct photos after visual review"
 ```
 
-Re-run the first command to rebuild the HTML and
-`near_duplicate_review_status.json`. Both `duplicate` and `near-duplicate`
-are treated conservatively as confirmed for leakage review. If either member
-is in another split, the status report lists it. **Do not edit frozen CSVs.**
-First review and approve the listed groups, then create a separate versioned
-split with `prepare_oxford_pets.py --output-dir splits/v2 --confirmed-groups …`.
+To import a completed semicolon-delimited Excel export while preserving its
+source file, validate it and write the normalised review plus transitive groups:
+
+```powershell
+py -3 scripts/review_near_duplicates.py --split-dir splits --import-completed splits/near_duplicate_review_completed.csv --confirmed-groups-output splits/confirmed_groups_v2.json
+```
+
+The completed Excel export was validated against all 91 source pairs and
+normalised into `splits/near_duplicate_review.csv`: 84 `different images`, 3
+`duplicate`, 4 `near-duplicate`, and no `uncertain` decisions. Its seven
+confirmed pairs form six transitive groups in `splits/confirmed_groups_v2.json`.
+Two confirmed v1 cross-split groups were resolved in v2; v1 itself was not
+edited and the original Excel export is preserved.
 
 ## Definition of Done status
 
-Automated preparation and integrity checks are complete for the frozen v1
-split. The perceptual-hash candidate review is deliberately open until a human
-visually assigns each row in `near_duplicate_review.csv`. Current completion
-status is machine-readable in `near_duplicate_review_status.json`; it lists
-confirmed and unresolved cross-split pairs separately. At this point all 91 pairs are
-`uncertain`, so no correction to v1 is proposed and no frozen CSV has changed.
+The v2 manifests passed RGB/hash integrity, ID/path/content-hash disjointness,
+class-presence, confirmed-group, reproducibility, and DataLoader-contract
+checks. The EDA notebook reads the active split from `configs/data.yaml`; its
+executed outputs are saved in `notebooks/eda_oxford_pets.ipynb`. It includes
+the v2 tables, overlap and confirmed-group checks, image-size distributions,
+and original plus augmented training examples for all ten classes. It did not
+modify the frozen manifests.
 
 ## DataLoader interface
 

@@ -2,8 +2,9 @@
 """Build and maintain a human review queue for perceptual-hash candidates.
 
 This utility never changes train.csv, val.csv, test.csv, or class_mapping.json.
-It only records human decisions in near_duplicate_review.csv and produces an
-HTML contact sheet with both images of each candidate displayed side by side.
+It imports a completed Excel export only after strict validation, records the
+normalised review in near_duplicate_review.csv, and produces an HTML contact
+sheet with both images of each candidate displayed side by side.
 """
 
 from __future__ import annotations
@@ -23,6 +24,22 @@ REVIEW_COLUMNS = [
     "image_id_b", "class_name_b", "split_b", "relative_path_b",
     "hamming_distance", "same_class", "decision", "review_notes",
 ]
+
+
+class UnionFind:
+    def __init__(self, items: set[str]):
+        self.parent = {item: item for item in items}
+
+    def find(self, item: str) -> str:
+        while self.parent[item] != item:
+            self.parent[item] = self.parent[self.parent[item]]
+            item = self.parent[item]
+        return item
+
+    def union(self, first: str, second: str) -> None:
+        first_root, second_root = self.find(first), self.find(second)
+        if first_root != second_root:
+            self.parent[max(first_root, second_root)] = min(first_root, second_root)
 
 
 def pair_id(image_id_a: str, image_id_b: str) -> str:
@@ -79,6 +96,62 @@ def create_or_load_review(split_dir: Path) -> list[dict[str, str]]:
     return rows
 
 
+def import_completed_review(source_path: Path, split_dir: Path) -> list[dict[str, str]]:
+    """Validate and normalise a semicolon-delimited Excel export without editing it."""
+    with source_path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.reader(handle, delimiter=";")
+        raw_rows = list(reader)
+    if not raw_rows:
+        raise ValueError(f"Completed review is empty: {source_path}")
+    header = raw_rows[0]
+    if header[:len(REVIEW_COLUMNS)] != REVIEW_COLUMNS or len(header) != len(REVIEW_COLUMNS) + 4 or any(header[len(REVIEW_COLUMNS):]):
+        raise ValueError("Completed review must have the expected columns followed by exactly four blank Excel columns")
+    if any(len(row) != len(header) for row in raw_rows[1:]):
+        raise ValueError("Completed review has inconsistent column counts")
+
+    candidates, image_info = source_rows(split_dir)
+    expected_candidates = {pair_id(row["image_id_a"], row["image_id_b"]): row for row in candidates}
+    if len(raw_rows) - 1 != len(expected_candidates):
+        raise ValueError(f"Completed review has {len(raw_rows) - 1} pairs; expected {len(expected_candidates)}")
+    completed: dict[str, dict[str, str]] = {}
+    for line_number, raw in enumerate(raw_rows[1:], start=2):
+        row = dict(zip(REVIEW_COLUMNS, raw[:len(REVIEW_COLUMNS)]))
+        identifier = row["pair_id"]
+        if identifier in completed:
+            raise ValueError(f"Completed review repeats pair_id at line {line_number}: {identifier}")
+        candidate = expected_candidates.get(identifier)
+        if candidate is None:
+            raise ValueError(f"Completed review has unknown pair_id at line {line_number}: {identifier}")
+        first, second = image_info[candidate["image_id_a"]], image_info[candidate["image_id_b"]]
+        expected = {
+            "image_id_a": first["image_id"], "class_name_a": first["class_name"], "split_a": first["split"], "relative_path_a": first["relative_path"],
+            "image_id_b": second["image_id"], "class_name_b": second["class_name"], "split_b": second["split"], "relative_path_b": second["relative_path"],
+            "hamming_distance": str(candidate["hamming_distance"]), "same_class": str(candidate["same_class"]),
+        }
+        mismatched = [field for field, value in expected.items() if row[field] != value]
+        if mismatched:
+            raise ValueError(f"Completed review metadata mismatch at line {line_number} ({identifier}): {mismatched}")
+        if row["decision"] not in DECISIONS:
+            raise ValueError(f"Invalid decision at line {line_number} ({identifier}): {row['decision']!r}")
+        completed[identifier] = row
+    missing = sorted(set(expected_candidates) - set(completed))
+    if missing:
+        raise ValueError(f"Completed review is missing pair_id: {missing[0]}")
+    return [completed[pair_id(row["image_id_a"], row["image_id_b"])] for row in candidates]
+
+
+def confirmed_groups(rows: list[dict[str, str]]) -> list[list[str]]:
+    """Create connected components for reviewed duplicate/near-duplicate pairs."""
+    confirmed = [row for row in rows if row["decision"] in {"duplicate", "near-duplicate"}]
+    union_find = UnionFind({image_id for row in confirmed for image_id in (row["image_id_a"], row["image_id_b"])})
+    for row in confirmed:
+        union_find.union(row["image_id_a"], row["image_id_b"])
+    groups: dict[str, list[str]] = {}
+    for image_id in union_find.parent:
+        groups.setdefault(union_find.find(image_id), []).append(image_id)
+    return sorted((sorted(group) for group in groups.values()), key=lambda group: group[0])
+
+
 def write_review(path: Path, rows: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=REVIEW_COLUMNS)
@@ -128,10 +201,12 @@ def status(rows: list[dict[str, str]]) -> dict[str, object]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--split-dir", type=Path, default=PROJECT_ROOT / "splits")
+    parser.add_argument("--import-completed", type=Path, help="UTF-8 semicolon-delimited Excel export with four ignored trailing columns")
+    parser.add_argument("--confirmed-groups-output", type=Path, help="Write transitive confirmed duplicate/near-duplicate groups as JSON")
     parser.add_argument("--set-decision", nargs=2, metavar=("PAIR_ID", "DECISION"), help="Persist one reviewed decision")
     parser.add_argument("--notes", default="", help="Optional note used with --set-decision")
     args = parser.parse_args()
-    rows = create_or_load_review(args.split_dir)
+    rows = import_completed_review(args.import_completed, args.split_dir) if args.import_completed else create_or_load_review(args.split_dir)
     if args.set_decision:
         target, decision = args.set_decision
         if decision not in DECISIONS:
@@ -143,6 +218,8 @@ def main() -> None:
         matching[0]["review_notes"] = args.notes
     write_review(args.split_dir / "near_duplicate_review.csv", rows)
     write_html(args.split_dir / "near_duplicate_review.html", rows)
+    if args.confirmed_groups_output:
+        args.confirmed_groups_output.write_text(json.dumps({"groups": confirmed_groups(rows)}, indent=2) + "\n", encoding="utf-8")
     report = status(rows)
     (args.split_dir / "near_duplicate_review_status.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
