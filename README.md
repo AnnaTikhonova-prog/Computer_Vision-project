@@ -202,3 +202,48 @@ stretching an image to a square. Validation/test, and train with
 `augment: false`, use the deterministic
 `ResNet50_Weights.IMAGENET1K_V2.transforms()` transform. Validation/test never
 shuffle and never drop their final batch.
+
+## Training C0–C3
+
+All conditions use the same `src/train.py`. Choose the condition through YAML;
+each condition inherits shared settings from `configs/training.yaml` and
+`configs/data.yaml`.
+
+| Config | What trains |
+| --- | --- |
+| `configs/c0.yaml` | Classifier head only |
+| `configs/c1.yaml` | Head + `layer4` |
+| `configs/c2.yaml` | Head + `layer3` + `layer4` |
+| `configs/c3.yaml` | Entire ResNet50 |
+
+Run from the repository root using the Python environment where dependencies
+are installed. GPU training requires a CUDA-enabled PyTorch build:
+
+```powershell
+py -3 -m src.train --config configs/c2.yaml --training-seed 43 --lr 1e-4 --output-dir artifacts/c2_seed43_lr1e-4
+```
+
+Training seeds are **42, 43, 44**, independent of `split_seed=42`; LR candidates
+are **1e-3, 1e-4, 1e-5**. Training uses ImageNet V2 ResNet50, AdamW and batches of
+32, processed in microbatches of four. The best checkpoint is selected by
+validation macro-F1, with at most 30 epochs and early stopping after five epochs
+without improvement. BatchNorm running statistics stay frozen; its weight and
+bias train only in unfrozen blocks. The test loader is not used during training.
+
+Each run creates a new output directory containing `best.pt`, `history.csv`,
+the resolved `config.yaml`, `metadata.json` (seeds, Git commit and environment)
+and `runtime.json`. Existing directories are never overwritten. **`artifacts/`
+is ignored by Git**, so back up results and share them separately with the team.
+
+## Training reproducibility
+
+The trainer seeds Python, NumPy, PyTorch and loader workers and enables strict
+deterministic GPU operations. For a fixed seed, C0–C3 start with identical heads;
+BN running statistics are checked for changes after every epoch.
+
+To repeat a run, use its saved config with a new output directory and compare histories:
+
+```powershell
+py -3 -m src.train --config artifacts/c2_seed43_lr1e-4/config.yaml --output-dir artifacts/c2_repeat
+fc.exe /b artifacts\c2_seed43_lr1e-4\history.csv artifacts\c2_repeat\history.csv
+```
