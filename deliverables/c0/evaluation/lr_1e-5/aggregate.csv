@@ -1,0 +1,2 @@
+lr,seed_42_val_macro_f1,seed_43_val_macro_f1,seed_44_val_macro_f1,mean_val_macro_f1,sample_std_val_macro_f1,contributing_seeds,metric_kind
+1e-05,0.8812655700008728,0.81372078015888205,0.86958300901835861,0.85485645305937119,0.036100252720854542,"42,43,44",mean/std of seed-level macro-F1; not pooled or ensemble

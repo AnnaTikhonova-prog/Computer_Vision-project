@@ -1,0 +1,415 @@
+{
+  "authoritative_runs": 9,
+  "condition": "C0",
+  "excluded_incomplete_attempt": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed42",
+  "files": [
+    {
+      "category": "delivery documentation",
+      "path": "README.md",
+      "sha256": "f1f4189bee76b4e5e9f10829c7ff88e548560edf486df2a55173c1e75eb81a41",
+      "size_bytes": 1286,
+      "source": null
+    },
+    {
+      "category": "chosen LR manifest",
+      "path": "chosen_lr_manifest.json",
+      "sha256": "405b30b68685b4373be5a52d54aef9c898b0d91302f8dd8ef372f9168f1a7e6a",
+      "size_bytes": 844,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/learning_rates.csv",
+      "sha256": "1455418fcddd526ceac80425ad3a6e508a2745fda8723608cedc4827071651fa",
+      "size_bytes": 688,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\learning_rates.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/aggregate.csv",
+      "sha256": "587afb763b4487d1b25ffcdd1d00fee9b1d66adac37ce0cbac4108feca0f55b7",
+      "size_bytes": 314,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-3\\aggregate.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/metrics.csv",
+      "sha256": "0e76f0e31abd2d961bca99a54d0d795e7a57a77f0323b855186982e31775e044",
+      "size_bytes": 1336,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-3\\metrics.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/seed_42_predictions.csv",
+      "sha256": "04b8becd06d9532d4ace6e122ba6c8e9e3f4ba39f51499a2170eb07614575bcf",
+      "size_bytes": 18705,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-3\\seed_42_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/seed_43_predictions.csv",
+      "sha256": "1d5103fa83d2c75459ed347116a0b38d9a19d04a7ca92cac37922153ac4af94e",
+      "size_bytes": 18710,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-3\\seed_43_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/seed_44_predictions.csv",
+      "sha256": "1780eb56bd44bff6dd6936251637189d4b7e26fcdca7598bfc9ac9faef66a4c4",
+      "size_bytes": 18725,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-3\\seed_44_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/aggregate.csv",
+      "sha256": "e8c518fed101d01369a9600c0bb66f3aa1e5f014aa9b34b8467a2a2d26bd7d32",
+      "size_bytes": 314,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-4\\aggregate.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/metrics.csv",
+      "sha256": "7796418c3926c8fb789be3ba21a30bf14ae0080f2405b638808061311c3299ae",
+      "size_bytes": 1350,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-4\\metrics.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/seed_42_predictions.csv",
+      "sha256": "89acbea605c46a443c43bcb94f7517c8d9487662e3856e329b57f9e8622b8479",
+      "size_bytes": 18702,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-4\\seed_42_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/seed_43_predictions.csv",
+      "sha256": "eedb537f6b9de6e80d5cf95caba0bf482713d67a8fdca7c6300b4074cd9186cc",
+      "size_bytes": 18715,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-4\\seed_43_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/seed_44_predictions.csv",
+      "sha256": "5bc56db78862e62002af6b09731fcfa5d6d286fa03f7022c22b49c49133282e6",
+      "size_bytes": 18709,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-4\\seed_44_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/aggregate.csv",
+      "sha256": "cd0bc902e910877284c065a10acd791716d802023a45ddce1c51247daf1cf173",
+      "size_bytes": 312,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-5\\aggregate.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/metrics.csv",
+      "sha256": "f2fa200100d3a4d8946b4c75f6dcbdbae21871b9200c7a7c24ccd728b9c0d304",
+      "size_bytes": 1317,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-5\\metrics.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/seed_42_predictions.csv",
+      "sha256": "8f384d84ea6943764e3a120146bc2de0829b726ef8497da5153bb092b8ab4808",
+      "size_bytes": 18760,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-5\\seed_42_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/seed_43_predictions.csv",
+      "sha256": "69ac4a7b2af8534ed1ff1158c43fcc5d3e1a737eefbbb928f168d1903ef6d9b1",
+      "size_bytes": 18963,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-5\\seed_43_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/seed_44_predictions.csv",
+      "sha256": "07cc3be84657a057f63ad10df25d7a5e569d786c81566000e603670b6319580d",
+      "size_bytes": 18794,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\lr_1e-5\\seed_44_predictions.csv"
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/report_mapping.csv",
+      "sha256": "b6af86d5307bcbbc65e1be4f8acd6831117aa3e12b55a62546138e1f6bc3f22c",
+      "size_bytes": 967,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\validation_evaluation\\report_mapping.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_42/best.pt",
+      "sha256": "f6bcabb8c763c3a4d03241da3f93074aef68fc71c8fcd348d95c42db7c55f170",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed42\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_42/config.yaml",
+      "sha256": "3c8ca06ae33e43b56f354cb9b0ab7fb6b52548b105434e34bdd0e177811afcc4",
+      "size_bytes": 270,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed42\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_42/history.csv",
+      "sha256": "7de7d392002ae8f45a068fb35019f94a731d193d95da1476509f454d5d125f54",
+      "size_bytes": 1585,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed42\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_42/metadata.json",
+      "sha256": "82daec28ba9bd18d016aed761125510d13c020f06c35f25b66c749a49b88456b",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed42\\metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_43/best.pt",
+      "sha256": "0fc7a8cc6211f1af729846681b69013e55627fbec48bd760a72383a3d3b40814",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed43\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_43/config.yaml",
+      "sha256": "fbb4fee72b0f86dd4d344debd4c4fa7bc891f6d28cd26bd404e59295b5a0ae75",
+      "size_bytes": 270,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed43\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_43/history.csv",
+      "sha256": "cd29922d03d40d5c4f417e3a380a2b2355b5c32a77ed57978007a9c90751be8c",
+      "size_bytes": 1583,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed43\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_43/metadata.json",
+      "sha256": "9fb3d6d3ead55cb4f14cd62d1c50449d02dfb94c4db04e051ebdfcd8ec1e3c16",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed43\\metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_44/best.pt",
+      "sha256": "c462c91bba77d3ef833f6dac946d2126850134f06ca624551134aa1a09bb0f2b",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed44\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_44/config.yaml",
+      "sha256": "8f761b8fa72ef6bc3a4993bf3b432e310647686d2a4cf3bb72ad7467a59f3a80",
+      "size_bytes": 270,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed44\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_44/history.csv",
+      "sha256": "e1a91ec92fd83a3e24bd9821031d50dec04a66810066a9c54abec459a6a0395b",
+      "size_bytes": 1809,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed44\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_44/metadata.json",
+      "sha256": "b8971555ba54bdddfcde994bdeaf2a24f2cff6d74420ff18718fa47e9cf55a8f",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-3_seed44\\metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_42/best.pt",
+      "sha256": "66e843bb4a6628c2b9623b4e1cdf8e1652eace803e17b664323aab42d8e984b1",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed42_attempt2\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_42/config.yaml",
+      "sha256": "7a9868a8697bcde4cae35be12dcbc09110a51b6b92c97b5c539195ecae611c8b",
+      "size_bytes": 271,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed42_attempt2\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_42/history.csv",
+      "sha256": "9e004e6f61284759d432f1b09ff243570805222edaad0025df05a48969a29c9d",
+      "size_bytes": 1911,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed42_attempt2\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_42/metadata.json",
+      "sha256": "d6b9a46f541b36535aeb65f901725b05004365e00b607f1fab338fbacf2473f1",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed42_attempt2\\metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_43/best.pt",
+      "sha256": "5b56faf0a72c50a39ad8c72ad97cf8bbbf93825bd657bf03ac680a29df1a6b12",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed43\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_43/config.yaml",
+      "sha256": "d894a8f37625266080671bb5c2b97fb1c1c571388779334613955cfb2016dfc1",
+      "size_bytes": 271,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed43\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_43/history.csv",
+      "sha256": "76e80b18d82c36e3cdf80ba787feda363f14c4b166d49c5f1643c7dcce7a2239",
+      "size_bytes": 1793,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed43\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_43/metadata.json",
+      "sha256": "2351536051b94a53ce37a74178d6d482b19fd97b3d0c5f5e061f1ad6b91cbc34",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed43\\metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_44/best.pt",
+      "sha256": "e3dbaa5b5eaf3afaebc2b071ee23f5879d21d356ae5cf2fd061e03cb9d0b69e9",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed44\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_44/config.yaml",
+      "sha256": "881c749e4c9817e9889872cebff7ec3299e5931e47e8c7ea64dafdc4641dcdaa",
+      "size_bytes": 271,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed44\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_44/history.csv",
+      "sha256": "9f497efde1d8261ba61a4058eb46bd23522bfdcda88d096067714261da97b7ff",
+      "size_bytes": 1799,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed44\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_44/metadata.json",
+      "sha256": "938ce46c00b2f943fe69e9ee44164e36f39198f9fb95dcfe682ae5bf67149146",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-4_seed44\\metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_42/best.pt",
+      "sha256": "39b7ea66c5b302f4efb175531be4b3579121adb2806974af416fb8d223bbc469",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed42\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_42/config.yaml",
+      "sha256": "8f9e20f5fdf92b51e84f23244dfe132dd32e1b9b300081dbcbf1553f91537436",
+      "size_bytes": 272,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed42\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_42/history.csv",
+      "sha256": "7b8cd2bcdc71a82b4425272af8ab59871d5ccba68e0472ed06e1e028c5126747",
+      "size_bytes": 3729,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed42\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_42/metadata.json",
+      "sha256": "180ba4d2d846587bf85d30e573783430e13fadba3ea0ca245b0919a65b6e441f",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed42\\metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_43/best.pt",
+      "sha256": "85ca798539f3b4adef064a5930198f27391c3ba6f3ac1a71064331fbd91aef8c",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed43\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_43/config.yaml",
+      "sha256": "fb4ccc70c0770209c6aebd9207b1806a5c8cc148f4897ce0db1abf401ed57ab1",
+      "size_bytes": 272,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed43\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_43/history.csv",
+      "sha256": "dfe054a222db0eccb9e382c67c3289c818af028d9a9998161ab112d72bef8a35",
+      "size_bytes": 3710,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed43\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_43/metadata.json",
+      "sha256": "509d5ab0302ae7737c633f46cc06834a3e05f8d783a708640d6cea42165be830",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed43\\metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_44/best.pt",
+      "sha256": "520b320323f64abf11f16467bc85d417ef80ef06050b5bd031a272f3a0245b16",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed44\\best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_44/config.yaml",
+      "sha256": "a4b5c20a4314f0247b30abc29eb46420606d1b247ee80584434d49c8ef446c1d",
+      "size_bytes": 272,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed44\\config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_44/history.csv",
+      "sha256": "7b11846279e5c22088b15f97a7b6be380bc527986677c3e0a4ff8b07aac1a190",
+      "size_bytes": 3703,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed44\\history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_44/metadata.json",
+      "sha256": "2ed3c82930106974ce0515d8a0c8d22209d90587c1df120c681fe083ebd6924d",
+      "size_bytes": 1720,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\runs\\c0_lr1e-5_seed44\\metadata.json"
+    },
+    {
+      "category": "training summary",
+      "path": "training_summary/learning_rates.csv",
+      "sha256": "0c001ac64978c0dc2e892ce96275d6560e36f72bde8efb246a792016b9a7d8de",
+      "size_bytes": 439,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\summary\\learning_rates.csv"
+    },
+    {
+      "category": "training summary",
+      "path": "training_summary/report.md",
+      "sha256": "78080ede1fb5303398dd292d5b30e7b3c18e5f58d7cfd8af0aec5831e7f7a9c8",
+      "size_bytes": 1881,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\summary\\report.md"
+    },
+    {
+      "category": "training summary",
+      "path": "training_summary/runs.csv",
+      "sha256": "7cb573369409be6f1f9a5b5184d047237dd9ff26de914672850d9ccdbc3ecef8",
+      "size_bytes": 2766,
+      "source": "C:\\Users\\albiina\\Computer_Vision-project\\artifacts\\c0_cpu_grid\\summary\\runs.csv"
+    }
+  ],
+  "selected_lr": 0.001,
+  "test_split_evaluated": false
+}

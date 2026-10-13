@@ -1,0 +1,47 @@
+{
+  "architecture": "resnet50",
+  "bn_initial_sha256": "a756b908e2e7d233197a4c72759777b06bd3ee12e980c989efba4d88d31e2b5c",
+  "condition": "C0",
+  "config_sha256": "d894a8f37625266080671bb5c2b97fb1c1c571388779334613955cfb2016dfc1",
+  "environment": {
+    "cuda": null,
+    "cudnn": null,
+    "determinism": {
+      "algorithms": true,
+      "cublas_workspace_config": ":4096:8",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true
+    },
+    "device": "cpu",
+    "gpu": null,
+    "python": "3.14.6",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu"
+  },
+  "git": {
+    "commit": "155bf1b5325c758455de03431f08008ae310d1ff",
+    "dirty": true
+  },
+  "head_init_sha256": "39fa053698c6a5dfeeedfe34136448c161abf95a463773bd06b4c5fbdc1ba817",
+  "input_sha256": {
+    "class_mapping.json": "fe4cc2bfc4e121e82665258186bce9f0008d239568e5644c0dab0c6183e6926b",
+    "split_report.json": "f511d14e1a0ce5334eab3176fea03c831265081c7a8bf32b93642516142cae13",
+    "test.csv": "63f216504beb5b8e946dd142545b586a2268e4f56a1f68eee0d88cb3826664f7",
+    "train.csv": "2a9a28d0a1c915606d49b18405bf177a52e0dbb5a085cea992d3fe45cf32b232",
+    "val.csv": "29fc095925b32326b48182f0490b0ea7dea0dee21ef2ad03fe3e313fe3336bdb"
+  },
+  "source_sha256": {
+    "src/dataset.py": "bb221e5c67eb6690ccbe220c5132c53c0cec478df24cae7447699a6cc8b551b6",
+    "src/train.py": "521b4ad25d1d96e83535ebbb6bff73d30765e8d316221e11e66371736e314484"
+  },
+  "split_seed": 42,
+  "trainable_parameter_count": 20490,
+  "trainable_parameters": [
+    "fc.weight",
+    "fc.bias"
+  ],
+  "training_seed": 43,
+  "weights": "IMAGENET1K_V2"
+}
