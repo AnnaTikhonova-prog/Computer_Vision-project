@@ -159,6 +159,41 @@ def apply_unfreeze(model: nn.Module, unfreeze: str) -> None:
     for name in TRAINABLE_MODULES[unfreeze]:
         model.get_submodule(name).requires_grad_(True)
 
+    assert_trainable_policy(model, unfreeze)
+
+
+def expected_trainable_parameter_names(model: nn.Module, unfreeze: str) -> set[str]:
+    """Return the exact parameter names selected by an unfreeze condition."""
+    if unfreeze not in TRAINABLE_MODULES:
+        raise ValueError(f"Unknown unfreeze: {unfreeze}")
+    prefixes = tuple(f"{name}." for name in TRAINABLE_MODULES[unfreeze])
+    return {name for name, _ in model.named_parameters() if name.startswith(prefixes)}
+
+
+def assert_trainable_policy(model: nn.Module, unfreeze: str) -> None:
+    """Fail fast if ``requires_grad`` does not match the declared condition."""
+    expected = expected_trainable_parameter_names(model, unfreeze)
+    actual = {name for name, parameter in model.named_parameters() if parameter.requires_grad}
+    if actual != expected:
+        raise RuntimeError(
+            f"Trainable parameter policy mismatch for {unfreeze}: "
+            f"missing={sorted(expected - actual)}, unexpected={sorted(actual - expected)}"
+        )
+
+
+def assert_optimizer_matches_trainable(
+    model: nn.Module, optimizer: torch.optim.Optimizer
+) -> None:
+    """Ensure the optimizer contains every and only trainable parameter once."""
+    expected = {id(parameter) for parameter in model.parameters() if parameter.requires_grad}
+    members = [id(parameter) for group in optimizer.param_groups for parameter in group["params"]]
+    actual = set(members)
+    if len(members) != len(actual) or actual != expected:
+        raise RuntimeError(
+            "Optimizer parameter membership mismatch: "
+            f"expected={len(expected)}, actual={len(actual)}, entries={len(members)}"
+        )
+
 
 def build_model(training_seed: int, unfreeze: str) -> nn.Module:
     """Always use ImageNet V2; isolated CPU head RNG is independent of condition."""
@@ -327,8 +362,17 @@ def train(config: Mapping[str, Any], output_dir: str | Path) -> dict[str, Any]:
             "environment": {
                 "python": sys.version.split()[0], "torch": str(torch.__version__),
                 "torchvision": str(torchvision.__version__), "cuda": torch.version.cuda,
+                "cudnn": torch.backends.cudnn.version(),
                 "device": str(device),
                 "gpu": torch.cuda.get_device_name(device) if device.type == "cuda" else None,
+                "determinism": {
+                    "algorithms": torch.are_deterministic_algorithms_enabled(),
+                    "cublas_workspace_config": os.environ.get("CUBLAS_WORKSPACE_CONFIG"),
+                    "cudnn_benchmark": torch.backends.cudnn.benchmark,
+                    "cudnn_deterministic": torch.backends.cudnn.deterministic,
+                    "cuda_matmul_allow_tf32": torch.backends.cuda.matmul.allow_tf32,
+                    "cudnn_allow_tf32": torch.backends.cudnn.allow_tf32,
+                },
             },
             "architecture": "resnet50", "weights": "IMAGENET1K_V2",
         }
@@ -353,6 +397,7 @@ def train(config: Mapping[str, Any], output_dir: str | Path) -> dict[str, Any]:
             weight_decay=config["weight_decay"], betas=tuple(config["betas"]),
             eps=config["eps"], foreach=False, fused=False,
         )
+        assert_optimizer_matches_trainable(model, optimizer)
         
         best_score, best_epoch, bad_epochs = -math.inf, 0, 0
         

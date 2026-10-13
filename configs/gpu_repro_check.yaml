@@ -1,0 +1,4 @@
+# Verification only: one full-split epoch through the shared C1 trainer.
+# This is not a production experiment configuration.
+extends: c1.yaml
+max_epochs: 1

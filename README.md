@@ -247,3 +247,7 @@ To repeat a run, use its saved config with a new output directory and compare hi
 py -3 -m src.train --config artifacts/c2_seed43_lr1e-4/config.yaml --output-dir artifacts/c2_repeat
 fc.exe /b artifacts\c2_seed43_lr1e-4\history.csv artifacts\c2_repeat\history.csv
 ```
+
+After the training implementation is merged, `src/train.py` is frozen.
+Subsequent changes to that file require a new issue and review; this workflow
+rule takes effect at merge and is not enforced through file permissions.
