@@ -251,3 +251,30 @@ fc.exe /b artifacts\c2_seed43_lr1e-4\history.csv artifacts\c2_repeat\history.csv
 After the training implementation is merged, `src/train.py` is frozen.
 Subsequent changes to that file require a new issue and review; this workflow
 rule takes effect at merge and is not enforced through file permissions.
+
+## Evaluation
+
+Use `src/evaluate.py` as the project evaluator. It loads one checkpoint or
+aggregates the three retained checkpoints for a condition, evaluates the
+selected `train`, `val`, or `test` split, and writes summary metrics, per-class
+F1, and latency CSVs to `reports/tables/` plus a confusion-matrix PNG to
+`reports/figures/`. Three-checkpoint summaries report the mean and sample
+standard deviation across seeds 42, 43, and 44. Batch-1 and batch-32 latency
+are measured for each checkpoint and summarized across the checkpoints.
+
+Evaluate a single checkpoint:
+
+```powershell
+py -3 -m src.evaluate --checkpoint deliverables/c0/runs/lr_1e-3/seed_42/best.pt --config configs/c0.yaml --split val
+```
+
+Aggregate a condition’s three retained checkpoints:
+
+```powershell
+py -3 -m src.evaluate --condition C0 --checkpoints deliverables/c0/runs/lr_1e-3/seed_42/best.pt deliverables/c0/runs/lr_1e-3/seed_43/best.pt deliverables/c0/runs/lr_1e-3/seed_44/best.pt --config configs/c0.yaml --split val --device cpu
+```
+
+Use `--device cpu` to override a CUDA device in the YAML configuration when
+evaluating on a CPU-only machine. The first recorded C0 validation grid is
+documented in [`docs/initial-baseline-report.md`](docs/initial-baseline-report.md);
+it does not include test-set scores or latency measurements.
