@@ -1,0 +1,3 @@
+# Production C0 protocol on the authorized local CPU environment.
+extends: c0.yaml
+device: cpu
