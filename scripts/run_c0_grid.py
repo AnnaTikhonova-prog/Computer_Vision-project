@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the nine C0 production experiments sequentially with safe restart."""
+"""Run nine production experiments for one condition with safe restart."""
 
 from __future__ import annotations
 
@@ -20,6 +20,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from scripts.summarize_c0_grid import (  # noqa: E402
     LRS, SEEDS, expected_config, summarize_batch, validate_completed_run,
 )
+from src.train import CONDITIONS  # noqa: E402
 
 
 def file_sha256(path: Path) -> str:
@@ -46,9 +47,12 @@ def prevent_system_sleep() -> None:
 
 
 def provenance(config_path: Path) -> dict[str, Any]:
+    resolved = expected_config(config_path, LRS[0], SEEDS[0])
+    condition = CONDITIONS[resolved["unfreeze"]]
+    condition_config = f"configs/{condition.lower()}.yaml"
     relevant = [
         "src/train.py", "src/dataset.py", "configs/data.yaml", "configs/training.yaml",
-        "configs/c0.yaml", str(config_path.relative_to(PROJECT_ROOT)),
+        condition_config, str(config_path.relative_to(PROJECT_ROOT)),
         "splits/v2/train.csv", "splits/v2/val.csv", "splits/v2/test.csv",
         "splits/v2/class_mapping.json", "splits/v2/split_report.json",
     ]
@@ -65,7 +69,7 @@ def provenance(config_path: Path) -> dict[str, Any]:
         "files_sha256": {name: file_sha256(PROJECT_ROOT / name) for name in relevant},
         "interpreter": sys.executable,
         "grid": {
-            "condition": "C0",
+            "condition": condition,
             "learning_rates": list(LRS),
             "training_seeds": list(SEEDS),
         },
@@ -104,6 +108,8 @@ def main() -> None:
     args = parser.parse_args()
     prevent_system_sleep()
     batch_dir, config_path = args.batch_dir.resolve(), args.config.resolve()
+    condition = CONDITIONS[expected_config(config_path, LRS[0], SEEDS[0])["unfreeze"]]
+    condition_slug = condition.lower()
     runs_root, logs_root = batch_dir / "runs", batch_dir / "logs"
     runs_root.mkdir(parents=True, exist_ok=True)
     logs_root.mkdir(parents=True, exist_ok=True)
@@ -134,10 +140,10 @@ def main() -> None:
     for index, (lr, seed) in enumerate(cells, start=1):
         expected = expected_config(config_path, lr, seed)
         lr_name = {1e-3: "1e-3", 1e-4: "1e-4", 1e-5: "1e-5"}[lr]
-        stem = f"c0_lr{lr_name}_seed{seed}"
+        stem = f"{condition_slug}_lr{lr_name}_seed{seed}"
         output_dir, reuse = choose_output(runs_root, stem, expected)
         print(
-            f"[{index}/9] C0 lr={lr_name} seed={seed} output={output_dir} "
+            f"[{index}/9] {condition} lr={lr_name} seed={seed} output={output_dir} "
             f"status={'reusing-completed' if reuse else 'starting'}",
             flush=True,
         )

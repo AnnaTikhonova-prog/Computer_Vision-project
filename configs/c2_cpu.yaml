@@ -1,0 +1,5 @@
+# Production C2 protocol with locally benchmarked Windows CPU settings.
+extends: c2.yaml
+device: cpu
+num_workers: 0
+torch_num_threads: 6

@@ -19,20 +19,22 @@ from scripts.summarize_c0_grid import (
     summarize_batch, validate_completed_run,
 )
 from scripts.run_c0_grid import provenance
-from src.train import HISTORY_FIELDS
+from src.train import CONDITIONS, HISTORY_FIELDS
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CONFIG = PROJECT_ROOT / "configs" / "c0_cpu.yaml"
+C2_CONFIG = PROJECT_ROOT / "configs" / "c2_cpu.yaml"
 
 
-def make_run(run_dir: Path, lr: float, seed: int, best_score: float) -> None:
+def make_run(run_dir: Path, lr: float, seed: int, best_score: float, config_path: Path = CONFIG) -> None:
     run_dir.mkdir(parents=True)
-    config = expected_config(CONFIG, lr, seed)
+    config = expected_config(config_path, lr, seed)
+    condition = CONDITIONS[config["unfreeze"]]
     (run_dir / "config.yaml").write_text(yaml.safe_dump(config, sort_keys=True), encoding="utf-8")
     git = {"commit": "test-commit", "dirty": True}
     (run_dir / "metadata.json").write_text(json.dumps({
-        "condition": "C0", "training_seed": seed, "split_seed": 42, "git": git,
+        "condition": condition, "training_seed": seed, "split_seed": 42, "git": git,
     }), encoding="utf-8")
     (run_dir / "runtime.json").write_text(json.dumps({
         "status": "completed", "epochs_completed": 2, "bn_checks_passed": 2,
@@ -58,6 +60,13 @@ def make_run(run_dir: Path, lr: float, seed: int, best_score: float) -> None:
 
 
 class C0AggregationTests(unittest.TestCase):
+    def test_completed_c2_run_uses_shared_validation(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            run_dir = Path(directory) / "run"
+            make_run(run_dir, 1e-4, 42, 0.7, C2_CONFIG)
+            row = validate_completed_run(run_dir, expected_config(C2_CONFIG, 1e-4, 42))
+            self.assertEqual(row["condition"], "C2")
+
     def test_batch_provenance_survives_json_round_trip(self) -> None:
         current = provenance(CONFIG)
         self.assertEqual(json.loads(json.dumps(current)), current)

@@ -41,7 +41,10 @@ FIELDS = {
     "dataset_root", "split_dir", "batch_size", "num_workers", "augment",
     "training_seed", "split_seed", "unfreeze", "lr", "micro_batch_size",
     "max_epochs", "patience", "device", "weight_decay", "betas", "eps",
+    "torch_num_threads",
 }
+
+OPTIONAL_FIELDS = {"torch_num_threads"}
 
 HISTORY_FIELDS = (
     "epoch", "lr", "train_loss", "train_accuracy", "val_loss",
@@ -54,7 +57,7 @@ BN_BUFFERS = {"running_mean", "running_var", "num_batches_tracked"}
 def validate_config(config: Mapping[str, Any]) -> dict[str, Any]:
     """Validate a complete, flat configuration; do not mutate the caller."""
     result = dict(config)
-    unknown, missing = set(result) - FIELDS, FIELDS - set(result)
+    unknown, missing = set(result) - FIELDS, (FIELDS - OPTIONAL_FIELDS) - set(result)
     if unknown or missing:
         raise ValueError(f"Config fields: unknown={sorted(unknown)}, missing={sorted(missing)}")
     
@@ -62,6 +65,10 @@ def validate_config(config: Mapping[str, Any]) -> dict[str, Any]:
                 "micro_batch_size", "max_epochs", "patience"):
         if type(result[key]) is not int:
             raise ValueError(f"{key} must be an integer")
+
+    if "torch_num_threads" in result:
+        if type(result["torch_num_threads"]) is not int or result["torch_num_threads"] < 1:
+            raise ValueError("torch_num_threads must be a positive integer")
         
     if result["training_seed"] not in (42, 43, 44) or result["split_seed"] != 42:
         raise ValueError("training_seed must be 42/43/44; split_seed must be 42")
@@ -135,7 +142,7 @@ def load_config(path: str | Path, *, training_seed: int | None = None,
     return validate_config(config)
 
 
-def configure_determinism(seed: int) -> None:
+def configure_determinism(seed: int, torch_num_threads: int = 1) -> None:
     if torch.cuda.is_initialized() and os.environ.get("CUBLAS_WORKSPACE_CONFIG") != ":4096:8":
         raise RuntimeError("Configure CUBLAS_WORKSPACE_CONFIG=:4096:8 before initializing CUDA")
     os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":4096:8"
@@ -148,7 +155,7 @@ def configure_determinism(seed: int) -> None:
     torch.backends.cudnn.deterministic = True
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
-    torch.set_num_threads(1)
+    torch.set_num_threads(torch_num_threads)
 
 
 def apply_unfreeze(model: nn.Module, unfreeze: str) -> None:
@@ -329,7 +336,7 @@ def train(config: Mapping[str, Any], output_dir: str | Path) -> dict[str, Any]:
     cuda_started = False
     
     try:
-        configure_determinism(config["training_seed"])
+        configure_determinism(config["training_seed"], config.get("torch_num_threads", 1))
         if device.type == "cuda" and not torch.cuda.is_available():
             raise RuntimeError("CUDA requested but unavailable. Install a CUDA PyTorch build; no CPU fallback.")
         

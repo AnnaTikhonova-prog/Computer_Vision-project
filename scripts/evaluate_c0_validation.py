@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Re-evaluate the nine authoritative C0 checkpoints on validation only."""
+"""Re-evaluate nine authoritative condition checkpoints on validation only."""
 
 from __future__ import annotations
 
@@ -28,6 +28,7 @@ from scripts.summarize_c0_grid import (  # noqa: E402
     LRS, SEEDS, expected_config, file_sha256, validate_completed_run,
 )
 from src.dataset import PetManifestDataset, _eval_transform  # noqa: E402
+from src.train import CONDITIONS  # noqa: E402
 
 
 LR_NAMES = {1e-3: "1e-3", 1e-4: "1e-4", 1e-5: "1e-5"}
@@ -64,11 +65,12 @@ def authoritative_runs(batch_dir: Path, config_path: Path) -> list[dict[str, Any
     if manifest.get("status") != "completed":
         raise ValueError("Batch manifest is not completed")
     provenance = manifest.get("provenance", {})
+    condition = CONDITIONS[expected_config(config_path, LRS[0], SEEDS[0])["unfreeze"]]
     expected_grid = {
-        "condition": "C0", "learning_rates": list(LRS), "training_seeds": list(SEEDS),
+        "condition": condition, "learning_rates": list(LRS), "training_seeds": list(SEEDS),
     }
     if provenance.get("grid") != expected_grid:
-        raise ValueError("Batch manifest grid provenance is not the required C0 grid")
+        raise ValueError(f"Batch manifest grid provenance is not the required {condition} grid")
     for recorded_name, recorded_hash in provenance.get("files_sha256", {}).items():
         local_path = PROJECT_ROOT / Path(recorded_name.replace("\\", "/"))
         if not local_path.is_file() or file_sha256(local_path) != recorded_hash:

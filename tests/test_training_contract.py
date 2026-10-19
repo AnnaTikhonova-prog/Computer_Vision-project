@@ -78,6 +78,12 @@ class TrainingContractTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "split_seed"):
             training.validate_config(invalid)
 
+        cpu_config = training.load_config(training.PROJECT_ROOT / "configs" / "c2_cpu.yaml")
+        self.assertEqual(cpu_config["unfreeze"], "layer3_layer4")
+        self.assertEqual(cpu_config["device"], "cpu")
+        self.assertEqual(cpu_config["num_workers"], 0)
+        self.assertEqual(cpu_config["torch_num_threads"], 6)
+
     def test_head_initialization_is_tensor_identical_for_every_seed_and_condition(self) -> None:
         with patch.object(training, "resnet50", side_effect=offline_resnet50):
             for seed in (42, 43, 44):

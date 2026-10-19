@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build an idempotent, self-auditing local C0 delivery directory."""
+"""Build an idempotent, self-auditing local condition delivery directory."""
 
 from __future__ import annotations
 
@@ -41,6 +41,7 @@ def build_delivery(
     batch_dir: Path, config_path: Path, evaluation_dir: Path, delivery_dir: Path,
 ) -> dict[str, Any]:
     rows = authoritative_runs(batch_dir, config_path)
+    condition = rows[0]["condition"]
     if not (evaluation_dir / "learning_rates.csv").is_file():
         raise FileNotFoundError("Validation evaluation is missing; run evaluate_c0_validation.py first")
     manifest_files: list[dict[str, Any]] = []
@@ -86,7 +87,7 @@ def build_delivery(
         "checkpoint_sha256": file_sha256(delivered_by_cell[(selected_lr, seed)]),
     } for seed in SEEDS]
     chosen_payload = {
-        "condition": "C0", "selected_lr": selected_lr,
+        "condition": condition, "selected_lr": selected_lr,
         "selection_metric": "mean validation macro-F1 across three selected checkpoints",
         "standard_deviation": "sample standard deviation (ddof=1)",
         "seed_selection": "none; all three seeds retained", "checkpoints": chosen,
@@ -98,15 +99,20 @@ def build_delivery(
         "size_bytes": chosen_path.stat().st_size, "sha256": file_sha256(chosen_path),
     })
 
-    readme = f"""# C0 local delivery
+    exclusion_note = (
+        "The interrupted `c0_lr1e-4_seed42` attempt, datasets, caches, logs, and environment files are excluded. Its source remains untouched under `artifacts/c0_cpu_grid`."
+        if condition == "C0" else
+        f"Incomplete attempts, datasets, caches, logs, and environment files are excluded. Their sources remain untouched under `{batch_dir}`."
+    )
+    readme = f"""# {condition} local delivery
 
-This directory contains the nine authoritative C0 validation-selected runs (three learning rates x seeds 42, 43, and 44), validation-only evaluator CSVs, and training summaries.
+This directory contains the nine authoritative {condition} validation-selected runs (three learning rates x seeds 42, 43, and 44), validation-only evaluator CSVs, and training summaries.
 
 Selected LR: `{selected_lr:.0e}`. Re-evaluated validation macro-F1: `{selected['mean_val_macro_f1']} +/- {selected['sample_std_val_macro_f1']}` (mean and sample standard deviation across three seed-level scores, ddof=1; not pooled predictions and not an ensemble).
 
 `runs/` preserves one `best.pt`, effective `config.yaml`, `metadata.json`, and `history.csv` for each authoritative completed run. The filenames are unchanged. Historical absolute paths inside copied metadata/config/history are preserved rather than rewritten. `evaluation/` keeps each LR separate and contains seed-specific predictions plus per-LR metrics and aggregates. `chosen_lr_manifest.json` references the same three selected-LR checkpoints already under `runs/`; no second checkpoint copies are made.
 
-The interrupted `c0_lr1e-4_seed42` attempt, datasets, caches, logs, and environment files are excluded. Its source remains untouched under `artifacts/c0_cpu_grid`. No test-split evaluation was performed. CPU validation does not resolve the separate Task 1 GPU reproducibility check. Commit and delivery to the Team Lead remain pending user actions.
+{exclusion_note} No test-split evaluation was performed. CPU validation does not resolve the separate Task 1 GPU reproducibility check. Commit and delivery to the Team Lead remain pending user actions.
 """
     readme_path = delivery_dir / "README.md"
     write_text_idempotent(readme_path, readme)
@@ -115,9 +121,11 @@ The interrupted `c0_lr1e-4_seed42` attempt, datasets, caches, logs, and environm
         "size_bytes": readme_path.stat().st_size, "sha256": file_sha256(readme_path),
     })
     manifest_payload = {
-        "condition": "C0", "authoritative_runs": 9, "selected_lr": selected_lr,
+        "condition": condition, "authoritative_runs": 9, "selected_lr": selected_lr,
         "test_split_evaluated": False,
-        "excluded_incomplete_attempt": str((batch_dir / "runs" / "c0_lr1e-4_seed42").resolve()),
+        "excluded_incomplete_attempt": (
+            str((batch_dir / "runs" / "c0_lr1e-4_seed42").resolve()) if condition == "C0" else None
+        ),
         "files": sorted(manifest_files, key=lambda item: item["path"]),
     }
     write_text_idempotent(

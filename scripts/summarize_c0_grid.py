@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and aggregate a complete nine-run C0 learning-rate grid."""
+"""Validate and aggregate a complete nine-run condition learning-rate grid."""
 
 from __future__ import annotations
 
@@ -55,13 +55,14 @@ def validate_completed_run(
     saved_config = yaml.safe_load((run_dir / "config.yaml").read_text(encoding="utf-8"))
     if saved_config != expected:
         raise ValueError(f"{run_dir}: effective config does not match the requested grid cell")
-    if saved_config["unfreeze"] != "head" or CONDITIONS[saved_config["unfreeze"]] != "C0":
-        raise ValueError(f"{run_dir}: run is not C0")
+    expected_condition = CONDITIONS[expected["unfreeze"]]
+    if CONDITIONS[saved_config["unfreeze"]] != expected_condition:
+        raise ValueError(f"{run_dir}: run is not {expected_condition}")
 
     metadata = _read_json(run_dir / "metadata.json")
     runtime = _read_json(run_dir / "runtime.json")
-    if metadata.get("condition") != "C0":
-        raise ValueError(f"{run_dir}: metadata condition is not C0")
+    if metadata.get("condition") != expected_condition:
+        raise ValueError(f"{run_dir}: metadata condition is not {expected_condition}")
     if metadata.get("training_seed") != expected["training_seed"] or metadata.get("split_seed") != 42:
         raise ValueError(f"{run_dir}: metadata seeds do not match")
     if runtime.get("status") != "completed":
@@ -117,7 +118,7 @@ def validate_completed_run(
             raise ValueError(f"{run_dir}: checkpoint is not a complete ResNet50 state")
 
     return {
-        "condition": "C0",
+        "condition": expected_condition,
         "lr": float(expected["lr"]),
         "training_seed": expected["training_seed"],
         "split_seed": expected["split_seed"],
@@ -192,6 +193,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]], fields: tuple[str, ...]) -
 
 def summarize_batch(batch_dir: Path, config_path: Path) -> dict[str, Any]:
     rows = collect_grid(batch_dir, config_path)
+    condition = CONDITIONS[expected_config(config_path, LRS[0], SEEDS[0])["unfreeze"]]
     summaries, selected_lr = select_learning_rate(rows)
     summary_dir = batch_dir / "summary"
     summary_dir.mkdir(parents=True, exist_ok=True)
@@ -204,7 +206,7 @@ def summarize_batch(batch_dir: Path, config_path: Path) -> dict[str, Any]:
 
     chosen = [row for row in rows if row["lr"] == selected_lr]
     delivery = {
-        "condition": "C0", "selected_lr": selected_lr,
+        "condition": condition, "selected_lr": selected_lr,
         "selection_metric": "mean selected-checkpoint validation macro-F1",
         "standard_deviation": "sample standard deviation (ddof=1)",
         "seed_selection": "none; all three seeds retained",
@@ -223,8 +225,9 @@ def summarize_batch(batch_dir: Path, config_path: Path) -> dict[str, Any]:
         json.dumps(delivery, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
     selected_summary = next(row for row in summaries if row["selected"])
+    training_description = "C0 head-only training" if condition == "C0" else f"{condition} configured unfreezing"
     report_lines = [
-        "# C0 production training report", "",
+        f"# {condition} production training report", "",
         "Nine validation-only runs: three learning rates × three training seeds.",
         "The test loader was not iterated and test metrics were not computed.", "",
         "## Per-run selected checkpoints", "",
@@ -251,7 +254,7 @@ def summarize_batch(batch_dir: Path, config_path: Path) -> dict[str, Any]:
         f"{selected_summary['sample_std_val_macro_f1']:.17g}` (sample std, ddof=1).",
         "Exact mean ties select the smaller LR. No seed is ranked or selected.", "",
         "## Production protocol", "",
-        "ImageNet V2 ResNet50; C0 head-only training; frozen BatchNorm statistics; "
+        f"ImageNet V2 ResNet50; {training_description}; frozen BatchNorm statistics; "
         "AdamW; batch 32; microbatch 4; augmentation enabled; maximum 30 epochs; "
         "early stopping patience 5; earliest epoch retained on an exact score tie.", "",
         "## Limitations and delivery", "",
