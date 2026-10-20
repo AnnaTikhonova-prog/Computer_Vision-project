@@ -1,0 +1,10 @@
+condition,lr,training_seed,split_seed,selected_epoch,selected_val_macro_f1,checkpoint_path,checkpoint_sha256,history_path
+C1,0.001,42,42,4,0.9667128800145633,deliverables/c1/runs/lr_1e-3/seed_42/best.pt,8e22c7b7a209e619c1a9471d9dd47c638b82be0543e2dec021a76a28e25d997e,deliverables/c1/runs/lr_1e-3/seed_42/history.csv
+C1,0.001,43,42,3,0.9667988327480274,deliverables/c1/runs/lr_1e-3/seed_43/best.pt,dafbe130ebee11897404db8660fe04b51651d0d67008cdfea44b0634e648b33a,deliverables/c1/runs/lr_1e-3/seed_43/history.csv
+C1,0.001,44,42,5,0.9666149749373434,deliverables/c1/runs/lr_1e-3/seed_44/best.pt,60f743a5336d87f956de48e1dd8995ead5e35a049591f3ef9df433769cd635ad,deliverables/c1/runs/lr_1e-3/seed_44/history.csv
+C1,0.0001,42,42,5,0.9833870519588774,deliverables/c1/runs/lr_1e-4/seed_42/best.pt,d4cda19030d5ee60eb2c8b7ec79a3444cf366f5922d1a9f09acdac2a61ec1384,deliverables/c1/runs/lr_1e-4/seed_42/history.csv
+C1,0.0001,43,42,4,0.9833175758561039,deliverables/c1/runs/lr_1e-4/seed_43/best.pt,0ed0ab23f11306f430dc8025a4204475cd5e839d368a64e1669a868053867f65,deliverables/c1/runs/lr_1e-4/seed_43/history.csv
+C1,0.0001,44,42,7,0.9899981476336019,deliverables/c1/runs/lr_1e-4/seed_44/best.pt,97bdab7c1eca8413f14b62aac3800debb85031754af8fc226ee59c1ca367b068,deliverables/c1/runs/lr_1e-4/seed_44/history.csv
+C1,1e-05,42,42,9,0.9733870519588775,deliverables/c1/runs/lr_1e-5/seed_42/best.pt,5d2f96abf5b32489fbfbdcea42bb95860716f9e0e349f005dc035eaa1b18d6f7,deliverables/c1/runs/lr_1e-5/seed_42/history.csv
+C1,1e-05,43,42,11,0.9766490568230392,deliverables/c1/runs/lr_1e-5/seed_43/best.pt,74a6e1e69ac7cb3838ab0564bad79594d75157fc3926383057c6cf953450e8e6,deliverables/c1/runs/lr_1e-5/seed_43/history.csv
+C1,1e-05,44,42,10,0.9799944429008057,deliverables/c1/runs/lr_1e-5/seed_44/best.pt,ef7725ec7532755513c95ef058c0147f4f8508068765dec367f400821be3acad,deliverables/c1/runs/lr_1e-5/seed_44/history.csv

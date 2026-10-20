@@ -1,0 +1,77 @@
+{
+  "architecture": "resnet50",
+  "bn_initial_sha256": "a756b908e2e7d233197a4c72759777b06bd3ee12e980c989efba4d88d31e2b5c",
+  "condition": "C1",
+  "config_sha256": "3be55bd7c72b2446d125048c5a5d9bbf32ee342c23c774b84057d2eb67359750",
+  "environment": {
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "determinism": {
+      "algorithms": true,
+      "cublas_workspace_config": ":4096:8",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true
+    },
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128"
+  },
+  "git": {
+    "commit": "37f1e666390bde90743cc5ec765f286359c04d90",
+    "dirty": false
+  },
+  "head_init_sha256": "9dc798bdcf5eaadd50ab4423077c5a13a8ef5571b57453d6e575b2b2ce2b3de8",
+  "input_sha256": {
+    "class_mapping.json": "832f187c37006df26d5d9ec4d1433e8aa613cab404666074e11c9b8807ce9f48",
+    "split_report.json": "4e3219107dda962637ae2d6e98377f777645a2f8f14905f772b44549fa6bbcfe",
+    "test.csv": "f4adcb7c65daa28de98adf9d6696f2ff09e156f7480dbd4e3435a589be382aeb",
+    "train.csv": "67ebb64be44face1d85fea03928035239a95f00ea4280c11a986c508963d1d2e",
+    "val.csv": "fd7ea9bee7e455e312cad8d60981571983c45ea3cfaad46801a6d389d74cf082"
+  },
+  "source_sha256": {
+    "src/dataset.py": "7971c3e836259865963fbb9783bfaf8088472f163db2344b0657b539201c3855",
+    "src/train.py": "1c46614142dbdbe857b5a54353463fc5d2679aa364ba24ef927775a4594bd9fc"
+  },
+  "split_seed": 42,
+  "trainable_parameter_count": 14985226,
+  "trainable_parameters": [
+    "layer4.0.conv1.weight",
+    "layer4.0.bn1.weight",
+    "layer4.0.bn1.bias",
+    "layer4.0.conv2.weight",
+    "layer4.0.bn2.weight",
+    "layer4.0.bn2.bias",
+    "layer4.0.conv3.weight",
+    "layer4.0.bn3.weight",
+    "layer4.0.bn3.bias",
+    "layer4.0.downsample.0.weight",
+    "layer4.0.downsample.1.weight",
+    "layer4.0.downsample.1.bias",
+    "layer4.1.conv1.weight",
+    "layer4.1.bn1.weight",
+    "layer4.1.bn1.bias",
+    "layer4.1.conv2.weight",
+    "layer4.1.bn2.weight",
+    "layer4.1.bn2.bias",
+    "layer4.1.conv3.weight",
+    "layer4.1.bn3.weight",
+    "layer4.1.bn3.bias",
+    "layer4.2.conv1.weight",
+    "layer4.2.bn1.weight",
+    "layer4.2.bn1.bias",
+    "layer4.2.conv2.weight",
+    "layer4.2.bn2.weight",
+    "layer4.2.bn2.bias",
+    "layer4.2.conv3.weight",
+    "layer4.2.bn3.weight",
+    "layer4.2.bn3.bias",
+    "fc.weight",
+    "fc.bias"
+  ],
+  "training_seed": 43,
+  "weights": "IMAGENET1K_V2"
+}
