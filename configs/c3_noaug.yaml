@@ -1,0 +1,3 @@
+# C3 augmentation ablation: keep the selected LR and seed protocol fixed.
+extends: c3.yaml
+augment: false

@@ -1,7 +1,6 @@
 # Local data and generated preparation artifacts
 data/
 artifacts/
-reports/
 splits/*.tmp
 
 # Python and notebooks

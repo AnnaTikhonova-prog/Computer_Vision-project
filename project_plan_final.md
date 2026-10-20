@@ -88,7 +88,7 @@ Results are reported as mean ± standard deviation across the three retained che
 
 ### Test protocol and pipeline order
 
-The test set is not used to select classes, preprocessing, hyperparameters, checkpoints, seeds, or later training. Test-file integrity checks are allowed. Error analysis after final evaluation is allowed but must not change models or training choices.
+No settings are changed based on test results. The test split may be inspected for final evaluation and diagnostic error analysis, but tuning or selecting models/settings based on test results is forbidden. Test-file integrity checks are allowed.
 
 The required order is:
 

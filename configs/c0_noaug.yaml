@@ -1,0 +1,3 @@
+# C0 augmentation ablation: keep the selected LR and seed protocol fixed.
+extends: c0.yaml
+augment: false

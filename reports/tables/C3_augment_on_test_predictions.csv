@@ -1,0 +1,901 @@
+training_seed,checkpoint,image_id,relative_path,true_label,true_class,predicted_label,predicted_class,predicted_class_confidence,correct
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_101,images/Birman_101.jpg,3,Birman,3,Birman,0.9999929666519165,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_105,images/Birman_105.jpg,3,Birman,3,Birman,0.9999592304229736,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_112,images/Birman_112.jpg,3,Birman,3,Birman,0.9999988079071045,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_116,images/Birman_116.jpg,3,Birman,3,Birman,0.9999953508377075,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_127,images/Birman_127.jpg,3,Birman,3,Birman,0.9998263716697693,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_133,images/Birman_133.jpg,3,Birman,3,Birman,0.9996997117996216,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_134,images/Birman_134.jpg,3,Birman,3,Birman,0.9999945163726807,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_15,images/Birman_15.jpg,3,Birman,3,Birman,0.9999991655349731,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_154,images/Birman_154.jpg,3,Birman,3,Birman,0.9999326467514038,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_156,images/Birman_156.jpg,3,Birman,3,Birman,0.9999561309814453,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_161,images/Birman_161.jpg,3,Birman,3,Birman,0.9997720122337341,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_167,images/Birman_167.jpg,3,Birman,3,Birman,0.9999926090240479,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_168,images/Birman_168.jpg,3,Birman,3,Birman,0.9999804496765137,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_189,images/Birman_189.jpg,3,Birman,3,Birman,0.9999995231628418,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_192,images/Birman_192.jpg,3,Birman,3,Birman,0.9998137354850769,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_196,images/Birman_196.jpg,3,Birman,3,Birman,0.9997872710227966,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_201,images/Birman_201.jpg,3,Birman,3,Birman,0.9987668991088867,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_26,images/Birman_26.jpg,3,Birman,3,Birman,0.9997856020927429,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_29,images/Birman_29.jpg,3,Birman,3,Birman,0.9999876022338867,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_3,images/Birman_3.jpg,3,Birman,3,Birman,0.9999842643737793,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_4,images/Birman_4.jpg,3,Birman,3,Birman,0.9999988079071045,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_43,images/Birman_43.jpg,3,Birman,3,Birman,0.7857469320297241,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_44,images/Birman_44.jpg,3,Birman,3,Birman,0.9999901056289673,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_46,images/Birman_46.jpg,3,Birman,3,Birman,0.9999983310699463,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_49,images/Birman_49.jpg,3,Birman,3,Birman,0.9997476935386658,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_6,images/Birman_6.jpg,3,Birman,3,Birman,0.999988317489624,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_7,images/Birman_7.jpg,3,Birman,3,Birman,0.9999958276748657,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_8,images/Birman_8.jpg,3,Birman,3,Birman,0.9999982118606567,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_86,images/Birman_86.jpg,3,Birman,3,Birman,0.9999598264694214,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Birman_96,images/Birman_96.jpg,3,Birman,3,Birman,0.9993937015533447,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_107,images/British_Shorthair_107.jpg,0,British Shorthair,0,British Shorthair,0.9990200996398926,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_116,images/British_Shorthair_116.jpg,0,British Shorthair,0,British Shorthair,0.9999866485595703,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_121,images/British_Shorthair_121.jpg,0,British Shorthair,0,British Shorthair,0.997626006603241,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_124,images/British_Shorthair_124.jpg,0,British Shorthair,0,British Shorthair,0.9971663355827332,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_125,images/British_Shorthair_125.jpg,0,British Shorthair,0,British Shorthair,0.5558875799179077,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_144,images/British_Shorthair_144.jpg,0,British Shorthair,0,British Shorthair,0.9916712045669556,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_157,images/British_Shorthair_157.jpg,0,British Shorthair,0,British Shorthair,0.9959547519683838,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_161,images/British_Shorthair_161.jpg,0,British Shorthair,0,British Shorthair,0.9999979734420776,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_163,images/British_Shorthair_163.jpg,0,British Shorthair,0,British Shorthair,0.9944972395896912,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_18,images/British_Shorthair_18.jpg,0,British Shorthair,0,British Shorthair,0.9999982118606567,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_180,images/British_Shorthair_180.jpg,0,British Shorthair,0,British Shorthair,0.999997615814209,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_186,images/British_Shorthair_186.jpg,0,British Shorthair,0,British Shorthair,0.9999996423721313,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_190,images/British_Shorthair_190.jpg,0,British Shorthair,0,British Shorthair,0.7957202792167664,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_193,images/British_Shorthair_193.jpg,0,British Shorthair,0,British Shorthair,0.9999997615814209,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_196,images/British_Shorthair_196.jpg,0,British Shorthair,0,British Shorthair,0.9994531273841858,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_201,images/British_Shorthair_201.jpg,0,British Shorthair,0,British Shorthair,0.9999990463256836,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_204,images/British_Shorthair_204.jpg,0,British Shorthair,0,British Shorthair,0.9999376535415649,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_205,images/British_Shorthair_205.jpg,0,British Shorthair,0,British Shorthair,0.9991614818572998,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_230,images/British_Shorthair_230.jpg,0,British Shorthair,1,Russian Blue,0.7215378880500793,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_266,images/British_Shorthair_266.jpg,0,British Shorthair,0,British Shorthair,0.9994485974311829,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_267,images/British_Shorthair_267.jpg,0,British Shorthair,0,British Shorthair,0.9971708655357361,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_269,images/British_Shorthair_269.jpg,0,British Shorthair,0,British Shorthair,0.999992847442627,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_271,images/British_Shorthair_271.jpg,0,British Shorthair,0,British Shorthair,0.9999997615814209,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_33,images/British_Shorthair_33.jpg,0,British Shorthair,0,British Shorthair,0.9999754428863525,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_50,images/British_Shorthair_50.jpg,0,British Shorthair,0,British Shorthair,0.9980568289756775,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_54,images/British_Shorthair_54.jpg,0,British Shorthair,0,British Shorthair,0.8046760559082031,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_63,images/British_Shorthair_63.jpg,0,British Shorthair,0,British Shorthair,0.9999772310256958,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_65,images/British_Shorthair_65.jpg,0,British Shorthair,0,British Shorthair,0.943236231803894,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_79,images/British_Shorthair_79.jpg,0,British Shorthair,0,British Shorthair,0.9992771744728088,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,British_Shorthair_92,images/British_Shorthair_92.jpg,0,British Shorthair,0,British Shorthair,0.9700577259063721,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_104,images/Maine_Coon_104.jpg,7,Maine Coon,7,Maine Coon,0.9999556541442871,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_105,images/Maine_Coon_105.jpg,7,Maine Coon,7,Maine Coon,0.9801793098449707,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_116,images/Maine_Coon_116.jpg,7,Maine Coon,7,Maine Coon,0.9999611377716064,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_121,images/Maine_Coon_121.jpg,7,Maine Coon,7,Maine Coon,0.9999866485595703,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_123,images/Maine_Coon_123.jpg,7,Maine Coon,7,Maine Coon,0.9983953833580017,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_131,images/Maine_Coon_131.jpg,7,Maine Coon,7,Maine Coon,0.999992847442627,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_137,images/Maine_Coon_137.jpg,7,Maine Coon,7,Maine Coon,0.9999984502792358,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_147,images/Maine_Coon_147.jpg,7,Maine Coon,7,Maine Coon,0.9999980926513672,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_16,images/Maine_Coon_16.jpg,7,Maine Coon,7,Maine Coon,0.9999880790710449,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_171,images/Maine_Coon_171.jpg,7,Maine Coon,7,Maine Coon,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_193,images/Maine_Coon_193.jpg,7,Maine Coon,7,Maine Coon,0.9999910593032837,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_197,images/Maine_Coon_197.jpg,7,Maine Coon,7,Maine Coon,0.9999772310256958,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_205,images/Maine_Coon_205.jpg,7,Maine Coon,7,Maine Coon,0.9999995231628418,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_206,images/Maine_Coon_206.jpg,7,Maine Coon,7,Maine Coon,0.999982476234436,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_222,images/Maine_Coon_222.jpg,7,Maine Coon,7,Maine Coon,0.9999808073043823,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_238,images/Maine_Coon_238.jpg,7,Maine Coon,0,British Shorthair,0.8248152136802673,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_239,images/Maine_Coon_239.jpg,7,Maine Coon,7,Maine Coon,0.7749760150909424,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_267,images/Maine_Coon_267.jpg,7,Maine Coon,7,Maine Coon,0.9969964027404785,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_270,images/Maine_Coon_270.jpg,7,Maine Coon,7,Maine Coon,0.9980641007423401,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_271,images/Maine_Coon_271.jpg,7,Maine Coon,7,Maine Coon,0.9998910427093506,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_29,images/Maine_Coon_29.jpg,7,Maine Coon,7,Maine Coon,0.9999997615814209,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_30,images/Maine_Coon_30.jpg,7,Maine Coon,7,Maine Coon,0.9937077760696411,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_35,images/Maine_Coon_35.jpg,7,Maine Coon,7,Maine Coon,0.9998661279678345,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_55,images/Maine_Coon_55.jpg,7,Maine Coon,7,Maine Coon,0.9999805688858032,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_69,images/Maine_Coon_69.jpg,7,Maine Coon,8,Beagle,0.392997145652771,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_77,images/Maine_Coon_77.jpg,7,Maine Coon,7,Maine Coon,0.9872912764549255,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_78,images/Maine_Coon_78.jpg,7,Maine Coon,7,Maine Coon,0.985724151134491,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_87,images/Maine_Coon_87.jpg,7,Maine Coon,7,Maine Coon,0.9999992847442627,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_89,images/Maine_Coon_89.jpg,7,Maine Coon,7,Maine Coon,0.9998444318771362,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Maine_Coon_98,images/Maine_Coon_98.jpg,7,Maine Coon,7,Maine Coon,0.5291105508804321,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_116,images/Russian_Blue_116.jpg,1,Russian Blue,1,Russian Blue,0.9995445609092712,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_123,images/Russian_Blue_123.jpg,1,Russian Blue,1,Russian Blue,0.9994465708732605,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_127,images/Russian_Blue_127.jpg,1,Russian Blue,1,Russian Blue,0.9999277591705322,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_131,images/Russian_Blue_131.jpg,1,Russian Blue,1,Russian Blue,0.9999659061431885,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_135,images/Russian_Blue_135.jpg,1,Russian Blue,1,Russian Blue,0.9984087347984314,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_155,images/Russian_Blue_155.jpg,1,Russian Blue,1,Russian Blue,0.997596800327301,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_157,images/Russian_Blue_157.jpg,1,Russian Blue,1,Russian Blue,0.7789075970649719,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_164,images/Russian_Blue_164.jpg,1,Russian Blue,0,British Shorthair,0.9165493845939636,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_171,images/Russian_Blue_171.jpg,1,Russian Blue,1,Russian Blue,0.9997689127922058,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_172,images/Russian_Blue_172.jpg,1,Russian Blue,1,Russian Blue,0.9990912675857544,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_18,images/Russian_Blue_18.jpg,1,Russian Blue,1,Russian Blue,0.9963738322257996,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_186,images/Russian_Blue_186.jpg,1,Russian Blue,1,Russian Blue,0.9999922513961792,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_191,images/Russian_Blue_191.jpg,1,Russian Blue,1,Russian Blue,0.9999442100524902,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_211,images/Russian_Blue_211.jpg,1,Russian Blue,1,Russian Blue,0.9923567771911621,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_228,images/Russian_Blue_228.jpg,1,Russian Blue,1,Russian Blue,0.973422110080719,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_264,images/Russian_Blue_264.jpg,1,Russian Blue,0,British Shorthair,0.7327683568000793,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_29,images/Russian_Blue_29.jpg,1,Russian Blue,0,British Shorthair,0.9989641904830933,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_34,images/Russian_Blue_34.jpg,1,Russian Blue,1,Russian Blue,0.9998238682746887,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_35,images/Russian_Blue_35.jpg,1,Russian Blue,1,Russian Blue,0.9996064305305481,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_38,images/Russian_Blue_38.jpg,1,Russian Blue,1,Russian Blue,0.9999796152114868,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_44,images/Russian_Blue_44.jpg,1,Russian Blue,1,Russian Blue,0.9977396726608276,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_45,images/Russian_Blue_45.jpg,1,Russian Blue,1,Russian Blue,0.9989782571792603,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_61,images/Russian_Blue_61.jpg,1,Russian Blue,1,Russian Blue,0.9546524882316589,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_62,images/Russian_Blue_62.jpg,1,Russian Blue,1,Russian Blue,0.999758780002594,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_63,images/Russian_Blue_63.jpg,1,Russian Blue,1,Russian Blue,0.9921809434890747,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_66,images/Russian_Blue_66.jpg,1,Russian Blue,1,Russian Blue,0.9999744892120361,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_68,images/Russian_Blue_68.jpg,1,Russian Blue,1,Russian Blue,0.9999990463256836,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_78,images/Russian_Blue_78.jpg,1,Russian Blue,1,Russian Blue,0.9989728927612305,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_8,images/Russian_Blue_8.jpg,1,Russian Blue,1,Russian Blue,0.9685100317001343,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Russian_Blue_9,images/Russian_Blue_9.jpg,1,Russian Blue,1,Russian Blue,0.9950809478759766,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_102,images/Siamese_102.jpg,2,Siamese,2,Siamese,0.9999966621398926,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_112,images/Siamese_112.jpg,2,Siamese,3,Birman,0.7993096709251404,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_129,images/Siamese_129.jpg,2,Siamese,2,Siamese,0.9793044328689575,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_130,images/Siamese_130.jpg,2,Siamese,2,Siamese,0.8933023810386658,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_142,images/Siamese_142.jpg,2,Siamese,2,Siamese,0.9958590865135193,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_144,images/Siamese_144.jpg,2,Siamese,2,Siamese,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_145,images/Siamese_145.jpg,2,Siamese,2,Siamese,0.5016493797302246,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_163,images/Siamese_163.jpg,2,Siamese,2,Siamese,0.9999998807907104,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_168,images/Siamese_168.jpg,2,Siamese,2,Siamese,0.9999990463256836,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_170,images/Siamese_170.jpg,2,Siamese,2,Siamese,0.9999996423721313,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_175,images/Siamese_175.jpg,2,Siamese,2,Siamese,0.9999991655349731,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_178,images/Siamese_178.jpg,2,Siamese,2,Siamese,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_189,images/Siamese_189.jpg,2,Siamese,2,Siamese,0.9999370574951172,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_193,images/Siamese_193.jpg,2,Siamese,2,Siamese,0.9999980926513672,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_194,images/Siamese_194.jpg,2,Siamese,3,Birman,0.9960219264030457,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_195,images/Siamese_195.jpg,2,Siamese,2,Siamese,0.9999973773956299,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_198,images/Siamese_198.jpg,2,Siamese,2,Siamese,0.9999905824661255,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_202,images/Siamese_202.jpg,2,Siamese,2,Siamese,0.9999949932098389,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_206,images/Siamese_206.jpg,2,Siamese,2,Siamese,0.9992437362670898,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_207,images/Siamese_207.jpg,2,Siamese,2,Siamese,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_22,images/Siamese_22.jpg,2,Siamese,2,Siamese,0.9988915324211121,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_257,images/Siamese_257.jpg,2,Siamese,3,Birman,0.9999642372131348,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_42,images/Siamese_42.jpg,2,Siamese,2,Siamese,0.9999951124191284,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_55,images/Siamese_55.jpg,2,Siamese,2,Siamese,0.9994984865188599,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_6,images/Siamese_6.jpg,2,Siamese,2,Siamese,0.9998828172683716,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_63,images/Siamese_63.jpg,2,Siamese,2,Siamese,0.9922394752502441,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_72,images/Siamese_72.jpg,2,Siamese,2,Siamese,0.9999643564224243,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_74,images/Siamese_74.jpg,2,Siamese,2,Siamese,0.9999843835830688,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_82,images/Siamese_82.jpg,2,Siamese,2,Siamese,0.9899330139160156,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Siamese_92,images/Siamese_92.jpg,2,Siamese,2,Siamese,0.9998168349266052,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_110,images/Sphynx_110.jpg,6,Sphynx,6,Sphynx,0.9996380805969238,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_112,images/Sphynx_112.jpg,6,Sphynx,6,Sphynx,0.9994982481002808,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_128,images/Sphynx_128.jpg,6,Sphynx,6,Sphynx,0.9927327036857605,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_132,images/Sphynx_132.jpg,6,Sphynx,6,Sphynx,0.9999998807907104,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_143,images/Sphynx_143.jpg,6,Sphynx,6,Sphynx,0.9885237812995911,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_146,images/Sphynx_146.jpg,6,Sphynx,6,Sphynx,0.9999802112579346,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_150,images/Sphynx_150.jpg,6,Sphynx,6,Sphynx,0.9981014132499695,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_158,images/Sphynx_158.jpg,6,Sphynx,6,Sphynx,0.9999369382858276,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_169,images/Sphynx_169.jpg,6,Sphynx,6,Sphynx,0.9999994039535522,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_173,images/Sphynx_173.jpg,6,Sphynx,6,Sphynx,0.9999957084655762,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_174,images/Sphynx_174.jpg,6,Sphynx,6,Sphynx,0.9998776912689209,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_178,images/Sphynx_178.jpg,6,Sphynx,6,Sphynx,0.9998506307601929,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_181,images/Sphynx_181.jpg,6,Sphynx,6,Sphynx,0.9996788501739502,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_183,images/Sphynx_183.jpg,6,Sphynx,6,Sphynx,0.9939038157463074,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_193,images/Sphynx_193.jpg,6,Sphynx,6,Sphynx,0.9999978542327881,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_195,images/Sphynx_195.jpg,6,Sphynx,6,Sphynx,0.9998378753662109,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_197,images/Sphynx_197.jpg,6,Sphynx,6,Sphynx,0.9999721050262451,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_201,images/Sphynx_201.jpg,6,Sphynx,6,Sphynx,0.9999674558639526,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_206,images/Sphynx_206.jpg,6,Sphynx,6,Sphynx,0.9999998807907104,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_222,images/Sphynx_222.jpg,6,Sphynx,6,Sphynx,0.9999815225601196,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_245,images/Sphynx_245.jpg,6,Sphynx,6,Sphynx,0.999990701675415,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_30,images/Sphynx_30.jpg,6,Sphynx,6,Sphynx,0.999925971031189,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_36,images/Sphynx_36.jpg,6,Sphynx,6,Sphynx,0.9999803304672241,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_38,images/Sphynx_38.jpg,6,Sphynx,6,Sphynx,0.9999494552612305,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_66,images/Sphynx_66.jpg,6,Sphynx,6,Sphynx,0.9997575879096985,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_73,images/Sphynx_73.jpg,6,Sphynx,6,Sphynx,0.9354965686798096,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_9,images/Sphynx_9.jpg,6,Sphynx,6,Sphynx,0.9997484087944031,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_93,images/Sphynx_93.jpg,6,Sphynx,6,Sphynx,0.9999958276748657,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_95,images/Sphynx_95.jpg,6,Sphynx,6,Sphynx,0.9996979236602783,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,Sphynx_99,images/Sphynx_99.jpg,6,Sphynx,6,Sphynx,0.9930739402770996,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_101,images/american_bulldog_101.jpg,4,American Bulldog,4,American Bulldog,0.9999606609344482,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_102,images/american_bulldog_102.jpg,4,American Bulldog,4,American Bulldog,0.999826967716217,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_11,images/american_bulldog_11.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_111,images/american_bulldog_111.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_119,images/american_bulldog_119.jpg,4,American Bulldog,4,American Bulldog,0.9999855756759644,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_144,images/american_bulldog_144.jpg,4,American Bulldog,4,American Bulldog,0.9999791383743286,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_15,images/american_bulldog_15.jpg,4,American Bulldog,4,American Bulldog,0.9999891519546509,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_150,images/american_bulldog_150.jpg,4,American Bulldog,4,American Bulldog,0.9999979734420776,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_164,images/american_bulldog_164.jpg,4,American Bulldog,4,American Bulldog,0.9953783750534058,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_167,images/american_bulldog_167.jpg,4,American Bulldog,6,Sphynx,0.35205188393592834,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_177,images/american_bulldog_177.jpg,4,American Bulldog,4,American Bulldog,0.9995903372764587,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_179,images/american_bulldog_179.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_186,images/american_bulldog_186.jpg,4,American Bulldog,4,American Bulldog,0.9999790191650391,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_189,images/american_bulldog_189.jpg,4,American Bulldog,4,American Bulldog,0.9999998807907104,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_19,images/american_bulldog_19.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_194,images/american_bulldog_194.jpg,4,American Bulldog,4,American Bulldog,0.9993089437484741,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_197,images/american_bulldog_197.jpg,4,American Bulldog,4,American Bulldog,0.9999935626983643,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_216,images/american_bulldog_216.jpg,4,American Bulldog,4,American Bulldog,0.9999996423721313,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_22,images/american_bulldog_22.jpg,4,American Bulldog,4,American Bulldog,0.9976981282234192,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_221,images/american_bulldog_221.jpg,4,American Bulldog,4,American Bulldog,0.9999992847442627,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_25,images/american_bulldog_25.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_26,images/american_bulldog_26.jpg,4,American Bulldog,4,American Bulldog,0.9999818801879883,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_3,images/american_bulldog_3.jpg,4,American Bulldog,4,American Bulldog,0.9934256076812744,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_32,images/american_bulldog_32.jpg,4,American Bulldog,4,American Bulldog,0.9999905824661255,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_38,images/american_bulldog_38.jpg,4,American Bulldog,4,American Bulldog,0.9999836683273315,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_39,images/american_bulldog_39.jpg,4,American Bulldog,4,American Bulldog,0.9999988079071045,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_41,images/american_bulldog_41.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_44,images/american_bulldog_44.jpg,4,American Bulldog,4,American Bulldog,0.9999992847442627,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_47,images/american_bulldog_47.jpg,4,American Bulldog,4,American Bulldog,0.9999955892562866,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,american_bulldog_8,images/american_bulldog_8.jpg,4,American Bulldog,4,American Bulldog,0.9994229078292847,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_103,images/beagle_103.jpg,8,Beagle,8,Beagle,0.9999998807907104,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_109,images/beagle_109.jpg,8,Beagle,8,Beagle,0.9999986886978149,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_120,images/beagle_120.jpg,8,Beagle,8,Beagle,0.999995231628418,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_137,images/beagle_137.jpg,8,Beagle,8,Beagle,0.9873055219650269,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_141,images/beagle_141.jpg,8,Beagle,8,Beagle,0.9975615739822388,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_152,images/beagle_152.jpg,8,Beagle,8,Beagle,0.9991607666015625,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_153,images/beagle_153.jpg,8,Beagle,8,Beagle,0.9998152852058411,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_156,images/beagle_156.jpg,8,Beagle,8,Beagle,0.9872432947158813,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_158,images/beagle_158.jpg,8,Beagle,8,Beagle,0.9999139308929443,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_161,images/beagle_161.jpg,8,Beagle,8,Beagle,0.9998260140419006,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_168,images/beagle_168.jpg,8,Beagle,8,Beagle,0.9999048709869385,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_17,images/beagle_17.jpg,8,Beagle,8,Beagle,0.9999985694885254,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_176,images/beagle_176.jpg,8,Beagle,8,Beagle,0.9999997615814209,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_178,images/beagle_178.jpg,8,Beagle,8,Beagle,0.9999995231628418,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_183,images/beagle_183.jpg,8,Beagle,8,Beagle,0.8545874357223511,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_184,images/beagle_184.jpg,8,Beagle,8,Beagle,0.9995386600494385,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_195,images/beagle_195.jpg,8,Beagle,8,Beagle,0.9988613128662109,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_196,images/beagle_196.jpg,8,Beagle,8,Beagle,0.9999990463256836,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_203,images/beagle_203.jpg,8,Beagle,8,Beagle,0.9999995231628418,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_24,images/beagle_24.jpg,8,Beagle,8,Beagle,0.9999103546142578,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_32,images/beagle_32.jpg,8,Beagle,8,Beagle,0.9999996423721313,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_33,images/beagle_33.jpg,8,Beagle,8,Beagle,0.7884941101074219,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_34,images/beagle_34.jpg,8,Beagle,8,Beagle,0.9999970197677612,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_40,images/beagle_40.jpg,8,Beagle,8,Beagle,0.9999980926513672,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_41,images/beagle_41.jpg,8,Beagle,8,Beagle,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_51,images/beagle_51.jpg,8,Beagle,8,Beagle,0.9999970197677612,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_61,images/beagle_61.jpg,8,Beagle,8,Beagle,0.9999905824661255,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_79,images/beagle_79.jpg,8,Beagle,8,Beagle,0.9999938011169434,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_83,images/beagle_83.jpg,8,Beagle,8,Beagle,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,beagle_94,images/beagle_94.jpg,8,Beagle,8,Beagle,0.9999988079071045,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_101,images/pug_101.jpg,5,Pug,5,Pug,0.9999750852584839,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_12,images/pug_12.jpg,5,Pug,5,Pug,0.9999951124191284,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_120,images/pug_120.jpg,5,Pug,5,Pug,0.9999972581863403,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_127,images/pug_127.jpg,5,Pug,5,Pug,0.9999783039093018,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_13,images/pug_13.jpg,5,Pug,5,Pug,0.9999979734420776,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_130,images/pug_130.jpg,5,Pug,5,Pug,0.9999985694885254,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_143,images/pug_143.jpg,5,Pug,5,Pug,0.9999988079071045,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_144,images/pug_144.jpg,5,Pug,5,Pug,0.9999972581863403,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_147,images/pug_147.jpg,5,Pug,5,Pug,0.9999990463256836,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_151,images/pug_151.jpg,5,Pug,5,Pug,0.9999992847442627,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_153,images/pug_153.jpg,5,Pug,5,Pug,0.9999967813491821,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_156,images/pug_156.jpg,5,Pug,5,Pug,0.9999990463256836,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_165,images/pug_165.jpg,5,Pug,5,Pug,0.9998161196708679,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_167,images/pug_167.jpg,5,Pug,5,Pug,0.9999610185623169,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_168,images/pug_168.jpg,5,Pug,5,Pug,0.9999979734420776,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_177,images/pug_177.jpg,5,Pug,5,Pug,0.999993085861206,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_195,images/pug_195.jpg,5,Pug,5,Pug,0.9999032020568848,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_200,images/pug_200.jpg,5,Pug,5,Pug,0.9998712539672852,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_24,images/pug_24.jpg,5,Pug,5,Pug,0.9999480247497559,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_3,images/pug_3.jpg,5,Pug,5,Pug,1.0,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_32,images/pug_32.jpg,5,Pug,5,Pug,0.9999996423721313,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_36,images/pug_36.jpg,5,Pug,5,Pug,0.9999634027481079,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_37,images/pug_37.jpg,5,Pug,5,Pug,0.9997395873069763,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_43,images/pug_43.jpg,5,Pug,5,Pug,0.9999969005584717,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_44,images/pug_44.jpg,5,Pug,5,Pug,0.9999997615814209,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_50,images/pug_50.jpg,5,Pug,5,Pug,0.9998292922973633,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_72,images/pug_72.jpg,5,Pug,5,Pug,0.9999986886978149,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_74,images/pug_74.jpg,5,Pug,4,American Bulldog,0.911658763885498,0
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_8,images/pug_8.jpg,5,Pug,5,Pug,0.9999867677688599,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,pug_93,images/pug_93.jpg,5,Pug,5,Pug,0.9570268988609314,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_101,images/samoyed_101.jpg,9,Samoyed,9,Samoyed,0.9998855590820312,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_107,images/samoyed_107.jpg,9,Samoyed,9,Samoyed,0.9999598264694214,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_108,images/samoyed_108.jpg,9,Samoyed,9,Samoyed,0.9999889135360718,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_110,images/samoyed_110.jpg,9,Samoyed,9,Samoyed,0.9999864101409912,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_12,images/samoyed_12.jpg,9,Samoyed,9,Samoyed,0.9999818801879883,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_127,images/samoyed_127.jpg,9,Samoyed,9,Samoyed,0.999981164932251,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_130,images/samoyed_130.jpg,9,Samoyed,9,Samoyed,0.9998548030853271,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_137,images/samoyed_137.jpg,9,Samoyed,9,Samoyed,0.9996007084846497,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_140,images/samoyed_140.jpg,9,Samoyed,9,Samoyed,0.9994248151779175,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_141,images/samoyed_141.jpg,9,Samoyed,9,Samoyed,0.998292863368988,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_145,images/samoyed_145.jpg,9,Samoyed,9,Samoyed,0.9998810291290283,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_164,images/samoyed_164.jpg,9,Samoyed,9,Samoyed,0.9999871253967285,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_167,images/samoyed_167.jpg,9,Samoyed,9,Samoyed,0.9999786615371704,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_18,images/samoyed_18.jpg,9,Samoyed,9,Samoyed,0.9999371767044067,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_186,images/samoyed_186.jpg,9,Samoyed,9,Samoyed,0.9999680519104004,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_197,images/samoyed_197.jpg,9,Samoyed,9,Samoyed,0.9999730587005615,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_22,images/samoyed_22.jpg,9,Samoyed,9,Samoyed,0.9996247291564941,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_3,images/samoyed_3.jpg,9,Samoyed,9,Samoyed,0.9987432360649109,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_36,images/samoyed_36.jpg,9,Samoyed,9,Samoyed,0.9998883008956909,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_4,images/samoyed_4.jpg,9,Samoyed,9,Samoyed,0.9996856451034546,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_43,images/samoyed_43.jpg,9,Samoyed,9,Samoyed,0.9998006224632263,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_44,images/samoyed_44.jpg,9,Samoyed,9,Samoyed,0.9999809265136719,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_46,images/samoyed_46.jpg,9,Samoyed,9,Samoyed,0.9999963045120239,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_49,images/samoyed_49.jpg,9,Samoyed,9,Samoyed,0.9999932050704956,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_53,images/samoyed_53.jpg,9,Samoyed,9,Samoyed,0.9998928308486938,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_57,images/samoyed_57.jpg,9,Samoyed,9,Samoyed,0.9999933242797852,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_58,images/samoyed_58.jpg,9,Samoyed,9,Samoyed,0.9999905824661255,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_64,images/samoyed_64.jpg,9,Samoyed,9,Samoyed,0.9999396800994873,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_72,images/samoyed_72.jpg,9,Samoyed,9,Samoyed,0.9999842643737793,1
+42,deliverables\c3\runs\lr_1e-5\seed_42\best.pt,samoyed_8,images/samoyed_8.jpg,9,Samoyed,9,Samoyed,0.9999958276748657,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_101,images/Birman_101.jpg,3,Birman,3,Birman,0.9992238283157349,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_105,images/Birman_105.jpg,3,Birman,3,Birman,0.999277651309967,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_112,images/Birman_112.jpg,3,Birman,3,Birman,0.9996269941329956,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_116,images/Birman_116.jpg,3,Birman,3,Birman,0.9981520771980286,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_127,images/Birman_127.jpg,3,Birman,3,Birman,0.9947499632835388,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_133,images/Birman_133.jpg,3,Birman,3,Birman,0.9018727540969849,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_134,images/Birman_134.jpg,3,Birman,3,Birman,0.9998918771743774,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_15,images/Birman_15.jpg,3,Birman,3,Birman,0.9997566342353821,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_154,images/Birman_154.jpg,3,Birman,3,Birman,0.9772393703460693,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_156,images/Birman_156.jpg,3,Birman,3,Birman,0.9953485131263733,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_161,images/Birman_161.jpg,3,Birman,3,Birman,0.9992620348930359,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_167,images/Birman_167.jpg,3,Birman,3,Birman,0.9996287822723389,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_168,images/Birman_168.jpg,3,Birman,3,Birman,0.9975383281707764,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_189,images/Birman_189.jpg,3,Birman,3,Birman,0.9990955591201782,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_192,images/Birman_192.jpg,3,Birman,3,Birman,0.9890705347061157,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_196,images/Birman_196.jpg,3,Birman,3,Birman,0.9852660298347473,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_201,images/Birman_201.jpg,3,Birman,3,Birman,0.985466718673706,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_26,images/Birman_26.jpg,3,Birman,3,Birman,0.9995954632759094,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_29,images/Birman_29.jpg,3,Birman,3,Birman,0.9354062080383301,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_3,images/Birman_3.jpg,3,Birman,3,Birman,0.9990585446357727,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_4,images/Birman_4.jpg,3,Birman,3,Birman,0.9811248779296875,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_43,images/Birman_43.jpg,3,Birman,3,Birman,0.9702963829040527,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_44,images/Birman_44.jpg,3,Birman,3,Birman,0.9556654691696167,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_46,images/Birman_46.jpg,3,Birman,3,Birman,0.9996515512466431,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_49,images/Birman_49.jpg,3,Birman,3,Birman,0.9998970031738281,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_6,images/Birman_6.jpg,3,Birman,3,Birman,0.9957072734832764,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_7,images/Birman_7.jpg,3,Birman,3,Birman,0.9437483549118042,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_8,images/Birman_8.jpg,3,Birman,3,Birman,0.9999291896820068,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_86,images/Birman_86.jpg,3,Birman,3,Birman,0.9989284873008728,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Birman_96,images/Birman_96.jpg,3,Birman,3,Birman,0.7239522933959961,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_107,images/British_Shorthair_107.jpg,0,British Shorthair,0,British Shorthair,0.9974900484085083,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_116,images/British_Shorthair_116.jpg,0,British Shorthair,0,British Shorthair,0.9994340538978577,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_121,images/British_Shorthair_121.jpg,0,British Shorthair,0,British Shorthair,0.9684550166130066,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_124,images/British_Shorthair_124.jpg,0,British Shorthair,0,British Shorthair,0.9859516620635986,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_125,images/British_Shorthair_125.jpg,0,British Shorthair,0,British Shorthair,0.8824957013130188,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_144,images/British_Shorthair_144.jpg,0,British Shorthair,0,British Shorthair,0.9884843230247498,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_157,images/British_Shorthair_157.jpg,0,British Shorthair,0,British Shorthair,0.9748547077178955,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_161,images/British_Shorthair_161.jpg,0,British Shorthair,0,British Shorthair,0.972277045249939,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_163,images/British_Shorthair_163.jpg,0,British Shorthair,0,British Shorthair,0.92341148853302,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_18,images/British_Shorthair_18.jpg,0,British Shorthair,0,British Shorthair,0.9989161491394043,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_180,images/British_Shorthair_180.jpg,0,British Shorthair,0,British Shorthair,0.9969565868377686,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_186,images/British_Shorthair_186.jpg,0,British Shorthair,0,British Shorthair,0.9999164342880249,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_190,images/British_Shorthair_190.jpg,0,British Shorthair,0,British Shorthair,0.6133031249046326,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_193,images/British_Shorthair_193.jpg,0,British Shorthair,0,British Shorthair,0.9999111890792847,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_196,images/British_Shorthair_196.jpg,0,British Shorthair,0,British Shorthair,0.8522247672080994,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_201,images/British_Shorthair_201.jpg,0,British Shorthair,0,British Shorthair,0.9865451455116272,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_204,images/British_Shorthair_204.jpg,0,British Shorthair,0,British Shorthair,0.9984251260757446,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_205,images/British_Shorthair_205.jpg,0,British Shorthair,0,British Shorthair,0.9967791438102722,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_230,images/British_Shorthair_230.jpg,0,British Shorthair,1,Russian Blue,0.8013981580734253,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_266,images/British_Shorthair_266.jpg,0,British Shorthair,0,British Shorthair,0.9970807433128357,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_267,images/British_Shorthair_267.jpg,0,British Shorthair,0,British Shorthair,0.7122611999511719,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_269,images/British_Shorthair_269.jpg,0,British Shorthair,0,British Shorthair,0.9997487664222717,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_271,images/British_Shorthair_271.jpg,0,British Shorthair,0,British Shorthair,0.9999163150787354,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_33,images/British_Shorthair_33.jpg,0,British Shorthair,0,British Shorthair,0.9979479908943176,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_50,images/British_Shorthair_50.jpg,0,British Shorthair,0,British Shorthair,0.9992454051971436,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_54,images/British_Shorthair_54.jpg,0,British Shorthair,7,Maine Coon,0.7428187131881714,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_63,images/British_Shorthair_63.jpg,0,British Shorthair,0,British Shorthair,0.9888737201690674,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_65,images/British_Shorthair_65.jpg,0,British Shorthair,0,British Shorthair,0.9064029455184937,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_79,images/British_Shorthair_79.jpg,0,British Shorthair,0,British Shorthair,0.97918301820755,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,British_Shorthair_92,images/British_Shorthair_92.jpg,0,British Shorthair,1,Russian Blue,0.6862471103668213,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_104,images/Maine_Coon_104.jpg,7,Maine Coon,7,Maine Coon,0.9995266199111938,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_105,images/Maine_Coon_105.jpg,7,Maine Coon,7,Maine Coon,0.9994527697563171,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_116,images/Maine_Coon_116.jpg,7,Maine Coon,7,Maine Coon,0.9991433620452881,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_121,images/Maine_Coon_121.jpg,7,Maine Coon,7,Maine Coon,0.9997336268424988,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_123,images/Maine_Coon_123.jpg,7,Maine Coon,7,Maine Coon,0.9994947910308838,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_131,images/Maine_Coon_131.jpg,7,Maine Coon,7,Maine Coon,0.9997416138648987,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_137,images/Maine_Coon_137.jpg,7,Maine Coon,7,Maine Coon,0.9999014139175415,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_147,images/Maine_Coon_147.jpg,7,Maine Coon,7,Maine Coon,0.9999105930328369,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_16,images/Maine_Coon_16.jpg,7,Maine Coon,7,Maine Coon,0.999872088432312,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_171,images/Maine_Coon_171.jpg,7,Maine Coon,7,Maine Coon,0.9999990463256836,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_193,images/Maine_Coon_193.jpg,7,Maine Coon,7,Maine Coon,0.9999922513961792,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_197,images/Maine_Coon_197.jpg,7,Maine Coon,7,Maine Coon,0.9996532201766968,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_205,images/Maine_Coon_205.jpg,7,Maine Coon,7,Maine Coon,0.9999961853027344,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_206,images/Maine_Coon_206.jpg,7,Maine Coon,7,Maine Coon,0.9999805688858032,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_222,images/Maine_Coon_222.jpg,7,Maine Coon,7,Maine Coon,0.9999738931655884,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_238,images/Maine_Coon_238.jpg,7,Maine Coon,7,Maine Coon,0.2646833658218384,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_239,images/Maine_Coon_239.jpg,7,Maine Coon,7,Maine Coon,0.9995768666267395,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_267,images/Maine_Coon_267.jpg,7,Maine Coon,7,Maine Coon,0.9236196279525757,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_270,images/Maine_Coon_270.jpg,7,Maine Coon,7,Maine Coon,0.9984633922576904,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_271,images/Maine_Coon_271.jpg,7,Maine Coon,7,Maine Coon,0.9980072379112244,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_29,images/Maine_Coon_29.jpg,7,Maine Coon,7,Maine Coon,0.9999998807907104,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_30,images/Maine_Coon_30.jpg,7,Maine Coon,7,Maine Coon,0.9996534585952759,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_35,images/Maine_Coon_35.jpg,7,Maine Coon,7,Maine Coon,0.9999715089797974,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_55,images/Maine_Coon_55.jpg,7,Maine Coon,7,Maine Coon,0.9991679191589355,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_69,images/Maine_Coon_69.jpg,7,Maine Coon,0,British Shorthair,0.41276538372039795,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_77,images/Maine_Coon_77.jpg,7,Maine Coon,7,Maine Coon,0.985276997089386,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_78,images/Maine_Coon_78.jpg,7,Maine Coon,7,Maine Coon,0.9979867935180664,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_87,images/Maine_Coon_87.jpg,7,Maine Coon,7,Maine Coon,0.9999426603317261,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_89,images/Maine_Coon_89.jpg,7,Maine Coon,7,Maine Coon,0.9999678134918213,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Maine_Coon_98,images/Maine_Coon_98.jpg,7,Maine Coon,7,Maine Coon,0.7619174718856812,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_116,images/Russian_Blue_116.jpg,1,Russian Blue,1,Russian Blue,0.9932646751403809,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_123,images/Russian_Blue_123.jpg,1,Russian Blue,1,Russian Blue,0.998207688331604,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_127,images/Russian_Blue_127.jpg,1,Russian Blue,1,Russian Blue,0.9797781705856323,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_131,images/Russian_Blue_131.jpg,1,Russian Blue,1,Russian Blue,0.9986236095428467,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_135,images/Russian_Blue_135.jpg,1,Russian Blue,1,Russian Blue,0.9879760146141052,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_155,images/Russian_Blue_155.jpg,1,Russian Blue,1,Russian Blue,0.9894995093345642,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_157,images/Russian_Blue_157.jpg,1,Russian Blue,1,Russian Blue,0.7473224401473999,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_164,images/Russian_Blue_164.jpg,1,Russian Blue,0,British Shorthair,0.9205503463745117,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_171,images/Russian_Blue_171.jpg,1,Russian Blue,1,Russian Blue,0.998601496219635,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_172,images/Russian_Blue_172.jpg,1,Russian Blue,1,Russian Blue,0.985913872718811,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_18,images/Russian_Blue_18.jpg,1,Russian Blue,1,Russian Blue,0.9992954730987549,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_186,images/Russian_Blue_186.jpg,1,Russian Blue,1,Russian Blue,0.9994414448738098,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_191,images/Russian_Blue_191.jpg,1,Russian Blue,1,Russian Blue,0.9941321015357971,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_211,images/Russian_Blue_211.jpg,1,Russian Blue,1,Russian Blue,0.990581750869751,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_228,images/Russian_Blue_228.jpg,1,Russian Blue,1,Russian Blue,0.9375129342079163,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_264,images/Russian_Blue_264.jpg,1,Russian Blue,1,Russian Blue,0.7175999283790588,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_29,images/Russian_Blue_29.jpg,1,Russian Blue,0,British Shorthair,0.9710010290145874,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_34,images/Russian_Blue_34.jpg,1,Russian Blue,1,Russian Blue,0.9988127946853638,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_35,images/Russian_Blue_35.jpg,1,Russian Blue,1,Russian Blue,0.9742707014083862,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_38,images/Russian_Blue_38.jpg,1,Russian Blue,1,Russian Blue,0.9995488524436951,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_44,images/Russian_Blue_44.jpg,1,Russian Blue,1,Russian Blue,0.9995817542076111,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_45,images/Russian_Blue_45.jpg,1,Russian Blue,1,Russian Blue,0.9989748001098633,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_61,images/Russian_Blue_61.jpg,1,Russian Blue,1,Russian Blue,0.7926270365715027,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_62,images/Russian_Blue_62.jpg,1,Russian Blue,1,Russian Blue,0.9951748847961426,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_63,images/Russian_Blue_63.jpg,1,Russian Blue,1,Russian Blue,0.980286180973053,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_66,images/Russian_Blue_66.jpg,1,Russian Blue,1,Russian Blue,0.9898194670677185,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_68,images/Russian_Blue_68.jpg,1,Russian Blue,1,Russian Blue,0.9997703433036804,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_78,images/Russian_Blue_78.jpg,1,Russian Blue,1,Russian Blue,0.9961104989051819,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_8,images/Russian_Blue_8.jpg,1,Russian Blue,1,Russian Blue,0.7906606197357178,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Russian_Blue_9,images/Russian_Blue_9.jpg,1,Russian Blue,1,Russian Blue,0.9558848142623901,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_102,images/Siamese_102.jpg,2,Siamese,2,Siamese,0.9608073234558105,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_112,images/Siamese_112.jpg,2,Siamese,2,Siamese,0.8460915684700012,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_129,images/Siamese_129.jpg,2,Siamese,2,Siamese,0.9985332489013672,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_130,images/Siamese_130.jpg,2,Siamese,2,Siamese,0.7322850227355957,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_142,images/Siamese_142.jpg,2,Siamese,2,Siamese,0.9950372576713562,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_144,images/Siamese_144.jpg,2,Siamese,2,Siamese,0.9999269247055054,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_145,images/Siamese_145.jpg,2,Siamese,3,Birman,0.6322044134140015,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_163,images/Siamese_163.jpg,2,Siamese,2,Siamese,0.9999328851699829,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_168,images/Siamese_168.jpg,2,Siamese,2,Siamese,0.9990918636322021,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_170,images/Siamese_170.jpg,2,Siamese,2,Siamese,0.9993471503257751,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_175,images/Siamese_175.jpg,2,Siamese,2,Siamese,0.9992945194244385,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_178,images/Siamese_178.jpg,2,Siamese,2,Siamese,0.9999381303787231,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_189,images/Siamese_189.jpg,2,Siamese,2,Siamese,0.9997497200965881,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_193,images/Siamese_193.jpg,2,Siamese,2,Siamese,0.9995972514152527,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_194,images/Siamese_194.jpg,2,Siamese,3,Birman,0.6305451989173889,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_195,images/Siamese_195.jpg,2,Siamese,2,Siamese,0.9993370175361633,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_198,images/Siamese_198.jpg,2,Siamese,2,Siamese,0.9943431615829468,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_202,images/Siamese_202.jpg,2,Siamese,2,Siamese,0.998166024684906,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_206,images/Siamese_206.jpg,2,Siamese,2,Siamese,0.988946259021759,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_207,images/Siamese_207.jpg,2,Siamese,2,Siamese,0.9997884631156921,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_22,images/Siamese_22.jpg,2,Siamese,2,Siamese,0.9841917753219604,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_257,images/Siamese_257.jpg,2,Siamese,3,Birman,0.6956192255020142,0
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_42,images/Siamese_42.jpg,2,Siamese,2,Siamese,0.9996203184127808,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_55,images/Siamese_55.jpg,2,Siamese,2,Siamese,0.9960358738899231,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_6,images/Siamese_6.jpg,2,Siamese,2,Siamese,0.9991284012794495,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_63,images/Siamese_63.jpg,2,Siamese,2,Siamese,0.9389269351959229,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_72,images/Siamese_72.jpg,2,Siamese,2,Siamese,0.9956734776496887,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_74,images/Siamese_74.jpg,2,Siamese,2,Siamese,0.9840295910835266,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_82,images/Siamese_82.jpg,2,Siamese,2,Siamese,0.9546599984169006,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Siamese_92,images/Siamese_92.jpg,2,Siamese,2,Siamese,0.9909664392471313,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_110,images/Sphynx_110.jpg,6,Sphynx,6,Sphynx,0.9970715045928955,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_112,images/Sphynx_112.jpg,6,Sphynx,6,Sphynx,0.999758780002594,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_128,images/Sphynx_128.jpg,6,Sphynx,6,Sphynx,0.9621015787124634,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_132,images/Sphynx_132.jpg,6,Sphynx,6,Sphynx,0.9999653100967407,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_143,images/Sphynx_143.jpg,6,Sphynx,6,Sphynx,0.9972909092903137,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_146,images/Sphynx_146.jpg,6,Sphynx,6,Sphynx,0.9994439482688904,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_150,images/Sphynx_150.jpg,6,Sphynx,6,Sphynx,0.9993183612823486,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_158,images/Sphynx_158.jpg,6,Sphynx,6,Sphynx,0.9997261166572571,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_169,images/Sphynx_169.jpg,6,Sphynx,6,Sphynx,0.9997758269309998,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_173,images/Sphynx_173.jpg,6,Sphynx,6,Sphynx,0.9999245405197144,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_174,images/Sphynx_174.jpg,6,Sphynx,6,Sphynx,0.9898437261581421,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_178,images/Sphynx_178.jpg,6,Sphynx,6,Sphynx,0.999821126461029,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_181,images/Sphynx_181.jpg,6,Sphynx,6,Sphynx,0.9996960163116455,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_183,images/Sphynx_183.jpg,6,Sphynx,6,Sphynx,0.9977210164070129,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_193,images/Sphynx_193.jpg,6,Sphynx,6,Sphynx,0.9997987151145935,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_195,images/Sphynx_195.jpg,6,Sphynx,6,Sphynx,0.9995996356010437,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_197,images/Sphynx_197.jpg,6,Sphynx,6,Sphynx,0.9996398687362671,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_201,images/Sphynx_201.jpg,6,Sphynx,6,Sphynx,0.9993267059326172,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_206,images/Sphynx_206.jpg,6,Sphynx,6,Sphynx,0.9999771118164062,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_222,images/Sphynx_222.jpg,6,Sphynx,6,Sphynx,0.9998657703399658,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_245,images/Sphynx_245.jpg,6,Sphynx,6,Sphynx,0.9999748468399048,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_30,images/Sphynx_30.jpg,6,Sphynx,6,Sphynx,0.9989756345748901,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_36,images/Sphynx_36.jpg,6,Sphynx,6,Sphynx,0.9998884201049805,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_38,images/Sphynx_38.jpg,6,Sphynx,6,Sphynx,0.9978944659233093,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_66,images/Sphynx_66.jpg,6,Sphynx,6,Sphynx,0.9996228218078613,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_73,images/Sphynx_73.jpg,6,Sphynx,6,Sphynx,0.9786176681518555,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_9,images/Sphynx_9.jpg,6,Sphynx,6,Sphynx,0.9942997694015503,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_93,images/Sphynx_93.jpg,6,Sphynx,6,Sphynx,0.9997079968452454,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_95,images/Sphynx_95.jpg,6,Sphynx,6,Sphynx,0.9631306529045105,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,Sphynx_99,images/Sphynx_99.jpg,6,Sphynx,6,Sphynx,0.9851605892181396,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_101,images/american_bulldog_101.jpg,4,American Bulldog,4,American Bulldog,0.9973618388175964,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_102,images/american_bulldog_102.jpg,4,American Bulldog,4,American Bulldog,0.9890046715736389,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_11,images/american_bulldog_11.jpg,4,American Bulldog,4,American Bulldog,0.9999649524688721,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_111,images/american_bulldog_111.jpg,4,American Bulldog,4,American Bulldog,0.9999960660934448,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_119,images/american_bulldog_119.jpg,4,American Bulldog,4,American Bulldog,0.9996891021728516,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_144,images/american_bulldog_144.jpg,4,American Bulldog,4,American Bulldog,0.9992239475250244,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_15,images/american_bulldog_15.jpg,4,American Bulldog,4,American Bulldog,0.999958872795105,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_150,images/american_bulldog_150.jpg,4,American Bulldog,4,American Bulldog,0.9995280504226685,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_164,images/american_bulldog_164.jpg,4,American Bulldog,4,American Bulldog,0.9764134287834167,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_167,images/american_bulldog_167.jpg,4,American Bulldog,4,American Bulldog,0.746884822845459,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_177,images/american_bulldog_177.jpg,4,American Bulldog,4,American Bulldog,0.9859117269515991,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_179,images/american_bulldog_179.jpg,4,American Bulldog,4,American Bulldog,0.999998927116394,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_186,images/american_bulldog_186.jpg,4,American Bulldog,4,American Bulldog,0.9990097284317017,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_189,images/american_bulldog_189.jpg,4,American Bulldog,4,American Bulldog,0.9998700618743896,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_19,images/american_bulldog_19.jpg,4,American Bulldog,4,American Bulldog,0.9999834299087524,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_194,images/american_bulldog_194.jpg,4,American Bulldog,4,American Bulldog,0.9956763386726379,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_197,images/american_bulldog_197.jpg,4,American Bulldog,4,American Bulldog,0.9995367527008057,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_216,images/american_bulldog_216.jpg,4,American Bulldog,4,American Bulldog,0.9999579191207886,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_22,images/american_bulldog_22.jpg,4,American Bulldog,4,American Bulldog,0.9987218976020813,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_221,images/american_bulldog_221.jpg,4,American Bulldog,4,American Bulldog,0.9999599456787109,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_25,images/american_bulldog_25.jpg,4,American Bulldog,4,American Bulldog,0.9999865293502808,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_26,images/american_bulldog_26.jpg,4,American Bulldog,4,American Bulldog,0.9999850988388062,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_3,images/american_bulldog_3.jpg,4,American Bulldog,4,American Bulldog,0.9813371300697327,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_32,images/american_bulldog_32.jpg,4,American Bulldog,4,American Bulldog,0.9999364614486694,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_38,images/american_bulldog_38.jpg,4,American Bulldog,4,American Bulldog,0.9999196529388428,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_39,images/american_bulldog_39.jpg,4,American Bulldog,4,American Bulldog,0.9999552965164185,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_41,images/american_bulldog_41.jpg,4,American Bulldog,4,American Bulldog,0.9999901056289673,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_44,images/american_bulldog_44.jpg,4,American Bulldog,4,American Bulldog,0.9999597072601318,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_47,images/american_bulldog_47.jpg,4,American Bulldog,4,American Bulldog,0.999900221824646,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,american_bulldog_8,images/american_bulldog_8.jpg,4,American Bulldog,4,American Bulldog,0.9994250535964966,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_103,images/beagle_103.jpg,8,Beagle,8,Beagle,0.9999924898147583,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_109,images/beagle_109.jpg,8,Beagle,8,Beagle,0.9999823570251465,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_120,images/beagle_120.jpg,8,Beagle,8,Beagle,0.9999219179153442,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_137,images/beagle_137.jpg,8,Beagle,8,Beagle,0.9874003529548645,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_141,images/beagle_141.jpg,8,Beagle,8,Beagle,0.9707571864128113,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_152,images/beagle_152.jpg,8,Beagle,8,Beagle,0.9992824196815491,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_153,images/beagle_153.jpg,8,Beagle,8,Beagle,0.9979585409164429,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_156,images/beagle_156.jpg,8,Beagle,8,Beagle,0.9870433211326599,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_158,images/beagle_158.jpg,8,Beagle,8,Beagle,0.999239444732666,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_161,images/beagle_161.jpg,8,Beagle,8,Beagle,0.9970621466636658,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_168,images/beagle_168.jpg,8,Beagle,8,Beagle,0.9996786117553711,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_17,images/beagle_17.jpg,8,Beagle,8,Beagle,0.9998607635498047,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_176,images/beagle_176.jpg,8,Beagle,8,Beagle,0.9999895095825195,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_178,images/beagle_178.jpg,8,Beagle,8,Beagle,0.9999756813049316,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_183,images/beagle_183.jpg,8,Beagle,8,Beagle,0.9826239943504333,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_184,images/beagle_184.jpg,8,Beagle,8,Beagle,0.9993008375167847,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_195,images/beagle_195.jpg,8,Beagle,8,Beagle,0.9946416616439819,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_196,images/beagle_196.jpg,8,Beagle,8,Beagle,0.9999711513519287,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_203,images/beagle_203.jpg,8,Beagle,8,Beagle,0.9999905824661255,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_24,images/beagle_24.jpg,8,Beagle,8,Beagle,0.9905085563659668,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_32,images/beagle_32.jpg,8,Beagle,8,Beagle,0.9999793767929077,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_33,images/beagle_33.jpg,8,Beagle,8,Beagle,0.929201066493988,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_34,images/beagle_34.jpg,8,Beagle,8,Beagle,0.9999183416366577,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_40,images/beagle_40.jpg,8,Beagle,8,Beagle,0.9999969005584717,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_41,images/beagle_41.jpg,8,Beagle,8,Beagle,0.9999980926513672,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_51,images/beagle_51.jpg,8,Beagle,8,Beagle,0.9999455213546753,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_61,images/beagle_61.jpg,8,Beagle,8,Beagle,0.9995855689048767,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_79,images/beagle_79.jpg,8,Beagle,8,Beagle,0.9998672008514404,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_83,images/beagle_83.jpg,8,Beagle,8,Beagle,0.9999791383743286,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,beagle_94,images/beagle_94.jpg,8,Beagle,8,Beagle,0.9994992017745972,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_101,images/pug_101.jpg,5,Pug,5,Pug,0.9999539852142334,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_12,images/pug_12.jpg,5,Pug,5,Pug,0.9999980926513672,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_120,images/pug_120.jpg,5,Pug,5,Pug,0.9999886751174927,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_127,images/pug_127.jpg,5,Pug,5,Pug,0.9998496770858765,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_13,images/pug_13.jpg,5,Pug,5,Pug,0.999988317489624,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_130,images/pug_130.jpg,5,Pug,5,Pug,0.9999126195907593,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_143,images/pug_143.jpg,5,Pug,5,Pug,0.9999865293502808,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_144,images/pug_144.jpg,5,Pug,5,Pug,0.999987006187439,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_147,images/pug_147.jpg,5,Pug,5,Pug,0.999997615814209,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_151,images/pug_151.jpg,5,Pug,5,Pug,0.9999638795852661,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_153,images/pug_153.jpg,5,Pug,5,Pug,0.9999895095825195,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_156,images/pug_156.jpg,5,Pug,5,Pug,0.9999924898147583,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_165,images/pug_165.jpg,5,Pug,5,Pug,0.9996848106384277,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_167,images/pug_167.jpg,5,Pug,5,Pug,0.9990472197532654,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_168,images/pug_168.jpg,5,Pug,5,Pug,0.9999431371688843,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_177,images/pug_177.jpg,5,Pug,5,Pug,0.9998823404312134,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_195,images/pug_195.jpg,5,Pug,5,Pug,0.998671293258667,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_200,images/pug_200.jpg,5,Pug,5,Pug,0.9999209642410278,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_24,images/pug_24.jpg,5,Pug,5,Pug,0.9999508857727051,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_3,images/pug_3.jpg,5,Pug,5,Pug,0.9999997615814209,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_32,images/pug_32.jpg,5,Pug,5,Pug,0.9999933242797852,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_36,images/pug_36.jpg,5,Pug,5,Pug,0.9999881982803345,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_37,images/pug_37.jpg,5,Pug,5,Pug,0.9996211528778076,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_43,images/pug_43.jpg,5,Pug,5,Pug,0.9999792575836182,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_44,images/pug_44.jpg,5,Pug,5,Pug,0.9999985694885254,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_50,images/pug_50.jpg,5,Pug,5,Pug,0.9992654919624329,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_72,images/pug_72.jpg,5,Pug,5,Pug,0.9999960660934448,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_74,images/pug_74.jpg,5,Pug,5,Pug,0.6496285796165466,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_8,images/pug_8.jpg,5,Pug,5,Pug,0.9999823570251465,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,pug_93,images/pug_93.jpg,5,Pug,5,Pug,0.9699596762657166,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_101,images/samoyed_101.jpg,9,Samoyed,9,Samoyed,0.9999703168869019,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_107,images/samoyed_107.jpg,9,Samoyed,9,Samoyed,0.9999971389770508,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_108,images/samoyed_108.jpg,9,Samoyed,9,Samoyed,0.9960833787918091,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_110,images/samoyed_110.jpg,9,Samoyed,9,Samoyed,0.9999905824661255,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_12,images/samoyed_12.jpg,9,Samoyed,9,Samoyed,0.9999969005584717,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_127,images/samoyed_127.jpg,9,Samoyed,9,Samoyed,0.9999793767929077,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_130,images/samoyed_130.jpg,9,Samoyed,9,Samoyed,0.998754620552063,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_137,images/samoyed_137.jpg,9,Samoyed,9,Samoyed,0.9998886585235596,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_140,images/samoyed_140.jpg,9,Samoyed,9,Samoyed,0.9948570728302002,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_141,images/samoyed_141.jpg,9,Samoyed,9,Samoyed,0.9965949654579163,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_145,images/samoyed_145.jpg,9,Samoyed,9,Samoyed,0.999992847442627,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_164,images/samoyed_164.jpg,9,Samoyed,9,Samoyed,0.9999874830245972,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_167,images/samoyed_167.jpg,9,Samoyed,9,Samoyed,0.9999858140945435,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_18,images/samoyed_18.jpg,9,Samoyed,9,Samoyed,0.9997851252555847,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_186,images/samoyed_186.jpg,9,Samoyed,9,Samoyed,0.9999912977218628,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_197,images/samoyed_197.jpg,9,Samoyed,9,Samoyed,0.9999990463256836,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_22,images/samoyed_22.jpg,9,Samoyed,9,Samoyed,0.9999675750732422,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_3,images/samoyed_3.jpg,9,Samoyed,9,Samoyed,0.9998575448989868,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_36,images/samoyed_36.jpg,9,Samoyed,9,Samoyed,0.9999659061431885,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_4,images/samoyed_4.jpg,9,Samoyed,9,Samoyed,0.9999790191650391,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_43,images/samoyed_43.jpg,9,Samoyed,9,Samoyed,0.9743903279304504,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_44,images/samoyed_44.jpg,9,Samoyed,9,Samoyed,0.9999655485153198,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_46,images/samoyed_46.jpg,9,Samoyed,9,Samoyed,0.9999986886978149,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_49,images/samoyed_49.jpg,9,Samoyed,9,Samoyed,0.9999991655349731,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_53,images/samoyed_53.jpg,9,Samoyed,9,Samoyed,0.9997168183326721,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_57,images/samoyed_57.jpg,9,Samoyed,9,Samoyed,0.9999821186065674,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_58,images/samoyed_58.jpg,9,Samoyed,9,Samoyed,0.999996542930603,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_64,images/samoyed_64.jpg,9,Samoyed,9,Samoyed,0.9993886947631836,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_72,images/samoyed_72.jpg,9,Samoyed,9,Samoyed,0.9999531507492065,1
+43,deliverables\c3\runs\lr_1e-5\seed_43\best.pt,samoyed_8,images/samoyed_8.jpg,9,Samoyed,9,Samoyed,0.9999961853027344,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_101,images/Birman_101.jpg,3,Birman,3,Birman,0.9999548196792603,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_105,images/Birman_105.jpg,3,Birman,3,Birman,0.999818742275238,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_112,images/Birman_112.jpg,3,Birman,3,Birman,0.9999957084655762,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_116,images/Birman_116.jpg,3,Birman,3,Birman,0.9999831914901733,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_127,images/Birman_127.jpg,3,Birman,3,Birman,0.9998202919960022,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_133,images/Birman_133.jpg,3,Birman,3,Birman,0.6131626963615417,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_134,images/Birman_134.jpg,3,Birman,3,Birman,0.9999983310699463,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_15,images/Birman_15.jpg,3,Birman,3,Birman,0.9999756813049316,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_154,images/Birman_154.jpg,3,Birman,3,Birman,0.9857526421546936,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_156,images/Birman_156.jpg,3,Birman,3,Birman,0.9992733597755432,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_161,images/Birman_161.jpg,3,Birman,3,Birman,0.9999347925186157,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_167,images/Birman_167.jpg,3,Birman,3,Birman,0.9999966621398926,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_168,images/Birman_168.jpg,3,Birman,3,Birman,0.9999943971633911,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_189,images/Birman_189.jpg,3,Birman,3,Birman,0.9999796152114868,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_192,images/Birman_192.jpg,3,Birman,3,Birman,0.9989984631538391,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_196,images/Birman_196.jpg,3,Birman,3,Birman,0.9999749660491943,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_201,images/Birman_201.jpg,3,Birman,3,Birman,0.9765902161598206,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_26,images/Birman_26.jpg,3,Birman,3,Birman,0.9999196529388428,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_29,images/Birman_29.jpg,3,Birman,2,Siamese,0.5703055262565613,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_3,images/Birman_3.jpg,3,Birman,3,Birman,0.9997467398643494,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_4,images/Birman_4.jpg,3,Birman,3,Birman,0.9996308088302612,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_43,images/Birman_43.jpg,3,Birman,3,Birman,0.9891448616981506,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_44,images/Birman_44.jpg,3,Birman,3,Birman,0.9902864098548889,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_46,images/Birman_46.jpg,3,Birman,3,Birman,0.9999959468841553,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_49,images/Birman_49.jpg,3,Birman,3,Birman,0.9999077320098877,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_6,images/Birman_6.jpg,3,Birman,3,Birman,0.9999977350234985,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_7,images/Birman_7.jpg,3,Birman,3,Birman,0.9980071187019348,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_8,images/Birman_8.jpg,3,Birman,3,Birman,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_86,images/Birman_86.jpg,3,Birman,3,Birman,0.999923825263977,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Birman_96,images/Birman_96.jpg,3,Birman,3,Birman,0.9953438639640808,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_107,images/British_Shorthair_107.jpg,0,British Shorthair,0,British Shorthair,0.9997463822364807,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_116,images/British_Shorthair_116.jpg,0,British Shorthair,0,British Shorthair,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_121,images/British_Shorthair_121.jpg,0,British Shorthair,0,British Shorthair,0.9997305274009705,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_124,images/British_Shorthair_124.jpg,0,British Shorthair,0,British Shorthair,0.9999982118606567,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_125,images/British_Shorthair_125.jpg,0,British Shorthair,1,Russian Blue,0.6915100812911987,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_144,images/British_Shorthair_144.jpg,0,British Shorthair,0,British Shorthair,0.999704897403717,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_157,images/British_Shorthair_157.jpg,0,British Shorthair,0,British Shorthair,0.9924371838569641,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_161,images/British_Shorthair_161.jpg,0,British Shorthair,0,British Shorthair,0.9997909665107727,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_163,images/British_Shorthair_163.jpg,0,British Shorthair,0,British Shorthair,0.9749406576156616,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_18,images/British_Shorthair_18.jpg,0,British Shorthair,0,British Shorthair,0.9999896287918091,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_180,images/British_Shorthair_180.jpg,0,British Shorthair,0,British Shorthair,0.9999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_186,images/British_Shorthair_186.jpg,0,British Shorthair,0,British Shorthair,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_190,images/British_Shorthair_190.jpg,0,British Shorthair,0,British Shorthair,0.9999117851257324,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_193,images/British_Shorthair_193.jpg,0,British Shorthair,0,British Shorthair,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_196,images/British_Shorthair_196.jpg,0,British Shorthair,0,British Shorthair,0.9999716281890869,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_201,images/British_Shorthair_201.jpg,0,British Shorthair,0,British Shorthair,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_204,images/British_Shorthair_204.jpg,0,British Shorthair,0,British Shorthair,0.9999735355377197,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_205,images/British_Shorthair_205.jpg,0,British Shorthair,0,British Shorthair,0.9985621571540833,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_230,images/British_Shorthair_230.jpg,0,British Shorthair,1,Russian Blue,0.9938241243362427,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_266,images/British_Shorthair_266.jpg,0,British Shorthair,0,British Shorthair,0.9983742237091064,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_267,images/British_Shorthair_267.jpg,0,British Shorthair,0,British Shorthair,0.9999414682388306,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_269,images/British_Shorthair_269.jpg,0,British Shorthair,0,British Shorthair,0.9999967813491821,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_271,images/British_Shorthair_271.jpg,0,British Shorthair,0,British Shorthair,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_33,images/British_Shorthair_33.jpg,0,British Shorthair,0,British Shorthair,0.999993085861206,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_50,images/British_Shorthair_50.jpg,0,British Shorthair,0,British Shorthair,0.9999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_54,images/British_Shorthair_54.jpg,0,British Shorthair,7,Maine Coon,0.9438931941986084,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_63,images/British_Shorthair_63.jpg,0,British Shorthair,0,British Shorthair,0.9999369382858276,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_65,images/British_Shorthair_65.jpg,0,British Shorthair,0,British Shorthair,0.9994381070137024,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_79,images/British_Shorthair_79.jpg,0,British Shorthair,0,British Shorthair,0.999998927116394,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,British_Shorthair_92,images/British_Shorthair_92.jpg,0,British Shorthair,1,Russian Blue,0.9824495315551758,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_104,images/Maine_Coon_104.jpg,7,Maine Coon,7,Maine Coon,0.9984692931175232,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_105,images/Maine_Coon_105.jpg,7,Maine Coon,7,Maine Coon,0.9999778270721436,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_116,images/Maine_Coon_116.jpg,7,Maine Coon,7,Maine Coon,0.9997629523277283,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_121,images/Maine_Coon_121.jpg,7,Maine Coon,7,Maine Coon,0.9999457597732544,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_123,images/Maine_Coon_123.jpg,7,Maine Coon,7,Maine Coon,0.9965153932571411,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_131,images/Maine_Coon_131.jpg,7,Maine Coon,7,Maine Coon,0.9999872446060181,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_137,images/Maine_Coon_137.jpg,7,Maine Coon,7,Maine Coon,0.9999815225601196,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_147,images/Maine_Coon_147.jpg,7,Maine Coon,7,Maine Coon,0.9999972581863403,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_16,images/Maine_Coon_16.jpg,7,Maine Coon,7,Maine Coon,0.9999921321868896,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_171,images/Maine_Coon_171.jpg,7,Maine Coon,7,Maine Coon,0.9999964237213135,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_193,images/Maine_Coon_193.jpg,7,Maine Coon,7,Maine Coon,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_197,images/Maine_Coon_197.jpg,7,Maine Coon,7,Maine Coon,0.9999922513961792,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_205,images/Maine_Coon_205.jpg,7,Maine Coon,7,Maine Coon,0.999998927116394,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_206,images/Maine_Coon_206.jpg,7,Maine Coon,7,Maine Coon,0.9999914169311523,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_222,images/Maine_Coon_222.jpg,7,Maine Coon,7,Maine Coon,0.9999943971633911,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_238,images/Maine_Coon_238.jpg,7,Maine Coon,7,Maine Coon,0.6411901712417603,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_239,images/Maine_Coon_239.jpg,7,Maine Coon,7,Maine Coon,0.9999973773956299,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_267,images/Maine_Coon_267.jpg,7,Maine Coon,7,Maine Coon,0.9395784139633179,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_270,images/Maine_Coon_270.jpg,7,Maine Coon,7,Maine Coon,0.99986732006073,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_271,images/Maine_Coon_271.jpg,7,Maine Coon,7,Maine Coon,0.999503493309021,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_29,images/Maine_Coon_29.jpg,7,Maine Coon,7,Maine Coon,0.9999996423721313,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_30,images/Maine_Coon_30.jpg,7,Maine Coon,7,Maine Coon,0.99993896484375,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_35,images/Maine_Coon_35.jpg,7,Maine Coon,7,Maine Coon,0.9999247789382935,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_55,images/Maine_Coon_55.jpg,7,Maine Coon,7,Maine Coon,0.9998747110366821,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_69,images/Maine_Coon_69.jpg,7,Maine Coon,7,Maine Coon,0.8212500810623169,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_77,images/Maine_Coon_77.jpg,7,Maine Coon,7,Maine Coon,0.9932597279548645,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_78,images/Maine_Coon_78.jpg,7,Maine Coon,7,Maine Coon,0.9999397993087769,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_87,images/Maine_Coon_87.jpg,7,Maine Coon,7,Maine Coon,0.9963817596435547,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_89,images/Maine_Coon_89.jpg,7,Maine Coon,7,Maine Coon,0.9999986886978149,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Maine_Coon_98,images/Maine_Coon_98.jpg,7,Maine Coon,7,Maine Coon,0.9745458364486694,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_116,images/Russian_Blue_116.jpg,1,Russian Blue,1,Russian Blue,0.9999196529388428,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_123,images/Russian_Blue_123.jpg,1,Russian Blue,1,Russian Blue,0.9997711777687073,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_127,images/Russian_Blue_127.jpg,1,Russian Blue,1,Russian Blue,0.9994522929191589,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_131,images/Russian_Blue_131.jpg,1,Russian Blue,1,Russian Blue,0.9999628067016602,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_135,images/Russian_Blue_135.jpg,1,Russian Blue,1,Russian Blue,0.9995796084403992,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_155,images/Russian_Blue_155.jpg,1,Russian Blue,1,Russian Blue,0.9998326301574707,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_157,images/Russian_Blue_157.jpg,1,Russian Blue,1,Russian Blue,0.9655026793479919,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_164,images/Russian_Blue_164.jpg,1,Russian Blue,0,British Shorthair,0.9651908874511719,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_171,images/Russian_Blue_171.jpg,1,Russian Blue,1,Russian Blue,0.9996920824050903,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_172,images/Russian_Blue_172.jpg,1,Russian Blue,1,Russian Blue,0.9999058246612549,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_18,images/Russian_Blue_18.jpg,1,Russian Blue,1,Russian Blue,0.9999866485595703,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_186,images/Russian_Blue_186.jpg,1,Russian Blue,1,Russian Blue,0.9999974966049194,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_191,images/Russian_Blue_191.jpg,1,Russian Blue,1,Russian Blue,0.9999316930770874,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_211,images/Russian_Blue_211.jpg,1,Russian Blue,1,Russian Blue,0.9935539960861206,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_228,images/Russian_Blue_228.jpg,1,Russian Blue,1,Russian Blue,0.999386191368103,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_264,images/Russian_Blue_264.jpg,1,Russian Blue,0,British Shorthair,0.9801691174507141,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_29,images/Russian_Blue_29.jpg,1,Russian Blue,0,British Shorthair,0.9999991655349731,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_34,images/Russian_Blue_34.jpg,1,Russian Blue,1,Russian Blue,0.9999982118606567,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_35,images/Russian_Blue_35.jpg,1,Russian Blue,1,Russian Blue,0.9999529123306274,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_38,images/Russian_Blue_38.jpg,1,Russian Blue,1,Russian Blue,0.9999741315841675,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_44,images/Russian_Blue_44.jpg,1,Russian Blue,1,Russian Blue,0.9999970197677612,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_45,images/Russian_Blue_45.jpg,1,Russian Blue,1,Russian Blue,0.999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_61,images/Russian_Blue_61.jpg,1,Russian Blue,1,Russian Blue,0.9983450174331665,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_62,images/Russian_Blue_62.jpg,1,Russian Blue,1,Russian Blue,0.999967098236084,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_63,images/Russian_Blue_63.jpg,1,Russian Blue,1,Russian Blue,0.9945167899131775,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_66,images/Russian_Blue_66.jpg,1,Russian Blue,1,Russian Blue,0.9999816417694092,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_68,images/Russian_Blue_68.jpg,1,Russian Blue,1,Russian Blue,0.9999951124191284,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_78,images/Russian_Blue_78.jpg,1,Russian Blue,1,Russian Blue,0.999911904335022,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_8,images/Russian_Blue_8.jpg,1,Russian Blue,1,Russian Blue,0.9547752737998962,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Russian_Blue_9,images/Russian_Blue_9.jpg,1,Russian Blue,1,Russian Blue,0.9975207448005676,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_102,images/Siamese_102.jpg,2,Siamese,2,Siamese,0.9998821020126343,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_112,images/Siamese_112.jpg,2,Siamese,2,Siamese,0.9657524824142456,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_129,images/Siamese_129.jpg,2,Siamese,2,Siamese,0.9997414946556091,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_130,images/Siamese_130.jpg,2,Siamese,2,Siamese,0.6927724480628967,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_142,images/Siamese_142.jpg,2,Siamese,2,Siamese,0.9969108700752258,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_144,images/Siamese_144.jpg,2,Siamese,2,Siamese,0.9999991655349731,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_145,images/Siamese_145.jpg,2,Siamese,2,Siamese,0.9218231439590454,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_163,images/Siamese_163.jpg,2,Siamese,2,Siamese,0.9999992847442627,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_168,images/Siamese_168.jpg,2,Siamese,2,Siamese,0.999993085861206,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_170,images/Siamese_170.jpg,2,Siamese,2,Siamese,0.9999861717224121,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_175,images/Siamese_175.jpg,2,Siamese,2,Siamese,0.9999933242797852,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_178,images/Siamese_178.jpg,2,Siamese,2,Siamese,0.999984860420227,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_189,images/Siamese_189.jpg,2,Siamese,2,Siamese,0.9999898672103882,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_193,images/Siamese_193.jpg,2,Siamese,2,Siamese,0.999972939491272,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_194,images/Siamese_194.jpg,2,Siamese,3,Birman,0.9995062351226807,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_195,images/Siamese_195.jpg,2,Siamese,2,Siamese,0.9994375109672546,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_198,images/Siamese_198.jpg,2,Siamese,2,Siamese,0.9998912811279297,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_202,images/Siamese_202.jpg,2,Siamese,2,Siamese,0.9999090433120728,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_206,images/Siamese_206.jpg,2,Siamese,2,Siamese,0.9886293411254883,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_207,images/Siamese_207.jpg,2,Siamese,2,Siamese,0.9999973773956299,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_22,images/Siamese_22.jpg,2,Siamese,2,Siamese,0.9833186864852905,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_257,images/Siamese_257.jpg,2,Siamese,3,Birman,0.9972928166389465,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_42,images/Siamese_42.jpg,2,Siamese,2,Siamese,0.9999939203262329,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_55,images/Siamese_55.jpg,2,Siamese,2,Siamese,0.9954060316085815,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_6,images/Siamese_6.jpg,2,Siamese,2,Siamese,0.9979141354560852,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_63,images/Siamese_63.jpg,2,Siamese,2,Siamese,0.9830436110496521,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_72,images/Siamese_72.jpg,2,Siamese,2,Siamese,0.9997512698173523,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_74,images/Siamese_74.jpg,2,Siamese,2,Siamese,0.999618411064148,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_82,images/Siamese_82.jpg,2,Siamese,2,Siamese,0.9896062016487122,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Siamese_92,images/Siamese_92.jpg,2,Siamese,2,Siamese,0.9999290704727173,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_110,images/Sphynx_110.jpg,6,Sphynx,6,Sphynx,0.9999996423721313,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_112,images/Sphynx_112.jpg,6,Sphynx,6,Sphynx,0.9999935626983643,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_128,images/Sphynx_128.jpg,6,Sphynx,6,Sphynx,0.9979771971702576,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_132,images/Sphynx_132.jpg,6,Sphynx,6,Sphynx,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_143,images/Sphynx_143.jpg,6,Sphynx,6,Sphynx,0.9997895359992981,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_146,images/Sphynx_146.jpg,6,Sphynx,6,Sphynx,0.9999986886978149,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_150,images/Sphynx_150.jpg,6,Sphynx,6,Sphynx,0.994223415851593,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_158,images/Sphynx_158.jpg,6,Sphynx,6,Sphynx,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_169,images/Sphynx_169.jpg,6,Sphynx,6,Sphynx,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_173,images/Sphynx_173.jpg,6,Sphynx,6,Sphynx,0.9999994039535522,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_174,images/Sphynx_174.jpg,6,Sphynx,6,Sphynx,0.9999966621398926,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_178,images/Sphynx_178.jpg,6,Sphynx,6,Sphynx,0.9999911785125732,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_181,images/Sphynx_181.jpg,6,Sphynx,6,Sphynx,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_183,images/Sphynx_183.jpg,6,Sphynx,6,Sphynx,0.9999970197677612,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_193,images/Sphynx_193.jpg,6,Sphynx,6,Sphynx,0.9999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_195,images/Sphynx_195.jpg,6,Sphynx,6,Sphynx,0.9999939203262329,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_197,images/Sphynx_197.jpg,6,Sphynx,6,Sphynx,0.9999994039535522,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_201,images/Sphynx_201.jpg,6,Sphynx,6,Sphynx,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_206,images/Sphynx_206.jpg,6,Sphynx,6,Sphynx,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_222,images/Sphynx_222.jpg,6,Sphynx,6,Sphynx,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_245,images/Sphynx_245.jpg,6,Sphynx,6,Sphynx,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_30,images/Sphynx_30.jpg,6,Sphynx,6,Sphynx,0.999996542930603,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_36,images/Sphynx_36.jpg,6,Sphynx,6,Sphynx,0.9999980926513672,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_38,images/Sphynx_38.jpg,6,Sphynx,6,Sphynx,0.9999980926513672,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_66,images/Sphynx_66.jpg,6,Sphynx,6,Sphynx,0.9999971389770508,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_73,images/Sphynx_73.jpg,6,Sphynx,6,Sphynx,0.9793717265129089,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_9,images/Sphynx_9.jpg,6,Sphynx,6,Sphynx,0.9999560117721558,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_93,images/Sphynx_93.jpg,6,Sphynx,6,Sphynx,0.9999988079071045,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_95,images/Sphynx_95.jpg,6,Sphynx,6,Sphynx,0.9999812841415405,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,Sphynx_99,images/Sphynx_99.jpg,6,Sphynx,6,Sphynx,0.7110893130302429,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_101,images/american_bulldog_101.jpg,4,American Bulldog,4,American Bulldog,0.9999910593032837,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_102,images/american_bulldog_102.jpg,4,American Bulldog,4,American Bulldog,0.9991384744644165,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_11,images/american_bulldog_11.jpg,4,American Bulldog,4,American Bulldog,0.9999990463256836,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_111,images/american_bulldog_111.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_119,images/american_bulldog_119.jpg,4,American Bulldog,4,American Bulldog,0.9999960660934448,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_144,images/american_bulldog_144.jpg,4,American Bulldog,4,American Bulldog,0.9999579191207886,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_15,images/american_bulldog_15.jpg,4,American Bulldog,4,American Bulldog,0.9999933242797852,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_150,images/american_bulldog_150.jpg,4,American Bulldog,4,American Bulldog,0.9999932050704956,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_164,images/american_bulldog_164.jpg,4,American Bulldog,4,American Bulldog,0.8582243919372559,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_167,images/american_bulldog_167.jpg,4,American Bulldog,6,Sphynx,0.9913279414176941,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_177,images/american_bulldog_177.jpg,4,American Bulldog,4,American Bulldog,0.9998918771743774,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_179,images/american_bulldog_179.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_186,images/american_bulldog_186.jpg,4,American Bulldog,4,American Bulldog,0.9999958276748657,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_189,images/american_bulldog_189.jpg,4,American Bulldog,4,American Bulldog,0.9999996423721313,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_19,images/american_bulldog_19.jpg,4,American Bulldog,4,American Bulldog,0.9999990463256836,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_194,images/american_bulldog_194.jpg,4,American Bulldog,4,American Bulldog,0.9999858140945435,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_197,images/american_bulldog_197.jpg,4,American Bulldog,4,American Bulldog,0.9999988079071045,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_216,images/american_bulldog_216.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_22,images/american_bulldog_22.jpg,4,American Bulldog,4,American Bulldog,0.999582827091217,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_221,images/american_bulldog_221.jpg,4,American Bulldog,4,American Bulldog,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_25,images/american_bulldog_25.jpg,4,American Bulldog,4,American Bulldog,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_26,images/american_bulldog_26.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_3,images/american_bulldog_3.jpg,4,American Bulldog,4,American Bulldog,0.9973711967468262,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_32,images/american_bulldog_32.jpg,4,American Bulldog,4,American Bulldog,0.9999823570251465,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_38,images/american_bulldog_38.jpg,4,American Bulldog,4,American Bulldog,0.9999934434890747,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_39,images/american_bulldog_39.jpg,4,American Bulldog,4,American Bulldog,0.9999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_41,images/american_bulldog_41.jpg,4,American Bulldog,4,American Bulldog,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_44,images/american_bulldog_44.jpg,4,American Bulldog,4,American Bulldog,0.9999991655349731,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_47,images/american_bulldog_47.jpg,4,American Bulldog,4,American Bulldog,0.9999948740005493,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,american_bulldog_8,images/american_bulldog_8.jpg,4,American Bulldog,4,American Bulldog,0.9999752044677734,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_103,images/beagle_103.jpg,8,Beagle,8,Beagle,0.9999982118606567,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_109,images/beagle_109.jpg,8,Beagle,8,Beagle,0.999998927116394,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_120,images/beagle_120.jpg,8,Beagle,8,Beagle,0.9999874830245972,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_137,images/beagle_137.jpg,8,Beagle,6,Sphynx,0.8873161673545837,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_141,images/beagle_141.jpg,8,Beagle,8,Beagle,0.9998822212219238,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_152,images/beagle_152.jpg,8,Beagle,8,Beagle,0.9993911981582642,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_153,images/beagle_153.jpg,8,Beagle,8,Beagle,0.9996360540390015,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_156,images/beagle_156.jpg,8,Beagle,8,Beagle,0.9994254112243652,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_158,images/beagle_158.jpg,8,Beagle,8,Beagle,0.9998624324798584,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_161,images/beagle_161.jpg,8,Beagle,8,Beagle,0.9999774694442749,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_168,images/beagle_168.jpg,8,Beagle,8,Beagle,0.9999951124191284,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_17,images/beagle_17.jpg,8,Beagle,8,Beagle,0.9999955892562866,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_176,images/beagle_176.jpg,8,Beagle,8,Beagle,0.9999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_178,images/beagle_178.jpg,8,Beagle,8,Beagle,0.9999991655349731,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_183,images/beagle_183.jpg,8,Beagle,8,Beagle,0.9725301265716553,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_184,images/beagle_184.jpg,8,Beagle,8,Beagle,0.9998959302902222,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_195,images/beagle_195.jpg,8,Beagle,8,Beagle,0.999622106552124,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_196,images/beagle_196.jpg,8,Beagle,8,Beagle,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_203,images/beagle_203.jpg,8,Beagle,8,Beagle,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_24,images/beagle_24.jpg,8,Beagle,8,Beagle,0.9997156262397766,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_32,images/beagle_32.jpg,8,Beagle,8,Beagle,0.9999984502792358,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_33,images/beagle_33.jpg,8,Beagle,8,Beagle,0.9951091408729553,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_34,images/beagle_34.jpg,8,Beagle,8,Beagle,0.9999810457229614,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_40,images/beagle_40.jpg,8,Beagle,8,Beagle,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_41,images/beagle_41.jpg,8,Beagle,8,Beagle,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_51,images/beagle_51.jpg,8,Beagle,8,Beagle,0.9999895095825195,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_61,images/beagle_61.jpg,8,Beagle,8,Beagle,0.9999821186065674,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_79,images/beagle_79.jpg,8,Beagle,8,Beagle,0.9999991655349731,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_83,images/beagle_83.jpg,8,Beagle,8,Beagle,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,beagle_94,images/beagle_94.jpg,8,Beagle,8,Beagle,0.9999817609786987,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_101,images/pug_101.jpg,5,Pug,5,Pug,0.9999959468841553,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_12,images/pug_12.jpg,5,Pug,5,Pug,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_120,images/pug_120.jpg,5,Pug,5,Pug,0.9999994039535522,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_127,images/pug_127.jpg,5,Pug,5,Pug,0.9999959468841553,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_13,images/pug_13.jpg,5,Pug,5,Pug,0.9999922513961792,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_130,images/pug_130.jpg,5,Pug,5,Pug,0.9999988079071045,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_143,images/pug_143.jpg,5,Pug,5,Pug,0.9999959468841553,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_144,images/pug_144.jpg,5,Pug,5,Pug,0.9999996423721313,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_147,images/pug_147.jpg,5,Pug,5,Pug,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_151,images/pug_151.jpg,5,Pug,5,Pug,0.9999979734420776,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_153,images/pug_153.jpg,5,Pug,5,Pug,0.9999996423721313,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_156,images/pug_156.jpg,5,Pug,5,Pug,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_165,images/pug_165.jpg,5,Pug,5,Pug,0.9998738765716553,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_167,images/pug_167.jpg,5,Pug,5,Pug,0.9999964237213135,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_168,images/pug_168.jpg,5,Pug,5,Pug,0.9999984502792358,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_177,images/pug_177.jpg,5,Pug,5,Pug,0.9999974966049194,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_195,images/pug_195.jpg,5,Pug,5,Pug,0.9999551773071289,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_200,images/pug_200.jpg,5,Pug,5,Pug,0.9999748468399048,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_24,images/pug_24.jpg,5,Pug,5,Pug,0.999996542930603,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_3,images/pug_3.jpg,5,Pug,5,Pug,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_32,images/pug_32.jpg,5,Pug,5,Pug,0.9999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_36,images/pug_36.jpg,5,Pug,5,Pug,0.9999996423721313,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_37,images/pug_37.jpg,5,Pug,5,Pug,0.9999969005584717,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_43,images/pug_43.jpg,5,Pug,5,Pug,0.9999986886978149,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_44,images/pug_44.jpg,5,Pug,5,Pug,0.999998927116394,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_50,images/pug_50.jpg,5,Pug,5,Pug,0.9999662637710571,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_72,images/pug_72.jpg,5,Pug,5,Pug,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_74,images/pug_74.jpg,5,Pug,4,American Bulldog,0.5796583294868469,0
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_8,images/pug_8.jpg,5,Pug,5,Pug,0.9999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,pug_93,images/pug_93.jpg,5,Pug,5,Pug,0.983911395072937,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_101,images/samoyed_101.jpg,9,Samoyed,9,Samoyed,0.9998831748962402,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_107,images/samoyed_107.jpg,9,Samoyed,9,Samoyed,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_108,images/samoyed_108.jpg,9,Samoyed,9,Samoyed,0.9999983310699463,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_110,images/samoyed_110.jpg,9,Samoyed,9,Samoyed,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_12,images/samoyed_12.jpg,9,Samoyed,9,Samoyed,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_127,images/samoyed_127.jpg,9,Samoyed,9,Samoyed,0.9999957084655762,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_130,images/samoyed_130.jpg,9,Samoyed,9,Samoyed,0.9997714161872864,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_137,images/samoyed_137.jpg,9,Samoyed,9,Samoyed,0.9996973276138306,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_140,images/samoyed_140.jpg,9,Samoyed,9,Samoyed,0.9998838901519775,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_141,images/samoyed_141.jpg,9,Samoyed,9,Samoyed,0.998938262462616,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_145,images/samoyed_145.jpg,9,Samoyed,9,Samoyed,0.9999886751174927,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_164,images/samoyed_164.jpg,9,Samoyed,9,Samoyed,0.9999983310699463,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_167,images/samoyed_167.jpg,9,Samoyed,9,Samoyed,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_18,images/samoyed_18.jpg,9,Samoyed,9,Samoyed,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_186,images/samoyed_186.jpg,9,Samoyed,9,Samoyed,0.999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_197,images/samoyed_197.jpg,9,Samoyed,9,Samoyed,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_22,images/samoyed_22.jpg,9,Samoyed,9,Samoyed,0.9999916553497314,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_3,images/samoyed_3.jpg,9,Samoyed,9,Samoyed,0.9999910593032837,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_36,images/samoyed_36.jpg,9,Samoyed,9,Samoyed,0.9999995231628418,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_4,images/samoyed_4.jpg,9,Samoyed,9,Samoyed,0.9999945163726807,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_43,images/samoyed_43.jpg,9,Samoyed,9,Samoyed,0.9999810457229614,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_44,images/samoyed_44.jpg,9,Samoyed,9,Samoyed,0.9999997615814209,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_46,images/samoyed_46.jpg,9,Samoyed,9,Samoyed,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_49,images/samoyed_49.jpg,9,Samoyed,9,Samoyed,1.0,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_53,images/samoyed_53.jpg,9,Samoyed,9,Samoyed,0.9999977350234985,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_57,images/samoyed_57.jpg,9,Samoyed,9,Samoyed,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_58,images/samoyed_58.jpg,9,Samoyed,9,Samoyed,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_64,images/samoyed_64.jpg,9,Samoyed,9,Samoyed,0.9999555349349976,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_72,images/samoyed_72.jpg,9,Samoyed,9,Samoyed,0.9999998807907104,1
+44,deliverables\c3\runs\lr_1e-5\seed_44\best.pt,samoyed_8,images/samoyed_8.jpg,9,Samoyed,9,Samoyed,1.0,1
