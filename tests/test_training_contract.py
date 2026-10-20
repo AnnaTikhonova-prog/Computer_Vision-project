@@ -166,6 +166,26 @@ class TrainingContractTests(unittest.TestCase):
                     )
                 )
 
+    def test_microbatch_accumulation_keeps_one_effective_batch_step_and_loss_scaling(self) -> None:
+        torch.manual_seed(321)
+        model = nn.Linear(4, 10)
+        reference = nn.Linear(4, 10)
+        reference.load_state_dict(model.state_dict())
+        inputs = torch.randn(32, 4)
+        labels = torch.arange(32) % 10
+        optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.01)
+        reference_optimizer = torch.optim.AdamW(reference.parameters(), lr=1e-4, weight_decay=0.01)
+
+        with patch.object(optimizer, "step", wraps=optimizer.step) as step_mock:
+            training.run_epoch(model, [(inputs, labels)], torch.device("cpu"), 4, optimizer)
+        self.assertEqual(step_mock.call_count, 1)
+
+        reference_optimizer.zero_grad(set_to_none=True)
+        torch.nn.functional.cross_entropy(reference(inputs), labels, reduction="mean").backward()
+        reference_optimizer.step()
+        for actual, expected in zip(model.parameters(), reference.parameters()):
+            self.assertTrue(torch.allclose(actual, expected, rtol=1e-6, atol=1e-7))
+
     def test_completed_run_writes_stable_history_and_identifying_artifacts(self) -> None:
         class TinyClassifier(nn.Module):
             def __init__(self) -> None:
@@ -207,6 +227,8 @@ class TrainingContractTests(unittest.TestCase):
             self.assertEqual(metadata["condition"], "C0")
             self.assertEqual(metadata["training_seed"], 42)
             self.assertEqual(metadata["split_seed"], 42)
+            self.assertEqual(metadata["environment"]["torch_num_threads"], 1)
+            self.assertTrue(metadata["environment"]["determinism"]["mkldnn_deterministic"])
             self.assertEqual(metadata["git"]["commit"], training.subprocess.check_output(
                 ["git", "rev-parse", "HEAD"], cwd=training.PROJECT_ROOT, text=True
             ).strip())

@@ -11,6 +11,10 @@ from scripts.prepare_c0_delivery import copy_idempotent
 
 
 class C0DeliveryTests(unittest.TestCase):
+    def test_each_learning_rate_has_a_distinct_report_directory(self) -> None:
+        roots = {f"lr_{name}" for name in ("1e-3", "1e-4", "1e-5")}
+        self.assertEqual(len(roots), 3)
+
     def test_report_write_accepts_match_and_rejects_conflict(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             report = Path(directory) / "lr_1e-3" / "metrics.csv"

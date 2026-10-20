@@ -62,8 +62,8 @@ def authoritative_runs(batch_dir: Path, config_path: Path) -> list[dict[str, Any
     if not manifest_path.is_file():
         raise ValueError(f"Missing orchestrator manifest: {manifest_path}")
     manifest = _read_json(manifest_path)
-    if manifest.get("status") != "completed":
-        raise ValueError("Batch manifest is not completed")
+    if manifest.get("status") != "completed" and manifest.get("training_completed") is not True:
+        raise ValueError("Batch training is not complete")
     provenance = manifest.get("provenance", {})
     condition = CONDITIONS[expected_config(config_path, LRS[0], SEEDS[0])["unfreeze"]]
     expected_grid = {
@@ -79,13 +79,18 @@ def authoritative_runs(batch_dir: Path, config_path: Path) -> list[dict[str, Any
     found: dict[tuple[float, int], list[Path]] = {
         (lr, seed): [] for lr in LRS for seed in SEEDS
     }
-    for attempt in manifest.get("attempts", []):
-        if attempt.get("status") != "completed":
-            continue
-        key = (float(attempt.get("lr", math.nan)), attempt.get("training_seed"))
+    authoritative = manifest.get("authoritative_runs")
+    if authoritative is not None:
+        if not isinstance(authoritative, list):
+            raise ValueError("authoritative_runs must be a list")
+        records = authoritative
+    else:
+        records = [attempt for attempt in manifest.get("attempts", []) if attempt.get("status") == "completed"]
+    for record in records:
+        key = (float(record.get("lr", math.nan)), record.get("training_seed"))
         if key not in found:
-            raise ValueError(f"Unexpected completed attempt in manifest: {key}")
-        run_dir = _resolved_inside(Path(attempt["output_dir"]), batch_dir / "runs")
+            raise ValueError(f"Unexpected authoritative attempt in manifest: {key}")
+        run_dir = _resolved_inside(Path(record["output_dir"]), batch_dir / "runs")
         found[key].append(run_dir)
     missing = [key for key, paths in found.items() if not paths]
     duplicates = [key for key, paths in found.items() if len(paths) != 1]

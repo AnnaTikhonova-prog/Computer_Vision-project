@@ -153,6 +153,7 @@ def configure_determinism(seed: int, torch_num_threads: int = 1) -> None:
     torch.use_deterministic_algorithms(True, warn_only=False)
     torch.backends.cudnn.benchmark = False
     torch.backends.cudnn.deterministic = True
+    torch.backends.mkldnn.deterministic = True
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
     torch.set_num_threads(torch_num_threads)
@@ -371,12 +372,14 @@ def train(config: Mapping[str, Any], output_dir: str | Path) -> dict[str, Any]:
                 "torchvision": str(torchvision.__version__), "cuda": torch.version.cuda,
                 "cudnn": torch.backends.cudnn.version(),
                 "device": str(device),
+                "torch_num_threads": torch.get_num_threads(),
                 "gpu": torch.cuda.get_device_name(device) if device.type == "cuda" else None,
                 "determinism": {
                     "algorithms": torch.are_deterministic_algorithms_enabled(),
                     "cublas_workspace_config": os.environ.get("CUBLAS_WORKSPACE_CONFIG"),
                     "cudnn_benchmark": torch.backends.cudnn.benchmark,
                     "cudnn_deterministic": torch.backends.cudnn.deterministic,
+                    "mkldnn_deterministic": torch.backends.mkldnn.deterministic,
                     "cuda_matmul_allow_tf32": torch.backends.cuda.matmul.allow_tf32,
                     "cudnn_allow_tf32": torch.backends.cudnn.allow_tf32,
                 },

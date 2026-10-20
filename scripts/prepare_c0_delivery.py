@@ -99,11 +99,10 @@ def build_delivery(
         "size_bytes": chosen_path.stat().st_size, "sha256": file_sha256(chosen_path),
     })
 
-    exclusion_note = (
-        "The interrupted `c0_lr1e-4_seed42` attempt, datasets, caches, logs, and environment files are excluded. Its source remains untouched under `artifacts/c0_cpu_grid`."
-        if condition == "C0" else
-        f"Incomplete attempts, datasets, caches, logs, and environment files are excluded. Their sources remain untouched under `{batch_dir}`."
-    )
+    if condition == "C0":
+        exclusion_note = "The interrupted `c0_lr1e-4_seed42` attempt, datasets, caches, logs, and environment files are excluded. Its source remains untouched under `artifacts/c0_cpu_grid`."
+    else:
+        exclusion_note = f"Interrupted or incompatible attempts, datasets, caches, logs, and environment files are excluded. Their sources remain untouched under `{batch_dir}`."
     readme = f"""# {condition} local delivery
 
 This directory contains the nine authoritative {condition} validation-selected runs (three learning rates x seeds 42, 43, and 44), validation-only evaluator CSVs, and training summaries.
@@ -123,11 +122,23 @@ Selected LR: `{selected_lr:.0e}`. Re-evaluated validation macro-F1: `{selected['
     manifest_payload = {
         "condition": condition, "authoritative_runs": 9, "selected_lr": selected_lr,
         "test_split_evaluated": False,
-        "excluded_incomplete_attempt": (
-            str((batch_dir / "runs" / "c0_lr1e-4_seed42").resolve()) if condition == "C0" else None
-        ),
         "files": sorted(manifest_files, key=lambda item: item["path"]),
     }
+    if condition == "C0":
+        manifest_payload["excluded_incomplete_attempt"] = str(
+            (batch_dir / "runs" / "c0_lr1e-4_seed42").resolve()
+        )
+    else:
+        batch_manifest = json.loads((batch_dir / "batch_manifest.json").read_text(encoding="utf-8"))
+        authoritative_paths = {
+            str(Path(record["output_dir"]).resolve())
+            for record in batch_manifest.get("authoritative_runs", [])
+        }
+        manifest_payload["excluded_attempts"] = sorted({
+            str(Path(attempt["output_dir"]).resolve())
+            for attempt in batch_manifest.get("attempts", [])
+            if str(Path(attempt["output_dir"]).resolve()) not in authoritative_paths
+        })
     write_text_idempotent(
         delivery_dir / "manifest.json", json.dumps(manifest_payload, indent=2, sort_keys=True) + "\n"
     )

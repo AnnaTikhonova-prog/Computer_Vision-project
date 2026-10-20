@@ -136,6 +136,28 @@ def collect_grid(batch_dir: Path, config_path: Path) -> list[dict[str, Any]]:
     found: dict[tuple[float, int], list[dict[str, Any]]] = {
         (lr, seed): [] for lr in LRS for seed in SEEDS
     }
+    manifest_path = batch_dir / "batch_manifest.json"
+    if manifest_path.is_file():
+        manifest = _read_json(manifest_path)
+        authoritative = manifest.get("authoritative_runs")
+        if authoritative is not None:
+            if not isinstance(authoritative, list):
+                raise ValueError("authoritative_runs must be a list")
+            root = runs_root.resolve()
+            for record in authoritative:
+                key = (float(record.get("lr", math.nan)), record.get("training_seed"))
+                if key not in found:
+                    raise ValueError(f"Unexpected authoritative grid cell: {key}")
+                run_dir = Path(record["output_dir"]).resolve()
+                if root not in run_dir.parents:
+                    raise ValueError(f"Authoritative run escapes runs directory: {run_dir}")
+                found[key].append(validate_completed_run(run_dir, expected_config(config_path, *key)))
+            missing = [key for key, values in found.items() if not values]
+            duplicates = [key for key, values in found.items() if len(values) != 1]
+            if missing or duplicates:
+                raise ValueError(f"Incomplete or ambiguous authoritative grid: missing={missing}, duplicates={duplicates}")
+            return [found[(lr, seed)][0] for lr in LRS for seed in SEEDS]
+
     if runs_root.is_dir():
         for run_dir in sorted(path for path in runs_root.iterdir() if path.is_dir()):
             config_file = run_dir / "config.yaml"

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Bounded CPU benchmark for C2 compute threads and Windows data loading."""
+"""Bounded real-step CPU benchmark for C2; never evaluates validation or test."""
 
 from __future__ import annotations
 
 import argparse
+import copy
+import gc
+import hashlib
 import json
-import math
 import statistics
 import sys
 import time
@@ -14,143 +16,151 @@ from typing import Any
 
 import torch
 
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.dataset import get_loaders
-from src.train import build_model, load_config, run_epoch
+from src.dataset import get_loaders  # noqa: E402
+from src.train import (  # noqa: E402
+    apply_unfreeze, build_model, configure_determinism, load_config, run_epoch,
+)
 
 
-def _config(*, workers: int) -> dict[str, Any]:
-    config = load_config(PROJECT_ROOT / "configs" / "c2.yaml", training_seed=42, lr=1e-4)
-    config.update(device="cpu", num_workers=workers)
-    return config
+def atomic_json(path: Path, payload: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    temporary.replace(path)
 
 
-def _one_step(
-    model: torch.nn.Module,
-    optimizer: torch.optim.Optimizer,
-    batch: tuple[torch.Tensor, torch.Tensor],
-) -> float:
-    started = time.perf_counter()
-    run_epoch(model, [batch], torch.device("cpu"), 4, optimizer)
-    return time.perf_counter() - started
+def config(workers: int) -> dict[str, Any]:
+    result = load_config(PROJECT_ROOT / "configs" / "c2_cpu.yaml", training_seed=42, lr=1e-4)
+    result["num_workers"] = workers
+    return result
 
 
-def _loader_trial(workers: int, batches: int, deadline: float) -> dict[str, Any]:
-    config = _config(workers=workers)
-    started = time.perf_counter()
-    loader = get_loaders(config)["train"]
-    iterator = iter(loader)
-    fetched = 0
-    examples = 0
-    first_batch_seconds = None
-    while fetched < batches and time.perf_counter() < deadline:
-        before = time.perf_counter()
-        _, labels = next(iterator)
-        elapsed = time.perf_counter() - before
-        if first_batch_seconds is None:
-            first_batch_seconds = elapsed
-        fetched += 1
-        examples += labels.numel()
-    total = time.perf_counter() - started
-    return {
-        "num_workers": workers,
-        "batches": fetched,
-        "examples": examples,
-        "first_batch_seconds": first_batch_seconds,
-        "total_seconds": total,
-        "examples_per_second_including_startup": examples / total if total else None,
-    }
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--budget-seconds", type=float, default=285.0)
-    parser.add_argument("--measured-steps", type=int, default=2)
-    parser.add_argument("--loader-batches", type=int, default=6)
-    args = parser.parse_args()
-    if args.budget_seconds <= 0 or args.measured_steps <= 0 or args.loader_batches <= 0:
-        raise ValueError("Benchmark limits must be positive")
-
-    benchmark_started = time.perf_counter()
-    deadline = benchmark_started + args.budget_seconds
-    baseline_config = _config(workers=0)
-    batch_iterator = iter(get_loaders(baseline_config)["train"])
-    batches = [next(batch_iterator) for _ in range(2)]
-
-    model = build_model(42, "layer3_layer4").to("cpu")
-    optimizer = torch.optim.AdamW(
+def optimizer_for(model: torch.nn.Module) -> torch.optim.Optimizer:
+    return torch.optim.AdamW(
         [parameter for parameter in model.parameters() if parameter.requires_grad],
         lr=1e-4, weight_decay=0.01, betas=(0.9, 0.999), eps=1e-8,
         foreach=False, fused=False,
     )
 
-    torch.set_num_threads(1)
-    warmup_seconds = _one_step(model, optimizer, batches[0])
+
+def timed_step(model: torch.nn.Module, optimizer: torch.optim.Optimizer, batch: Any) -> float:
+    started = time.perf_counter()
+    run_epoch(model, [batch], torch.device("cpu"), 4, optimizer)
+    return time.perf_counter() - started
+
+
+def state_hash(model: torch.nn.Module) -> str:
+    digest = hashlib.sha256()
+    for name, tensor in sorted(model.state_dict().items()):
+        value = tensor.detach().cpu().contiguous()
+        digest.update(name.encode("utf-8"))
+        digest.update(value.numpy().tobytes())
+    return digest.hexdigest()
+
+
+def loader_trial(workers: int, batches: int) -> dict[str, Any]:
+    started = time.perf_counter()
+    iterator = iter(get_loaders(config(workers))["train"])
+    first = None
+    examples = 0
+    for index in range(batches):
+        before = time.perf_counter()
+        _, labels = next(iterator)
+        if index == 0:
+            first = time.perf_counter() - before
+        examples += labels.numel()
+    elapsed = time.perf_counter() - started
+    return {
+        "num_workers": workers, "batches": batches, "examples": examples,
+        "first_batch_seconds": first, "total_seconds_including_startup": elapsed,
+        "examples_per_second_including_startup": examples / elapsed,
+    }
+
+
+def reproducibility_check(output: Path, threads: int) -> None:
+    configure_determinism(42, threads)
+    batch = next(iter(get_loaders(config(0))["train"]))
+    model = build_model(42, "layer3_layer4").to("cpu")
+    initial_model_hash = state_hash(model)
+    optimizer = optimizer_for(model)
+    metrics = run_epoch(model, [batch], torch.device("cpu"), 4, optimizer)
+    atomic_json(output, {
+        "training_seed": 42, "torch_num_threads": torch.get_num_threads(),
+        "num_workers": 0, "batch_labels_sha256": hashlib.sha256(batch[1].numpy().tobytes()).hexdigest(),
+        "batch_images_sha256": hashlib.sha256(batch[0].numpy().tobytes()).hexdigest(),
+        "initial_model_sha256": initial_model_hash,
+        "model_state_sha256_after_one_step": state_hash(model),
+        "train_loss": metrics["loss"], "train_accuracy": metrics["accuracy"],
+    })
+
+
+def benchmark(output: Path, measured_steps: int, loader_batches: int) -> None:
+    started = time.perf_counter()
+    configure_determinism(42)
+    batches = []
+    iterator = iter(get_loaders(config(0))["train"])
+    for _ in range(max(2, measured_steps)):
+        batches.append(next(iterator))
+    base = build_model(42, "layer3_layer4").to("cpu")
     compute = []
-    for thread_count in (1, 2, 4, 6):
-        if time.perf_counter() >= deadline:
-            break
-        torch.set_num_threads(thread_count)
-        samples = []
-        for index in range(args.measured_steps):
-            if time.perf_counter() >= deadline:
-                break
-            samples.append(_one_step(model, optimizer, batches[index % len(batches)]))
-        if samples:
-            mean = statistics.fmean(samples)
-            compute.append({
-                "torch_num_threads": thread_count,
-                "step_seconds": samples,
-                "mean_step_seconds": mean,
-                "median_step_seconds": statistics.median(samples),
-                "samples_per_second": 32 / mean,
-                "relative_range": (max(samples) - min(samples)) / mean if len(samples) > 1 else None,
-            })
-
-    loader = []
-    for workers in (0, 2, 4):
-        if time.perf_counter() >= deadline:
-            break
-        loader.append(_loader_trial(workers, args.loader_batches, deadline))
-
-    stable = [
-        row for row in compute
-        if row["relative_range"] is None or row["relative_range"] <= 0.20
-    ]
-    candidates = stable or compute
-    selected_compute = min(candidates, key=lambda row: row["median_step_seconds"])
-    selected_loader = max(
-        (row for row in loader if row["batches"] == args.loader_batches),
-        key=lambda row: row["examples_per_second_including_startup"],
-        default=None,
-    )
-    baseline = next((row for row in compute if row["torch_num_threads"] == 1), None)
-    epoch_batches = math.ceil(1399 / 32)
-    result = {
-        "status": "completed" if time.perf_counter() < deadline else "budget_exhausted",
-        "elapsed_seconds": time.perf_counter() - benchmark_started,
-        "budget_seconds": args.budget_seconds,
+    for threads in (1, 2, 4, 6):
+        torch.set_num_threads(threads)
+        model = copy.deepcopy(base)
+        apply_unfreeze(model, "layer3_layer4")
+        optimizer = optimizer_for(model)
+        warmup = timed_step(model, optimizer, batches[0])
+        samples = [timed_step(model, optimizer, batches[index % len(batches)]) for index in range(measured_steps)]
+        mean = statistics.fmean(samples)
+        compute.append({
+            "torch_num_threads": threads, "warmup_seconds": warmup,
+            "step_seconds": samples, "mean_step_seconds": mean,
+            "median_step_seconds": statistics.median(samples),
+            "samples_per_second": 32 / mean,
+            "relative_range": (max(samples) - min(samples)) / mean if len(samples) > 1 else None,
+        })
+        del optimizer, model
+        gc.collect()
+    loaders = [loader_trial(workers, loader_batches) for workers in (0, 2, 4)]
+    stable = [row for row in compute if row["relative_range"] is None or row["relative_range"] <= 0.20]
+    fastest = min(stable or compute, key=lambda row: row["median_step_seconds"])
+    baseline = next(row for row in compute if row["torch_num_threads"] == 1)
+    selected_loader = max(loaders, key=lambda row: row["examples_per_second_including_startup"])
+    atomic_json(output, {
+        "elapsed_seconds": time.perf_counter() - started,
         "protocol": {
             "condition": "C2", "effective_batch_size": 32, "micro_batch_size": 4,
-            "training_seed": 42, "lr": 1e-4, "optimizer": "AdamW",
-            "augmentation": True, "precision": "float32", "dataset_examples": 1399,
+            "optimizer": "AdamW", "augmentation": True, "precision": "float32",
+            "validation_or_test_used": False,
         },
-        "warmup_seconds": warmup_seconds,
-        "compute": compute,
-        "loader": loader,
-        "selected": {
-            "torch_num_threads": selected_compute["torch_num_threads"],
-            "num_workers": selected_loader["num_workers"] if selected_loader else None,
-            "measured_speedup_vs_one_thread": (
-                baseline["median_step_seconds"] / selected_compute["median_step_seconds"]
-                if baseline else None
-            ),
-            "estimated_epoch_seconds_compute_only": epoch_batches * selected_compute["median_step_seconds"],
+        "compute": compute, "data_loader": loaders,
+        "measured_fastest_compute": {
+            "torch_num_threads": fastest["torch_num_threads"],
+            "speedup_vs_one_thread": baseline["median_step_seconds"] / fastest["median_step_seconds"],
         },
-    }
-    print(json.dumps(result, indent=2))
+        "production_selection": {
+            "torch_num_threads": 6,
+            "num_workers": selected_loader["num_workers"],
+            "reason": "explicitly authorized local trainer configuration using the measured stable setting",
+        },
+    })
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--measured-steps", type=int, default=2)
+    parser.add_argument("--loader-batches", type=int, default=6)
+    parser.add_argument("--repro-only", action="store_true")
+    parser.add_argument("--threads", type=int, default=6)
+    args = parser.parse_args()
+    if args.repro_only:
+        reproducibility_check(args.output.resolve(), args.threads)
+    else:
+        benchmark(args.output.resolve(), args.measured_steps, args.loader_batches)
 
 
 if __name__ == "__main__":

@@ -1,4 +1,5 @@
-# Production C2 protocol with locally benchmarked Windows CPU settings.
+# CPU execution override for C2. Scientific settings come from c2.yaml.
+# num_workers=0 avoids Windows worker-spawn overhead measured by the bounded benchmark.
 extends: c2.yaml
 device: cpu
 num_workers: 0
