@@ -1,0 +1,19 @@
+augment: true
+batch_size: 32
+betas:
+- 0.9
+- 0.999
+dataset_root: data/oxford-iiit-pet
+device: cpu
+eps: 1.0e-08
+lr: 1.0e-05
+max_epochs: 30
+micro_batch_size: 4
+num_workers: 0
+patience: 5
+split_dir: splits/v2
+split_seed: 42
+torch_num_threads: 6
+training_seed: 44
+unfreeze: layer3_layer4
+weight_decay: 0.01

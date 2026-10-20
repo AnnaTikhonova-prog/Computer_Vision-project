@@ -1,0 +1,4 @@
+lr,seed_42_val_macro_f1,seed_43_val_macro_f1,seed_44_val_macro_f1,mean_val_macro_f1,sample_std_val_macro_f1,contributing_seeds,metric_kind,selected
+0.001,0.0182370820668693,0.018292682926829267,0.0182370820668693,0.018255615686855953,3.2101171465061757e-05,"42,43,44",mean/std of seed-level macro-F1; not pooled or ensemble,False
+0.0001,0.9866629619338706,0.98333240715013426,0.96672236111762011,0.9789059100672084,0.010681867699383205,"42,43,44",mean/std of seed-level macro-F1; not pooled or ensemble,False
+1e-05,0.98009212557219194,0.98009212557219194,0.98005094007594695,0.98007839707344357,2.3778457343752538e-05,"42,43,44",mean/std of seed-level macro-F1; not pooled or ensemble,True

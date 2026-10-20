@@ -1,3 +1,4 @@
 # C0 delivery checkpoints are large binary artifacts and must use Git LFS.
 deliverables/c0/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text
+# C2 delivery checkpoints are large binary artifacts and must use Git LFS.
 deliverables/c2/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text

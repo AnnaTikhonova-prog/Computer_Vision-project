@@ -1,0 +1,24 @@
+{
+  "checkpoints": [
+    {
+      "checkpoint_path": "runs/lr_1e-5/seed_42/best.pt",
+      "checkpoint_sha256": "e2befedbd0daaf0720e11f1d7967783de5b7484fbe47180323ccfb17d04c3525",
+      "training_seed": 42
+    },
+    {
+      "checkpoint_path": "runs/lr_1e-5/seed_43/best.pt",
+      "checkpoint_sha256": "16dad612b2131fe2bb8557b1b2d9ad20344da60f98ad11bbac43ddd770071eaf",
+      "training_seed": 43
+    },
+    {
+      "checkpoint_path": "runs/lr_1e-5/seed_44/best.pt",
+      "checkpoint_sha256": "dde255ff1d3de1e54cadae5a0ec7afa65a8154ac01acde2dae6e9fb03ac194fe",
+      "training_seed": 44
+    }
+  ],
+  "condition": "C2",
+  "seed_selection": "none; all three seeds retained",
+  "selected_lr": 1e-05,
+  "selection_metric": "mean validation macro-F1 across three selected checkpoints",
+  "standard_deviation": "sample standard deviation (ddof=1)"
+}
