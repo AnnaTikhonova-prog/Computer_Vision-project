@@ -1,3 +1,4 @@
 # Delivery checkpoints are large binary artifacts and must use Git LFS.
 deliverables/c0/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text
 deliverables/c1/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text
+deliverables/c3/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text

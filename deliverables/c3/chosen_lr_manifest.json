@@ -1,0 +1,25 @@
+{
+  "checkpoints": [
+    {
+      "checkpoint_path": "runs/lr_1e-5/seed_42/best.pt",
+      "checkpoint_sha256": "a86f41e8a6056a9f4cdf98f650382c3c6566f6e3ac9863136a5bf796f49ddfb2",
+      "training_seed": 42
+    },
+    {
+      "checkpoint_path": "runs/lr_1e-5/seed_43/best.pt",
+      "checkpoint_sha256": "772690d451cee2b10c4b572ad44458f6f9b0ad05bfeddce95f63c5c364b7ac94",
+      "training_seed": 43
+    },
+    {
+      "checkpoint_path": "runs/lr_1e-5/seed_44/best.pt",
+      "checkpoint_sha256": "af29478f58964e6e0480eaacc0311b297334cc6ecbcd03a7e77214c7c636f69b",
+      "training_seed": 44
+    }
+  ],
+  "condition": "C3",
+  "metric_source": "separate CPU validation evaluation; all nine scores match recorded training scores",
+  "seed_selection": "none; all three seeds retained",
+  "selected_lr": 1e-05,
+  "selection_metric": "mean validation macro-F1 across three selected checkpoints",
+  "standard_deviation": "sample standard deviation (ddof=1)"
+}

@@ -1,0 +1,534 @@
+{
+  "authoritative_runs": 9,
+  "condition": "C3",
+  "evaluation": {
+    "elapsed_seconds": 310.05136610000045,
+    "environment": {
+      "batch_size": 32,
+      "deterministic_algorithms": true,
+      "device": "cpu",
+      "num_workers": 0,
+      "python": "3.14.0",
+      "threads": 4,
+      "torch": "2.10.0+cpu",
+      "torchvision": "0.25.0+cpu"
+    },
+    "evaluator": "scripts/evaluate_c0_validation.py:evaluate_run",
+    "evaluator_sha256": "982ab04099c0f9c0aa258678bc7e9b0a882c9e2c243bf29fd274541ce35f9b57",
+    "mismatch_count": 0,
+    "test_split_evaluated": false,
+    "validation_examples": 300
+  },
+  "files": [
+    {
+      "category": "chosen LR manifest",
+      "path": "chosen_lr_manifest.json",
+      "sha256": "20c9baa1c615b6964b27442a9a18b87ddd9d83b213e3a39c333a354bb1de8f5d",
+      "size_bytes": 949,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/learning_rates.csv",
+      "sha256": "9758cd55e1a7675bf5ea16c2638817ec451e4b12d44d6ddc32558e9b7aed7fa7",
+      "size_bytes": 674,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/aggregate.csv",
+      "sha256": "7d77dcef3de81794f26af8ae9f7007ff1322420d0757afd64d428e9cd3598fa7",
+      "size_bytes": 298,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/metrics.csv",
+      "sha256": "82a3fab6f4e9f71d7d5c519e16d418424e191b547ad095e5f5c9489d64715991",
+      "size_bytes": 1223,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/seed_42_predictions.csv",
+      "sha256": "ad2ce17bc519d1e91875690fd8aa7c4037934b03a24934ecef9dfc0f6fbf3be5",
+      "size_bytes": 19005,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/seed_43_predictions.csv",
+      "sha256": "ad2ce17bc519d1e91875690fd8aa7c4037934b03a24934ecef9dfc0f6fbf3be5",
+      "size_bytes": 19005,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-3/seed_44_predictions.csv",
+      "sha256": "9bd0c0365f3653585b4936605846547bbc7e2e47fa3ac31959490e5db8d3c162",
+      "size_bytes": 18105,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/aggregate.csv",
+      "sha256": "dcb4c8ea5aaae401fc07db4309bc8406eaf8e9d8e3901bd4ac0b436d3294b9bc",
+      "size_bytes": 314,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/metrics.csv",
+      "sha256": "e20ec6fdbf326e630bec64247ba938066318bd5ac99f103495551d091138cd5f",
+      "size_bytes": 1225,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/seed_42_predictions.csv",
+      "sha256": "4add130505645cb40a8ecf3e14e33f33c2f17ca41b8211157dcd28a2aaac28c5",
+      "size_bytes": 18704,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/seed_43_predictions.csv",
+      "sha256": "dbdb223c7f32a5bf129bcfee256b3f7d1322445a48299c0bf110f96b0d024c2d",
+      "size_bytes": 18706,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-4/seed_44_predictions.csv",
+      "sha256": "c013f3e1a651b2d24dd70b4ff1e4527c474b0c3974f1445cf030042687dbec40",
+      "size_bytes": 18704,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/aggregate.csv",
+      "sha256": "83fe3e4c3b8a68675646f775cb70616a9998d8a1fe487d539b31e6a55e91d9f4",
+      "size_bytes": 314,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/metrics.csv",
+      "sha256": "93986828886f2ec45b1557207cf290e53c2150a6727546c158d702e852659602",
+      "size_bytes": 1226,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/seed_42_predictions.csv",
+      "sha256": "6d47a025f51c6f37d1ccdf0791c810ba7de47556ba586f9b20e8d0531fc14237",
+      "size_bytes": 18708,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/seed_43_predictions.csv",
+      "sha256": "395727a334d0f6878cad758ce45941a729396b3c6d9d55e12e288158e209c5bb",
+      "size_bytes": 18716,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/lr_1e-5/seed_44_predictions.csv",
+      "sha256": "f0a0492e2b66be6346814a3cdcbde5e281a1f07230f92417c2c1a44bc8333da7",
+      "size_bytes": 18698,
+      "source": null
+    },
+    {
+      "category": "validation evaluator report",
+      "path": "evaluation/report_mapping.csv",
+      "sha256": "8113ffc149eef2260ba63b356621ad1c73ceed35101218ec6747c451f1697039",
+      "size_bytes": 895,
+      "source": null
+    },
+    {
+      "category": "delivery documentation",
+      "path": "README.md",
+      "sha256": "7c22a721fa04927631d65530692308015ca4280a913c4cdbda7551465024f39e",
+      "size_bytes": 1144,
+      "source": null
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_42/best.pt",
+      "sha256": "a0a08d0b49cc2721b9992cb652a17c56e066d835758502dfe5ead7f68b82e515",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results.zip!c3_lr1e-3_seed42/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_42/config.yaml",
+      "sha256": "70b45bd452b93a610c3ab0801bcf392480f22d3d7cff7d2bb9647d89bd833cc7",
+      "size_bytes": 270,
+      "source": "C:\\Users\\maksimka\\Downloads\\results.zip!c3_lr1e-3_seed42/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_42/history.csv",
+      "sha256": "889ce1ac07ad56a375cdb28cf24623046ef588e68daee1e6dba967e88b85addf",
+      "size_bytes": 714,
+      "source": "C:\\Users\\maksimka\\Downloads\\results.zip!c3_lr1e-3_seed42/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_42/metadata.json",
+      "sha256": "595ac9c672966693a75e97d039e7a8432e8f9bdc9ea1fbd091f7bd6e3f2f4c58",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results.zip!c3_lr1e-3_seed42/metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_43/best.pt",
+      "sha256": "1f764cf1f48b436dc12f423711dd2e5d78c4944aec4e53090e73c4b747b23f63",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (3).zip!c3_lr1e-3_seed43/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_43/config.yaml",
+      "sha256": "1366f52a78352c215b1f7b685761107a99601b1144b3b3331f828c4bb95b8408",
+      "size_bytes": 270,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (3).zip!c3_lr1e-3_seed43/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_43/history.csv",
+      "sha256": "507ad87b2c94043e62562b8f965f620d85996b14442f48239d34dbaedf57f346",
+      "size_bytes": 714,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (3).zip!c3_lr1e-3_seed43/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_43/metadata.json",
+      "sha256": "4f2547e639437dd48d10e823046e94270fab1f8ac8b9b227c437e93607528f06",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (3).zip!c3_lr1e-3_seed43/metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_44/best.pt",
+      "sha256": "7afbfd00e4db0fec652bbdbb23d0387b7a64b3c7aa76b8c1896d411709e0ab46",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (6).zip!c3_lr1e-3_seed44/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_44/config.yaml",
+      "sha256": "d0ad00d03f27683b23371af5a1a6403a346629dca091e51c8315bd5b8ee553aa",
+      "size_bytes": 270,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (6).zip!c3_lr1e-3_seed44/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_44/history.csv",
+      "sha256": "159f9df59bb325b3453ce7c7b7a3c819f734b66f65034c6754bc429e598fca53",
+      "size_bytes": 715,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (6).zip!c3_lr1e-3_seed44/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-3/seed_44/metadata.json",
+      "sha256": "3795ff8ddf552ea653f9259d40903ff1c85ebd7f7a72e88c98a0e9bca4f310b9",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (6).zip!c3_lr1e-3_seed44/metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_42/best.pt",
+      "sha256": "8a31cef840926be4ae215ee5ef667dd001a809ba797f6c7f0c6c6efec679afb6",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (2).zip!c3_lr1e-4_seed42/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_42/config.yaml",
+      "sha256": "e7ee14841afacd2bb664fcfbf2edb6f91695abc22da20f82793880f064d202af",
+      "size_bytes": 271,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (2).zip!c3_lr1e-4_seed42/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_42/history.csv",
+      "sha256": "358de6ce11872c69771aa1496ae6dcd3862efd4dba6e8521f85ee67348d74824",
+      "size_bytes": 2049,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (2).zip!c3_lr1e-4_seed42/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_42/metadata.json",
+      "sha256": "ec2696cbcde2e93e38fea2b26f0328dc16dfcf0f521b75210d27f7a3c8c81b6b",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (2).zip!c3_lr1e-4_seed42/metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_43/best.pt",
+      "sha256": "3b502b8e0cc263eeb9c7eaa91cd251e403676334fb410f22f15e0e85107e0273",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (4).zip!c3_lr1e-4_seed43/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_43/config.yaml",
+      "sha256": "a465ff9ee46279f3bc14e359068ad7dd1e68688af8c880be1fe709feea5822e1",
+      "size_bytes": 271,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (4).zip!c3_lr1e-4_seed43/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_43/history.csv",
+      "sha256": "f41689f27356d5ff6d96b1eecdf9a69a7f1cd5b77324fbbf1bd57c5b315e4943",
+      "size_bytes": 837,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (4).zip!c3_lr1e-4_seed43/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_43/metadata.json",
+      "sha256": "ba7864e515f485ab8715f90fdb1b0e73c694e1af9bad6ee2f9c6b0836cd90b85",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (4).zip!c3_lr1e-4_seed43/metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_44/best.pt",
+      "sha256": "7c9442ad6ec9e4bfb8bcae066f3420f7b6d63e256a76dad2606427e88a9f3e09",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (7).zip!c3_lr1e-4_seed44/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_44/config.yaml",
+      "sha256": "b1daf36b2511453123861159135508efaa96058b03d13ca89aa27a08b7539ac3",
+      "size_bytes": 271,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (7).zip!c3_lr1e-4_seed44/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_44/history.csv",
+      "sha256": "dc85a2518ed161f754d05d2d7aff411208485be8867ff7c465b1da8fe1cd1a7b",
+      "size_bytes": 1893,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (7).zip!c3_lr1e-4_seed44/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-4/seed_44/metadata.json",
+      "sha256": "520f6cb46768ceb38a4f980d5612ecb5d799a12eca9a4edf16f93dccf90ce05a",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (7).zip!c3_lr1e-4_seed44/metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_42/best.pt",
+      "sha256": "a86f41e8a6056a9f4cdf98f650382c3c6566f6e3ac9863136a5bf796f49ddfb2",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (1).zip!c3_lr1e-5_seed42/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_42/config.yaml",
+      "sha256": "b51850aa8b822c45550baaad6a67aa0bb1d6f2b1e1fbc91707ef4cc14f0cdfb0",
+      "size_bytes": 272,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (1).zip!c3_lr1e-5_seed42/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_42/history.csv",
+      "sha256": "64c9731de4746babab89af673461818664ba73dd97e3f7ef06dcc2c5d94a1c83",
+      "size_bytes": 2374,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (1).zip!c3_lr1e-5_seed42/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_42/metadata.json",
+      "sha256": "26e94b9e2c0d440d24282c08630434107ec88f6d04595ac355778f364cd95e7c",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (1).zip!c3_lr1e-5_seed42/metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_43/best.pt",
+      "sha256": "772690d451cee2b10c4b572ad44458f6f9b0ad05bfeddce95f63c5c364b7ac94",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (5).zip!c3_lr1e-5_seed43/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_43/config.yaml",
+      "sha256": "2cfac4c4fd88ad30be2f5c7b1e23548d8010d751fd96e8e52b668c0b33c490b2",
+      "size_bytes": 272,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (5).zip!c3_lr1e-5_seed43/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_43/history.csv",
+      "sha256": "bed61b24e0e4b5e1ff6cdd9cf5a3726de46976a967d89e7b9da91ca4eec2e7a1",
+      "size_bytes": 1415,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (5).zip!c3_lr1e-5_seed43/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_43/metadata.json",
+      "sha256": "a8d75bd6e3122d0f7241278337345ecb2392a3443d4fc944f0df42baf15333fe",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (5).zip!c3_lr1e-5_seed43/metadata.json"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_44/best.pt",
+      "sha256": "af29478f58964e6e0480eaacc0311b297334cc6ecbcd03a7e77214c7c636f69b",
+      "size_bytes": 94423231,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (8).zip!c3_lr1e-5_seed44/best.pt"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_44/config.yaml",
+      "sha256": "11a792c412dc3e41a46e553d823511185fc0fb45a2478de8b82809ad65228480",
+      "size_bytes": 272,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (8).zip!c3_lr1e-5_seed44/config.yaml"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_44/history.csv",
+      "sha256": "24af6c681d7550aedd6fc8f12f92cba44240787d54b626eb7ddd59f86b8fe544",
+      "size_bytes": 3281,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (8).zip!c3_lr1e-5_seed44/history.csv"
+    },
+    {
+      "category": "authoritative run artifact",
+      "path": "runs/lr_1e-5/seed_44/metadata.json",
+      "sha256": "a5b628f34d18560d2ab085d4c7a89c91628039e9eaacaf220f3b717b7a449db0",
+      "size_bytes": 6058,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (8).zip!c3_lr1e-5_seed44/metadata.json"
+    },
+    {
+      "category": "training summary",
+      "path": "training_summary/learning_rates.csv",
+      "sha256": "fc2703d9d5ebb903ac871c84c8de9224f04beb03c0de873cab871bef740ee36c",
+      "size_bytes": 431,
+      "source": null
+    },
+    {
+      "category": "training summary",
+      "path": "training_summary/report.md",
+      "sha256": "bc1bd3876855ca54fcf5cf544d2c6a46c1949b86282c685c5bccfffbaa94353e",
+      "size_bytes": 4009,
+      "source": null
+    },
+    {
+      "category": "training summary",
+      "path": "training_summary/runs.csv",
+      "sha256": "a698bc0171f7fd4361cfcc150a73a6f4dedef6ba571faf664fe67d559457e8e7",
+      "size_bytes": 1886,
+      "source": null
+    },
+    {
+      "category": "training summary",
+      "path": "training_summary/train_val_curves.png",
+      "sha256": "dd359ed2c52c2031562b6c88e66074905e09919f8810f6c5234980c32b2f80c5",
+      "size_bytes": 224285,
+      "source": null
+    }
+  ],
+  "run_validation": [
+    {
+      "best_epoch": 1,
+      "bn_checks_passed": 6,
+      "epochs_completed": 6,
+      "lr": 0.001,
+      "source": "C:\\Users\\maksimka\\Downloads\\results.zip!c3_lr1e-3_seed42/runtime.json",
+      "source_runtime_sha256": "ec3781457ec26c6c8834022cc7dff8221c92457b881835f9e519c993e65038b1",
+      "status": "completed",
+      "training_seed": 42
+    },
+    {
+      "best_epoch": 1,
+      "bn_checks_passed": 6,
+      "epochs_completed": 6,
+      "lr": 0.001,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (3).zip!c3_lr1e-3_seed43/runtime.json",
+      "source_runtime_sha256": "33e4d85f49d5ffc48503a1ab3b2668a0fdb818928a6a1ee1f47fa8e4a1030b26",
+      "status": "completed",
+      "training_seed": 43
+    },
+    {
+      "best_epoch": 1,
+      "bn_checks_passed": 6,
+      "epochs_completed": 6,
+      "lr": 0.001,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (6).zip!c3_lr1e-3_seed44/runtime.json",
+      "source_runtime_sha256": "c4843ae0e11a859c38b4e7490318c419e798f59925210c592e2484d4ab43a4fb",
+      "status": "completed",
+      "training_seed": 44
+    },
+    {
+      "best_epoch": 13,
+      "bn_checks_passed": 18,
+      "epochs_completed": 18,
+      "lr": 0.0001,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (2).zip!c3_lr1e-4_seed42/runtime.json",
+      "source_runtime_sha256": "b0f22b8b6e9f9a4780b6de493dc92ddb462bbc03b71d371e473dcd7d8ad071a1",
+      "status": "completed",
+      "training_seed": 42
+    },
+    {
+      "best_epoch": 2,
+      "bn_checks_passed": 7,
+      "epochs_completed": 7,
+      "lr": 0.0001,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (4).zip!c3_lr1e-4_seed43/runtime.json",
+      "source_runtime_sha256": "2afd5311a2bf5f5c085e03230530e937d7e0d89a0717482fdcb79e635d86b1f1",
+      "status": "completed",
+      "training_seed": 43
+    },
+    {
+      "best_epoch": 12,
+      "bn_checks_passed": 17,
+      "epochs_completed": 17,
+      "lr": 0.0001,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (7).zip!c3_lr1e-4_seed44/runtime.json",
+      "source_runtime_sha256": "ba4a48b0d5fb5c78bab003a8e3a813e6e436526df113e82e7eb14576dacfc648",
+      "status": "completed",
+      "training_seed": 44
+    },
+    {
+      "best_epoch": 14,
+      "bn_checks_passed": 19,
+      "epochs_completed": 19,
+      "lr": 1e-05,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (1).zip!c3_lr1e-5_seed42/runtime.json",
+      "source_runtime_sha256": "5302e873ad925f72df0163145c3d5d5a453f00e1d858e4166e280bf5c8c5cb60",
+      "status": "completed",
+      "training_seed": 42
+    },
+    {
+      "best_epoch": 6,
+      "bn_checks_passed": 11,
+      "epochs_completed": 11,
+      "lr": 1e-05,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (5).zip!c3_lr1e-5_seed43/runtime.json",
+      "source_runtime_sha256": "645ccc9fcb6cc5daa139188ef81fa7e3bd14bb746faac3630d270f91ed92364e",
+      "status": "completed",
+      "training_seed": 43
+    },
+    {
+      "best_epoch": 22,
+      "bn_checks_passed": 27,
+      "epochs_completed": 27,
+      "lr": 1e-05,
+      "source": "C:\\Users\\maksimka\\Downloads\\results (8).zip!c3_lr1e-5_seed44/runtime.json",
+      "source_runtime_sha256": "7a73be6cbacc64b82bd174d9be14982859a816545a3e5055bb08722ff5997b94",
+      "status": "completed",
+      "training_seed": 44
+    }
+  ],
+  "runtime_files_included": false,
+  "selected_lr": 1e-05,
+  "selection_source": "separate validation evaluation, matching all recorded training-time macro-F1 scores",
+  "test_split_evaluated": false,
+  "validation_evaluation_performed": true
+}
