@@ -1,0 +1,10 @@
+condition,lr,training_seed,split_seed,selected_epoch,selected_val_macro_f1,checkpoint_path,checkpoint_sha256,history_path
+C3,0.001,42,42,1,0.01818181818181818,deliverables/c3/runs/lr_1e-3/seed_42/best.pt,a0a08d0b49cc2721b9992cb652a17c56e066d835758502dfe5ead7f68b82e515,deliverables/c3/runs/lr_1e-3/seed_42/history.csv
+C3,0.001,43,42,1,0.01818181818181818,deliverables/c3/runs/lr_1e-3/seed_43/best.pt,1f764cf1f48b436dc12f423711dd2e5d78c4944aec4e53090e73c4b747b23f63,deliverables/c3/runs/lr_1e-3/seed_43/history.csv
+C3,0.001,44,42,1,0.01818181818181818,deliverables/c3/runs/lr_1e-3/seed_44/best.pt,7afbfd00e4db0fec652bbdbb23d0387b7a64b3c7aa76b8c1896d411709e0ab46,deliverables/c3/runs/lr_1e-3/seed_44/history.csv
+C3,0.0001,42,42,13,0.9766499830062381,deliverables/c3/runs/lr_1e-4/seed_42/best.pt,8a31cef840926be4ae215ee5ef667dd001a809ba797f6c7f0c6c6efec679afb6,deliverables/c3/runs/lr_1e-4/seed_42/history.csv
+C3,0.0001,43,42,2,0.9631871269026657,deliverables/c3/runs/lr_1e-4/seed_43/best.pt,3b502b8e0cc263eeb9c7eaa91cd251e403676334fb410f22f15e0e85107e0273,deliverables/c3/runs/lr_1e-4/seed_43/history.csv
+C3,0.0001,44,42,12,0.989999073816801,deliverables/c3/runs/lr_1e-4/seed_44/best.pt,7c9442ad6ec9e4bfb8bcae066f3420f7b6d63e256a76dad2606427e88a9f3e09,deliverables/c3/runs/lr_1e-4/seed_44/history.csv
+C3,1e-05,42,42,14,0.9833296286005371,deliverables/c3/runs/lr_1e-5/seed_42/best.pt,a86f41e8a6056a9f4cdf98f650382c3c6566f6e3ac9863136a5bf796f49ddfb2,deliverables/c3/runs/lr_1e-5/seed_42/history.csv
+C3,1e-05,43,42,6,0.9700974284971633,deliverables/c3/runs/lr_1e-5/seed_43/best.pt,772690d451cee2b10c4b572ad44458f6f9b0ad05bfeddce95f63c5c364b7ac94,deliverables/c3/runs/lr_1e-5/seed_43/history.csv
+C3,1e-05,44,42,22,0.9766601833842735,deliverables/c3/runs/lr_1e-5/seed_44/best.pt,af29478f58964e6e0480eaacc0311b297334cc6ecbcd03a7e77214c7c636f69b,deliverables/c3/runs/lr_1e-5/seed_44/history.csv
