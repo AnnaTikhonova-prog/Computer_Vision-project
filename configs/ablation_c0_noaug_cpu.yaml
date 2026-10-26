@@ -1,0 +1,7 @@
+# Pre-specified C0 augmentation-off ablation on the authorized local CPU.
+extends: c0.yaml
+augment: false
+device: cpu
+num_workers: 0
+lr: 1.0e-3
+

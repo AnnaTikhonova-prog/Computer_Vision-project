@@ -1,0 +1,7 @@
+# Pre-specified C3 augmentation-off ablation on the authorized local CPU.
+extends: c3.yaml
+augment: false
+device: cpu
+num_workers: 0
+lr: 1.0e-5
+
