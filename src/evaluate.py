@@ -46,6 +46,10 @@ def _resolve_config(path: Path, device_override: str | None) -> dict[str, Any]:
         config["device"] = device_override
     if config["device"] == "cuda" and not torch.cuda.is_available():
         raise RuntimeError("CUDA requested by config but unavailable; pass --device cpu to evaluate on CPU.")
+    # Windows CPU evaluation is more reliable without spawned DataLoader
+    # processes; this only changes data transport, never sample order or metrics.
+    if config["device"] == "cpu":
+        config["num_workers"] = 0
     return config
 
 
@@ -71,10 +75,14 @@ def _load_model(checkpoint_path: Path, device: torch.device) -> tuple[nn.Module,
 def _evaluate_checkpoint(model: nn.Module, loader: Any, device: torch.device) -> dict[str, Any]:
     targets: list[int] = []
     predictions: list[int] = []
+    confidence: list[float] = []
     with torch.inference_mode():
         for images, labels in loader:
             logits = model(images.to(device))
-            predictions.extend(logits.argmax(dim=1).cpu().tolist())
+            probabilities = logits.softmax(dim=1)
+            batch_confidence, batch_predictions = probabilities.max(dim=1)
+            predictions.extend(batch_predictions.cpu().tolist())
+            confidence.extend(batch_confidence.cpu().tolist())
             targets.extend(labels.tolist())
     if not targets:
         raise ValueError("Selected evaluation split is empty")
@@ -82,6 +90,7 @@ def _evaluate_checkpoint(model: nn.Module, loader: Any, device: torch.device) ->
     return {
         "targets": targets,
         "predictions": predictions,
+        "confidence": confidence,
         "accuracy": float(accuracy_score(targets, predictions)),
         "macro_f1": float(f1_score(targets, predictions, labels=LABELS, average="macro", zero_division=0)),
         "per_class_f1": [float(value) for value in per_class],
@@ -169,13 +178,19 @@ def evaluate(
             raise ValueError(f"Checkpoint has an invalid class mapping: {path}") from exc
         if saved_names != class_names:
             raise ValueError(f"Checkpoint class mapping does not match configured split: {path}")
-        metric_results.append(_evaluate_checkpoint(model, loader, device))
+        metrics = _evaluate_checkpoint(model, loader, device)
+        metrics["training_seed"] = training_seed
+        metrics["checkpoint"] = str(path)
+        metric_results.append(metrics)
         latency_results.append({size: _latency_ms(model, device, size) for size in (1, 32)})
         del model
     if len(checkpoints) == 3 and set(evaluated_seeds) != {42, 43, 44}:
         raise ValueError("Condition aggregation requires one retained checkpoint for each training seed 42, 43, and 44")
 
-    report_name = condition if len(checkpoints) == 3 else f"{condition}_{checkpoints[0].parent.name}"
+    augmentation = "on" if config["augment"] else "off"
+    report_name = f"{condition}_augment_{augmentation}"
+    if len(checkpoints) == 1:
+        report_name = f"{report_name}_{checkpoints[0].parent.name}"
     stem = f"{_safe_name(report_name)}_{split}"
     table_dir = PROJECT_ROOT / "reports" / "tables"
     figure_dir = PROJECT_ROOT / "reports" / "figures"
@@ -207,6 +222,35 @@ def evaluate(
     per_class_path = table_dir / f"{stem}_per_class_f1.csv"
     _write_csv(per_class_path, ["label", "class_name", "support_mean", "f1_mean", "f1_std"], class_rows)
 
+    # Keep sample-level test predictions so the final report can describe
+    # representative errors without rerunning or changing any model settings.
+    prediction_rows = []
+    dataset_rows = getattr(loader.dataset, "rows", None)
+    if dataset_rows is None or len(dataset_rows) != len(metric_results[0]["targets"]):
+        raise ValueError("The evaluation dataset must expose one manifest row per prediction")
+    for result in metric_results:
+        for row_index, (target, prediction, confidence) in enumerate(zip(
+            result["targets"], result["predictions"], result["confidence"]
+        )):
+            manifest_row = dataset_rows[row_index]
+            prediction_rows.append({
+                "training_seed": result["training_seed"],
+                "checkpoint": result["checkpoint"],
+                "image_id": manifest_row["image_id"],
+                "relative_path": manifest_row["relative_path"],
+                "true_label": target,
+                "true_class": class_names[target],
+                "predicted_label": prediction,
+                "predicted_class": class_names[prediction],
+                "predicted_class_confidence": confidence,
+                "correct": int(target == prediction),
+            })
+    predictions_path = table_dir / f"{stem}_predictions.csv"
+    _write_csv(predictions_path, [
+        "training_seed", "checkpoint", "image_id", "relative_path", "true_label", "true_class",
+        "predicted_label", "predicted_class", "predicted_class_confidence", "correct",
+    ], prediction_rows)
+
     latency_rows = []
     for batch_size in (1, 32):
         for checkpoint_index, results in enumerate(latency_results):
@@ -233,7 +277,13 @@ def evaluate(
                     color="white" if pooled_confusion[row, column] > threshold else "black", fontsize=8)
     fig.savefig(figure_path, dpi=160)
     plt.close(fig)
-    return {"summary": summary_path, "per_class": per_class_path, "latency": latency_path, "confusion_matrix": figure_path}
+    return {
+        "summary": summary_path,
+        "per_class": per_class_path,
+        "predictions": predictions_path,
+        "latency": latency_path,
+        "confusion_matrix": figure_path,
+    }
 
 
 def main(argv: list[str] | None = None) -> None:

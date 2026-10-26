@@ -29,26 +29,41 @@ the earlier planning text must not be interpreted as selecting them.
 
 ## Install and prepare data
 
-Install a PyTorch build suitable for your platform, then install the remaining
-packages. `torchvision` is required for both official-data download support and
-the ResNet50 preprocessing contract.
+Use Python 3.13.15 (or Python 3.13.x) and install the matching CPU or CUDA
+PyTorch wheels first; the remaining direct dependencies are pinned in
+`requirements.txt`. The recorded GPU runs used PyTorch 2.11.0 and torchvision
+0.26.0.
 
 ```powershell
-py -3 -m pip install -r requirements.txt
-py -3 scripts/prepare_oxford_pets.py --download-only
+py -3.13 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install pip==25.1.1
+# Choose exactly one PyTorch build:
+python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+# CPU-only alternative:
+# python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements.txt
+python scripts/prepare_oxford_pets.py --download-only
+python scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
 ```
 
-The second command downloads and extracts the two official archives from the
+The dataset command downloads and extracts the two official archives from the
 official Oxford URL to `data/oxford-iiit-pet/`. It does **not** generate,
 replace, or otherwise touch frozen manifests. A fresh clone then uses the
-committed active `splits/v2` manifests directly.
+committed active `splits/v2` manifests directly. The CUDA 12.8 command matches
+the recorded Tesla T4 runs; use the CPU wheel on a CPU-only host. torchvision
+downloads the ImageNet V2 ResNet50 weights on the first training run, so allow
+network access. Reproducing the training grid requires a compatible CUDA GPU;
+the CPU wheel supports data verification and evaluation, but the frozen
+training configs request CUDA. The PyTorch wheel commands follow the [official
+installation matrix](https://pytorch.org/get-started/previous-versions/).
 
 For a fresh clone, the complete read-only data workflow after installation is:
 
 ```powershell
-py -3 scripts/prepare_oxford_pets.py --download-only
-py -3 scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
-py -3 -m jupyter notebook notebooks/eda_oxford_pets.ipynb
+python scripts/prepare_oxford_pets.py --download-only
+python scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
+python -m jupyter notebook notebooks/eda_oxford_pets.ipynb
 ```
 
 The download-only and verification commands do not regenerate or overwrite the
@@ -84,7 +99,7 @@ Preparation never overwrites a frozen manifest. To create a future explicit
 new version, use a new output directory:
 
 ```powershell
-py -3 scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v3 --seed 42
+python scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v3 --seed 42
 ```
 
 The active configuration uses the reviewed `splits/v2` manifests: 1,399 train,
@@ -98,7 +113,7 @@ nothing. If review confirms a group, save it as
 version; confirmed groups are kept in one split.
 
 ```powershell
-py -3 scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v3 --confirmed-groups confirmed_duplicates.json
+python scripts/prepare_oxford_pets.py --dataset-root data/oxford-iiit-pet --output-dir splits/v3 --confirmed-groups confirmed_duplicates.json
 ```
 
 Exact RGB duplicates are different: preparation hashes decoded RGB bytes plus
@@ -115,18 +130,19 @@ flags additionally check the loader contract and regenerate manifests in a
 temporary directory for a bytewise reproducibility comparison.
 
 ```powershell
-py -3 scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
+python scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
 ```
 
 Use the EDA only after manifests are frozen:
 
 ```powershell
-py -3 -m jupyter notebook notebooks/eda_oxford_pets.ipynb
+python -m jupyter notebook notebooks/eda_oxford_pets.ipynb
 ```
 
 It reads reports/manifests and shows only training examples for augmentation
-visualization. It never uses model predictions or test examples to select
-classes, preprocessing, or a split.
+visualization. No settings are changed based on test results. The test split may be inspected
+for final evaluation and diagnostic error analysis; tuning on test results is
+forbidden.
 
 ## Perceptual-hash review queue
 
@@ -135,7 +151,7 @@ used to choose model classes, preprocessing, hyperparameters, or any C0–C3
 condition. Build/open the local pair viewer after data preparation:
 
 ```powershell
-py -3 scripts/review_near_duplicates.py --split-dir splits
+python scripts/review_near_duplicates.py --split-dir splits
 Start-Process splits\near_duplicate_review.html
 ```
 
@@ -146,14 +162,14 @@ current split, and Hamming distance. Decisions persist in
 CSV in a spreadsheet, or record one decision reproducibly:
 
 ```powershell
-py -3 scripts/review_near_duplicates.py --set-decision "Birman_120__Russian_Blue_226" "different images" --notes "Distinct photos after visual review"
+python scripts/review_near_duplicates.py --set-decision "Birman_120__Russian_Blue_226" "different images" --notes "Distinct photos after visual review"
 ```
 
 To import a completed semicolon-delimited Excel export while preserving its
 source file, validate it and write the normalised review plus transitive groups:
 
 ```powershell
-py -3 scripts/review_near_duplicates.py --split-dir splits --import-completed splits/near_duplicate_review_completed.csv --confirmed-groups-output splits/confirmed_groups_v2.json
+python scripts/review_near_duplicates.py --split-dir splits --import-completed splits/near_duplicate_review_completed.csv --confirmed-groups-output splits/confirmed_groups_v2.json
 ```
 
 The completed Excel export was validated against all 91 source pairs and
@@ -216,11 +232,24 @@ each condition inherits shared settings from `configs/training.yaml` and
 | `configs/c2.yaml` | Head + `layer3` + `layer4` |
 | `configs/c3.yaml` | Entire ResNet50 |
 
-Run from the repository root using the Python environment where dependencies
-are installed. GPU training requires a CUDA-enabled PyTorch build:
+Run from the repository root using the activated environment. To reproduce
+the full four-condition learning-rate grid, run this PowerShell block. It
+launches 36 runs (4 conditions × 3 learning rates × 3 seeds) and writes each
+run to a new directory under `artifacts/`:
 
 ```powershell
-py -3 -m src.train --config configs/c2.yaml --training-seed 43 --lr 1e-4 --output-dir artifacts/c2_seed43_lr1e-4
+$conditions = @("c0", "c1", "c2", "c3")
+$learningRates = @("1e-3", "1e-4", "1e-5")
+$seeds = @(42, 43, 44)
+foreach ($condition in $conditions) {
+    foreach ($lr in $learningRates) {
+        foreach ($seed in $seeds) {
+            $runDir = "artifacts/${condition}_lr${lr}_seed${seed}"
+            python -m src.train --config "configs/${condition}.yaml" --training-seed $seed --lr $lr --output-dir $runDir
+            if ($LASTEXITCODE -ne 0) { throw "Training failed: $condition LR=$lr seed=$seed" }
+        }
+    }
+}
 ```
 
 Training seeds are **42, 43, 44**, independent of `split_seed=42`; LR candidates
@@ -244,7 +273,7 @@ BN running statistics are checked for changes after every epoch.
 To repeat a run, use its saved config with a new output directory and compare histories:
 
 ```powershell
-py -3 -m src.train --config artifacts/c2_seed43_lr1e-4/config.yaml --output-dir artifacts/c2_repeat
+python -m src.train --config artifacts/c2_seed43_lr1e-4/config.yaml --output-dir artifacts/c2_repeat
 fc.exe /b artifacts\c2_seed43_lr1e-4\history.csv artifacts\c2_repeat\history.csv
 ```
 
@@ -254,27 +283,74 @@ rule takes effect at merge and is not enforced through file permissions.
 
 ## Evaluation
 
-Use `src/evaluate.py` as the project evaluator. It loads one checkpoint or
-aggregates the three retained checkpoints for a condition, evaluates the
-selected `train`, `val`, or `test` split, and writes summary metrics, per-class
-F1, and latency CSVs to `reports/tables/` plus a confusion-matrix PNG to
-`reports/figures/`. Three-checkpoint summaries report the mean and sample
-standard deviation across seeds 42, 43, and 44. Batch-1 and batch-32 latency
-are measured for each checkpoint and summarized across the checkpoints.
+Use `src/evaluate.py` as the only source for final project test metrics. For
+three checkpoints it reports the mean and sample standard deviation over seeds
+42, 43, and 44. Summary, per-class F1, per-image predictions, and latency CSVs
+are saved under `reports/tables/`; pooled confusion matrices are saved under
+`reports/figures/`. Filenames include condition and augmentation state so
+ablation outputs cannot overwrite C0/C3 outputs.
 
-Evaluate a single checkpoint:
-
-```powershell
-py -3 -m src.evaluate --checkpoint deliverables/c0/runs/lr_1e-3/seed_42/best.pt --config configs/c0.yaml --split val
-```
-
-Aggregate a condition’s three retained checkpoints:
+For example, aggregate the retained C0 checkpoints on validation:
 
 ```powershell
-py -3 -m src.evaluate --condition C0 --checkpoints deliverables/c0/runs/lr_1e-3/seed_42/best.pt deliverables/c0/runs/lr_1e-3/seed_43/best.pt deliverables/c0/runs/lr_1e-3/seed_44/best.pt --config configs/c0.yaml --split val --device cpu
+python -m src.evaluate --condition C0 --checkpoints deliverables/c0/runs/lr_1e-3/seed_42/best.pt deliverables/c0/runs/lr_1e-3/seed_43/best.pt deliverables/c0/runs/lr_1e-3/seed_44/best.pt --config configs/c0.yaml --split val --device cpu
 ```
 
-Use `--device cpu` to override a CUDA device in the YAML configuration when
-evaluating on a CPU-only machine. The first recorded C0 validation grid is
-documented in [`docs/initial-baseline-report.md`](docs/initial-baseline-report.md);
-it does not include test-set scores or latency measurements.
+### Final test evaluation and augmentation ablation
+
+The ablation is pre-specified: hold the selected LR and seeds fixed and set
+only `augment: false`. C0 selected LR is `1e-3`; C3 selected LR is `1e-5`.
+The configs are `configs/c0_noaug.yaml` and `configs/c3_noaug.yaml`. Train the
+six ablation runs after C0/C3 settings have been frozen:
+
+```powershell
+python -m src.train --config configs/c0_noaug.yaml --training-seed 42 --lr 1e-3 --output-dir artifacts/c0_noaug_lr1e-3_seed42
+python -m src.train --config configs/c0_noaug.yaml --training-seed 43 --lr 1e-3 --output-dir artifacts/c0_noaug_lr1e-3_seed43
+python -m src.train --config configs/c0_noaug.yaml --training-seed 44 --lr 1e-3 --output-dir artifacts/c0_noaug_lr1e-3_seed44
+python -m src.train --config configs/c3_noaug.yaml --training-seed 42 --lr 1e-5 --output-dir artifacts/c3_noaug_lr1e-5_seed42
+python -m src.train --config configs/c3_noaug.yaml --training-seed 43 --lr 1e-5 --output-dir artifacts/c3_noaug_lr1e-5_seed43
+python -m src.train --config configs/c3_noaug.yaml --training-seed 44 --lr 1e-5 --output-dir artifacts/c3_noaug_lr1e-5_seed44
+```
+
+Run all six final evaluations only after every model and setting is frozen.
+The first four use the retained selected-LR checkpoints in `deliverables/`;
+the last two use the ablation checkpoints produced above.
+
+```powershell
+python -m src.evaluate --condition C0 --checkpoints deliverables/c0/runs/lr_1e-3/seed_42/best.pt deliverables/c0/runs/lr_1e-3/seed_43/best.pt deliverables/c0/runs/lr_1e-3/seed_44/best.pt --config configs/c0.yaml --split test --device cpu
+python -m src.evaluate --condition C1 --checkpoints deliverables/c1/runs/lr_1e-4/seed_42/best.pt deliverables/c1/runs/lr_1e-4/seed_43/best.pt deliverables/c1/runs/lr_1e-4/seed_44/best.pt --config configs/c1.yaml --split test --device cpu
+python -m src.evaluate --condition C2 --checkpoints deliverables/c2/runs/lr_1e-5/seed_42/best.pt deliverables/c2/runs/lr_1e-5/seed_43/best.pt deliverables/c2/runs/lr_1e-5/seed_44/best.pt --config configs/c2.yaml --split test --device cpu
+python -m src.evaluate --condition C3 --checkpoints deliverables/c3/runs/lr_1e-5/seed_42/best.pt deliverables/c3/runs/lr_1e-5/seed_43/best.pt deliverables/c3/runs/lr_1e-5/seed_44/best.pt --config configs/c3.yaml --split test --device cpu
+python -m src.evaluate --condition C0 --checkpoints artifacts/c0_noaug_lr1e-3_seed42/best.pt artifacts/c0_noaug_lr1e-3_seed43/best.pt artifacts/c0_noaug_lr1e-3_seed44/best.pt --config configs/c0_noaug.yaml --split test --device cpu
+python -m src.evaluate --condition C3 --checkpoints artifacts/c3_noaug_lr1e-5_seed42/best.pt artifacts/c3_noaug_lr1e-5_seed43/best.pt artifacts/c3_noaug_lr1e-5_seed44/best.pt --config configs/c3_noaug.yaml --split test --device cpu
+```
+
+After evaluation, compile the six summary CSVs into
+`reports/results_preliminary.md`, add mean ± sample standard deviation for
+accuracy and macro-F1, link all per-class F1 tables and confusion matrices,
+and analyze at least three representative errors with Grad-CAM visualizations.
+Use a row with `correct=0` from one of the generated `*_predictions.csv` files
+to choose a test `image_id`, then generate a supporting overlay:
+
+```powershell
+python scripts/generate_gradcam.py --checkpoint deliverables/c3/runs/lr_1e-5/seed_42/best.pt --config configs/c3.yaml --image-id pug_123 --output reports/figures/gradcam_pug_123.png --device cpu
+```
+
+Replace the illustrative image ID with an actual misclassified ID from the
+CSV. Describe likely visual causes from the source image and overlay; Grad-CAM
+is supporting evidence, not a causal explanation.
+**No settings are changed based on test results.** Test errors may be inspected
+for analysis, but tuning on test results is forbidden.
+
+The current partial comparison and error review are in
+[`reports/results_preliminary.md`](reports/results_preliminary.md). It marks
+the two augmentation-off results as pending until their checkpoints are
+trained and evaluated.
+
+### Team clean-environment review
+
+Please ask every team member to follow the install → download and verify data →
+train → evaluate sequence above from a fresh clone. Each person should confirm
+the Python/PyTorch versions, successful data verification, and whether the
+commands run without undocumented steps before this README is treated as the
+reproducibility handoff.
