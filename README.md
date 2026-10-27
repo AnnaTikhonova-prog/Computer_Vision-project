@@ -347,6 +347,15 @@ The current partial comparison and error review are in
 the two augmentation-off results as pending until their checkpoints are
 trained and evaluated.
 
+The detailed [failure analysis](reports/failure_analysis.md) documents three
+test errors with source images and Grad-CAM overlays in `reports/errors/`,
+explained probable causes, and limitations.
+
+Export all saved misclassified test images by condition and true/predicted
+breed pair with `python scripts/export_test_errors.py`. The
+[export guide](reports/errors/README.md) documents the folders, prediction
+index, counts, and read-only analysis / test-leakage restriction.
+
 ### Team clean-environment review
 
 Please ask every team member to follow the install → download and verify data →
