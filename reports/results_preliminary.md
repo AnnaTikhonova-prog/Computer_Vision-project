@@ -66,6 +66,10 @@ for every checkpoint on the local CPU.
 
 ## Test error review
 
+The detailed [failure analysis](failure_analysis.md) includes full source
+images, regenerated Grad-CAM overlays, checkpoint/seed provenance, probable
+causes, cross-seed observations, and limitations for the three cases below.
+
 The examples below are C0 augmentation-on test errors. Probable causes describe
 the visible image ambiguity and model attention; Grad-CAM is supporting
 visualization, not proof of a causal explanation.
