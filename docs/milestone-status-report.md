@@ -14,14 +14,14 @@ augmentation-on conditions have also been evaluated on the frozen test split.
 Three representative test failures have a written analysis and Grad-CAM
 visualizations.
 
-The main experiment is therefore complete. The final comparison is not yet
-fully closed: the augmentation-off ablation has validation results, but its
-run bundles are not present in this checkout and no corresponding test
-evaluation artifacts have been produced. Exact training wall-clock time and
-the exact CPU model for the saved inference-latency measurements also need to
-be recorded. The remaining plan below fits into two weeks if the no-augmentation
-artifacts can be recovered promptly; otherwise, prioritize those runs and
-evaluation before polishing the final submission.
+The main experiment and the pre-specified C0/C3 augmentation ablation are
+complete. The ablation's validation comparison is recorded in
+`reports/ablation.md`. Separately, the current checkout's final test-results
+table still has no augmentation-off test metrics, and the ablation run bundles
+are not present in this checkout. Exact training wall-clock time and the exact
+CPU model for the saved inference-latency measurements also need to be
+recorded. The remaining plan below fits into two weeks, with recovery of the
+existing ablation bundles ahead of any decision to rerun them.
 
 ## Completed experiments
 
@@ -36,10 +36,12 @@ evaluation before polishing the final submission.
 - Evaluated all 12 retained augmentation-on checkpoints on the test split
   using `src/evaluate.py`; saved accuracy, macro-F1, per-class F1, confusion
   matrices, predictions, and CPU inference latency under `reports/`.
-- Ran the augmentation-off C0 and C3 conditions for three seeds each and
-  recorded validation results in `reports/ablation.md`. The report states
-  these runs used fixed selected learning rates and changed augmentation only.
-  Their raw run artifacts are currently absent from this checkout.
+- Completed the pre-specified augmentation-off ablation for C0 and C3, with
+  three seeds per condition, and recorded its validation comparison in
+  `reports/ablation.md`. The learning rates were fixed at the previously
+  selected values; augmentation was the changed factor. The raw run bundles
+  are not included in this checkout, which is an artifact-provenance issue,
+  not an incomplete ablation experiment.
 - Completed post-evaluation failure analysis for three C0 test errors, with
   source images and Grad-CAM overlays. Exported misclassified test images for
   all four augmentation-on conditions, grouped by true and predicted class.
@@ -73,9 +75,9 @@ that the same ranking will hold on other data.
 | C0 | 0.9701 ± 0.0034 | 0.9598 ± 0.0058 | −0.0103 |
 | C3 | 0.9767 ± 0.0066 | 0.9677 ± 0.0052 | −0.0090 |
 
-These are validation-only, descriptive differences. The augmentation-off
-checkpoints have not been evaluated on the test split in the current project
-artifacts.
+These are validation-only, descriptive differences. The augmentation ablation
+is complete on validation. The separate final test-results table still needs
+test metrics for the two augmentation-off configurations.
 
 ## Observations and difficulties
 
@@ -110,20 +112,19 @@ artifacts.
 
 ## Remaining work: final two weeks
 
-### Week 1 — close the ablation and runtime evidence
+### Week 1 — finish final evaluation and runtime evidence
 
-1. Recover the six C0/C3 augmentation-off run bundles (three seeds per
-   condition), including each `best.pt`, `history.csv`, resolved config, and
-   metadata. They are referenced under the ignored `artifacts/` path in the
-   ablation report but are absent from this checkout. If they cannot be
-   recovered, rerun the six pre-specified runs at the already selected LRs
-   (`1e-3` for C0, `1e-5` for C3) with seeds 42, 43, and 44; do not retune on
-   test results.
-2. Evaluate the three retained checkpoints for each ablation condition on the
-   frozen test split. Add accuracy, macro-F1, per-class F1, confusion matrices,
-   predictions, and latency artifacts. Update the two pending rows in
-   `reports/results_preliminary.md` and label the analysis clearly as
-   post-selection test reporting.
+1. Recover the already completed C0/C3 augmentation-off run bundles (three
+   seeds per condition), including each `best.pt`, `history.csv`, resolved
+   config, and metadata. They are referenced under the ignored `artifacts/`
+   path in the ablation report but are absent from this checkout. Re-running
+   training is only a fallback if the existing bundles cannot be recovered;
+   keep the selected LRs and seeds fixed and do not tune on test results.
+2. Complete the separate final test evaluation of the three retained
+   checkpoints for each ablation condition. Add accuracy, macro-F1, per-class
+   F1, confusion matrices, predictions, and latency artifacts. Update the two
+   pending rows in `reports/results_preliminary.md` and label the analysis
+   clearly as post-selection test reporting.
 3. Record total training wall-clock time and the CPU model for the existing
    latency benchmark, or rerun only the latency measurement if that metadata
    cannot be recovered. Keep hardware and software versions beside each
@@ -148,8 +149,8 @@ artifacts.
 
 | Risk | Effect | Mitigation |
 | --- | --- | --- |
-| No-augmentation checkpoints and histories are absent from this checkout | The reported validation ablation cannot currently be audited or used for test evaluation | Recover the run bundles from the training machine/team archive; otherwise rerun the fixed six runs in Week 1 |
-| Two augmentation-off test evaluations remain | The six-configuration final comparison is incomplete | Evaluate only the retained/fixed-LR checkpoints and update all linked artifacts together |
+| No-augmentation checkpoints and histories are absent from this checkout | The completed validation ablation is harder to audit here, and its checkpoints cannot yet be evaluated on test from this checkout | Recover the completed run bundles from the training machine/team archive; rerun only if recovery fails |
+| Two augmentation-off test evaluations are not yet in the current results table | The six-configuration final test comparison is incomplete, although the validation ablation itself is complete | Evaluate only the retained/fixed-LR checkpoints and update all linked artifacts together |
 | Training wall-clock and exact CPU model are missing | Runtime evidence is incomplete and latency is hard to reproduce | Recover metadata or measure and record it on a named machine during Week 1 |
 | Different historical environments and initialization hashes | Small score differences cannot be attributed solely to trainable depth or augmentation | State the limitation; avoid causal claims and keep test results descriptive |
 | Clean-clone review and team contributions are not evidenced in the current report | Reproducibility and submission checklist may remain incomplete | Assign each member a clean-clone check and record names/contributions before submission |
@@ -157,10 +158,11 @@ artifacts.
 
 ## Current milestone status
 
-**Completed:** the four-condition training and test comparison, the validation
-augmentation ablation, and the three-case Grad-CAM failure review.
-**In progress:** make the ablation auditable in the repository, complete its
-test evaluation, and finish runtime/reproducibility evidence.
+**Completed:** four-condition training and test evaluation, the C0/C3
+validation augmentation ablation, and the three-case Grad-CAM failure review.
+**In progress:** recover the completed ablation run bundles for repository
+audit, add their separate test evaluation to the six-configuration comparison,
+and finish runtime/reproducibility evidence.
 **Milestone document:** this status report is prepared for team review and
 submission; the final course submission still needs the remaining items above.
 

@@ -1,9 +1,11 @@
 # Preliminary test-set results
 
 **Status: partial.** The four frozen augmentation-on conditions have been
-evaluated. The two augmentation-off ablations do not yet have trained
-checkpoints, so the six-configuration comparison is not complete. `N/A` means
-the evaluation has not been run; it is not a zero score.
+evaluated. The C0 and C3 augmentation-off ablation experiments are complete on
+the validation split and summarized in [`ablation.md`](ablation.md). Their
+test-set evaluations are not yet present here, so the six-configuration test
+comparison is not complete. `N/A` means no test metric is reported; it is not a
+zero score or an indication that the validation ablation was not run.
 
 ## Comparison
 
@@ -17,8 +19,8 @@ mean ± sample standard deviation across those three checkpoints.
 | C1 · augmentation on | 0.9656 ± 0.0069 | 0.9655 ± 0.0070 | [Per-class F1](tables/C1_augment_on_test_per_class_f1.csv) · [confusion matrix](figures/C1_augment_on_test_confusion_matrix.png) · [latency](tables/C1_augment_on_test_latency.csv) |
 | C2 · augmentation on | 0.9600 ± 0.0033 | 0.9601 ± 0.0033 | [Per-class F1](tables/C2_augment_on_test_per_class_f1.csv) · [confusion matrix](figures/C2_augment_on_test_confusion_matrix.png) · [latency](tables/C2_augment_on_test_latency.csv) |
 | C3 · augmentation on | 0.9633 ± 0.0067 | 0.9633 ± 0.0067 | [Per-class F1](tables/C3_augment_on_test_per_class_f1.csv) · [confusion matrix](figures/C3_augment_on_test_confusion_matrix.png) · [latency](tables/C3_augment_on_test_latency.csv) |
-| C0 · augmentation off | N/A · checkpoints pending | N/A · checkpoints pending | Config: [`configs/c0_noaug.yaml`](../configs/c0_noaug.yaml) |
-| C3 · augmentation off | N/A · checkpoints pending | N/A · checkpoints pending | Config: [`configs/c3_noaug.yaml`](../configs/c3_noaug.yaml) |
+| C0 · augmentation off | N/A · test evaluation pending | N/A · test evaluation pending | Validation: [`ablation.md`](ablation.md) · Config: [`configs/c0_noaug.yaml`](../configs/c0_noaug.yaml) |
+| C3 · augmentation off | N/A · test evaluation pending | N/A · test evaluation pending | Validation: [`ablation.md`](ablation.md) · Config: [`configs/c3_noaug.yaml`](../configs/c3_noaug.yaml) |
 
 Per-class F1 is the mean and sample standard deviation across the same three
 checkpoints. Confusion matrices pool their predictions on the fixed test set.
@@ -73,9 +75,10 @@ on them is forbidden.
 
 ## Remaining work
 
-Train and retain the three C0 augmentation-off checkpoints at LR `1e-3` and the
-three C3 augmentation-off checkpoints at LR `1e-5`, for seeds 42, 43, and 44,
-using the commands in the [README](../README.md#final-test-evaluation-and-augmentation-ablation).
-Then run the two matching `src.evaluate` commands from that section and replace
-the two pending rows above with their metrics and artifact links. The
-six-configuration Definition of Done is not met until those runs are present.
+Recover the already completed C0/C3 augmentation-off run bundles (or rerun the
+fixed-LR runs only if the bundles cannot be recovered), then run the two
+matching `src.evaluate` commands from the
+[README](../README.md#final-test-evaluation-and-augmentation-ablation). Replace
+the two pending rows above with their test metrics and artifact links. The
+six-configuration test-comparison Definition of Done is not met until these
+evaluations are present; the validation ablation itself is complete.
