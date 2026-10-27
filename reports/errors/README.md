@@ -17,6 +17,8 @@ reports/errors/
   C1_augment_on/...
   C2_augment_on/...
   C3_augment_on/...
+  C0_augment_off/...
+  C3_augment_off/...
   index.csv
   summary.csv
 ```
@@ -37,7 +39,7 @@ correlated observations, not independent test samples or ensemble results.
 
 ## Current export
 
-Sources are the four saved augmentation-on
+Sources are all six saved augmentation-on/off
 [`reports/tables/*_test_predictions.csv`](../tables/) tables. Each contains
 900 predictions: the frozen 300-image test split for seeds 42, 43, and 44.
 
@@ -47,9 +49,11 @@ Sources are the four saved augmentation-on
 | C1, augmentation on | 31 | 15 | 15 | 7 |
 | C2, augmentation on | 36 | 18 | 20 | 10 |
 | C3, augmentation on | 33 | 17 | 18 | 10 |
-| Total across conditions | 144 | — | 69 | 36 |
+| C0, augmentation off | 46 | 16 | 16 | 7 |
+| C3, augmentation off | 38 | 21 | 22 | 10 |
+| Total across conditions | 228 | — | 107 | 53 |
 
-No augmentation-off test tables are present; no export is claimed for them.
+Both augmentation-off test tables and their error images are included.
 The existing three source images, Grad-CAM panels, and `cases.csv` at this
 directory's top level support the [failure analysis](../failure_analysis.md)
 and are preserved separately from the complete grouped export.

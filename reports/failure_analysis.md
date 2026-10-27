@@ -10,11 +10,11 @@ its selected learning rate is `1e-3`. Images were selected from rows with
 No model, preprocessing, checkpoint, or hyperparameter is selected or changed
 using this analysis.
 
-The updated repository did not contain `reports/errors/`. The three original
-JPEGs have therefore been exported there from the local Oxford-IIIT Pet data,
-without re-encoding, alongside Grad-CAM overlays generated with the matching
-retained checkpoints. [`errors/cases.csv`](errors/cases.csv) records each
-prediction, seed, checkpoint, image/overlay path, and SHA-256 hashes of the
+The three original JPEGs are stored in `reports/errors/`, exported from the
+local Oxford-IIIT Pet data without re-encoding, alongside Grad-CAM overlays
+generated with the matching retained checkpoints.
+[`errors/cases.csv`](errors/cases.csv) records each prediction, seed, checkpoint,
+image/overlay path, and SHA-256 hashes of the
 source image and checkpoint. Labels below are dataset annotations, not an
 independent visual verification of pedigree.
 
@@ -175,11 +175,11 @@ this example across seeds.
   hashes differ across some conditions, as documented in the
   [ablation report](ablation.md#ограничения-сопоставимости). These observations
   cannot isolate fine-tuning depth as the cause of a changed decision.
-- **Available evaluation is partial.** The committed test tables cover the
-  four augmentation-on conditions. The [ablation report](ablation.md) supplies
-  validation results for augmentation off; no matching augmentation-off test
-  prediction tables are present. This report makes no test-level claim about
-  the effect of augmentation.
+- **Scope of these examples.** The [comparison](results_preliminary.md) now
+  includes test results for all six configurations, including C0/C3
+  augmentation off. These three image/Grad-CAM cases remain C0 augmentation-on
+  diagnostics; they do not establish an augmentation effect. Historical
+  environment differences further limit causal on/off comparisons.
 
 ## Reproduce the overlays
 

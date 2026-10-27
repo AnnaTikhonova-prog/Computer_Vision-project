@@ -300,17 +300,27 @@ python -m src.evaluate --condition C0 --checkpoints deliverables/c0/runs/lr_1e-3
 
 The ablation is pre-specified: hold the selected LR and seeds fixed and set
 only `augment: false`. C0 selected LR is `1e-3`; C3 selected LR is `1e-5`.
-The configs are `configs/c0_noaug.yaml` and `configs/c3_noaug.yaml`. Train the
-six ablation runs after C0/C3 settings have been frozen:
+The evaluation configs are `configs/c0_noaug.yaml` and `configs/c3_noaug.yaml`.
+Train the six ablation runs after C0/C3 settings have been frozen.
+
+For the CPU workflow used for the augmentation-off test results, run the
+existing fixed six-run orchestrator. It applies the same selected learning
+rates and seeds through `configs/ablation_c0_noaug_cpu.yaml` and
+`configs/ablation_c3_noaug_cpu.yaml`, with `num_workers=0` and one PyTorch CPU
+thread per run:
 
 ```powershell
-python -m src.train --config configs/c0_noaug.yaml --training-seed 42 --lr 1e-3 --output-dir artifacts/c0_noaug_lr1e-3_seed42
-python -m src.train --config configs/c0_noaug.yaml --training-seed 43 --lr 1e-3 --output-dir artifacts/c0_noaug_lr1e-3_seed43
-python -m src.train --config configs/c0_noaug.yaml --training-seed 44 --lr 1e-3 --output-dir artifacts/c0_noaug_lr1e-3_seed44
-python -m src.train --config configs/c3_noaug.yaml --training-seed 42 --lr 1e-5 --output-dir artifacts/c3_noaug_lr1e-5_seed42
-python -m src.train --config configs/c3_noaug.yaml --training-seed 43 --lr 1e-5 --output-dir artifacts/c3_noaug_lr1e-5_seed43
-python -m src.train --config configs/c3_noaug.yaml --training-seed 44 --lr 1e-5 --output-dir artifacts/c3_noaug_lr1e-5_seed44
+python scripts/run_ablation.py --check-only
+python scripts/run_ablation.py
 ```
+
+It saves each run under `artifacts/ablation_noaug/runs/`, verifies the selected
+validation checkpoint against its history, and writes the validation ablation
+summary. Existing runs with matching source/configuration provenance are
+reused; otherwise a new attempt directory is created. If an attempt suffix is
+used, supply that actual checkpoint path to the evaluator below. Checkpoints
+remain local artifacts; the committed evaluation provenance records their
+hashes and selected epochs.
 
 Run all six final evaluations only after every model and setting is frozen.
 The first four use the retained selected-LR checkpoints in `deliverables/`;
@@ -321,8 +331,8 @@ python -m src.evaluate --condition C0 --checkpoints deliverables/c0/runs/lr_1e-3
 python -m src.evaluate --condition C1 --checkpoints deliverables/c1/runs/lr_1e-4/seed_42/best.pt deliverables/c1/runs/lr_1e-4/seed_43/best.pt deliverables/c1/runs/lr_1e-4/seed_44/best.pt --config configs/c1.yaml --split test --device cpu
 python -m src.evaluate --condition C2 --checkpoints deliverables/c2/runs/lr_1e-5/seed_42/best.pt deliverables/c2/runs/lr_1e-5/seed_43/best.pt deliverables/c2/runs/lr_1e-5/seed_44/best.pt --config configs/c2.yaml --split test --device cpu
 python -m src.evaluate --condition C3 --checkpoints deliverables/c3/runs/lr_1e-5/seed_42/best.pt deliverables/c3/runs/lr_1e-5/seed_43/best.pt deliverables/c3/runs/lr_1e-5/seed_44/best.pt --config configs/c3.yaml --split test --device cpu
-python -m src.evaluate --condition C0 --checkpoints artifacts/c0_noaug_lr1e-3_seed42/best.pt artifacts/c0_noaug_lr1e-3_seed43/best.pt artifacts/c0_noaug_lr1e-3_seed44/best.pt --config configs/c0_noaug.yaml --split test --device cpu
-python -m src.evaluate --condition C3 --checkpoints artifacts/c3_noaug_lr1e-5_seed42/best.pt artifacts/c3_noaug_lr1e-5_seed43/best.pt artifacts/c3_noaug_lr1e-5_seed44/best.pt --config configs/c3_noaug.yaml --split test --device cpu
+python -m src.evaluate --condition C0 --checkpoints artifacts/ablation_noaug/runs/c0_lr1e-3_seed42/best.pt artifacts/ablation_noaug/runs/c0_lr1e-3_seed43/best.pt artifacts/ablation_noaug/runs/c0_lr1e-3_seed44/best.pt --config configs/c0_noaug.yaml --split test --device cpu
+python -m src.evaluate --condition C3 --checkpoints artifacts/ablation_noaug/runs/c3_lr1e-5_seed42/best.pt artifacts/ablation_noaug/runs/c3_lr1e-5_seed43/best.pt artifacts/ablation_noaug/runs/c3_lr1e-5_seed44/best.pt --config configs/c3_noaug.yaml --split test --device cpu
 ```
 
 After evaluation, compile the six summary CSVs into
@@ -342,10 +352,11 @@ is supporting evidence, not a causal explanation.
 **No settings are changed based on test results.** Test errors may be inspected
 for analysis, but tuning on test results is forbidden.
 
-The current partial comparison and error review are in
-[`reports/results_preliminary.md`](reports/results_preliminary.md). It marks
-the two augmentation-off results as pending until their checkpoints are
-trained and evaluated.
+The completed six-configuration comparison and error review are in
+[`reports/results_preliminary.md`](reports/results_preliminary.md). It includes
+C0/C3 augmentation-off test results, selected-checkpoint hashes and epochs,
+per-class F1 tables, and confusion matrices. No settings are changed based on
+test results.
 
 The detailed [failure analysis](reports/failure_analysis.md) documents three
 test errors with source images and Grad-CAM overlays in `reports/errors/`,
