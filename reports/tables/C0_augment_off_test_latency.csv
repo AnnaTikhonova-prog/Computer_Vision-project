@@ -1,0 +1,7 @@
+checkpoint,batch_size,mean_ms,std_ms,mean_ms_per_image
+artifacts\ablation_noaug\runs\c0_lr1e-3_seed42\best.pt,1,89.20622996520251,34.03380545428265,89.20622996520251
+artifacts\ablation_noaug\runs\c0_lr1e-3_seed43\best.pt,1,78.47975001204759,3.8036904438799604,78.47975001204759
+artifacts\ablation_noaug\runs\c0_lr1e-3_seed44\best.pt,1,74.52797999139875,6.480355953335007,74.52797999139875
+artifacts\ablation_noaug\runs\c0_lr1e-3_seed42\best.pt,32,2035.356089984998,41.15066474076145,63.60487781203119
+artifacts\ablation_noaug\runs\c0_lr1e-3_seed43\best.pt,32,2038.0127199925482,40.11875074904938,63.68789749976713
+artifacts\ablation_noaug\runs\c0_lr1e-3_seed44\best.pt,32,2042.8031200077385,59.37424348981758,63.83759750024183
