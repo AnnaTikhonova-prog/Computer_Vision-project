@@ -1,0 +1,901 @@
+training_seed,checkpoint,image_id,relative_path,true_label,true_class,predicted_label,predicted_class,predicted_class_confidence,correct
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_101,images/Birman_101.jpg,3,Birman,3,Birman,0.9988905787467957,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_105,images/Birman_105.jpg,3,Birman,3,Birman,0.9990491271018982,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_112,images/Birman_112.jpg,3,Birman,3,Birman,0.9998683929443359,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_116,images/Birman_116.jpg,3,Birman,3,Birman,0.9998272061347961,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_127,images/Birman_127.jpg,3,Birman,3,Birman,0.9880388379096985,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_133,images/Birman_133.jpg,3,Birman,3,Birman,0.9848735332489014,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_134,images/Birman_134.jpg,3,Birman,3,Birman,0.9990447163581848,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_15,images/Birman_15.jpg,3,Birman,3,Birman,0.9998430013656616,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_154,images/Birman_154.jpg,3,Birman,3,Birman,0.9559633731842041,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_156,images/Birman_156.jpg,3,Birman,3,Birman,0.9934034943580627,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_161,images/Birman_161.jpg,3,Birman,3,Birman,0.9958446621894836,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_167,images/Birman_167.jpg,3,Birman,3,Birman,0.9997575879096985,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_168,images/Birman_168.jpg,3,Birman,3,Birman,0.9997114539146423,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_189,images/Birman_189.jpg,3,Birman,3,Birman,0.9997087121009827,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_192,images/Birman_192.jpg,3,Birman,3,Birman,0.9947668313980103,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_196,images/Birman_196.jpg,3,Birman,3,Birman,0.9988247752189636,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_201,images/Birman_201.jpg,3,Birman,3,Birman,0.9983997941017151,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_26,images/Birman_26.jpg,3,Birman,3,Birman,0.9992558360099792,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_29,images/Birman_29.jpg,3,Birman,3,Birman,0.9997202754020691,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_3,images/Birman_3.jpg,3,Birman,3,Birman,0.9995837807655334,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_4,images/Birman_4.jpg,3,Birman,3,Birman,0.9991182684898376,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_43,images/Birman_43.jpg,3,Birman,3,Birman,0.8070692420005798,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_44,images/Birman_44.jpg,3,Birman,3,Birman,0.9937037825584412,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_46,images/Birman_46.jpg,3,Birman,3,Birman,0.9999641180038452,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_49,images/Birman_49.jpg,3,Birman,3,Birman,0.9981695413589478,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_6,images/Birman_6.jpg,3,Birman,3,Birman,0.9997933506965637,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_7,images/Birman_7.jpg,3,Birman,3,Birman,0.9801861047744751,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_8,images/Birman_8.jpg,3,Birman,3,Birman,0.999924898147583,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_86,images/Birman_86.jpg,3,Birman,3,Birman,0.9985710382461548,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Birman_96,images/Birman_96.jpg,3,Birman,3,Birman,0.8972401022911072,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_107,images/British_Shorthair_107.jpg,0,British Shorthair,0,British Shorthair,0.8974676728248596,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_116,images/British_Shorthair_116.jpg,0,British Shorthair,0,British Shorthair,0.9991376399993896,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_121,images/British_Shorthair_121.jpg,0,British Shorthair,0,British Shorthair,0.7216904163360596,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_124,images/British_Shorthair_124.jpg,0,British Shorthair,0,British Shorthair,0.9463114142417908,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_125,images/British_Shorthair_125.jpg,0,British Shorthair,1,Russian Blue,0.6798110008239746,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_144,images/British_Shorthair_144.jpg,0,British Shorthair,0,British Shorthair,0.9507300853729248,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_157,images/British_Shorthair_157.jpg,0,British Shorthair,0,British Shorthair,0.5547811388969421,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_161,images/British_Shorthair_161.jpg,0,British Shorthair,0,British Shorthair,0.9988736510276794,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_163,images/British_Shorthair_163.jpg,0,British Shorthair,0,British Shorthair,0.9125890731811523,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_18,images/British_Shorthair_18.jpg,0,British Shorthair,0,British Shorthair,0.9999756813049316,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_180,images/British_Shorthair_180.jpg,0,British Shorthair,0,British Shorthair,0.9976310729980469,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_186,images/British_Shorthair_186.jpg,0,British Shorthair,0,British Shorthair,0.9995132684707642,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_190,images/British_Shorthair_190.jpg,0,British Shorthair,0,British Shorthair,0.6116596460342407,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_193,images/British_Shorthair_193.jpg,0,British Shorthair,0,British Shorthair,0.999799907207489,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_196,images/British_Shorthair_196.jpg,0,British Shorthair,0,British Shorthair,0.9730790257453918,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_201,images/British_Shorthair_201.jpg,0,British Shorthair,0,British Shorthair,0.9977092742919922,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_204,images/British_Shorthair_204.jpg,0,British Shorthair,0,British Shorthair,0.998540997505188,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_205,images/British_Shorthair_205.jpg,0,British Shorthair,0,British Shorthair,0.9226894378662109,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_230,images/British_Shorthair_230.jpg,0,British Shorthair,0,British Shorthair,0.7230286002159119,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_266,images/British_Shorthair_266.jpg,0,British Shorthair,0,British Shorthair,0.9749528169631958,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_267,images/British_Shorthair_267.jpg,0,British Shorthair,0,British Shorthair,0.9364068508148193,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_269,images/British_Shorthair_269.jpg,0,British Shorthair,0,British Shorthair,0.991536021232605,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_271,images/British_Shorthair_271.jpg,0,British Shorthair,0,British Shorthair,0.9994000196456909,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_33,images/British_Shorthair_33.jpg,0,British Shorthair,0,British Shorthair,0.9970566034317017,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_50,images/British_Shorthair_50.jpg,0,British Shorthair,0,British Shorthair,0.9861175417900085,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_54,images/British_Shorthair_54.jpg,0,British Shorthair,0,British Shorthair,0.7483331561088562,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_63,images/British_Shorthair_63.jpg,0,British Shorthair,0,British Shorthair,0.9964834451675415,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_65,images/British_Shorthair_65.jpg,0,British Shorthair,0,British Shorthair,0.9380829334259033,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_79,images/British_Shorthair_79.jpg,0,British Shorthair,0,British Shorthair,0.8271231055259705,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,British_Shorthair_92,images/British_Shorthair_92.jpg,0,British Shorthair,0,British Shorthair,0.9481095671653748,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_104,images/Maine_Coon_104.jpg,7,Maine Coon,7,Maine Coon,0.9984625577926636,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_105,images/Maine_Coon_105.jpg,7,Maine Coon,7,Maine Coon,0.9866302013397217,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_116,images/Maine_Coon_116.jpg,7,Maine Coon,7,Maine Coon,0.9994359612464905,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_121,images/Maine_Coon_121.jpg,7,Maine Coon,7,Maine Coon,0.9992011189460754,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_123,images/Maine_Coon_123.jpg,7,Maine Coon,7,Maine Coon,0.925409734249115,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_131,images/Maine_Coon_131.jpg,7,Maine Coon,7,Maine Coon,0.9998383522033691,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_137,images/Maine_Coon_137.jpg,7,Maine Coon,7,Maine Coon,0.9997835755348206,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_147,images/Maine_Coon_147.jpg,7,Maine Coon,7,Maine Coon,0.9999287128448486,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_16,images/Maine_Coon_16.jpg,7,Maine Coon,7,Maine Coon,0.9989203214645386,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_171,images/Maine_Coon_171.jpg,7,Maine Coon,7,Maine Coon,0.9999814033508301,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_193,images/Maine_Coon_193.jpg,7,Maine Coon,7,Maine Coon,0.9975622892379761,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_197,images/Maine_Coon_197.jpg,7,Maine Coon,7,Maine Coon,0.998802900314331,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_205,images/Maine_Coon_205.jpg,7,Maine Coon,7,Maine Coon,0.9999947547912598,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_206,images/Maine_Coon_206.jpg,7,Maine Coon,7,Maine Coon,0.9994934797286987,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_222,images/Maine_Coon_222.jpg,7,Maine Coon,7,Maine Coon,0.9999570846557617,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_238,images/Maine_Coon_238.jpg,7,Maine Coon,0,British Shorthair,0.5943554639816284,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_239,images/Maine_Coon_239.jpg,7,Maine Coon,7,Maine Coon,0.9644286632537842,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_267,images/Maine_Coon_267.jpg,7,Maine Coon,7,Maine Coon,0.9826521873474121,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_270,images/Maine_Coon_270.jpg,7,Maine Coon,7,Maine Coon,0.9669609665870667,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_271,images/Maine_Coon_271.jpg,7,Maine Coon,7,Maine Coon,0.999286949634552,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_29,images/Maine_Coon_29.jpg,7,Maine Coon,7,Maine Coon,0.9999935626983643,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_30,images/Maine_Coon_30.jpg,7,Maine Coon,7,Maine Coon,0.9657634496688843,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_35,images/Maine_Coon_35.jpg,7,Maine Coon,7,Maine Coon,0.9980199337005615,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_55,images/Maine_Coon_55.jpg,7,Maine Coon,7,Maine Coon,0.9998302459716797,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_69,images/Maine_Coon_69.jpg,7,Maine Coon,7,Maine Coon,0.34677374362945557,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_77,images/Maine_Coon_77.jpg,7,Maine Coon,7,Maine Coon,0.4546523094177246,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_78,images/Maine_Coon_78.jpg,7,Maine Coon,7,Maine Coon,0.7320837378501892,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_87,images/Maine_Coon_87.jpg,7,Maine Coon,7,Maine Coon,0.999963641166687,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_89,images/Maine_Coon_89.jpg,7,Maine Coon,7,Maine Coon,0.9989848732948303,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Maine_Coon_98,images/Maine_Coon_98.jpg,7,Maine Coon,3,Birman,0.9651424288749695,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_116,images/Russian_Blue_116.jpg,1,Russian Blue,1,Russian Blue,0.9817790389060974,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_123,images/Russian_Blue_123.jpg,1,Russian Blue,1,Russian Blue,0.992901086807251,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_127,images/Russian_Blue_127.jpg,1,Russian Blue,1,Russian Blue,0.9995313882827759,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_131,images/Russian_Blue_131.jpg,1,Russian Blue,1,Russian Blue,0.9987315535545349,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_135,images/Russian_Blue_135.jpg,1,Russian Blue,1,Russian Blue,0.965731143951416,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_155,images/Russian_Blue_155.jpg,1,Russian Blue,1,Russian Blue,0.9956899285316467,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_157,images/Russian_Blue_157.jpg,1,Russian Blue,1,Russian Blue,0.6560651659965515,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_164,images/Russian_Blue_164.jpg,1,Russian Blue,1,Russian Blue,0.6639220714569092,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_171,images/Russian_Blue_171.jpg,1,Russian Blue,1,Russian Blue,0.9925474524497986,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_172,images/Russian_Blue_172.jpg,1,Russian Blue,1,Russian Blue,0.9889018535614014,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_18,images/Russian_Blue_18.jpg,1,Russian Blue,1,Russian Blue,0.8909916281700134,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_186,images/Russian_Blue_186.jpg,1,Russian Blue,1,Russian Blue,0.9992044568061829,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_191,images/Russian_Blue_191.jpg,1,Russian Blue,1,Russian Blue,0.9984342455863953,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_211,images/Russian_Blue_211.jpg,1,Russian Blue,1,Russian Blue,0.9607276916503906,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_228,images/Russian_Blue_228.jpg,1,Russian Blue,1,Russian Blue,0.5100221037864685,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_264,images/Russian_Blue_264.jpg,1,Russian Blue,0,British Shorthair,0.6338152289390564,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_29,images/Russian_Blue_29.jpg,1,Russian Blue,0,British Shorthair,0.9633471369743347,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_34,images/Russian_Blue_34.jpg,1,Russian Blue,1,Russian Blue,0.9816651940345764,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_35,images/Russian_Blue_35.jpg,1,Russian Blue,1,Russian Blue,0.9981318116188049,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_38,images/Russian_Blue_38.jpg,1,Russian Blue,1,Russian Blue,0.9976189732551575,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_44,images/Russian_Blue_44.jpg,1,Russian Blue,1,Russian Blue,0.9326339960098267,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_45,images/Russian_Blue_45.jpg,1,Russian Blue,1,Russian Blue,0.9949443936347961,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_61,images/Russian_Blue_61.jpg,1,Russian Blue,1,Russian Blue,0.7477644085884094,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_62,images/Russian_Blue_62.jpg,1,Russian Blue,1,Russian Blue,0.9968100190162659,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_63,images/Russian_Blue_63.jpg,1,Russian Blue,1,Russian Blue,0.9718291759490967,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_66,images/Russian_Blue_66.jpg,1,Russian Blue,1,Russian Blue,0.9984910488128662,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_68,images/Russian_Blue_68.jpg,1,Russian Blue,1,Russian Blue,0.999908447265625,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_78,images/Russian_Blue_78.jpg,1,Russian Blue,1,Russian Blue,0.9795234203338623,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_8,images/Russian_Blue_8.jpg,1,Russian Blue,1,Russian Blue,0.9610163569450378,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Russian_Blue_9,images/Russian_Blue_9.jpg,1,Russian Blue,1,Russian Blue,0.9797898530960083,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_102,images/Siamese_102.jpg,2,Siamese,2,Siamese,0.9999041557312012,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_112,images/Siamese_112.jpg,2,Siamese,2,Siamese,0.9629473686218262,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_129,images/Siamese_129.jpg,2,Siamese,2,Siamese,0.6270726323127747,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_130,images/Siamese_130.jpg,2,Siamese,2,Siamese,0.5228252410888672,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_142,images/Siamese_142.jpg,2,Siamese,2,Siamese,0.9903963804244995,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_144,images/Siamese_144.jpg,2,Siamese,2,Siamese,0.999998927116394,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_145,images/Siamese_145.jpg,2,Siamese,2,Siamese,0.6929299831390381,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_163,images/Siamese_163.jpg,2,Siamese,2,Siamese,0.9999665021896362,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_168,images/Siamese_168.jpg,2,Siamese,2,Siamese,0.9999593496322632,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_170,images/Siamese_170.jpg,2,Siamese,2,Siamese,0.9999353885650635,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_175,images/Siamese_175.jpg,2,Siamese,2,Siamese,0.9999685287475586,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_178,images/Siamese_178.jpg,2,Siamese,2,Siamese,0.9999992847442627,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_189,images/Siamese_189.jpg,2,Siamese,2,Siamese,0.9996711015701294,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_193,images/Siamese_193.jpg,2,Siamese,2,Siamese,0.999828577041626,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_194,images/Siamese_194.jpg,2,Siamese,3,Birman,0.9103335738182068,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_195,images/Siamese_195.jpg,2,Siamese,2,Siamese,0.9997983574867249,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_198,images/Siamese_198.jpg,2,Siamese,2,Siamese,0.9996932744979858,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_202,images/Siamese_202.jpg,2,Siamese,2,Siamese,0.999925971031189,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_206,images/Siamese_206.jpg,2,Siamese,2,Siamese,0.9954445362091064,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_207,images/Siamese_207.jpg,2,Siamese,2,Siamese,0.9999959468841553,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_22,images/Siamese_22.jpg,2,Siamese,2,Siamese,0.9834446907043457,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_257,images/Siamese_257.jpg,2,Siamese,3,Birman,0.9992954730987549,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_42,images/Siamese_42.jpg,2,Siamese,2,Siamese,0.9998193383216858,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_55,images/Siamese_55.jpg,2,Siamese,2,Siamese,0.9971805810928345,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_6,images/Siamese_6.jpg,2,Siamese,2,Siamese,0.9967240691184998,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_63,images/Siamese_63.jpg,2,Siamese,2,Siamese,0.9825238585472107,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_72,images/Siamese_72.jpg,2,Siamese,2,Siamese,0.9992497563362122,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_74,images/Siamese_74.jpg,2,Siamese,2,Siamese,0.9996212720870972,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_82,images/Siamese_82.jpg,2,Siamese,2,Siamese,0.9173652529716492,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Siamese_92,images/Siamese_92.jpg,2,Siamese,2,Siamese,0.998637855052948,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_110,images/Sphynx_110.jpg,6,Sphynx,6,Sphynx,0.995545506477356,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_112,images/Sphynx_112.jpg,6,Sphynx,6,Sphynx,0.9987461566925049,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_128,images/Sphynx_128.jpg,6,Sphynx,6,Sphynx,0.9824348092079163,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_132,images/Sphynx_132.jpg,6,Sphynx,6,Sphynx,0.9999924898147583,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_143,images/Sphynx_143.jpg,6,Sphynx,6,Sphynx,0.9919862747192383,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_146,images/Sphynx_146.jpg,6,Sphynx,6,Sphynx,0.9999245405197144,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_150,images/Sphynx_150.jpg,6,Sphynx,6,Sphynx,0.9973945617675781,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_158,images/Sphynx_158.jpg,6,Sphynx,6,Sphynx,0.9985881447792053,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_169,images/Sphynx_169.jpg,6,Sphynx,6,Sphynx,0.9999828338623047,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_173,images/Sphynx_173.jpg,6,Sphynx,6,Sphynx,0.999966025352478,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_174,images/Sphynx_174.jpg,6,Sphynx,6,Sphynx,0.9983521699905396,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_178,images/Sphynx_178.jpg,6,Sphynx,6,Sphynx,0.9980717897415161,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_181,images/Sphynx_181.jpg,6,Sphynx,6,Sphynx,0.9983029365539551,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_183,images/Sphynx_183.jpg,6,Sphynx,6,Sphynx,0.9847427606582642,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_193,images/Sphynx_193.jpg,6,Sphynx,6,Sphynx,0.9999017715454102,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_195,images/Sphynx_195.jpg,6,Sphynx,6,Sphynx,0.9998936653137207,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_197,images/Sphynx_197.jpg,6,Sphynx,6,Sphynx,0.9994783997535706,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_201,images/Sphynx_201.jpg,6,Sphynx,6,Sphynx,0.9998428821563721,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_206,images/Sphynx_206.jpg,6,Sphynx,6,Sphynx,0.9999934434890747,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_222,images/Sphynx_222.jpg,6,Sphynx,6,Sphynx,0.9989007711410522,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_245,images/Sphynx_245.jpg,6,Sphynx,6,Sphynx,0.9998764991760254,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_30,images/Sphynx_30.jpg,6,Sphynx,6,Sphynx,0.9995073080062866,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_36,images/Sphynx_36.jpg,6,Sphynx,6,Sphynx,0.999695897102356,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_38,images/Sphynx_38.jpg,6,Sphynx,6,Sphynx,0.9997790455818176,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_66,images/Sphynx_66.jpg,6,Sphynx,6,Sphynx,0.9993788003921509,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_73,images/Sphynx_73.jpg,6,Sphynx,6,Sphynx,0.8951404094696045,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_9,images/Sphynx_9.jpg,6,Sphynx,6,Sphynx,0.9967774748802185,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_93,images/Sphynx_93.jpg,6,Sphynx,6,Sphynx,0.999808132648468,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_95,images/Sphynx_95.jpg,6,Sphynx,6,Sphynx,0.9989722967147827,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,Sphynx_99,images/Sphynx_99.jpg,6,Sphynx,6,Sphynx,0.9760392904281616,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_101,images/american_bulldog_101.jpg,4,American Bulldog,4,American Bulldog,0.9791709184646606,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_102,images/american_bulldog_102.jpg,4,American Bulldog,4,American Bulldog,0.9939077496528625,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_11,images/american_bulldog_11.jpg,4,American Bulldog,4,American Bulldog,0.9999873638153076,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_111,images/american_bulldog_111.jpg,4,American Bulldog,4,American Bulldog,0.9999967813491821,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_119,images/american_bulldog_119.jpg,4,American Bulldog,4,American Bulldog,0.9996311664581299,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_144,images/american_bulldog_144.jpg,4,American Bulldog,4,American Bulldog,0.9991125464439392,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_15,images/american_bulldog_15.jpg,4,American Bulldog,4,American Bulldog,0.9998879432678223,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_150,images/american_bulldog_150.jpg,4,American Bulldog,4,American Bulldog,0.9996570348739624,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_164,images/american_bulldog_164.jpg,4,American Bulldog,4,American Bulldog,0.8875003457069397,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_167,images/american_bulldog_167.jpg,4,American Bulldog,6,Sphynx,0.4891504943370819,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_177,images/american_bulldog_177.jpg,4,American Bulldog,4,American Bulldog,0.9608651995658875,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_179,images/american_bulldog_179.jpg,4,American Bulldog,4,American Bulldog,0.9999985694885254,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_186,images/american_bulldog_186.jpg,4,American Bulldog,4,American Bulldog,0.996393620967865,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_189,images/american_bulldog_189.jpg,4,American Bulldog,4,American Bulldog,0.9999867677688599,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_19,images/american_bulldog_19.jpg,4,American Bulldog,4,American Bulldog,0.9999725818634033,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_194,images/american_bulldog_194.jpg,4,American Bulldog,4,American Bulldog,0.9951043128967285,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_197,images/american_bulldog_197.jpg,4,American Bulldog,4,American Bulldog,0.9982627034187317,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_216,images/american_bulldog_216.jpg,4,American Bulldog,4,American Bulldog,0.9999403953552246,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_22,images/american_bulldog_22.jpg,4,American Bulldog,4,American Bulldog,0.9973906874656677,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_221,images/american_bulldog_221.jpg,4,American Bulldog,4,American Bulldog,0.9999818801879883,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_25,images/american_bulldog_25.jpg,4,American Bulldog,4,American Bulldog,0.9999961853027344,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_26,images/american_bulldog_26.jpg,4,American Bulldog,4,American Bulldog,0.9998010993003845,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_3,images/american_bulldog_3.jpg,4,American Bulldog,4,American Bulldog,0.949685275554657,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_32,images/american_bulldog_32.jpg,4,American Bulldog,4,American Bulldog,0.9993487000465393,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_38,images/american_bulldog_38.jpg,4,American Bulldog,4,American Bulldog,0.9998006224632263,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_39,images/american_bulldog_39.jpg,4,American Bulldog,4,American Bulldog,0.9999332427978516,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_41,images/american_bulldog_41.jpg,4,American Bulldog,4,American Bulldog,0.9999933242797852,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_44,images/american_bulldog_44.jpg,4,American Bulldog,4,American Bulldog,0.9999603033065796,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_47,images/american_bulldog_47.jpg,4,American Bulldog,4,American Bulldog,0.9998250603675842,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,american_bulldog_8,images/american_bulldog_8.jpg,4,American Bulldog,4,American Bulldog,0.9977019429206848,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_103,images/beagle_103.jpg,8,Beagle,8,Beagle,0.9999947547912598,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_109,images/beagle_109.jpg,8,Beagle,8,Beagle,0.9999721050262451,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_120,images/beagle_120.jpg,8,Beagle,8,Beagle,0.9999587535858154,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_137,images/beagle_137.jpg,8,Beagle,8,Beagle,0.9093581438064575,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_141,images/beagle_141.jpg,8,Beagle,8,Beagle,0.9739601612091064,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_152,images/beagle_152.jpg,8,Beagle,8,Beagle,0.9870918989181519,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_153,images/beagle_153.jpg,8,Beagle,8,Beagle,0.9919539093971252,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_156,images/beagle_156.jpg,8,Beagle,8,Beagle,0.9830875992774963,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_158,images/beagle_158.jpg,8,Beagle,8,Beagle,0.9990326166152954,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_161,images/beagle_161.jpg,8,Beagle,8,Beagle,0.9937257170677185,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_168,images/beagle_168.jpg,8,Beagle,8,Beagle,0.9978213310241699,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_17,images/beagle_17.jpg,8,Beagle,8,Beagle,0.9999748468399048,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_176,images/beagle_176.jpg,8,Beagle,8,Beagle,0.999994158744812,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_178,images/beagle_178.jpg,8,Beagle,8,Beagle,0.9999879598617554,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_183,images/beagle_183.jpg,8,Beagle,8,Beagle,0.9276044368743896,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_184,images/beagle_184.jpg,8,Beagle,8,Beagle,0.9972136616706848,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_195,images/beagle_195.jpg,8,Beagle,8,Beagle,0.9972454309463501,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_196,images/beagle_196.jpg,8,Beagle,8,Beagle,0.9999568462371826,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_203,images/beagle_203.jpg,8,Beagle,8,Beagle,0.9999964237213135,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_24,images/beagle_24.jpg,8,Beagle,8,Beagle,0.9957960844039917,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_32,images/beagle_32.jpg,8,Beagle,8,Beagle,0.9999935626983643,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_33,images/beagle_33.jpg,8,Beagle,8,Beagle,0.5599475502967834,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_34,images/beagle_34.jpg,8,Beagle,8,Beagle,0.9999377727508545,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_40,images/beagle_40.jpg,8,Beagle,8,Beagle,0.9999544620513916,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_41,images/beagle_41.jpg,8,Beagle,8,Beagle,0.9999960660934448,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_51,images/beagle_51.jpg,8,Beagle,8,Beagle,0.999976396560669,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_61,images/beagle_61.jpg,8,Beagle,8,Beagle,0.9996808767318726,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_79,images/beagle_79.jpg,8,Beagle,8,Beagle,0.9998607635498047,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_83,images/beagle_83.jpg,8,Beagle,8,Beagle,0.9999977350234985,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,beagle_94,images/beagle_94.jpg,8,Beagle,8,Beagle,0.9999772310256958,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_101,images/pug_101.jpg,5,Pug,5,Pug,0.9999097585678101,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_12,images/pug_12.jpg,5,Pug,5,Pug,0.999994158744812,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_120,images/pug_120.jpg,5,Pug,5,Pug,0.9999700784683228,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_127,images/pug_127.jpg,5,Pug,5,Pug,0.9996621608734131,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_13,images/pug_13.jpg,5,Pug,5,Pug,0.9999395608901978,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_130,images/pug_130.jpg,5,Pug,5,Pug,0.9999340772628784,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_143,images/pug_143.jpg,5,Pug,5,Pug,0.9999809265136719,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_144,images/pug_144.jpg,5,Pug,5,Pug,0.9999616146087646,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_147,images/pug_147.jpg,5,Pug,5,Pug,0.9999922513961792,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_151,images/pug_151.jpg,5,Pug,5,Pug,0.9999912977218628,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_153,images/pug_153.jpg,5,Pug,5,Pug,0.9999634027481079,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_156,images/pug_156.jpg,5,Pug,5,Pug,0.9999709129333496,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_165,images/pug_165.jpg,5,Pug,5,Pug,0.9970445036888123,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_167,images/pug_167.jpg,5,Pug,5,Pug,0.9996310472488403,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_168,images/pug_168.jpg,5,Pug,5,Pug,0.999951958656311,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_177,images/pug_177.jpg,5,Pug,5,Pug,0.9997668862342834,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_195,images/pug_195.jpg,5,Pug,5,Pug,0.9986861348152161,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_200,images/pug_200.jpg,5,Pug,5,Pug,0.9995030164718628,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_24,images/pug_24.jpg,5,Pug,5,Pug,0.9990656971931458,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_3,images/pug_3.jpg,5,Pug,5,Pug,0.9999994039535522,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_32,images/pug_32.jpg,5,Pug,5,Pug,0.999971866607666,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_36,images/pug_36.jpg,5,Pug,5,Pug,0.9997875094413757,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_37,images/pug_37.jpg,5,Pug,5,Pug,0.9958637952804565,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_43,images/pug_43.jpg,5,Pug,5,Pug,0.9999692440032959,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_44,images/pug_44.jpg,5,Pug,5,Pug,0.999996542930603,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_50,images/pug_50.jpg,5,Pug,5,Pug,0.9987801909446716,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_72,images/pug_72.jpg,5,Pug,5,Pug,0.999984622001648,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_74,images/pug_74.jpg,5,Pug,4,American Bulldog,0.9144569635391235,0
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_8,images/pug_8.jpg,5,Pug,5,Pug,0.9998868703842163,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,pug_93,images/pug_93.jpg,5,Pug,5,Pug,0.986150324344635,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_101,images/samoyed_101.jpg,9,Samoyed,9,Samoyed,0.9987908005714417,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_107,images/samoyed_107.jpg,9,Samoyed,9,Samoyed,0.999862790107727,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_108,images/samoyed_108.jpg,9,Samoyed,9,Samoyed,0.9999164342880249,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_110,images/samoyed_110.jpg,9,Samoyed,9,Samoyed,0.9998606443405151,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_12,images/samoyed_12.jpg,9,Samoyed,9,Samoyed,0.9998748302459717,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_127,images/samoyed_127.jpg,9,Samoyed,9,Samoyed,0.9997420907020569,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_130,images/samoyed_130.jpg,9,Samoyed,9,Samoyed,0.9997774958610535,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_137,images/samoyed_137.jpg,9,Samoyed,9,Samoyed,0.9975618124008179,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_140,images/samoyed_140.jpg,9,Samoyed,9,Samoyed,0.9961860775947571,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_141,images/samoyed_141.jpg,9,Samoyed,9,Samoyed,0.9929439425468445,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_145,images/samoyed_145.jpg,9,Samoyed,9,Samoyed,0.9992623925209045,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_164,images/samoyed_164.jpg,9,Samoyed,9,Samoyed,0.9998519420623779,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_167,images/samoyed_167.jpg,9,Samoyed,9,Samoyed,0.9999319314956665,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_18,images/samoyed_18.jpg,9,Samoyed,9,Samoyed,0.9998388290405273,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_186,images/samoyed_186.jpg,9,Samoyed,9,Samoyed,0.9995469450950623,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_197,images/samoyed_197.jpg,9,Samoyed,9,Samoyed,0.9998315572738647,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_22,images/samoyed_22.jpg,9,Samoyed,9,Samoyed,0.9990334510803223,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_3,images/samoyed_3.jpg,9,Samoyed,9,Samoyed,0.9985890984535217,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_36,images/samoyed_36.jpg,9,Samoyed,9,Samoyed,0.9995326995849609,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_4,images/samoyed_4.jpg,9,Samoyed,9,Samoyed,0.9993324875831604,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_43,images/samoyed_43.jpg,9,Samoyed,9,Samoyed,0.9985886216163635,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_44,images/samoyed_44.jpg,9,Samoyed,9,Samoyed,0.9997923970222473,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_46,images/samoyed_46.jpg,9,Samoyed,9,Samoyed,0.9999542236328125,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_49,images/samoyed_49.jpg,9,Samoyed,9,Samoyed,0.9999275207519531,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_53,images/samoyed_53.jpg,9,Samoyed,9,Samoyed,0.9995723366737366,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_57,images/samoyed_57.jpg,9,Samoyed,9,Samoyed,0.9999364614486694,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_58,images/samoyed_58.jpg,9,Samoyed,9,Samoyed,0.9999141693115234,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_64,images/samoyed_64.jpg,9,Samoyed,9,Samoyed,0.9997875094413757,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_72,images/samoyed_72.jpg,9,Samoyed,9,Samoyed,0.9998654127120972,1
+42,artifacts\ablation_noaug\runs\c3_lr1e-5_seed42\best.pt,samoyed_8,images/samoyed_8.jpg,9,Samoyed,9,Samoyed,0.9999558925628662,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_101,images/Birman_101.jpg,3,Birman,3,Birman,0.9995239973068237,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_105,images/Birman_105.jpg,3,Birman,3,Birman,0.999306321144104,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_112,images/Birman_112.jpg,3,Birman,3,Birman,0.9997939467430115,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_116,images/Birman_116.jpg,3,Birman,3,Birman,0.9980354905128479,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_127,images/Birman_127.jpg,3,Birman,3,Birman,0.9927284717559814,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_133,images/Birman_133.jpg,3,Birman,3,Birman,0.8705340623855591,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_134,images/Birman_134.jpg,3,Birman,3,Birman,0.9999082088470459,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_15,images/Birman_15.jpg,3,Birman,3,Birman,0.9998016953468323,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_154,images/Birman_154.jpg,3,Birman,3,Birman,0.9974338412284851,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_156,images/Birman_156.jpg,3,Birman,3,Birman,0.9958794116973877,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_161,images/Birman_161.jpg,3,Birman,3,Birman,0.999215841293335,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_167,images/Birman_167.jpg,3,Birman,3,Birman,0.9998775720596313,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_168,images/Birman_168.jpg,3,Birman,3,Birman,0.9954959154129028,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_189,images/Birman_189.jpg,3,Birman,3,Birman,0.9936530590057373,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_192,images/Birman_192.jpg,3,Birman,3,Birman,0.9837575554847717,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_196,images/Birman_196.jpg,3,Birman,3,Birman,0.9838091135025024,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_201,images/Birman_201.jpg,3,Birman,3,Birman,0.9805067777633667,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_26,images/Birman_26.jpg,3,Birman,3,Birman,0.999283492565155,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_29,images/Birman_29.jpg,3,Birman,3,Birman,0.9829193353652954,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_3,images/Birman_3.jpg,3,Birman,3,Birman,0.9955692887306213,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_4,images/Birman_4.jpg,3,Birman,3,Birman,0.9943091869354248,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_43,images/Birman_43.jpg,3,Birman,3,Birman,0.9625417590141296,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_44,images/Birman_44.jpg,3,Birman,3,Birman,0.9849676489830017,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_46,images/Birman_46.jpg,3,Birman,3,Birman,0.9999840259552002,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_49,images/Birman_49.jpg,3,Birman,3,Birman,0.9999091625213623,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_6,images/Birman_6.jpg,3,Birman,3,Birman,0.9971017241477966,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_7,images/Birman_7.jpg,3,Birman,3,Birman,0.9183931946754456,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_8,images/Birman_8.jpg,3,Birman,3,Birman,0.9997120499610901,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_86,images/Birman_86.jpg,3,Birman,3,Birman,0.9986536502838135,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Birman_96,images/Birman_96.jpg,3,Birman,3,Birman,0.8754469752311707,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_107,images/British_Shorthair_107.jpg,0,British Shorthair,0,British Shorthair,0.9966676831245422,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_116,images/British_Shorthair_116.jpg,0,British Shorthair,0,British Shorthair,0.9984269142150879,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_121,images/British_Shorthair_121.jpg,0,British Shorthair,0,British Shorthair,0.9178734421730042,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_124,images/British_Shorthair_124.jpg,0,British Shorthair,0,British Shorthair,0.9954715967178345,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_125,images/British_Shorthair_125.jpg,0,British Shorthair,0,British Shorthair,0.8768539428710938,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_144,images/British_Shorthair_144.jpg,0,British Shorthair,0,British Shorthair,0.8255707025527954,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_157,images/British_Shorthair_157.jpg,0,British Shorthair,0,British Shorthair,0.7582054138183594,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_161,images/British_Shorthair_161.jpg,0,British Shorthair,0,British Shorthair,0.9861147403717041,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_163,images/British_Shorthair_163.jpg,0,British Shorthair,1,Russian Blue,0.6215502619743347,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_18,images/British_Shorthair_18.jpg,0,British Shorthair,0,British Shorthair,0.9999046325683594,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_180,images/British_Shorthair_180.jpg,0,British Shorthair,0,British Shorthair,0.995741605758667,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_186,images/British_Shorthair_186.jpg,0,British Shorthair,0,British Shorthair,0.999885082244873,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_190,images/British_Shorthair_190.jpg,0,British Shorthair,0,British Shorthair,0.849959135055542,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_193,images/British_Shorthair_193.jpg,0,British Shorthair,0,British Shorthair,0.9998754262924194,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_196,images/British_Shorthair_196.jpg,0,British Shorthair,0,British Shorthair,0.9335535764694214,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_201,images/British_Shorthair_201.jpg,0,British Shorthair,0,British Shorthair,0.9870087504386902,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_204,images/British_Shorthair_204.jpg,0,British Shorthair,0,British Shorthair,0.9952475428581238,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_205,images/British_Shorthair_205.jpg,0,British Shorthair,0,British Shorthair,0.9997912049293518,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_230,images/British_Shorthair_230.jpg,0,British Shorthair,1,Russian Blue,0.8921732306480408,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_266,images/British_Shorthair_266.jpg,0,British Shorthair,0,British Shorthair,0.9991911053657532,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_267,images/British_Shorthair_267.jpg,0,British Shorthair,1,Russian Blue,0.5963860750198364,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_269,images/British_Shorthair_269.jpg,0,British Shorthair,0,British Shorthair,0.9998272061347961,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_271,images/British_Shorthair_271.jpg,0,British Shorthair,0,British Shorthair,0.9998883008956909,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_33,images/British_Shorthair_33.jpg,0,British Shorthair,0,British Shorthair,0.9896764159202576,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_50,images/British_Shorthair_50.jpg,0,British Shorthair,0,British Shorthair,0.9986728429794312,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_54,images/British_Shorthair_54.jpg,0,British Shorthair,7,Maine Coon,0.550718367099762,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_63,images/British_Shorthair_63.jpg,0,British Shorthair,0,British Shorthair,0.9619878530502319,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_65,images/British_Shorthair_65.jpg,0,British Shorthair,0,British Shorthair,0.9389626979827881,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_79,images/British_Shorthair_79.jpg,0,British Shorthair,0,British Shorthair,0.9959611296653748,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,British_Shorthair_92,images/British_Shorthair_92.jpg,0,British Shorthair,0,British Shorthair,0.816959798336029,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_104,images/Maine_Coon_104.jpg,7,Maine Coon,7,Maine Coon,0.9994290471076965,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_105,images/Maine_Coon_105.jpg,7,Maine Coon,7,Maine Coon,0.9973992109298706,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_116,images/Maine_Coon_116.jpg,7,Maine Coon,7,Maine Coon,0.9990276098251343,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_121,images/Maine_Coon_121.jpg,7,Maine Coon,7,Maine Coon,0.9994229078292847,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_123,images/Maine_Coon_123.jpg,7,Maine Coon,7,Maine Coon,0.9984945058822632,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_131,images/Maine_Coon_131.jpg,7,Maine Coon,7,Maine Coon,0.999721348285675,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_137,images/Maine_Coon_137.jpg,7,Maine Coon,7,Maine Coon,0.9995766282081604,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_147,images/Maine_Coon_147.jpg,7,Maine Coon,7,Maine Coon,0.9998852014541626,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_16,images/Maine_Coon_16.jpg,7,Maine Coon,7,Maine Coon,0.9997958540916443,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_171,images/Maine_Coon_171.jpg,7,Maine Coon,7,Maine Coon,0.9999982118606567,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_193,images/Maine_Coon_193.jpg,7,Maine Coon,7,Maine Coon,0.9999762773513794,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_197,images/Maine_Coon_197.jpg,7,Maine Coon,7,Maine Coon,0.996752917766571,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_205,images/Maine_Coon_205.jpg,7,Maine Coon,7,Maine Coon,0.9999934434890747,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_206,images/Maine_Coon_206.jpg,7,Maine Coon,7,Maine Coon,0.9999874830245972,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_222,images/Maine_Coon_222.jpg,7,Maine Coon,7,Maine Coon,0.9999006986618042,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_238,images/Maine_Coon_238.jpg,7,Maine Coon,3,Birman,0.513042688369751,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_239,images/Maine_Coon_239.jpg,7,Maine Coon,7,Maine Coon,0.9998877048492432,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_267,images/Maine_Coon_267.jpg,7,Maine Coon,7,Maine Coon,0.9076176285743713,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_270,images/Maine_Coon_270.jpg,7,Maine Coon,7,Maine Coon,0.997883141040802,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_271,images/Maine_Coon_271.jpg,7,Maine Coon,7,Maine Coon,0.9996368885040283,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_29,images/Maine_Coon_29.jpg,7,Maine Coon,7,Maine Coon,0.9999998807907104,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_30,images/Maine_Coon_30.jpg,7,Maine Coon,7,Maine Coon,0.9976078271865845,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_35,images/Maine_Coon_35.jpg,7,Maine Coon,7,Maine Coon,0.9999306201934814,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_55,images/Maine_Coon_55.jpg,7,Maine Coon,7,Maine Coon,0.9979391694068909,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_69,images/Maine_Coon_69.jpg,7,Maine Coon,0,British Shorthair,0.3733985126018524,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_77,images/Maine_Coon_77.jpg,7,Maine Coon,7,Maine Coon,0.9905423521995544,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_78,images/Maine_Coon_78.jpg,7,Maine Coon,7,Maine Coon,0.9929628968238831,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_87,images/Maine_Coon_87.jpg,7,Maine Coon,7,Maine Coon,0.9999505281448364,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_89,images/Maine_Coon_89.jpg,7,Maine Coon,7,Maine Coon,0.9999184608459473,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Maine_Coon_98,images/Maine_Coon_98.jpg,7,Maine Coon,7,Maine Coon,0.516990602016449,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_116,images/Russian_Blue_116.jpg,1,Russian Blue,1,Russian Blue,0.9956645369529724,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_123,images/Russian_Blue_123.jpg,1,Russian Blue,1,Russian Blue,0.990402102470398,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_127,images/Russian_Blue_127.jpg,1,Russian Blue,1,Russian Blue,0.9744755625724792,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_131,images/Russian_Blue_131.jpg,1,Russian Blue,1,Russian Blue,0.9968785047531128,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_135,images/Russian_Blue_135.jpg,1,Russian Blue,1,Russian Blue,0.9708946943283081,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_155,images/Russian_Blue_155.jpg,1,Russian Blue,1,Russian Blue,0.989141583442688,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_157,images/Russian_Blue_157.jpg,1,Russian Blue,1,Russian Blue,0.776491641998291,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_164,images/Russian_Blue_164.jpg,1,Russian Blue,0,British Shorthair,0.8205950260162354,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_171,images/Russian_Blue_171.jpg,1,Russian Blue,1,Russian Blue,0.9993091821670532,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_172,images/Russian_Blue_172.jpg,1,Russian Blue,1,Russian Blue,0.9849303960800171,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_18,images/Russian_Blue_18.jpg,1,Russian Blue,1,Russian Blue,0.9885733127593994,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_186,images/Russian_Blue_186.jpg,1,Russian Blue,1,Russian Blue,0.9993890523910522,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_191,images/Russian_Blue_191.jpg,1,Russian Blue,1,Russian Blue,0.9938833713531494,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_211,images/Russian_Blue_211.jpg,1,Russian Blue,1,Russian Blue,0.9938978552818298,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_228,images/Russian_Blue_228.jpg,1,Russian Blue,1,Russian Blue,0.9493153691291809,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_264,images/Russian_Blue_264.jpg,1,Russian Blue,0,British Shorthair,0.6698430776596069,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_29,images/Russian_Blue_29.jpg,1,Russian Blue,0,British Shorthair,0.997923731803894,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_34,images/Russian_Blue_34.jpg,1,Russian Blue,1,Russian Blue,0.9959757924079895,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_35,images/Russian_Blue_35.jpg,1,Russian Blue,1,Russian Blue,0.9981076717376709,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_38,images/Russian_Blue_38.jpg,1,Russian Blue,1,Russian Blue,0.9986475110054016,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_44,images/Russian_Blue_44.jpg,1,Russian Blue,1,Russian Blue,0.9994452595710754,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_45,images/Russian_Blue_45.jpg,1,Russian Blue,1,Russian Blue,0.9998624324798584,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_61,images/Russian_Blue_61.jpg,1,Russian Blue,1,Russian Blue,0.7646823525428772,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_62,images/Russian_Blue_62.jpg,1,Russian Blue,1,Russian Blue,0.9974996447563171,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_63,images/Russian_Blue_63.jpg,1,Russian Blue,1,Russian Blue,0.9963334798812866,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_66,images/Russian_Blue_66.jpg,1,Russian Blue,1,Russian Blue,0.9872586131095886,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_68,images/Russian_Blue_68.jpg,1,Russian Blue,1,Russian Blue,0.9997351765632629,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_78,images/Russian_Blue_78.jpg,1,Russian Blue,1,Russian Blue,0.9819594025611877,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_8,images/Russian_Blue_8.jpg,1,Russian Blue,0,British Shorthair,0.5567835569381714,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Russian_Blue_9,images/Russian_Blue_9.jpg,1,Russian Blue,1,Russian Blue,0.9670913219451904,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_102,images/Siamese_102.jpg,2,Siamese,2,Siamese,0.8650439381599426,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_112,images/Siamese_112.jpg,2,Siamese,2,Siamese,0.8605794310569763,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_129,images/Siamese_129.jpg,2,Siamese,2,Siamese,0.984950065612793,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_130,images/Siamese_130.jpg,2,Siamese,2,Siamese,0.7698421478271484,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_142,images/Siamese_142.jpg,2,Siamese,2,Siamese,0.9976876974105835,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_144,images/Siamese_144.jpg,2,Siamese,2,Siamese,0.9998724460601807,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_145,images/Siamese_145.jpg,2,Siamese,3,Birman,0.8736775517463684,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_163,images/Siamese_163.jpg,2,Siamese,2,Siamese,0.9999604225158691,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_168,images/Siamese_168.jpg,2,Siamese,2,Siamese,0.9969118237495422,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_170,images/Siamese_170.jpg,2,Siamese,2,Siamese,0.9997891783714294,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_175,images/Siamese_175.jpg,2,Siamese,2,Siamese,0.9984183311462402,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_178,images/Siamese_178.jpg,2,Siamese,2,Siamese,0.9998881816864014,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_189,images/Siamese_189.jpg,2,Siamese,2,Siamese,0.9997190833091736,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_193,images/Siamese_193.jpg,2,Siamese,2,Siamese,0.9996470212936401,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_194,images/Siamese_194.jpg,2,Siamese,3,Birman,0.8278003334999084,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_195,images/Siamese_195.jpg,2,Siamese,2,Siamese,0.9990670084953308,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_198,images/Siamese_198.jpg,2,Siamese,2,Siamese,0.994631290435791,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_202,images/Siamese_202.jpg,2,Siamese,2,Siamese,0.9992045760154724,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_206,images/Siamese_206.jpg,2,Siamese,2,Siamese,0.9952634572982788,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_207,images/Siamese_207.jpg,2,Siamese,2,Siamese,0.999406099319458,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_22,images/Siamese_22.jpg,2,Siamese,2,Siamese,0.9844759106636047,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_257,images/Siamese_257.jpg,2,Siamese,3,Birman,0.9823042154312134,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_42,images/Siamese_42.jpg,2,Siamese,2,Siamese,0.9996380805969238,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_55,images/Siamese_55.jpg,2,Siamese,2,Siamese,0.9961411356925964,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_6,images/Siamese_6.jpg,2,Siamese,2,Siamese,0.9944478273391724,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_63,images/Siamese_63.jpg,2,Siamese,2,Siamese,0.8659982681274414,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_72,images/Siamese_72.jpg,2,Siamese,2,Siamese,0.9975135326385498,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_74,images/Siamese_74.jpg,2,Siamese,2,Siamese,0.9872825145721436,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_82,images/Siamese_82.jpg,2,Siamese,2,Siamese,0.9402529001235962,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Siamese_92,images/Siamese_92.jpg,2,Siamese,2,Siamese,0.9972381591796875,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_110,images/Sphynx_110.jpg,6,Sphynx,6,Sphynx,0.9880907535552979,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_112,images/Sphynx_112.jpg,6,Sphynx,6,Sphynx,0.9988718628883362,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_128,images/Sphynx_128.jpg,6,Sphynx,6,Sphynx,0.943375289440155,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_132,images/Sphynx_132.jpg,6,Sphynx,6,Sphynx,0.9999135732650757,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_143,images/Sphynx_143.jpg,6,Sphynx,6,Sphynx,0.9922078251838684,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_146,images/Sphynx_146.jpg,6,Sphynx,6,Sphynx,0.9998944997787476,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_150,images/Sphynx_150.jpg,6,Sphynx,6,Sphynx,0.9997215867042542,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_158,images/Sphynx_158.jpg,6,Sphynx,6,Sphynx,0.9985367059707642,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_169,images/Sphynx_169.jpg,6,Sphynx,6,Sphynx,0.9997894167900085,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_173,images/Sphynx_173.jpg,6,Sphynx,6,Sphynx,0.9998028874397278,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_174,images/Sphynx_174.jpg,6,Sphynx,6,Sphynx,0.9845247864723206,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_178,images/Sphynx_178.jpg,6,Sphynx,6,Sphynx,0.9998935461044312,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_181,images/Sphynx_181.jpg,6,Sphynx,6,Sphynx,0.9983568787574768,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_183,images/Sphynx_183.jpg,6,Sphynx,6,Sphynx,0.9827661514282227,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_193,images/Sphynx_193.jpg,6,Sphynx,6,Sphynx,0.9998458623886108,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_195,images/Sphynx_195.jpg,6,Sphynx,6,Sphynx,0.9998061060905457,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_197,images/Sphynx_197.jpg,6,Sphynx,6,Sphynx,0.9998612403869629,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_201,images/Sphynx_201.jpg,6,Sphynx,6,Sphynx,0.9995554089546204,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_206,images/Sphynx_206.jpg,6,Sphynx,6,Sphynx,0.999940037727356,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_222,images/Sphynx_222.jpg,6,Sphynx,6,Sphynx,0.9987277388572693,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_245,images/Sphynx_245.jpg,6,Sphynx,6,Sphynx,0.9999792575836182,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_30,images/Sphynx_30.jpg,6,Sphynx,6,Sphynx,0.9970188140869141,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_36,images/Sphynx_36.jpg,6,Sphynx,6,Sphynx,0.999704897403717,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_38,images/Sphynx_38.jpg,6,Sphynx,6,Sphynx,0.9976245760917664,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_66,images/Sphynx_66.jpg,6,Sphynx,6,Sphynx,0.9998503923416138,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_73,images/Sphynx_73.jpg,6,Sphynx,6,Sphynx,0.9705788493156433,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_9,images/Sphynx_9.jpg,6,Sphynx,6,Sphynx,0.9707123637199402,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_93,images/Sphynx_93.jpg,6,Sphynx,6,Sphynx,0.9997729659080505,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_95,images/Sphynx_95.jpg,6,Sphynx,4,American Bulldog,0.5448756217956543,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,Sphynx_99,images/Sphynx_99.jpg,6,Sphynx,6,Sphynx,0.9901559352874756,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_101,images/american_bulldog_101.jpg,4,American Bulldog,4,American Bulldog,0.9847020506858826,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_102,images/american_bulldog_102.jpg,4,American Bulldog,4,American Bulldog,0.9885616302490234,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_11,images/american_bulldog_11.jpg,4,American Bulldog,4,American Bulldog,0.9999586343765259,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_111,images/american_bulldog_111.jpg,4,American Bulldog,4,American Bulldog,0.9999983310699463,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_119,images/american_bulldog_119.jpg,4,American Bulldog,4,American Bulldog,0.9996654987335205,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_144,images/american_bulldog_144.jpg,4,American Bulldog,4,American Bulldog,0.9987200498580933,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_15,images/american_bulldog_15.jpg,4,American Bulldog,4,American Bulldog,0.999967098236084,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_150,images/american_bulldog_150.jpg,4,American Bulldog,4,American Bulldog,0.9996004700660706,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_164,images/american_bulldog_164.jpg,4,American Bulldog,4,American Bulldog,0.9832930564880371,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_167,images/american_bulldog_167.jpg,4,American Bulldog,6,Sphynx,0.7313143610954285,0
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_177,images/american_bulldog_177.jpg,4,American Bulldog,4,American Bulldog,0.9838825464248657,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_179,images/american_bulldog_179.jpg,4,American Bulldog,4,American Bulldog,0.9999984502792358,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_186,images/american_bulldog_186.jpg,4,American Bulldog,4,American Bulldog,0.9983246922492981,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_189,images/american_bulldog_189.jpg,4,American Bulldog,4,American Bulldog,0.9999568462371826,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_19,images/american_bulldog_19.jpg,4,American Bulldog,4,American Bulldog,0.9999573230743408,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_194,images/american_bulldog_194.jpg,4,American Bulldog,4,American Bulldog,0.9979230761528015,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_197,images/american_bulldog_197.jpg,4,American Bulldog,4,American Bulldog,0.999184787273407,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_216,images/american_bulldog_216.jpg,4,American Bulldog,4,American Bulldog,0.9999303817749023,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_22,images/american_bulldog_22.jpg,4,American Bulldog,4,American Bulldog,0.9992479681968689,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_221,images/american_bulldog_221.jpg,4,American Bulldog,4,American Bulldog,0.9999594688415527,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_25,images/american_bulldog_25.jpg,4,American Bulldog,4,American Bulldog,0.999988317489624,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_26,images/american_bulldog_26.jpg,4,American Bulldog,4,American Bulldog,0.9999728202819824,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_3,images/american_bulldog_3.jpg,4,American Bulldog,4,American Bulldog,0.9820951819419861,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_32,images/american_bulldog_32.jpg,4,American Bulldog,4,American Bulldog,0.9999310970306396,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_38,images/american_bulldog_38.jpg,4,American Bulldog,4,American Bulldog,0.999955415725708,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_39,images/american_bulldog_39.jpg,4,American Bulldog,4,American Bulldog,0.9999322891235352,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_41,images/american_bulldog_41.jpg,4,American Bulldog,4,American Bulldog,0.9999963045120239,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_44,images/american_bulldog_44.jpg,4,American Bulldog,4,American Bulldog,0.9999679327011108,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_47,images/american_bulldog_47.jpg,4,American Bulldog,4,American Bulldog,0.9998348951339722,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,american_bulldog_8,images/american_bulldog_8.jpg,4,American Bulldog,4,American Bulldog,0.9977331161499023,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_103,images/beagle_103.jpg,8,Beagle,8,Beagle,0.9999903440475464,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_109,images/beagle_109.jpg,8,Beagle,8,Beagle,0.9999858140945435,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_120,images/beagle_120.jpg,8,Beagle,8,Beagle,0.9999774694442749,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_137,images/beagle_137.jpg,8,Beagle,8,Beagle,0.983728289604187,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_141,images/beagle_141.jpg,8,Beagle,8,Beagle,0.8869042992591858,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_152,images/beagle_152.jpg,8,Beagle,8,Beagle,0.9993236064910889,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_153,images/beagle_153.jpg,8,Beagle,8,Beagle,0.9972678422927856,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_156,images/beagle_156.jpg,8,Beagle,8,Beagle,0.9936410784721375,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_158,images/beagle_158.jpg,8,Beagle,8,Beagle,0.9993797540664673,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_161,images/beagle_161.jpg,8,Beagle,8,Beagle,0.9947564601898193,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_168,images/beagle_168.jpg,8,Beagle,8,Beagle,0.9997653365135193,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_17,images/beagle_17.jpg,8,Beagle,8,Beagle,0.9998514652252197,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_176,images/beagle_176.jpg,8,Beagle,8,Beagle,0.9999942779541016,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_178,images/beagle_178.jpg,8,Beagle,8,Beagle,0.9999816417694092,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_183,images/beagle_183.jpg,8,Beagle,8,Beagle,0.9841705560684204,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_184,images/beagle_184.jpg,8,Beagle,8,Beagle,0.9993299245834351,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_195,images/beagle_195.jpg,8,Beagle,8,Beagle,0.9984936714172363,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_196,images/beagle_196.jpg,8,Beagle,8,Beagle,0.9999827146530151,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_203,images/beagle_203.jpg,8,Beagle,8,Beagle,0.9999912977218628,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_24,images/beagle_24.jpg,8,Beagle,8,Beagle,0.9836542010307312,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_32,images/beagle_32.jpg,8,Beagle,8,Beagle,0.9999809265136719,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_33,images/beagle_33.jpg,8,Beagle,8,Beagle,0.9270527362823486,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_34,images/beagle_34.jpg,8,Beagle,8,Beagle,0.9999245405197144,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_40,images/beagle_40.jpg,8,Beagle,8,Beagle,0.9999980926513672,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_41,images/beagle_41.jpg,8,Beagle,8,Beagle,0.9999973773956299,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_51,images/beagle_51.jpg,8,Beagle,8,Beagle,0.9999639987945557,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_61,images/beagle_61.jpg,8,Beagle,8,Beagle,0.9989808201789856,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_79,images/beagle_79.jpg,8,Beagle,8,Beagle,0.999884843826294,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_83,images/beagle_83.jpg,8,Beagle,8,Beagle,0.9999839067459106,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,beagle_94,images/beagle_94.jpg,8,Beagle,8,Beagle,0.999064028263092,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_101,images/pug_101.jpg,5,Pug,5,Pug,0.9999412298202515,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_12,images/pug_12.jpg,5,Pug,5,Pug,0.9999992847442627,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_120,images/pug_120.jpg,5,Pug,5,Pug,0.9999861717224121,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_127,images/pug_127.jpg,5,Pug,5,Pug,0.9997207522392273,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_13,images/pug_13.jpg,5,Pug,5,Pug,0.9999719858169556,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_130,images/pug_130.jpg,5,Pug,5,Pug,0.9997867941856384,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_143,images/pug_143.jpg,5,Pug,5,Pug,0.999970555305481,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_144,images/pug_144.jpg,5,Pug,5,Pug,0.9999397993087769,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_147,images/pug_147.jpg,5,Pug,5,Pug,0.9999983310699463,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_151,images/pug_151.jpg,5,Pug,5,Pug,0.9999791383743286,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_153,images/pug_153.jpg,5,Pug,5,Pug,0.9999850988388062,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_156,images/pug_156.jpg,5,Pug,5,Pug,0.9999910593032837,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_165,images/pug_165.jpg,5,Pug,5,Pug,0.9996378421783447,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_167,images/pug_167.jpg,5,Pug,5,Pug,0.9966409206390381,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_168,images/pug_168.jpg,5,Pug,5,Pug,0.9999622106552124,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_177,images/pug_177.jpg,5,Pug,5,Pug,0.9998142123222351,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_195,images/pug_195.jpg,5,Pug,5,Pug,0.9973949193954468,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_200,images/pug_200.jpg,5,Pug,5,Pug,0.9998977184295654,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_24,images/pug_24.jpg,5,Pug,5,Pug,0.9997649788856506,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_3,images/pug_3.jpg,5,Pug,5,Pug,0.9999998807907104,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_32,images/pug_32.jpg,5,Pug,5,Pug,0.9999829530715942,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_36,images/pug_36.jpg,5,Pug,5,Pug,0.9999921321868896,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_37,images/pug_37.jpg,5,Pug,5,Pug,0.9991464614868164,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_43,images/pug_43.jpg,5,Pug,5,Pug,0.9999611377716064,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_44,images/pug_44.jpg,5,Pug,5,Pug,0.9999985694885254,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_50,images/pug_50.jpg,5,Pug,5,Pug,0.9970966577529907,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_72,images/pug_72.jpg,5,Pug,5,Pug,0.9999932050704956,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_74,images/pug_74.jpg,5,Pug,5,Pug,0.6729171276092529,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_8,images/pug_8.jpg,5,Pug,5,Pug,0.9999890327453613,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,pug_93,images/pug_93.jpg,5,Pug,5,Pug,0.9740022420883179,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_101,images/samoyed_101.jpg,9,Samoyed,9,Samoyed,0.9999619722366333,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_107,images/samoyed_107.jpg,9,Samoyed,9,Samoyed,0.9999727010726929,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_108,images/samoyed_108.jpg,9,Samoyed,9,Samoyed,0.9944630265235901,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_110,images/samoyed_110.jpg,9,Samoyed,9,Samoyed,0.9999762773513794,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_12,images/samoyed_12.jpg,9,Samoyed,9,Samoyed,0.9999725818634033,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_127,images/samoyed_127.jpg,9,Samoyed,9,Samoyed,0.9999582767486572,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_130,images/samoyed_130.jpg,9,Samoyed,9,Samoyed,0.9922812581062317,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_137,images/samoyed_137.jpg,9,Samoyed,9,Samoyed,0.9998276233673096,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_140,images/samoyed_140.jpg,9,Samoyed,9,Samoyed,0.9835595488548279,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_141,images/samoyed_141.jpg,9,Samoyed,9,Samoyed,0.9936639070510864,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_145,images/samoyed_145.jpg,9,Samoyed,9,Samoyed,0.9999935626983643,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_164,images/samoyed_164.jpg,9,Samoyed,9,Samoyed,0.9999786615371704,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_167,images/samoyed_167.jpg,9,Samoyed,9,Samoyed,0.9999521970748901,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_18,images/samoyed_18.jpg,9,Samoyed,9,Samoyed,0.9997708201408386,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_186,images/samoyed_186.jpg,9,Samoyed,9,Samoyed,0.9999734163284302,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_197,images/samoyed_197.jpg,9,Samoyed,9,Samoyed,0.9999986886978149,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_22,images/samoyed_22.jpg,9,Samoyed,9,Samoyed,0.9997681975364685,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_3,images/samoyed_3.jpg,9,Samoyed,9,Samoyed,0.9995306730270386,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_36,images/samoyed_36.jpg,9,Samoyed,9,Samoyed,0.999826967716217,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_4,images/samoyed_4.jpg,9,Samoyed,9,Samoyed,0.9999386072158813,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_43,images/samoyed_43.jpg,9,Samoyed,9,Samoyed,0.9449081420898438,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_44,images/samoyed_44.jpg,9,Samoyed,9,Samoyed,0.9997852444648743,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_46,images/samoyed_46.jpg,9,Samoyed,9,Samoyed,0.999997615814209,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_49,images/samoyed_49.jpg,9,Samoyed,9,Samoyed,0.9999990463256836,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_53,images/samoyed_53.jpg,9,Samoyed,9,Samoyed,0.9995290040969849,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_57,images/samoyed_57.jpg,9,Samoyed,9,Samoyed,0.999950647354126,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_58,images/samoyed_58.jpg,9,Samoyed,9,Samoyed,0.9999915361404419,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_64,images/samoyed_64.jpg,9,Samoyed,9,Samoyed,0.9996795654296875,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_72,images/samoyed_72.jpg,9,Samoyed,9,Samoyed,0.9997943043708801,1
+43,artifacts\ablation_noaug\runs\c3_lr1e-5_seed43\best.pt,samoyed_8,images/samoyed_8.jpg,9,Samoyed,9,Samoyed,0.9999954700469971,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_101,images/Birman_101.jpg,3,Birman,3,Birman,0.9984989166259766,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_105,images/Birman_105.jpg,3,Birman,3,Birman,0.9971440434455872,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_112,images/Birman_112.jpg,3,Birman,3,Birman,0.9999538660049438,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_116,images/Birman_116.jpg,3,Birman,3,Birman,0.9990221261978149,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_127,images/Birman_127.jpg,3,Birman,3,Birman,0.999028205871582,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_133,images/Birman_133.jpg,3,Birman,3,Birman,0.8952140808105469,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_134,images/Birman_134.jpg,3,Birman,3,Birman,0.9999717473983765,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_15,images/Birman_15.jpg,3,Birman,3,Birman,0.9939940571784973,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_154,images/Birman_154.jpg,3,Birman,3,Birman,0.9855524897575378,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_156,images/Birman_156.jpg,3,Birman,3,Birman,0.9996978044509888,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_161,images/Birman_161.jpg,3,Birman,3,Birman,0.9991127848625183,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_167,images/Birman_167.jpg,3,Birman,3,Birman,0.999769389629364,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_168,images/Birman_168.jpg,3,Birman,3,Birman,0.9998353719711304,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_189,images/Birman_189.jpg,3,Birman,3,Birman,0.9983890056610107,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_192,images/Birman_192.jpg,3,Birman,3,Birman,0.9927088022232056,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_196,images/Birman_196.jpg,3,Birman,3,Birman,0.9994243383407593,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_201,images/Birman_201.jpg,3,Birman,3,Birman,0.9677675366401672,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_26,images/Birman_26.jpg,3,Birman,3,Birman,0.999586284160614,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_29,images/Birman_29.jpg,3,Birman,3,Birman,0.7119393348693848,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_3,images/Birman_3.jpg,3,Birman,3,Birman,0.9997552037239075,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_4,images/Birman_4.jpg,3,Birman,3,Birman,0.99790358543396,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_43,images/Birman_43.jpg,3,Birman,3,Birman,0.8338862657546997,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_44,images/Birman_44.jpg,3,Birman,3,Birman,0.8547483682632446,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_46,images/Birman_46.jpg,3,Birman,3,Birman,0.9999386072158813,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_49,images/Birman_49.jpg,3,Birman,3,Birman,0.9998719692230225,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_6,images/Birman_6.jpg,3,Birman,3,Birman,0.9999549388885498,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_7,images/Birman_7.jpg,3,Birman,3,Birman,0.9956703186035156,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_8,images/Birman_8.jpg,3,Birman,3,Birman,0.9999839067459106,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_86,images/Birman_86.jpg,3,Birman,3,Birman,0.9997065663337708,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Birman_96,images/Birman_96.jpg,3,Birman,3,Birman,0.6621983647346497,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_107,images/British_Shorthair_107.jpg,0,British Shorthair,0,British Shorthair,0.9906043410301208,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_116,images/British_Shorthair_116.jpg,0,British Shorthair,0,British Shorthair,0.9999630451202393,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_121,images/British_Shorthair_121.jpg,0,British Shorthair,0,British Shorthair,0.9462723731994629,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_124,images/British_Shorthair_124.jpg,0,British Shorthair,0,British Shorthair,0.9989786148071289,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_125,images/British_Shorthair_125.jpg,0,British Shorthair,1,Russian Blue,0.7139743566513062,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_144,images/British_Shorthair_144.jpg,0,British Shorthair,0,British Shorthair,0.9834686517715454,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_157,images/British_Shorthair_157.jpg,0,British Shorthair,0,British Shorthair,0.5150806903839111,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_161,images/British_Shorthair_161.jpg,0,British Shorthair,0,British Shorthair,0.9948554039001465,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_163,images/British_Shorthair_163.jpg,0,British Shorthair,0,British Shorthair,0.8816490769386292,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_18,images/British_Shorthair_18.jpg,0,British Shorthair,0,British Shorthair,0.9999840259552002,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_180,images/British_Shorthair_180.jpg,0,British Shorthair,0,British Shorthair,0.9997672438621521,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_186,images/British_Shorthair_186.jpg,0,British Shorthair,0,British Shorthair,0.9999663829803467,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_190,images/British_Shorthair_190.jpg,0,British Shorthair,0,British Shorthair,0.9998666048049927,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_193,images/British_Shorthair_193.jpg,0,British Shorthair,0,British Shorthair,0.9999446868896484,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_196,images/British_Shorthair_196.jpg,0,British Shorthair,0,British Shorthair,0.9995143413543701,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_201,images/British_Shorthair_201.jpg,0,British Shorthair,0,British Shorthair,0.9999810457229614,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_204,images/British_Shorthair_204.jpg,0,British Shorthair,0,British Shorthair,0.9979113936424255,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_205,images/British_Shorthair_205.jpg,0,British Shorthair,0,British Shorthair,0.8516159653663635,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_230,images/British_Shorthair_230.jpg,0,British Shorthair,1,Russian Blue,0.7862749695777893,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_266,images/British_Shorthair_266.jpg,0,British Shorthair,0,British Shorthair,0.9944260120391846,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_267,images/British_Shorthair_267.jpg,0,British Shorthair,0,British Shorthair,0.8959183692932129,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_269,images/British_Shorthair_269.jpg,0,British Shorthair,0,British Shorthair,0.9975209832191467,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_271,images/British_Shorthair_271.jpg,0,British Shorthair,0,British Shorthair,0.9999723434448242,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_33,images/British_Shorthair_33.jpg,0,British Shorthair,0,British Shorthair,0.9987362027168274,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_50,images/British_Shorthair_50.jpg,0,British Shorthair,0,British Shorthair,0.998914361000061,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_54,images/British_Shorthair_54.jpg,0,British Shorthair,7,Maine Coon,0.9793821573257446,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_63,images/British_Shorthair_63.jpg,0,British Shorthair,0,British Shorthair,0.992974042892456,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_65,images/British_Shorthair_65.jpg,0,British Shorthair,0,British Shorthair,0.9815773367881775,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_79,images/British_Shorthair_79.jpg,0,British Shorthair,0,British Shorthair,0.9999324083328247,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,British_Shorthair_92,images/British_Shorthair_92.jpg,0,British Shorthair,1,Russian Blue,0.8619181513786316,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_104,images/Maine_Coon_104.jpg,7,Maine Coon,7,Maine Coon,0.9990322589874268,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_105,images/Maine_Coon_105.jpg,7,Maine Coon,7,Maine Coon,0.999848484992981,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_116,images/Maine_Coon_116.jpg,7,Maine Coon,7,Maine Coon,0.9993020296096802,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_121,images/Maine_Coon_121.jpg,7,Maine Coon,7,Maine Coon,0.9992188215255737,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_123,images/Maine_Coon_123.jpg,7,Maine Coon,7,Maine Coon,0.9746361970901489,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_131,images/Maine_Coon_131.jpg,7,Maine Coon,7,Maine Coon,0.9996317625045776,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_137,images/Maine_Coon_137.jpg,7,Maine Coon,7,Maine Coon,0.9997981190681458,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_147,images/Maine_Coon_147.jpg,7,Maine Coon,7,Maine Coon,0.9999902248382568,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_16,images/Maine_Coon_16.jpg,7,Maine Coon,7,Maine Coon,0.9998401403427124,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_171,images/Maine_Coon_171.jpg,7,Maine Coon,7,Maine Coon,0.9999097585678101,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_193,images/Maine_Coon_193.jpg,7,Maine Coon,7,Maine Coon,0.9999910593032837,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_197,images/Maine_Coon_197.jpg,7,Maine Coon,7,Maine Coon,0.9998507499694824,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_205,images/Maine_Coon_205.jpg,7,Maine Coon,7,Maine Coon,0.9999992847442627,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_206,images/Maine_Coon_206.jpg,7,Maine Coon,7,Maine Coon,0.9998525381088257,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_222,images/Maine_Coon_222.jpg,7,Maine Coon,7,Maine Coon,0.9999593496322632,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_238,images/Maine_Coon_238.jpg,7,Maine Coon,0,British Shorthair,0.8321449160575867,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_239,images/Maine_Coon_239.jpg,7,Maine Coon,7,Maine Coon,0.9999080896377563,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_267,images/Maine_Coon_267.jpg,7,Maine Coon,7,Maine Coon,0.993514895439148,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_270,images/Maine_Coon_270.jpg,7,Maine Coon,7,Maine Coon,0.9996258020401001,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_271,images/Maine_Coon_271.jpg,7,Maine Coon,7,Maine Coon,0.9895317554473877,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_29,images/Maine_Coon_29.jpg,7,Maine Coon,7,Maine Coon,0.999998927116394,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_30,images/Maine_Coon_30.jpg,7,Maine Coon,7,Maine Coon,0.9999147653579712,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_35,images/Maine_Coon_35.jpg,7,Maine Coon,7,Maine Coon,0.9957720637321472,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_55,images/Maine_Coon_55.jpg,7,Maine Coon,7,Maine Coon,0.9991819262504578,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_69,images/Maine_Coon_69.jpg,7,Maine Coon,7,Maine Coon,0.7865842580795288,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_77,images/Maine_Coon_77.jpg,7,Maine Coon,7,Maine Coon,0.9313636422157288,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_78,images/Maine_Coon_78.jpg,7,Maine Coon,7,Maine Coon,0.9994444251060486,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_87,images/Maine_Coon_87.jpg,7,Maine Coon,7,Maine Coon,0.9952781200408936,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_89,images/Maine_Coon_89.jpg,7,Maine Coon,7,Maine Coon,0.9999821186065674,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Maine_Coon_98,images/Maine_Coon_98.jpg,7,Maine Coon,7,Maine Coon,0.7228875756263733,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_116,images/Russian_Blue_116.jpg,1,Russian Blue,1,Russian Blue,0.9972822666168213,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_123,images/Russian_Blue_123.jpg,1,Russian Blue,1,Russian Blue,0.9937129616737366,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_127,images/Russian_Blue_127.jpg,1,Russian Blue,1,Russian Blue,0.8740956783294678,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_131,images/Russian_Blue_131.jpg,1,Russian Blue,1,Russian Blue,0.9963741898536682,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_135,images/Russian_Blue_135.jpg,1,Russian Blue,1,Russian Blue,0.9958487749099731,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_155,images/Russian_Blue_155.jpg,1,Russian Blue,1,Russian Blue,0.9922297596931458,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_157,images/Russian_Blue_157.jpg,1,Russian Blue,1,Russian Blue,0.8122783303260803,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_164,images/Russian_Blue_164.jpg,1,Russian Blue,0,British Shorthair,0.9269170761108398,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_171,images/Russian_Blue_171.jpg,1,Russian Blue,1,Russian Blue,0.9987908005714417,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_172,images/Russian_Blue_172.jpg,1,Russian Blue,1,Russian Blue,0.9969632029533386,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_18,images/Russian_Blue_18.jpg,1,Russian Blue,1,Russian Blue,0.994772732257843,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_186,images/Russian_Blue_186.jpg,1,Russian Blue,1,Russian Blue,0.9999452829360962,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_191,images/Russian_Blue_191.jpg,1,Russian Blue,1,Russian Blue,0.9923925399780273,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_211,images/Russian_Blue_211.jpg,1,Russian Blue,1,Russian Blue,0.9861641526222229,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_228,images/Russian_Blue_228.jpg,1,Russian Blue,1,Russian Blue,0.9781584739685059,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_264,images/Russian_Blue_264.jpg,1,Russian Blue,0,British Shorthair,0.979674756526947,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_29,images/Russian_Blue_29.jpg,1,Russian Blue,0,British Shorthair,0.9999804496765137,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_34,images/Russian_Blue_34.jpg,1,Russian Blue,1,Russian Blue,0.9998247027397156,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_35,images/Russian_Blue_35.jpg,1,Russian Blue,1,Russian Blue,0.998982846736908,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_38,images/Russian_Blue_38.jpg,1,Russian Blue,1,Russian Blue,0.9979650974273682,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_44,images/Russian_Blue_44.jpg,1,Russian Blue,1,Russian Blue,0.999702513217926,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_45,images/Russian_Blue_45.jpg,1,Russian Blue,1,Russian Blue,0.9957258701324463,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_61,images/Russian_Blue_61.jpg,1,Russian Blue,1,Russian Blue,0.9216909408569336,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_62,images/Russian_Blue_62.jpg,1,Russian Blue,1,Russian Blue,0.9971266388893127,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_63,images/Russian_Blue_63.jpg,1,Russian Blue,0,British Shorthair,0.5192412734031677,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_66,images/Russian_Blue_66.jpg,1,Russian Blue,1,Russian Blue,0.9996638298034668,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_68,images/Russian_Blue_68.jpg,1,Russian Blue,1,Russian Blue,0.9999614953994751,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_78,images/Russian_Blue_78.jpg,1,Russian Blue,1,Russian Blue,0.9970908164978027,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_8,images/Russian_Blue_8.jpg,1,Russian Blue,1,Russian Blue,0.7925259470939636,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Russian_Blue_9,images/Russian_Blue_9.jpg,1,Russian Blue,1,Russian Blue,0.9581940770149231,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_102,images/Siamese_102.jpg,2,Siamese,2,Siamese,0.9995146989822388,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_112,images/Siamese_112.jpg,2,Siamese,2,Siamese,0.7141870856285095,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_129,images/Siamese_129.jpg,2,Siamese,2,Siamese,0.9735665917396545,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_130,images/Siamese_130.jpg,2,Siamese,2,Siamese,0.7737736701965332,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_142,images/Siamese_142.jpg,2,Siamese,2,Siamese,0.9885318279266357,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_144,images/Siamese_144.jpg,2,Siamese,2,Siamese,0.999990701675415,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_145,images/Siamese_145.jpg,2,Siamese,2,Siamese,0.7691479325294495,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_163,images/Siamese_163.jpg,2,Siamese,2,Siamese,0.9999176263809204,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_168,images/Siamese_168.jpg,2,Siamese,2,Siamese,0.9998620748519897,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_170,images/Siamese_170.jpg,2,Siamese,2,Siamese,0.9998736381530762,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_175,images/Siamese_175.jpg,2,Siamese,2,Siamese,0.9999339580535889,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_178,images/Siamese_178.jpg,2,Siamese,2,Siamese,0.9988963603973389,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_189,images/Siamese_189.jpg,2,Siamese,2,Siamese,0.9998506307601929,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_193,images/Siamese_193.jpg,2,Siamese,2,Siamese,0.999649167060852,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_194,images/Siamese_194.jpg,2,Siamese,3,Birman,0.9733573794364929,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_195,images/Siamese_195.jpg,2,Siamese,2,Siamese,0.9998711347579956,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_198,images/Siamese_198.jpg,2,Siamese,2,Siamese,0.998853325843811,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_202,images/Siamese_202.jpg,2,Siamese,2,Siamese,0.9997087121009827,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_206,images/Siamese_206.jpg,2,Siamese,2,Siamese,0.897519052028656,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_207,images/Siamese_207.jpg,2,Siamese,2,Siamese,0.9999039173126221,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_22,images/Siamese_22.jpg,2,Siamese,2,Siamese,0.9732239246368408,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_257,images/Siamese_257.jpg,2,Siamese,3,Birman,0.9916771650314331,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_42,images/Siamese_42.jpg,2,Siamese,2,Siamese,0.9998867511749268,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_55,images/Siamese_55.jpg,2,Siamese,2,Siamese,0.8120218515396118,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_6,images/Siamese_6.jpg,2,Siamese,2,Siamese,0.9970043301582336,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_63,images/Siamese_63.jpg,2,Siamese,2,Siamese,0.6666595339775085,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_72,images/Siamese_72.jpg,2,Siamese,2,Siamese,0.9959694147109985,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_74,images/Siamese_74.jpg,2,Siamese,2,Siamese,0.9771459102630615,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_82,images/Siamese_82.jpg,2,Siamese,2,Siamese,0.9626348614692688,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Siamese_92,images/Siamese_92.jpg,2,Siamese,2,Siamese,0.9981853365898132,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_110,images/Sphynx_110.jpg,6,Sphynx,6,Sphynx,0.9999704360961914,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_112,images/Sphynx_112.jpg,6,Sphynx,6,Sphynx,0.9999016523361206,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_128,images/Sphynx_128.jpg,6,Sphynx,6,Sphynx,0.9966917037963867,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_132,images/Sphynx_132.jpg,6,Sphynx,6,Sphynx,0.9999998807907104,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_143,images/Sphynx_143.jpg,6,Sphynx,6,Sphynx,0.9981166124343872,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_146,images/Sphynx_146.jpg,6,Sphynx,6,Sphynx,0.999990701675415,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_150,images/Sphynx_150.jpg,6,Sphynx,6,Sphynx,0.9996687173843384,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_158,images/Sphynx_158.jpg,6,Sphynx,6,Sphynx,0.9999970197677612,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_169,images/Sphynx_169.jpg,6,Sphynx,6,Sphynx,0.999987006187439,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_173,images/Sphynx_173.jpg,6,Sphynx,6,Sphynx,0.9999898672103882,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_174,images/Sphynx_174.jpg,6,Sphynx,6,Sphynx,0.9999699592590332,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_178,images/Sphynx_178.jpg,6,Sphynx,6,Sphynx,0.9999737739562988,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_181,images/Sphynx_181.jpg,6,Sphynx,6,Sphynx,0.9999972581863403,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_183,images/Sphynx_183.jpg,6,Sphynx,6,Sphynx,0.9999771118164062,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_193,images/Sphynx_193.jpg,6,Sphynx,6,Sphynx,0.9999876022338867,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_195,images/Sphynx_195.jpg,6,Sphynx,6,Sphynx,0.9999750852584839,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_197,images/Sphynx_197.jpg,6,Sphynx,6,Sphynx,0.999984622001648,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_201,images/Sphynx_201.jpg,6,Sphynx,6,Sphynx,0.9998897314071655,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_206,images/Sphynx_206.jpg,6,Sphynx,6,Sphynx,0.9999985694885254,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_222,images/Sphynx_222.jpg,6,Sphynx,6,Sphynx,0.9999525547027588,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_245,images/Sphynx_245.jpg,6,Sphynx,6,Sphynx,0.9999922513961792,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_30,images/Sphynx_30.jpg,6,Sphynx,6,Sphynx,0.9999828338623047,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_36,images/Sphynx_36.jpg,6,Sphynx,6,Sphynx,0.9999597072601318,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_38,images/Sphynx_38.jpg,6,Sphynx,6,Sphynx,0.9999388456344604,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_66,images/Sphynx_66.jpg,6,Sphynx,6,Sphynx,0.9999812841415405,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_73,images/Sphynx_73.jpg,6,Sphynx,6,Sphynx,0.9716575145721436,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_9,images/Sphynx_9.jpg,6,Sphynx,6,Sphynx,0.999640703201294,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_93,images/Sphynx_93.jpg,6,Sphynx,6,Sphynx,0.9999191761016846,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_95,images/Sphynx_95.jpg,6,Sphynx,6,Sphynx,0.999985933303833,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,Sphynx_99,images/Sphynx_99.jpg,6,Sphynx,6,Sphynx,0.836948812007904,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_101,images/american_bulldog_101.jpg,4,American Bulldog,4,American Bulldog,0.9998840093612671,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_102,images/american_bulldog_102.jpg,4,American Bulldog,4,American Bulldog,0.9981073141098022,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_11,images/american_bulldog_11.jpg,4,American Bulldog,4,American Bulldog,0.9999953508377075,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_111,images/american_bulldog_111.jpg,4,American Bulldog,4,American Bulldog,0.9999990463256836,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_119,images/american_bulldog_119.jpg,4,American Bulldog,4,American Bulldog,0.9999533891677856,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_144,images/american_bulldog_144.jpg,4,American Bulldog,4,American Bulldog,0.9993818998336792,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_15,images/american_bulldog_15.jpg,4,American Bulldog,4,American Bulldog,0.9999524354934692,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_150,images/american_bulldog_150.jpg,4,American Bulldog,4,American Bulldog,0.999947190284729,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_164,images/american_bulldog_164.jpg,4,American Bulldog,4,American Bulldog,0.8512454032897949,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_167,images/american_bulldog_167.jpg,4,American Bulldog,6,Sphynx,0.9823358654975891,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_177,images/american_bulldog_177.jpg,4,American Bulldog,4,American Bulldog,0.9992820620536804,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_179,images/american_bulldog_179.jpg,4,American Bulldog,4,American Bulldog,0.9999998807907104,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_186,images/american_bulldog_186.jpg,4,American Bulldog,4,American Bulldog,0.9999314546585083,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_189,images/american_bulldog_189.jpg,4,American Bulldog,4,American Bulldog,0.9999974966049194,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_19,images/american_bulldog_19.jpg,4,American Bulldog,4,American Bulldog,0.9999920129776001,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_194,images/american_bulldog_194.jpg,4,American Bulldog,4,American Bulldog,0.9995737671852112,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_197,images/american_bulldog_197.jpg,4,American Bulldog,4,American Bulldog,0.9997805953025818,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_216,images/american_bulldog_216.jpg,4,American Bulldog,4,American Bulldog,0.9999967813491821,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_22,images/american_bulldog_22.jpg,4,American Bulldog,4,American Bulldog,0.9990979433059692,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_221,images/american_bulldog_221.jpg,4,American Bulldog,4,American Bulldog,0.999996542930603,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_25,images/american_bulldog_25.jpg,4,American Bulldog,4,American Bulldog,0.9999960660934448,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_26,images/american_bulldog_26.jpg,4,American Bulldog,4,American Bulldog,0.9999966621398926,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_3,images/american_bulldog_3.jpg,4,American Bulldog,4,American Bulldog,0.9835563898086548,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_32,images/american_bulldog_32.jpg,4,American Bulldog,4,American Bulldog,0.9999734163284302,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_38,images/american_bulldog_38.jpg,4,American Bulldog,4,American Bulldog,0.9999409914016724,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_39,images/american_bulldog_39.jpg,4,American Bulldog,4,American Bulldog,0.999976396560669,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_41,images/american_bulldog_41.jpg,4,American Bulldog,4,American Bulldog,0.9999994039535522,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_44,images/american_bulldog_44.jpg,4,American Bulldog,4,American Bulldog,0.9999977350234985,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_47,images/american_bulldog_47.jpg,4,American Bulldog,4,American Bulldog,0.9999802112579346,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,american_bulldog_8,images/american_bulldog_8.jpg,4,American Bulldog,4,American Bulldog,0.999944806098938,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_103,images/beagle_103.jpg,8,Beagle,8,Beagle,0.9999973773956299,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_109,images/beagle_109.jpg,8,Beagle,8,Beagle,0.9999953508377075,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_120,images/beagle_120.jpg,8,Beagle,8,Beagle,0.999981164932251,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_137,images/beagle_137.jpg,8,Beagle,6,Sphynx,0.858158528804779,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_141,images/beagle_141.jpg,8,Beagle,8,Beagle,0.9993587136268616,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_152,images/beagle_152.jpg,8,Beagle,8,Beagle,0.9895132184028625,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_153,images/beagle_153.jpg,8,Beagle,8,Beagle,0.9992769360542297,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_156,images/beagle_156.jpg,8,Beagle,8,Beagle,0.997623860836029,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_158,images/beagle_158.jpg,8,Beagle,8,Beagle,0.9994818568229675,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_161,images/beagle_161.jpg,8,Beagle,8,Beagle,0.999160885810852,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_168,images/beagle_168.jpg,8,Beagle,8,Beagle,0.9999257326126099,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_17,images/beagle_17.jpg,8,Beagle,8,Beagle,0.9999847412109375,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_176,images/beagle_176.jpg,8,Beagle,8,Beagle,0.9999860525131226,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_178,images/beagle_178.jpg,8,Beagle,8,Beagle,0.9999960660934448,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_183,images/beagle_183.jpg,8,Beagle,8,Beagle,0.9918021559715271,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_184,images/beagle_184.jpg,8,Beagle,8,Beagle,0.9982578158378601,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_195,images/beagle_195.jpg,8,Beagle,8,Beagle,0.9927194118499756,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_196,images/beagle_196.jpg,8,Beagle,8,Beagle,0.9999982118606567,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_203,images/beagle_203.jpg,8,Beagle,8,Beagle,0.9999972581863403,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_24,images/beagle_24.jpg,8,Beagle,8,Beagle,0.9992235898971558,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_32,images/beagle_32.jpg,8,Beagle,8,Beagle,0.9999914169311523,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_33,images/beagle_33.jpg,8,Beagle,8,Beagle,0.9844969511032104,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_34,images/beagle_34.jpg,8,Beagle,8,Beagle,0.9999226331710815,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_40,images/beagle_40.jpg,8,Beagle,8,Beagle,0.9999998807907104,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_41,images/beagle_41.jpg,8,Beagle,8,Beagle,0.9999992847442627,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_51,images/beagle_51.jpg,8,Beagle,8,Beagle,0.9998968839645386,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_61,images/beagle_61.jpg,8,Beagle,8,Beagle,0.9999430179595947,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_79,images/beagle_79.jpg,8,Beagle,8,Beagle,0.9999920129776001,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_83,images/beagle_83.jpg,8,Beagle,8,Beagle,0.9999996423721313,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,beagle_94,images/beagle_94.jpg,8,Beagle,8,Beagle,0.9998193383216858,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_101,images/pug_101.jpg,5,Pug,5,Pug,0.9999799728393555,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_12,images/pug_12.jpg,5,Pug,5,Pug,0.9999974966049194,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_120,images/pug_120.jpg,5,Pug,5,Pug,0.9999980926513672,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_127,images/pug_127.jpg,5,Pug,5,Pug,0.9999737739562988,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_13,images/pug_13.jpg,5,Pug,5,Pug,0.9999685287475586,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_130,images/pug_130.jpg,5,Pug,5,Pug,0.999993085861206,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_143,images/pug_143.jpg,5,Pug,5,Pug,0.9999450445175171,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_144,images/pug_144.jpg,5,Pug,5,Pug,0.9999988079071045,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_147,images/pug_147.jpg,5,Pug,5,Pug,0.9999992847442627,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_151,images/pug_151.jpg,5,Pug,5,Pug,0.9999892711639404,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_153,images/pug_153.jpg,5,Pug,5,Pug,0.9999949932098389,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_156,images/pug_156.jpg,5,Pug,5,Pug,0.9999953508377075,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_165,images/pug_165.jpg,5,Pug,5,Pug,0.9993404746055603,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_167,images/pug_167.jpg,5,Pug,5,Pug,0.9999657869338989,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_168,images/pug_168.jpg,5,Pug,5,Pug,0.999995231628418,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_177,images/pug_177.jpg,5,Pug,5,Pug,0.9999791383743286,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_195,images/pug_195.jpg,5,Pug,5,Pug,0.9998302459716797,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_200,images/pug_200.jpg,5,Pug,5,Pug,0.9999510049819946,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_24,images/pug_24.jpg,5,Pug,5,Pug,0.9999696016311646,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_3,images/pug_3.jpg,5,Pug,5,Pug,0.9999997615814209,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_32,images/pug_32.jpg,5,Pug,5,Pug,0.9999947547912598,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_36,images/pug_36.jpg,5,Pug,5,Pug,0.9999945163726807,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_37,images/pug_37.jpg,5,Pug,5,Pug,0.9999547004699707,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_43,images/pug_43.jpg,5,Pug,5,Pug,0.9999740123748779,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_44,images/pug_44.jpg,5,Pug,5,Pug,0.9999958276748657,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_50,images/pug_50.jpg,5,Pug,5,Pug,0.9996763467788696,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_72,images/pug_72.jpg,5,Pug,5,Pug,0.999998927116394,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_74,images/pug_74.jpg,5,Pug,4,American Bulldog,0.6623125672340393,0
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_8,images/pug_8.jpg,5,Pug,5,Pug,0.9999979734420776,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,pug_93,images/pug_93.jpg,5,Pug,5,Pug,0.9673804044723511,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_101,images/samoyed_101.jpg,9,Samoyed,9,Samoyed,0.9997825026512146,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_107,images/samoyed_107.jpg,9,Samoyed,9,Samoyed,1.0,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_108,images/samoyed_108.jpg,9,Samoyed,9,Samoyed,0.9999992847442627,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_110,images/samoyed_110.jpg,9,Samoyed,9,Samoyed,0.9999996423721313,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_12,images/samoyed_12.jpg,9,Samoyed,9,Samoyed,0.9999992847442627,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_127,images/samoyed_127.jpg,9,Samoyed,9,Samoyed,0.9999836683273315,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_130,images/samoyed_130.jpg,9,Samoyed,9,Samoyed,0.9943622350692749,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_137,images/samoyed_137.jpg,9,Samoyed,9,Samoyed,0.9988435506820679,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_140,images/samoyed_140.jpg,9,Samoyed,9,Samoyed,0.998553454875946,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_141,images/samoyed_141.jpg,9,Samoyed,9,Samoyed,0.9994257688522339,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_145,images/samoyed_145.jpg,9,Samoyed,9,Samoyed,0.9999791383743286,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_164,images/samoyed_164.jpg,9,Samoyed,9,Samoyed,0.9999985694885254,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_167,images/samoyed_167.jpg,9,Samoyed,9,Samoyed,1.0,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_18,images/samoyed_18.jpg,9,Samoyed,9,Samoyed,0.9999990463256836,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_186,images/samoyed_186.jpg,9,Samoyed,9,Samoyed,0.9999582767486572,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_197,images/samoyed_197.jpg,9,Samoyed,9,Samoyed,0.9999964237213135,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_22,images/samoyed_22.jpg,9,Samoyed,9,Samoyed,0.999980092048645,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_3,images/samoyed_3.jpg,9,Samoyed,9,Samoyed,0.9999661445617676,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_36,images/samoyed_36.jpg,9,Samoyed,9,Samoyed,0.9999985694885254,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_4,images/samoyed_4.jpg,9,Samoyed,9,Samoyed,0.9999933242797852,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_43,images/samoyed_43.jpg,9,Samoyed,9,Samoyed,0.9999181032180786,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_44,images/samoyed_44.jpg,9,Samoyed,9,Samoyed,0.9999924898147583,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_46,images/samoyed_46.jpg,9,Samoyed,9,Samoyed,1.0,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_49,images/samoyed_49.jpg,9,Samoyed,9,Samoyed,1.0,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_53,images/samoyed_53.jpg,9,Samoyed,9,Samoyed,0.9999934434890747,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_57,images/samoyed_57.jpg,9,Samoyed,9,Samoyed,0.9999998807907104,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_58,images/samoyed_58.jpg,9,Samoyed,9,Samoyed,0.9999995231628418,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_64,images/samoyed_64.jpg,9,Samoyed,9,Samoyed,0.999944806098938,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_72,images/samoyed_72.jpg,9,Samoyed,9,Samoyed,0.9999998807907104,1
+44,artifacts\ablation_noaug\runs\c3_lr1e-5_seed44\best.pt,samoyed_8,images/samoyed_8.jpg,9,Samoyed,9,Samoyed,0.9999997615814209,1
