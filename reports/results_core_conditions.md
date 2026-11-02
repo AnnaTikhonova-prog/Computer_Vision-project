@@ -1,5 +1,10 @@
 # Final Test Results: Core Conditions (Augmentation On)
 
+> Historical core-only report. Its quality metrics remain valid, but its
+> hardware-unidentified latency values are not canonical. See the consolidated
+> [final and immutable results](results.md) and the documented latency-only
+> rerun there.
+
 **Status:** completed for the four core training conditions, C0-C3. This report
 covers the retained augmentation-on checkpoints and does not include the
 augmentation-off ablation.

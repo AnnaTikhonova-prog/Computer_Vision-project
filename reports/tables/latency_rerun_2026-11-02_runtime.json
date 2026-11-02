@@ -1,0 +1,132 @@
+{
+  "recorded_at": "2026-11-02T23:25:34.577522+03:00",
+  "purpose": "Latency-only rerun; no dataset loading and no accuracy/F1 evaluation.",
+  "method": "src.evaluate._latency_ms: torch.inference_mode, synthetic zero float32 NCHW 224x224 input, time.perf_counter",
+  "device": "cpu",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-1335U",
+  "logical_cpu_count": 12,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.6",
+  "python_executable": "C:\\Users\\albiina\\Computer_Vision-project\\.venv\\Scripts\\python.exe",
+  "torch": "2.14.1+cpu",
+  "torchvision": "0.29.1+cpu",
+  "torch_num_threads": 10,
+  "torch_num_interop_threads": 10,
+  "warmups_per_checkpoint_and_batch_size": 3,
+  "timed_repeats_per_checkpoint_and_batch_size": 10,
+  "git_commit": "2210b901affecabc71917620e6196db348c3c4a0",
+  "git_status_at_measurement": "?? reports/tables/latency_rerun_2026-11-02.csv\n?? scripts/benchmark_inference_latency.py",
+  "benchmark_script": "scripts/benchmark_inference_latency.py",
+  "benchmark_source": "src/evaluate.py::_latency_ms",
+  "results_csv": "reports/tables/latency_rerun_2026-11-02.csv",
+  "checkpoints": [
+    {
+      "configuration": "C0_augment_on",
+      "path": "deliverables/c0/runs/lr_1e-3/seed_42/best.pt",
+      "sha256": "f6bcabb8c763c3a4d03241da3f93074aef68fc71c8fcd348d95c42db7c55f170",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C0_augment_on",
+      "path": "deliverables/c0/runs/lr_1e-3/seed_43/best.pt",
+      "sha256": "0fc7a8cc6211f1af729846681b69013e55627fbec48bd760a72383a3d3b40814",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C0_augment_on",
+      "path": "deliverables/c0/runs/lr_1e-3/seed_44/best.pt",
+      "sha256": "c462c91bba77d3ef833f6dac946d2126850134f06ca624551134aa1a09bb0f2b",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C1_augment_on",
+      "path": "deliverables/c1/runs/lr_1e-4/seed_42/best.pt",
+      "sha256": "d4cda19030d5ee60eb2c8b7ec79a3444cf366f5922d1a9f09acdac2a61ec1384",
+      "storage": "local Git LFS object sha256:d4cda19030d5ee60eb2c8b7ec79a3444cf366f5922d1a9f09acdac2a61ec1384"
+    },
+    {
+      "configuration": "C1_augment_on",
+      "path": "deliverables/c1/runs/lr_1e-4/seed_43/best.pt",
+      "sha256": "0ed0ab23f11306f430dc8025a4204475cd5e839d368a64e1669a868053867f65",
+      "storage": "local Git LFS object sha256:0ed0ab23f11306f430dc8025a4204475cd5e839d368a64e1669a868053867f65"
+    },
+    {
+      "configuration": "C1_augment_on",
+      "path": "deliverables/c1/runs/lr_1e-4/seed_44/best.pt",
+      "sha256": "97bdab7c1eca8413f14b62aac3800debb85031754af8fc226ee59c1ca367b068",
+      "storage": "local Git LFS object sha256:97bdab7c1eca8413f14b62aac3800debb85031754af8fc226ee59c1ca367b068"
+    },
+    {
+      "configuration": "C2_augment_on",
+      "path": "deliverables/c2/runs/lr_1e-5/seed_42/best.pt",
+      "sha256": "e2befedbd0daaf0720e11f1d7967783de5b7484fbe47180323ccfb17d04c3525",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C2_augment_on",
+      "path": "deliverables/c2/runs/lr_1e-5/seed_43/best.pt",
+      "sha256": "16dad612b2131fe2bb8557b1b2d9ad20344da60f98ad11bbac43ddd770071eaf",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C2_augment_on",
+      "path": "deliverables/c2/runs/lr_1e-5/seed_44/best.pt",
+      "sha256": "dde255ff1d3de1e54cadae5a0ec7afa65a8154ac01acde2dae6e9fb03ac194fe",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C3_augment_on",
+      "path": "deliverables/c3/runs/lr_1e-5/seed_42/best.pt",
+      "sha256": "a86f41e8a6056a9f4cdf98f650382c3c6566f6e3ac9863136a5bf796f49ddfb2",
+      "storage": "local Git LFS object sha256:a86f41e8a6056a9f4cdf98f650382c3c6566f6e3ac9863136a5bf796f49ddfb2"
+    },
+    {
+      "configuration": "C3_augment_on",
+      "path": "deliverables/c3/runs/lr_1e-5/seed_43/best.pt",
+      "sha256": "772690d451cee2b10c4b572ad44458f6f9b0ad05bfeddce95f63c5c364b7ac94",
+      "storage": "local Git LFS object sha256:772690d451cee2b10c4b572ad44458f6f9b0ad05bfeddce95f63c5c364b7ac94"
+    },
+    {
+      "configuration": "C3_augment_on",
+      "path": "deliverables/c3/runs/lr_1e-5/seed_44/best.pt",
+      "sha256": "af29478f58964e6e0480eaacc0311b297334cc6ecbcd03a7e77214c7c636f69b",
+      "storage": "local Git LFS object sha256:af29478f58964e6e0480eaacc0311b297334cc6ecbcd03a7e77214c7c636f69b"
+    },
+    {
+      "configuration": "C0_augment_off",
+      "path": "artifacts/ablation_noaug/runs/c0_lr1e-3_seed42/best.pt",
+      "sha256": "204c59d0868ddb9370b8de3f6df147e703a0d9e75b619fb45039818481dabfda",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C0_augment_off",
+      "path": "artifacts/ablation_noaug/runs/c0_lr1e-3_seed43/best.pt",
+      "sha256": "f8346ddaf94add7e14305fc172c2eabea4f11e85db9f71bac1c8c6e0f68b01b4",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C0_augment_off",
+      "path": "artifacts/ablation_noaug/runs/c0_lr1e-3_seed44/best.pt",
+      "sha256": "70151c2c9504933030c899fd0a42b89c1a35c8b6051783f098e2aaddcce33d2e",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C3_augment_off",
+      "path": "artifacts/ablation_noaug/runs/c3_lr1e-5_seed42/best.pt",
+      "sha256": "ffd162fd45a19e379717c13ff54b4d16c03a57642a262acecca15abfa41879c6",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C3_augment_off",
+      "path": "artifacts/ablation_noaug/runs/c3_lr1e-5_seed43/best.pt",
+      "sha256": "5b0c73fe583599d173ca37e441f7e3deffd2003ef40c7f29a77df71412092dc5",
+      "storage": "working-tree checkpoint"
+    },
+    {
+      "configuration": "C3_augment_off",
+      "path": "artifacts/ablation_noaug/runs/c3_lr1e-5_seed44/best.pt",
+      "sha256": "4a4a847a8865540772da11eb0a7519db9d12cf1ac33508805c553c0c76f21034",
+      "storage": "working-tree checkpoint"
+    }
+  ]
+}

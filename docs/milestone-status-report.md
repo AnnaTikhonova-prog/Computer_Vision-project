@@ -4,6 +4,16 @@
 **Status date:** 27 October 2026
 **Repository:** [AnnaTikhonova-prog/Computer_Vision-project](https://github.com/AnnaTikhonova-prog/Computer_Vision-project)
 
+> **Closure update — 2 November 2026.** This document remains a historical
+> progress check. The missing augmentation-off test evaluations and run bundles
+> were subsequently recovered and verified. The original latency CPU model
+> could not be recovered from reliable evidence, so the reserved buffer was
+> used for a latency-only rerun on documented hardware; training and
+> accuracy/macro-F1 evaluation were not rerun. The buffer is closed with no
+> further rerun open. Canonical final and immutable metrics are in
+> [`reports/results.md`](../reports/results.md), with latency runtime and
+> checkpoint provenance linked there.
+
 ## Executive summary
 
 The shared data pipeline, training implementation, and four progressive

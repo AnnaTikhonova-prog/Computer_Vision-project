@@ -1,5 +1,8 @@
 # Test-Set Results: Core Conditions and Augmentation Ablations
 
+> Historical completed comparison. The canonical, frozen metrics and the
+> rerun-buffer closure are in [`results.md`](results.md).
+
 **Status: complete.** All six frozen configurations have been evaluated on the
 test split. The augmentation-off checkpoints were retained from the completed
 validation ablation; no training was rerun for this test evaluation. The
