@@ -1,5 +1,10 @@
 # Milestone Status Report: Progress, Results, and Remaining Work
 
+> **Historical snapshot (27 October 2026).** The remaining-work items below
+> describe the project state on that date. The final six-configuration test
+> evaluation is complete; see [`reports/results.md`](../reports/results.md)
+> for the frozen comparison and artifacts.
+
 **Project:** Oxford-IIIT Pet, ten-breed classification subset
 **Status date:** 27 October 2026
 **Repository:** [AnnaTikhonova-prog/Computer_Vision-project](https://github.com/AnnaTikhonova-prog/Computer_Vision-project)

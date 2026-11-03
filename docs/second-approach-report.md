@@ -92,7 +92,7 @@ checkpoints, not an ensemble.
 The test artifacts were produced by `src/evaluate.py`: [C1 per-class F1](../reports/tables/C1_augment_on_test_per_class_f1.csv),
 [C1 confusion matrix](../reports/figures/C1_augment_on_test_confusion_matrix.png),
 [C1 latency](../reports/tables/C1_augment_on_test_latency.csv), and
-[full preliminary comparison and error analysis](../reports/results_preliminary.md).
+[final comparison and error analysis](../reports/results.md).
 
 ## Observations and limitations
 

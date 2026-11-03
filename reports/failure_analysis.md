@@ -175,7 +175,7 @@ this example across seeds.
   hashes differ across some conditions, as documented in the
   [ablation report](ablation.md#ограничения-сопоставимости). These observations
   cannot isolate fine-tuning depth as the cause of a changed decision.
-- **Scope of these examples.** The [comparison](results_preliminary.md) now
+- **Scope of these examples.** The [final comparison](results.md) now
   includes test results for all six configurations, including C0/C3
   augmentation off. These three image/Grad-CAM cases remain C0 augmentation-on
   diagnostics; they do not establish an augmentation effect. Historical

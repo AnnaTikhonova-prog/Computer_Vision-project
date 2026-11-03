@@ -335,12 +335,12 @@ python -m src.evaluate --condition C0 --checkpoints artifacts/ablation_noaug/run
 python -m src.evaluate --condition C3 --checkpoints artifacts/ablation_noaug/runs/c3_lr1e-5_seed42/best.pt artifacts/ablation_noaug/runs/c3_lr1e-5_seed43/best.pt artifacts/ablation_noaug/runs/c3_lr1e-5_seed44/best.pt --config configs/c3_noaug.yaml --split test --device cpu
 ```
 
-After evaluation, compile the six summary CSVs into
-`reports/results_preliminary.md`, add mean ± sample standard deviation for
-accuracy and macro-F1, link all per-class F1 tables and confusion matrices,
-and analyze at least three representative errors with Grad-CAM visualizations.
-Use a row with `correct=0` from one of the generated `*_predictions.csv` files
-to choose a test `image_id`, then generate a supporting overlay:
+The completed, frozen comparison and linked evaluation artifacts are in
+[`reports/results.md`](reports/results.md). The no-augmentation checkpoint
+weights are not included in this checkout; the last two commands above require
+the retained checkpoints from the team archive. To regenerate the diagnostic
+overlays from the included core checkpoints, choose an image with `correct=0`
+from a `*_predictions.csv` and run, for example:
 
 ```powershell
 python scripts/generate_gradcam.py --checkpoint deliverables/c3/runs/lr_1e-5/seed_42/best.pt --config configs/c3.yaml --image-id pug_123 --output reports/figures/gradcam_pug_123.png --device cpu
@@ -352,11 +352,9 @@ is supporting evidence, not a causal explanation.
 **No settings are changed based on test results.** Test errors may be inspected
 for analysis, but tuning on test results is forbidden.
 
-The completed six-configuration comparison and error review are in
-[`reports/results_preliminary.md`](reports/results_preliminary.md). It includes
-C0/C3 augmentation-off test results, selected-checkpoint hashes and epochs,
-per-class F1 tables, and confusion matrices. No settings are changed based on
-test results.
+The final frozen comparison and complete result artifacts are in
+[`reports/results.md`](reports/results.md). The earlier preliminary note is
+retained as an archive. **No settings are changed based on test results.**
 
 The detailed [failure analysis](reports/failure_analysis.md) documents three
 test errors with source images and Grad-CAM overlays in `reports/errors/`,
