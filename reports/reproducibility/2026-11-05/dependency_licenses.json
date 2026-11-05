@@ -1,0 +1,52 @@
+[
+  {
+    "distribution": "torch",
+    "version": "2.11.0+cpu",
+    "license_metadata_excerpt": "BSD-3-Clause"
+  },
+  {
+    "distribution": "torchvision",
+    "version": "0.26.0+cpu",
+    "license_metadata_excerpt": "BSD"
+  },
+  {
+    "distribution": "numpy",
+    "version": "2.3.3",
+    "license_metadata_excerpt": "Copyright (c) 2005-2025, NumPy Developers.\n All rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions are\n met:\n\n     * Redistributions of source code must retain the above copyright\n        notice, this list of conditions and the following disclaimer.\n\n     * Redistributions in binary form must reproduce the above\n        copyright notice, this list of conditions and the following\n        disclai"
+  },
+  {
+    "distribution": "pandas",
+    "version": "2.3.3",
+    "license_metadata_excerpt": "BSD 3-Clause License\n\n Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team\n All rights reserved.\n\n Copyright (c) 2011-2023, Open source contributors.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions are met:\n\n * Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n * Redistributions i"
+  },
+  {
+    "distribution": "scikit-learn",
+    "version": "1.7.2",
+    "license_metadata_excerpt": "BSD-3-Clause"
+  },
+  {
+    "distribution": "pillow",
+    "version": "12.0.0",
+    "license_metadata_excerpt": "MIT-CMU"
+  },
+  {
+    "distribution": "PyYAML",
+    "version": "6.0.3",
+    "license_metadata_excerpt": "MIT"
+  },
+  {
+    "distribution": "matplotlib",
+    "version": "3.10.7",
+    "license_metadata_excerpt": "License agreement for matplotlib versions 1.3.0 and later\n =========================================================\n\n 1. This LICENSE AGREEMENT is between the Matplotlib Development Team\n (\"MDT\"), and the Individual or Organization (\"Licensee\") accessing and\n otherwise using matplotlib software in source or binary form and its\n associated documentation.\n\n 2. Subject to the terms and conditions of this License Agreement, MDT\n hereby grants Licensee a nonexclusive, royalty-free, world-wide licens"
+  },
+  {
+    "distribution": "seaborn",
+    "version": "0.13.2",
+    "license_metadata_excerpt": "See upstream notices"
+  },
+  {
+    "distribution": "jupyter",
+    "version": "1.1.1",
+    "license_metadata_excerpt": "BSD"
+  }
+]

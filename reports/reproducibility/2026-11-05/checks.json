@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-05",
+  "fresh_clone_base": "d889a681e7eb77154f609ddc0a9f34e1b8967c69",
+  "candidate_source_sha256": {
+    "src/train.py": "6332999a80bfa3a0cf0bef14958bfb9771446e8d8470ed965e6b8f0e44347511",
+    "src/dataset.py": "bb221e5c67eb6690ccbe220c5132c53c0cec478df24cae7447699a6cc8b551b6",
+    "src/evaluate.py": "37f2225076bf09f0382d28f475d533a644622622012c7b00ebcdfa0087b4a593",
+    "scripts/check_reproducibility.py": "167e8686b58e0a4e39a1d7d2ddc7cc97e11e30e15069dc54f45a4fbbd395f8cb",
+    "scripts/prepare_oxford_pets.py": "6212a9a4a03dee7030dbe55a2df2583152d7f26f717ab71bbc6c4073310e687c",
+    "scripts/plot_final_results.py": "3d29a83f5d4c68060822817eb60626aaa8f8dff9e3ee2a7c58d9bdce2b821bad",
+    "scripts/run_ablation.py": "9704730645700e1eb8e190b7da2e0e27e429935e477098897bad151ec194b6c4",
+    "tests/test_reproducibility.py": "b1792b0a9ba8a153e4670d81607377edc844a42b7892f79aafa4fb77c696c7cc"
+  },
+  "pip_check": "No broken requirements found.",
+  "unit_tests": {
+    "count": 29,
+    "seconds": 132.645,
+    "status": "passed"
+  },
+  "static_analysis": {
+    "tool": "ruff 0.17.3",
+    "rules": [
+      "F401",
+      "F841"
+    ],
+    "status": "passed"
+  },
+  "dataset_download": "official archives downloaded independently in fresh clone",
+  "safe_archive_extraction": "passed with explicit data filter",
+  "headless_plot_regeneration": "passed in clone only",
+  "error_export": "228 error rows, 107 files, 53 folders; git diff on tables/errors empty",
+  "quality_table_arithmetic": "all six configurations passed",
+  "latency_aggregation": "passed; no new timing benchmark",
+  "core_inference": {
+    "checkpoints": 12,
+    "predicted_labels": 3600,
+    "differences": 0,
+    "status": "passed"
+  },
+  "full_six_configuration_inference": "pending six original augmentation-off checkpoint files; user will supply later"
+}

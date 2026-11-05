@@ -1,8 +1,57 @@
 # Fine-tuning depth on Oxford-IIIT Pet
 
 This repository compares ResNet50 fine-tuning depth on one fixed 10-breed
-subset. The data interface here is shared by C0–C3; it does not change any
-experiment condition or run model training.
+subset. It contains the shared data pipeline, C0–C3 trainer, evaluator,
+retained core checkpoints, and frozen experimental reports.
+
+## Fresh clone and published-result checks
+
+Prerequisites: 64-bit Python 3.13.x, Git, and Git LFS. Run the clone block from
+a parent directory, then run the remaining commands from the new repository
+root. The CPU setup below does not require CUDA.
+
+```powershell
+# Skip the automatic download of all 36 grid checkpoints during clone.
+$env:GIT_LFS_SKIP_SMUDGE = "1"
+git clone https://github.com/AnnaTikhonova-prog/Computer_Vision-project.git
+Remove-Item Env:GIT_LFS_SKIP_SMUDGE
+Set-Location Computer_Vision-project
+git lfs install --local
+```
+
+Install the pinned environment in the installation section below. There are
+two different checks; neither changes the frozen `reports/results.md` metrics:
+
+```powershell
+# Recompute accuracy/F1 and sample SD from saved predictions for all six
+# configurations, checking the summaries and final report. No data/weights needed.
+python scripts/check_reproducibility.py
+
+# Download only the 12 validation-selected core checkpoints (about 1.1 GiB).
+git lfs pull --include="deliverables/c0/runs/lr_1e-3/*/best.pt,deliverables/c1/runs/lr_1e-4/*/best.pt,deliverables/c2/runs/lr_1e-5/*/best.pt,deliverables/c3/runs/lr_1e-5/*/best.pt"
+python scripts/prepare_oxford_pets.py --download-only
+python scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
+python scripts/check_reproducibility.py --inference core
+```
+
+The inference check loads those checkpoints through the shared evaluator,
+compares every predicted label with the published predictions, and writes a
+separate audit JSON to `artifacts/reproducibility/check.json`. It does not
+train, benchmark latency, or overwrite a report. Git LFS pointer files are
+not model weights; a missing checkpoint is reported explicitly.
+
+For full six-configuration inference, first obtain the **original** six
+augmentation-off checkpoints from the team archive and place them at the
+paths in the evaluation section below. Check their hashes against
+[`ablation_noaug_checkpoint_provenance.csv`](reports/tables/ablation_noaug_checkpoint_provenance.csv),
+then run `python scripts/check_reproducibility.py --inference all`.
+Missing weights make that audit partial (exit code 2); arithmetic checks over
+saved predictions do not substitute for inference. Retraining can produce
+different weights and cannot be claimed to reproduce these exact artifacts.
+
+The [submission checklist](reports/submission_checklist.md) and
+[reproducibility record](reports/reproducibility_check.md) record the tested
+scope, environment, evidence, and outstanding archive requirement.
 
 ## Fixed subset and labels
 
@@ -38,17 +87,21 @@ PyTorch wheels first; the remaining direct dependencies are pinned in
 py -3.13 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install pip==25.1.1
-# Choose exactly one PyTorch build:
-python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
-# CPU-only alternative:
-# python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cpu
+# CPU build used for the fresh-clone evaluation check:
+python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cpu
+# CUDA 12.8 alternative for training on a compatible GPU:
+# python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
 python -m pip install -r requirements.txt
 python scripts/prepare_oxford_pets.py --download-only
 python scripts/verify_data.py --dataset-root data/oxford-iiit-pet --split-dir splits/v2 --check-loaders --check-reproducibility
 ```
 
 The dataset command downloads and extracts the two official archives from the
-official Oxford URL to `data/oxford-iiit-pet/`. It does **not** generate,
+official Oxford URL to `data/oxford-iiit-pet/`. Activation is optional: if
+PowerShell blocks `Activate.ps1`, use `.venv\Scripts\python.exe` in place of
+`python` in each command, without changing the system execution policy.
+
+The download command does **not** generate,
 replace, or otherwise touch frozen manifests. A fresh clone then uses the
 committed active `splits/v2` manifests directly. The CUDA 12.8 command matches
 the recorded Tesla T4 runs; use the CPU wheel on a CPU-only host. torchvision
@@ -322,9 +375,11 @@ used, supply that actual checkpoint path to the evaluator below. Checkpoints
 remain local artifacts; the committed evaluation provenance records their
 hashes and selected epochs.
 
-Run all six final evaluations only after every model and setting is frozen.
-The first four use the retained selected-LR checkpoints in `deliverables/`;
-the last two use the ablation checkpoints produced above.
+The commands below document the original final evaluation after settings
+were frozen. They **write canonical report files**; for a reproducibility
+check use `scripts/check_reproducibility.py` above, which keeps replications
+separate. The first four use the retained selected-LR checkpoints in
+`deliverables/`; the last two require the original archived ablation weights.
 
 ```powershell
 python -m src.evaluate --condition C0 --checkpoints deliverables/c0/runs/lr_1e-3/seed_42/best.pt deliverables/c0/runs/lr_1e-3/seed_43/best.pt deliverables/c0/runs/lr_1e-3/seed_44/best.pt --config configs/c0.yaml --split test --device cpu
@@ -356,6 +411,10 @@ The final frozen comparison and complete result artifacts are in
 [`reports/results.md`](reports/results.md). The earlier preliminary note is
 retained as an archive. **No settings are changed based on test results.**
 
+The READMEs and training summaries inside `deliverables/` describe the original
+validation-only deliveries. Their historical paths and completion notes are
+preserved as provenance; they do not supersede the final results report.
+
 The detailed [failure analysis](reports/failure_analysis.md) documents three
 test errors with source images and Grad-CAM overlays in `reports/errors/`,
 explained probable causes, and limitations.
@@ -364,6 +423,14 @@ Export all saved misclassified test images by condition and true/predicted
 breed pair with `python scripts/export_test_errors.py`. The
 [export guide](reports/errors/README.md) documents the folders, prediction
 index, counts, and read-only analysis / test-leakage restriction.
+
+## Licensing and attribution
+
+Original project source code is **all rights reserved**, with no open-source
+license granted; see [LICENSE](LICENSE). Dataset photographs and image-derived
+visualizations retain their separate CC BY-SA 4.0 terms. Dataset credits,
+source/license links, modifications to images, pretrained-weight provenance,
+and dependency notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ### Team clean-environment review
 

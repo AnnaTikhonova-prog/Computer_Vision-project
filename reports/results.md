@@ -77,11 +77,16 @@ per-image latency is shown in parentheses.
 | Configuration | Batch 1, ms | Batch 32, ms per batch (ms/image) |
 | --- | ---: | ---: |
 | C0 · augmentation on | 79.40 ± 4.88 | 2031.67 ± 14.41 (63.49 ± 0.45) |
-| C1 · augmentation on | 118.97 ± 57.01 | 2421.08 ± 359.52 (75.66 ± 11.24) |
+| C1 · augmentation on | 118.97 ± 57.01 | 2421.08 ± 359.52 (75.66 ± 11.23) |
 | C2 · augmentation on | 86.72 ± 6.62 | 2162.50 ± 94.36 (67.58 ± 2.95) |
 | C3 · augmentation on | 87.58 ± 11.59 | 2045.25 ± 7.39 (63.91 ± 0.23) |
 | C0 · augmentation off | 96.01 ± 36.43 | 2403.26 ± 494.30 (75.10 ± 15.45) |
 | C3 · augmentation off | 90.74 ± 18.80 | 2100.44 ± 48.81 (65.64 ± 1.53) |
+
+**Display erratum, 5 November 2026:** C1's batch-32 per-image SD is `11.23 ms`
+(`359.5163754496131 / 32`), correcting the earlier `11.24` display. The recorded
+timings, checkpoint-level CSV, and all quality metrics are unchanged; no new
+benchmark or model evaluation was used for this arithmetic correction.
 
 The benchmark ran on a 13th Gen Intel Core i5-1335U (12 logical CPUs), Windows
 11 build 26300, Python 3.14.6, PyTorch 2.14.1+cpu, and torchvision 0.29.1+cpu,

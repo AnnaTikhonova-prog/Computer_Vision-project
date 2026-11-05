@@ -1,0 +1,120 @@
+python.exe : test_ablation_cells_are_exactly_the_precommitted_six (test_ablation.AblationTests.test_ablation_cells_are_
+exactly_the_precommitted_six) ... ok
+строка:2 знак:1
++ & '.venv/Scripts/python.exe' -m unittest discover -s tests -v > ../un ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_ablation_c...ted_six) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+test_aggregation_refuses_an_incomplete_grid (test_ablation.AblationTests.test_aggregation_refuses_an_incomplete_grid) .
+.. ok
+test_aggregation_uses_all_seeds_and_sample_standard_deviation (test_ablation.AblationTests.test_aggregation_uses_all_se
+eds_and_sample_standard_deviation) ... ok
+test_authoritative_manifest_selects_one_attempt_per_cell (test_c0_aggregation.C0AggregationTests.test_authoritative_man
+ifest_selects_one_attempt_per_cell) ... ok
+test_batch_provenance_survives_json_round_trip (test_c0_aggregation.C0AggregationTests.test_batch_provenance_survives_j
+son_round_trip) ... ok
+test_complete_summary_retains_all_three_selected_lr_seeds (test_c0_aggregation.C0AggregationTests.test_complete_summary
+_retains_all_three_selected_lr_seeds) ... ok
+test_completed_c2_run_uses_shared_validation (test_c0_aggregation.C0AggregationTests.test_completed_c2_run_uses_shared_
+validation) ... ok
+[2026-11-05T14:38:24+03:00] run=1/9 condition=C0 lr=1e-3 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-3_seed42 status=reusing-completed
+[2026-11-05T14:38:24+03:00] run=2/9 condition=C0 lr=1e-3 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-3_seed43 status=reusing-completed
+[2026-11-05T14:38:24+03:00] run=3/9 condition=C0 lr=1e-3 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-3_seed44 status=reusing-completed
+[2026-11-05T14:38:24+03:00] run=4/9 condition=C0 lr=1e-4 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-4_seed42 status=reusing-completed
+[2026-11-05T14:38:24+03:00] run=5/9 condition=C0 lr=1e-4 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-4_seed43 status=reusing-completed
+[2026-11-05T14:38:24+03:00] run=6/9 condition=C0 lr=1e-4 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-4_seed44 status=reusing-completed
+[2026-11-05T14:38:24+03:00] run=7/9 condition=C0 lr=1e-5 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-5_seed42 status=reusing-completed
+[2026-11-05T14:38:24+03:00] run=8/9 condition=C0 lr=1e-5 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-5_seed43 status=reusing-completed
+[2026-11-05T14:38:24+03:00] run=9/9 condition=C0 lr=1e-5 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpxzen5cat\runs\c0_lr1e-5_seed44 status=reusing-completed
+{
+  "status": "completed",
+  "runs": 9,
+  "selected_lr": 0.0001,
+  "summary": "C:\\Users\\\u042f\\AppData\\Local\\Temp\\tmpxzen5cat\\summary",
+  "delivery": "C:\\Users\\\u042f\\AppData\\Local\\Temp\\tmpxzen5cat\\delivery"
+}
+test_completion_is_written_only_after_delivery (test_c0_aggregation.C0AggregationTests.test_completion_is_written_only_
+after_delivery) ... ok
+[2026-11-05T14:38:25+03:00] run=1/9 condition=C0 lr=1e-3 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-3_seed42 status=reusing-completed
+[2026-11-05T14:38:25+03:00] run=2/9 condition=C0 lr=1e-3 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-3_seed43 status=reusing-completed
+[2026-11-05T14:38:25+03:00] run=3/9 condition=C0 lr=1e-3 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-3_seed44 status=reusing-completed
+[2026-11-05T14:38:25+03:00] run=4/9 condition=C0 lr=1e-4 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-4_seed42 status=reusing-completed
+[2026-11-05T14:38:25+03:00] run=5/9 condition=C0 lr=1e-4 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-4_seed43 status=reusing-completed
+[2026-11-05T14:38:25+03:00] run=6/9 condition=C0 lr=1e-4 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-4_seed44 status=reusing-completed
+[2026-11-05T14:38:25+03:00] run=7/9 condition=C0 lr=1e-5 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-5_seed42 status=reusing-completed
+[2026-11-05T14:38:25+03:00] run=8/9 condition=C0 lr=1e-5 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-5_seed43 status=reusing-completed
+[2026-11-05T14:38:25+03:00] run=9/9 condition=C0 lr=1e-5 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpc3dpnwvp\runs\c0_lr1e-5_seed44 status=reusing-completed
+test_delivery_failure_cannot_mark_pipeline_completed (test_c0_aggregation.C0AggregationTests.test_delivery_failure_cann
+ot_mark_pipeline_completed) ... ok
+test_missing_and_duplicate_completed_cells_are_rejected (test_c0_aggregation.C0AggregationTests.test_missing_and_duplic
+ate_completed_cells_are_rejected) ... ok
+test_pipeline_lock_is_released_after_exception (test_c0_aggregation.C0AggregationTests.test_pipeline_lock_is_released_a
+fter_exception) ... ok
+test_pipeline_lock_rejects_orchestrator_in_separate_process (test_c0_aggregation.C0AggregationTests.test_pipeline_lock_
+rejects_orchestrator_in_separate_process) ... ok
+[2026-11-05T14:38:43+03:00] run=1/9 condition=C0 lr=1e-3 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-3_seed42 status=reusing-completed
+[2026-11-05T14:38:43+03:00] run=2/9 condition=C0 lr=1e-3 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-3_seed43 status=reusing-completed
+[2026-11-05T14:38:43+03:00] run=3/9 condition=C0 lr=1e-3 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-3_seed44 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=4/9 condition=C0 lr=1e-4 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-4_seed42 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=5/9 condition=C0 lr=1e-4 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-4_seed43 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=6/9 condition=C0 lr=1e-4 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-4_seed44 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=7/9 condition=C0 lr=1e-5 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-5_seed42 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=8/9 condition=C0 lr=1e-5 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-5_seed43 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=9/9 condition=C0 lr=1e-5 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-5_seed44 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=1/9 condition=C0 lr=1e-3 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-3_seed42 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=2/9 condition=C0 lr=1e-3 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-3_seed43 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=3/9 condition=C0 lr=1e-3 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-3_seed44 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=4/9 condition=C0 lr=1e-4 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-4_seed42 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=5/9 condition=C0 lr=1e-4 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-4_seed43 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=6/9 condition=C0 lr=1e-4 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-4_seed44 status=reusing-completed
+[2026-11-05T14:38:44+03:00] run=7/9 condition=C0 lr=1e-5 seed=42 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-5_seed42 status=reusing-completed
+[2026-11-05T14:38:45+03:00] run=8/9 condition=C0 lr=1e-5 seed=43 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-5_seed43 status=reusing-completed
+[2026-11-05T14:38:45+03:00] run=9/9 condition=C0 lr=1e-5 seed=44 device=cpu configured_threads=1 output=C:\Users\�\AppData\Local\Temp\tmpngz71c1k\runs\c0_lr1e-5_seed44 status=reusing-completed
+{
+  "status": "completed",
+  "runs": 9,
+  "selected_lr": 0.0001,
+  "summary": "C:\\Users\\\u042f\\AppData\\Local\\Temp\\tmpngz71c1k\\summary",
+  "delivery": "C:\\Users\\\u042f\\AppData\\Local\\Temp\\tmpngz71c1k\\delivery"
+}
+test_postprocessing_failure_is_failed_and_retry_reuses_runs (test_c0_aggregation.C0AggregationTests.test_postprocessing
+_failure_is_failed_and_retry_reuses_runs) ... ok
+test_restart_uses_completed_run_and_preserves_incomplete_attempt (test_c0_aggregation.C0AggregationTests.test_restart_u
+ses_completed_run_and_preserves_incomplete_attempt) ... ok
+test_reused_cell_replaces_authoritative_record (test_c0_aggregation.C0AggregationTests.test_reused_cell_replaces_author
+itative_record) ... ok
+test_sample_std_and_exact_mean_tie_choose_smaller_lr (test_c0_aggregation.C0AggregationTests.test_sample_std_and_exact_
+mean_tie_choose_smaller_lr) ... ok
+test_selected_checkpoint_can_differ_from_last_epoch (test_c0_aggregation.C0AggregationTests.test_selected_checkpoint_ca
+n_differ_from_last_epoch) ... ok
+test_copy_accepts_hash_match_and_rejects_conflict (test_c0_delivery.C0DeliveryTests.test_copy_accepts_hash_match_and_re
+jects_conflict) ... ok
+test_each_learning_rate_has_a_distinct_report_directory (test_c0_delivery.C0DeliveryTests.test_each_learning_rate_has_a
+_distinct_report_directory) ... ok
+test_report_write_accepts_match_and_rejects_conflict (test_c0_delivery.C0DeliveryTests.test_report_write_accepts_match_
+and_rejects_conflict) ... ok
+test_duplicate_or_missing_image_is_rejected (test_reproducibility.ReproducibilityTests.test_duplicate_or_missing_image_
+is_rejected) ... ok
+test_invalid_confidence_correctness_or_label_is_rejected (test_reproducibility.ReproducibilityTests.test_invalid_confid
+ence_correctness_or_label_is_rejected) ... ok
+test_known_confusion_has_expected_accuracy_and_macro_f1 (test_reproducibility.ReproducibilityTests.test_known_confusion
+_has_expected_accuracy_and_macro_f1) ... ok
+test_all_configs_and_cli_overrides_are_typed_and_valid (test_training_contract.TrainingContractTests.test_all_configs_a
+nd_cli_overrides_are_typed_and_valid) ... ok
+test_bn_buffers_stay_exactly_fixed_after_training_steps_c1_to_c3 (test_training_contract.TrainingContractTests.test_bn_
+buffers_stay_exactly_fixed_after_training_steps_c1_to_c3) ... ok
+C0 epoch=1 train_loss=2.416609 val_macro_f1=0.000000
+test_completed_run_writes_stable_history_and_identifying_artifacts (test_training_contract.TrainingContractTests.test_c
+ompleted_run_writes_stable_history_and_identifying_artifacts) ... ok
+test_head_initialization_is_tensor_identical_for_every_seed_and_condition (test_training_contract.TrainingContractTests
+.test_head_initialization_is_tensor_identical_for_every_seed_and_condition) ... ok
+test_microbatch_accumulation_keeps_one_effective_batch_step_and_loss_scaling (test_training_contract.TrainingContractTe
+sts.test_microbatch_accumulation_keeps_one_effective_batch_step_and_loss_scaling) ... ok
+test_requires_grad_and_optimizer_membership_for_every_condition (test_training_contract.TrainingContractTests.test_requ
+ires_grad_and_optimizer_membership_for_every_condition) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 132.645s
+
+OK

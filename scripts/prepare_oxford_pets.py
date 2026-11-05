@@ -59,7 +59,7 @@ def _safe_extract(archive: Path, destination: Path) -> None:
             target = (destination / member.name).resolve()
             if destination.resolve() not in target.parents and target != destination.resolve():
                 raise ValueError(f"Unsafe path in archive {archive}: {member.name}")
-        tar.extractall(destination)
+        tar.extractall(destination, filter="data")
 
 
 def download_dataset(root: Path) -> None:
