@@ -51,7 +51,11 @@ different weights and cannot be claimed to reproduce these exact artifacts.
 
 The [submission checklist](reports/submission_checklist.md) and
 [reproducibility record](reports/reproducibility_check.md) record the tested
-scope, environment, evidence, and outstanding archive requirement.
+scope, environment, evidence, and archive requirements for future clones.
+The full six-configuration audit passed on 6 November 2026 using the original
+archive: all 18 checkpoints and 5,400 predicted labels matched. The six
+augmentation-off binaries remain local/team-archive inputs and are not added
+to Git.
 
 ## Fixed subset and labels
 

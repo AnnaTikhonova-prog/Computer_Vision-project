@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "split_sizes": {
+    "train": 1399,
+    "val": 300,
+    "test": 300
+  },
+  "loader_checks": false,
+  "reproducibility_check": false
+}

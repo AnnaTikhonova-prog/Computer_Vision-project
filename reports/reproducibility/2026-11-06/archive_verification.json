@@ -1,0 +1,103 @@
+{
+  "archive_name": "augmentation_off_checkpoints.zip",
+  "archive_bytes": 526461189,
+  "members": [
+    {
+      "path": "artifacts/ablation_noaug/runs/c0_lr1e-3_seed42/best.pt",
+      "bytes": 94423231,
+      "sha256": "204c59d0868ddb9370b8de3f6df147e703a0d9e75b619fb45039818481dabfda",
+      "matches_published_provenance": true,
+      "metadata_verified": {
+        "condition": "C0",
+        "training_seed": 42,
+        "learning_rate": 0.001,
+        "retained_epoch": 9,
+        "validation_macro_f1": 0.9530799282173202,
+        "augmentation": false,
+        "architecture": "resnet50",
+        "weights": "IMAGENET1K_V2"
+      }
+    },
+    {
+      "path": "artifacts/ablation_noaug/runs/c0_lr1e-3_seed43/best.pt",
+      "bytes": 94423231,
+      "sha256": "f8346ddaf94add7e14305fc172c2eabea4f11e85db9f71bac1c8c6e0f68b01b4",
+      "matches_published_provenance": true,
+      "metadata_verified": {
+        "condition": "C0",
+        "training_seed": 43,
+        "learning_rate": 0.001,
+        "retained_epoch": 14,
+        "validation_macro_f1": 0.9630994152046783,
+        "augmentation": false,
+        "architecture": "resnet50",
+        "weights": "IMAGENET1K_V2"
+      }
+    },
+    {
+      "path": "artifacts/ablation_noaug/runs/c0_lr1e-3_seed44/best.pt",
+      "bytes": 94423231,
+      "sha256": "70151c2c9504933030c899fd0a42b89c1a35c8b6051783f098e2aaddcce33d2e",
+      "matches_published_provenance": true,
+      "metadata_verified": {
+        "condition": "C0",
+        "training_seed": 44,
+        "learning_rate": 0.001,
+        "retained_epoch": 17,
+        "validation_macro_f1": 0.9630994152046783,
+        "augmentation": false,
+        "architecture": "resnet50",
+        "weights": "IMAGENET1K_V2"
+      }
+    },
+    {
+      "path": "artifacts/ablation_noaug/runs/c3_lr1e-5_seed42/best.pt",
+      "bytes": 94423231,
+      "sha256": "ffd162fd45a19e379717c13ff54b4d16c03a57642a262acecca15abfa41879c6",
+      "matches_published_provenance": true,
+      "metadata_verified": {
+        "condition": "C3",
+        "training_seed": 42,
+        "learning_rate": 1e-05,
+        "retained_epoch": 7,
+        "validation_macro_f1": 0.9632573739481665,
+        "augmentation": false,
+        "architecture": "resnet50",
+        "weights": "IMAGENET1K_V2"
+      }
+    },
+    {
+      "path": "artifacts/ablation_noaug/runs/c3_lr1e-5_seed43/best.pt",
+      "bytes": 94423231,
+      "sha256": "5b0c73fe583599d173ca37e441f7e3deffd2003ef40c7f29a77df71412092dc5",
+      "matches_published_provenance": true,
+      "metadata_verified": {
+        "condition": "C3",
+        "training_seed": 43,
+        "learning_rate": 1e-05,
+        "retained_epoch": 7,
+        "validation_macro_f1": 0.9734389182180235,
+        "augmentation": false,
+        "architecture": "resnet50",
+        "weights": "IMAGENET1K_V2"
+      }
+    },
+    {
+      "path": "artifacts/ablation_noaug/runs/c3_lr1e-5_seed44/best.pt",
+      "bytes": 94423231,
+      "sha256": "4a4a847a8865540772da11eb0a7519db9d12cf1ac33508805c553c0c76f21034",
+      "matches_published_provenance": true,
+      "metadata_verified": {
+        "condition": "C3",
+        "training_seed": 44,
+        "learning_rate": 1e-05,
+        "retained_epoch": 8,
+        "validation_macro_f1": 0.966470942212659,
+        "augmentation": false,
+        "architecture": "resnet50",
+        "weights": "IMAGENET1K_V2"
+      }
+    }
+  ],
+  "archive_sha256": "bb92aa84574cbf6c497c800cb6f822c18a625e8d1e91ea1900ec1c2690c3eb7b"
+}

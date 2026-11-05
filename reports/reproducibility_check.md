@@ -1,7 +1,7 @@
-# Reproducibility check — 5 November 2026
+# Reproducibility check — 5–6 November 2026
 
 **Scope:** a fresh clone, isolated pinned CPU environment, independent checks of
-published results, and repeat inference with the included core checkpoints.
+published results, and repeat inference with all 18 retained checkpoints.
 This is a separate diagnostic audit. No settings are changed based on test
 results, and no canonical prediction or timing CSV is overwritten.
 
@@ -80,29 +80,56 @@ rounds to **11.23 ms**, not 11.24. The correction is documented in the final
 report; recorded timings and all quality metrics are unchanged. No new latency
 measurement is claimed to reproduce the earlier hardware measurement.
 
-## Limits and outstanding artifacts
+## Full six-configuration follow-up — 6 November 2026
 
-The six original C0/C3 augmentation-off checkpoints are absent from the
-repository. Their expected hashes, seeds and selected epochs are recorded in
-[`ablation_noaug_checkpoint_provenance.csv`](tables/ablation_noaug_checkpoint_provenance.csv).
-The user confirmed that the archive will be supplied later. Full
-six-configuration inference remains **BLOCKED** until then; checking arithmetic
-over saved predictions does not remove that requirement.
+**Status: PASS for all six configurations.** Dates in this record use
+Europe/Moscow; the machine audit timestamps use UTC. The user supplied
+`augmentation_off_checkpoints.zip`. All six original checkpoint SHA-256 values
+match the committed augmentation-off provenance. Embedded condition, seed,
+learning rate, retained epoch, validation macro-F1, architecture and pretraining
+identifier also match. No replacement training was performed.
 
-Once supplied, restore the exact original files to
-`artifacts/ablation_noaug/runs/{c0_lr1e-3,c3_lr1e-5}_seed{42,43,44}/best.pt`
-and run:
+A new clean GitHub clone of `c07bd64` was used for the final audit. The twelve
+core checkpoints were fetched through Git LFS; the six verified archive files
+were restored to the documented local `artifacts/ablation_noaug/runs/` paths.
+The isolated pinned environment and independently downloaded dataset from
+5 November were reused. The dataset was attached through a local junction;
+all 1,999 image content hashes and both official archive hashes were checked
+again. This follow-up does not claim a second environment installation or
+fresh dataset download.
 
 ```powershell
 python scripts/check_reproducibility.py --inference all --output artifacts/reproducibility/all.json
 ```
 
-The script checks checkpoint hashes against the published provenance before
-forward passes. Missing requested checkpoints yield a partial audit and exit
-code 2. A wrong hash, inconsistent data, or a changed prediction fails the
-check instead of replacing the final values.
+All **18 checkpoint hash/config checks passed** and **5,400 of 5,400 predicted
+labels matched** the published predictions. Per-seed accuracy/macro-F1 and all
+six aggregate quality summaries match; the recorded latency aggregation also
+passes. There are no missing checkpoints in this audit. The source code is
+unchanged, and the previous 29-test result remains in the 5 November record.
+Canonical quality/timing tables, model settings, and trained weights were not
+modified; no new latency measurement was made.
+
+Evidence: [follow-up summary](reproducibility/2026-11-06/checks.json),
+[full inference/environment record](reproducibility/2026-11-06/all_inference.json),
+[archive hashes and checkpoint metadata](reproducibility/2026-11-06/archive_verification.json),
+and [data integrity recheck](reproducibility/2026-11-06/data_verification.json).
+The original 5 November evidence is retained as the earlier partial audit;
+this follow-up resolves its missing-archive blocker.
+
+## Scope and future reproduction
+
+The supplied archive and its six augmentation-off checkpoint binaries remain
+local ignored artifacts; they were not published to Git. Future fresh clones
+still need the original team archive in addition to the selected Git LFS
+checkpoints. Expected archive member paths
+and SHA-256 values are recorded in the evidence above and in
+[`ablation_noaug_checkpoint_provenance.csv`](tables/ablation_noaug_checkpoint_provenance.csv).
+Use the README instructions to restore the files and run the same full audit.
+Missing requested weights yield a partial audit (exit code 2), and a wrong hash
+or a changed prediction fails instead of replacing final results.
 
 This audit does not reproduce training histories or GPU determinism, certify
 each team member's independent clone, or assert equal latency across machines.
-The [submission checklist](submission_checklist.md) lists the repository items
-and the remaining archive dependency explicitly.
+The [submission checklist](submission_checklist.md) now records PASS for every
+repository item within the stated #20/#21 scope.

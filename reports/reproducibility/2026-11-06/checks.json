@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Europe/Moscow",
+  "fresh_clone_commit": "c07bd64652c66d37bea33a991a1d8741c5d2acb9",
+  "checkpoint_count": 18,
+  "configuration_count": 6,
+  "prediction_count": 5400,
+  "prediction_differences": 0,
+  "all_saved_quality_and_latency_aggregations": "passed",
+  "original_augmentation_off_archive": "augmentation_off_checkpoints.zip",
+  "archive_sha256": "bb92aa84574cbf6c497c800cb6f822c18a625e8d1e91ea1900ec1c2690c3eb7b",
+  "verified_archive_checkpoint_count": 6,
+  "augmentation_off_metadata": "condition, seed, LR, epoch, validation macro-F1, architecture and weights verified",
+  "dataset": "Reused independently downloaded 5 November dataset via local junction; all 1999 image hashes and both archive hashes rechecked on 6 November",
+  "environment": "Reused isolated Python 3.13.15 / torch 2.11.0+cpu / torchvision 0.26.0+cpu environment installed on 5 November",
+  "previous_offline_tests": "29 passed on 5 November; unchanged audit/training/evaluation code, no unnecessary rerun",
+  "canonical_tables_changed": false,
+  "retrained": false,
+  "new_latency_benchmark": false,
+  "archive_or_weights_published_to_git": false
+}
