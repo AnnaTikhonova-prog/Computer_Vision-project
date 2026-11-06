@@ -3,3 +3,4 @@ deliverables/c0/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text
 deliverables/c1/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text
 deliverables/c2/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text
 deliverables/c3/runs/**/best.pt filter=lfs diff=lfs merge=lfs -text
+deliverables/ablation_noaug/*.zip filter=lfs diff=lfs merge=lfs -text

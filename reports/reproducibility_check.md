@@ -119,11 +119,13 @@ this follow-up resolves its missing-archive blocker.
 
 ## Scope and future reproduction
 
-The supplied archive and its six augmentation-off checkpoint binaries remain
-local ignored artifacts; they were not published to Git. Future fresh clones
-still need the original team archive in addition to the selected Git LFS
-checkpoints. Expected archive member paths
-and SHA-256 values are recorded in the evidence above and in
+At the time of the 6 November audit, the supplied archive was a local ignored
+artifact. It is now included in the repository as
+[`deliverables/ablation_noaug/augmentation_off_checkpoints.zip`](../deliverables/ablation_noaug/augmentation_off_checkpoints.zip)
+through Git LFS. Fresh clones should fetch it with the README's LFS command and
+extract it at the repository root. The archive contains the six inference
+checkpoints; per-run histories and full metadata remain in the original
+training archive/machine if needed. Expected archive member paths and SHA-256 values are recorded in the evidence above and in
 [`ablation_noaug_checkpoint_provenance.csv`](tables/ablation_noaug_checkpoint_provenance.csv).
 Use the README instructions to restore the files and run the same full audit.
 Missing requested weights yield a partial audit (exit code 2), and a wrong hash

@@ -23,11 +23,11 @@ review requirements outside those issues have been completed.
 | Code licensing policy is explicit | PASS | [LICENSE](../LICENSE): all rights reserved, as requested; no open-source grant invented. |
 | Dataset and dependency attribution | PASS | [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md): Oxford source/citation, CC BY-SA terms, image modifications and dependency/weight notices. |
 | Frozen empirical results remain intact | PASS | No quality CSV, dated timing CSV, trained weight or experimental config is changed. One derived rounding display has a documented correction. |
-| Reproducibility limits are visible in README | PASS | Full six-configuration audit passed. Future clones need the original team archive; training-history and hardware-latency replication are outside this check. |
+| Reproducibility limits are visible in README | PASS | Full six-configuration audit passed. The six original augmentation-off checkpoints are now tracked through Git LFS; training-history and hardware-latency replication are outside this check. |
 
 **Overall: PASS** for all repository checks within #20/#21. The original
 archive dependency was resolved and all six configurations passed inference
-on 6 November. Checkpoint binaries remain external/local artifacts; this is
-not a claim of a self-contained clone without the documented archive input.
+on 6 November. The archive is now committed through Git LFS; training histories
+and hardware-specific latency remain outside this check.
 See [reproducibility_check.md](reproducibility_check.md) for commands, evidence,
 and the exact limits of this check.

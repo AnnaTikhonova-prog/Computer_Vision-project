@@ -146,9 +146,12 @@ prediction file contains 900 rows (300 images for each of the three seeds).
 Recorded provenance for the six augmentation-off checkpoints (seed, LR,
 selected epoch, validation macro-F1, and checkpoint SHA-256) is retained in
 [`ablation_noaug_checkpoint_provenance.csv`](tables/ablation_noaug_checkpoint_provenance.csv).
-The checkpoint files and histories are local artifacts and are not included
-in this checkout. The evaluation outputs, hashes, and runtime record above
-preserve the results without rerunning training.
+The six original augmentation-off checkpoint binaries are packaged in
+[`deliverables/ablation_noaug/augmentation_off_checkpoints.zip`](../deliverables/ablation_noaug/augmentation_off_checkpoints.zip)
+through Git LFS; use the README command to fetch and extract them into the
+ignored `artifacts/` paths. The original training histories and per-run
+metadata are not in the archive. The evaluation outputs and checkpoint hashes
+remain available for inference verification without retraining.
 
 ## Finality declaration
 
