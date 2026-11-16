@@ -4,12 +4,7 @@ This repository compares ResNet50 fine-tuning depth on one fixed 10-breed
 subset. It contains the shared data pipeline, C0–C3 trainer, evaluator,
 retained core checkpoints, and frozen experimental reports.
 
-## Live demo
-
-An English-language Streamlit app with photo upload, live breed predictions,
-ten built-in examples, short breed descriptions, and walking pixel pets:
-
-Entrypoint: `demo/app.py`.
+Demo: https://computervision-project-ydqvdowuhkhpes4rujm4ve.streamlit.app/
 
 ## Fresh clone and published-result checks
 
