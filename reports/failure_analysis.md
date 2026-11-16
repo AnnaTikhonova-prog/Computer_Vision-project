@@ -173,7 +173,7 @@ this example across seeds.
   [C3](tables/C3_augment_on_test_predictions.csv) predictions, not Grad-CAMs
   for those models. Historical training environments and head initialization
   hashes differ across some conditions, as documented in the
-  [ablation report](ablation.md#ограничения-сопоставимости). These observations
+  [ablation report](ablation.md#comparability-limitations). These observations
   cannot isolate fine-tuning depth as the cause of a changed decision.
 - **Scope of these examples.** The [final comparison](results.md) now
   includes test results for all six configurations, including C0/C3
