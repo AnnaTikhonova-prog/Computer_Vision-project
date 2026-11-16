@@ -6,6 +6,35 @@ retained core checkpoints, and frozen experimental reports.
 
 Demo: https://computervision-project-ydqvdowuhkhpes4rujm4ve.streamlit.app/
 
+## Run the live demo locally
+
+The hosted link above runs the same fixed C1 checkpoint. To run the app from a
+fresh clone, install Git LFS and fetch that checkpoint; the raw dataset is not
+needed. Use the dedicated, pinned CPU environment in `demo/requirements.txt`.
+
+```powershell
+git lfs install --local
+git lfs pull --include="deliverables/c1/runs/lr_1e-4/seed_42/best.pt"
+py -3.13 -m venv .venv-demo
+.\.venv-demo\Scripts\python.exe -m pip install -r demo/requirements.txt
+.\.venv-demo\Scripts\python.exe -m streamlit run demo/app.py
+```
+
+Open `http://localhost:8501`. On Linux or in the Dev Container, use:
+
+```bash
+git lfs install --local
+git lfs pull --include="deliverables/c1/runs/lr_1e-4/seed_42/best.pt"
+python3.13 -m venv .venv-demo
+.venv-demo/bin/python -m pip install -r demo/requirements.txt
+.venv-demo/bin/python -m streamlit run demo/app.py
+```
+
+The app predicts among ten supported breeds and always returns one of them,
+even for an unrelated animal or object. Scores are model outputs, not
+calibrated certainty. Uploads are processed in memory. The Dev Container
+installs the same pinned demo requirements and forwards port 8501.
+
 ## Fresh clone and published-result checks
 
 Prerequisites: 64-bit Python 3.13.x, Git, and Git LFS. Run the clone block from

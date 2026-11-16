@@ -41,7 +41,8 @@ earliest epoch retained on an exact validation score tie.
 
 Runs used Tesla T4, PyTorch 2.11.0+cu128, torchvision 0.26.0+cu128, and Python 3.13.15.
 Source commit: `37f1e666390bde90743cc5ec765f286359c04d90` (clean working tree).
-Source and split hashes match the repository Git blobs. Checkpoint metadata agrees with history and runtime.
-Original artifacts, including runtime.json completion evidence, are preserved byte-for-byte.
+Source and split hashes match the repository Git blobs. Checkpoint metadata agrees with history and source provenance.
+No per-run `runtime.json` is present in the committed run folders, so training wall-clock duration is not reported.
+Inference latency is reported separately in [`reports/results.md`](../../../reports/results.md).
 The evaluation/ directory contains separate CPU validation predictions, metrics, and LR aggregates in the C0 delivery format. The selected LR remains 1e-4.
 Paths in runs.csv are repository-relative. Archive/member provenance and hashes are recorded in manifest.json.
