@@ -4,6 +4,20 @@ This repository compares ResNet50 fine-tuning depth on one fixed 10-breed
 subset. It contains the shared data pipeline, C0–C3 trainer, evaluator,
 retained core checkpoints, and frozen experimental reports.
 
+## Live demo
+
+An English-language Streamlit app with photo upload, live breed predictions,
+two built-in examples, and walking pixel pets:
+
+```powershell
+python -m pip install -r demo/requirements.txt
+git lfs pull --include="deliverables/c1/runs/lr_1e-4/seed_42/best.pt"
+python -m streamlit run demo/app.py
+```
+
+Use a separate Python 3.13 environment for the demo. See the
+[local launch, presentation walkthrough, and Streamlit Cloud deployment guide](docs/streamlit_demo.md).
+
 ## Fresh clone and published-result checks
 
 Prerequisites: 64-bit Python 3.13.x, Git, and Git LFS. Run the clone block from

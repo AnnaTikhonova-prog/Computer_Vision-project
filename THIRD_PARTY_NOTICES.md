@@ -26,6 +26,11 @@ no ownership of their photographs is claimed here.
   Downloading them does not grant rights beyond the source's terms. Retain
   this notice and the source/license links when redistributing image material.
 
+The two bundled demo photographs, `demo/examples/Birman_1.jpg` and
+`demo/examples/pug_10.jpg`, are unchanged source photographs from the training
+manifest under the dataset terms above. The app displays source and license
+links. Pixel pets in `demo/pets.html` are original SVG/CSS drawings.
+
 ## Runtime dependencies and pretrained weights
 
 Dependencies are installed separately, with their own licenses and notices;
@@ -52,6 +57,9 @@ for ImageNet source images or all uses of derived weights. See the
 [torchvision pretrained-model terms](https://docs.pytorch.org/vision/stable/models.html)
 and the applicable dataset terms. Fine-tuned checkpoint hashes identify
 artifacts; they do not grant additional rights in third-party materials.
+
+The demo additionally uses [Streamlit (Apache 2.0)](https://github.com/streamlit/streamlit/blob/develop/LICENSE).
+Its dedicated inference dependencies are pinned in `demo/requirements.txt`.
 
 ## Project code
 
