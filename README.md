@@ -7,7 +7,7 @@ retained core checkpoints, and frozen experimental reports.
 ## Live demo
 
 An English-language Streamlit app with photo upload, live breed predictions,
-two built-in examples, and walking pixel pets:
+ten built-in examples, short breed descriptions, and walking pixel pets:
 
 ```powershell
 python -m pip install -r demo/requirements.txt

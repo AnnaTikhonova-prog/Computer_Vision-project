@@ -12,10 +12,10 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from demo.breeds import BREEDS
 from demo.inference import load_predictor, predict, read_image
 
 ASSETS = Path(__file__).resolve().parent
-EXAMPLES = {"Cat": "Birman_1.jpg", "Dog": "pug_10.jpg"}
 
 st.set_page_config(page_title="Pet / A little breed finder", page_icon="🐾", layout="centered")
 st.markdown(f"<style>{(ASSETS / 'style.css').read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
@@ -26,18 +26,17 @@ def predictor():
     return load_predictor()
 
 
-st.markdown('<div class="eyebrow">OXFORD PETS · LIVE DEMO</div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">OXFORD PETS</div>', unsafe_allow_html=True)
 st.title("Meet the breed.")
-st.caption("One pet. One photo. A little curiosity.")
 
 left, right = st.columns([1.1, 1], gap="large")
 with left:
     upload = st.file_uploader("Choose a pet photo", type=["jpg", "jpeg", "png", "webp"])
-    example = st.segmented_control("Or try an example", list(EXAMPLES), default="Cat")
+    example = st.selectbox("Or try an example", list(BREEDS))
     if upload is not None:
         data = upload.getvalue()
     elif example is not None:
-        data = (ASSETS / "examples" / EXAMPLES[example]).read_bytes()
+        data = (ASSETS / "examples" / BREEDS[example][0]).read_bytes()
     else:
         data = None
     image = None
@@ -57,6 +56,7 @@ with right:
                 predictions = predict(image, predictor())
             st.markdown('<div class="result-label">OUR BEST GUESS</div>', unsafe_allow_html=True)
             st.markdown(f'<div class="breed">{html.escape(predictions[0][0])}</div>', unsafe_allow_html=True)
+            st.markdown(f'<p class="breed-description">{html.escape(BREEDS[predictions[0][0]][1])}</p>', unsafe_allow_html=True)
             for index, (breed, probability) in enumerate(predictions):
                 value = probability * 100
                 muted = " muted" if index else ""
@@ -74,8 +74,7 @@ with right:
     st.caption("Knows 10 breeds. Other animals and breeds still receive a guess.")
 
 with st.expander("The 10 breeds"):
-    st.write("British Shorthair · Russian Blue · Siamese · Birman · American Bulldog · Pug · Sphynx · Maine Coon · Beagle · Samoyed")
+    for breed, (_, description) in BREEDS.items():
+        st.markdown(f"**{breed}** — {description}")
 
 st.markdown((ASSETS / "pets.html").read_text(encoding="utf-8"), unsafe_allow_html=True)
-st.caption("Built with ResNet50 · Photos stay in memory for this session; the app does not save them.")
-st.caption("Examples: Oxford-IIIT Pet / Parkhi et al. · [Source](https://www.robots.ox.ac.uk/~vgg/data/pets/) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)")

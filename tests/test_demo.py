@@ -16,6 +16,7 @@ if importlib.util.find_spec("streamlit") is None:
 
 from streamlit.testing.v1 import AppTest
 
+from demo.breeds import BREEDS
 from demo.inference import ROOT, load_predictor, predict, read_image
 from src.dataset import _eval_transform
 
@@ -26,7 +27,8 @@ class DemoChecks(unittest.TestCase):
         cls.predictor = load_predictor()
 
     def test_bundled_examples_and_frozen_preprocessing(self):
-        for filename in ("Birman_1.jpg", "pug_10.jpg"):
+        self.assertEqual(len(BREEDS), 10)
+        for filename, _ in BREEDS.values():
             with self.subTest(filename=filename):
                 image = read_image((ROOT / "demo/examples" / filename).read_bytes())
                 self.assertTrue(torch.equal(self.predictor[1](image), _eval_transform()(image)))
@@ -84,13 +86,17 @@ class DemoChecks(unittest.TestCase):
     def test_live_app_examples(self):
         app = AppTest.from_file(str(ROOT / "demo/app.py"), default_timeout=60).run()
         self.assertFalse(app.exception)
-        for example in ("Cat", "Dog"):
+        for example in BREEDS:
             with self.subTest(example=example):
-                app.segmented_control[0].set_value(example).run()
+                app.selectbox[0].select(example).run()
                 app.button[0].click().run()
                 self.assertFalse(app.exception)
                 self.assertFalse(app.error)
                 self.assertTrue(any("OUR BEST GUESS" in item.value for item in app.markdown))
+                self.assertTrue(any("breed-description" in item.value for item in app.markdown))
+        rendered = " ".join(item.value for item in app.markdown) + " ".join(item.value for item in app.caption)
+        for removed in ("LIVE DEMO", "One pet. One photo.", "Built with ResNet50", "Examples: Oxford-IIIT"):
+            self.assertNotIn(removed, rendered)
 
 
 if __name__ == "__main__":

@@ -1,8 +1,9 @@
 # Live breed demo
 
-A small English-language app: upload a photo (or choose a bundled cat/dog),
+A small English-language app: upload a photo (or choose one of ten examples),
 click **Find the breed**, and see three scores from a real ResNet50 inference.
-Two original pixel pets walk across the bottom. No account, dataset download,
+Each predicted breed has a short visual description. Two original pixel pets
+walk across the bottom. No account, dataset download,
 API key, or GPU is needed to run it. The first prediction loads the model;
 later predictions reuse it.
 
@@ -43,8 +44,8 @@ been downloaded. On Linux use `python3.13 -m venv .venv-demo` and
    Main file path: **`demo/app.py`**.
 4. In **Advanced settings**, choose **Python 3.13**. No secrets are required.
    Deploy and wait for installation and the Git LFS checkout to finish.
-5. Open the app, choose **Cat**, and click **Find the breed**. Repeat with
-   **Dog**, then upload a new image to verify live inference.
+5. Open the app, choose **Birman**, and click **Find the breed**. Repeat with
+   **Pug** or another of the ten breeds, then upload a new image to verify live inference.
 
 Community Cloud supports Git LFS. It finds `demo/requirements.txt` beside
 the entrypoint before the root training requirements. The demo pins CPU
@@ -59,7 +60,7 @@ and [Git LFS support](https://docs.streamlit.io/deploy/streamlit-community-cloud
 1. Start the local app before presenting. Run one prediction to warm the model.
    Keep the local app available even when showing the cloud URL.
 2. Say: **“This demo identifies ten cat and dog breeds from a photo.”**
-3. Click **Find the breed** for the cat example; switch to the dog and repeat.
+3. Click **Find the breed** for **Birman**; select **Pug** and repeat.
 4. Upload an unseen JPG, PNG, or WebP from your device and run it live.
    Invite the TA to supply another image; the upload replaces the example.
 5. Say: **“These are model scores, not calibrated certainty. It can confuse
@@ -82,8 +83,10 @@ with Wi-Fi disconnected. The pixel pets use only local SVG and CSS.
   resize shorter side to 232, center crop 224, RGB tensor, ImageNet normalization.
   Phone EXIF orientation is applied first. The original photo is displayed;
   inference uses the center crop, so keep the pet near the center.
-- Bundled examples are unchanged `Birman_1.jpg` and `pug_10.jpg`, from the
-  **training** manifest. They demonstrate interaction, not independent accuracy.
+- Ten bundled examples (one per breed) are unchanged photographs from the
+  **training** manifest, listed in `demo/breeds.py`. They demonstrate interaction,
+  not independent accuracy. Descriptions cover typical visible breed features,
+  not characteristics measured or verified by the model.
   New uploads are processed in memory; the app does not write them to disk or
   store them in a shared prediction cache. The model itself is shared read-only.
 - Supported classes: British Shorthair, Russian Blue, Siamese, Birman,
@@ -114,14 +117,15 @@ with Wi-Fi disconnected. The pixel pets use only local SVG and CSS.
 .\.venv-demo\Scripts\python.exe -m unittest discover -s tests -p test_demo.py -v
 ```
 
-The tests exercise both examples through the actual checkpoint, compare the
+The tests exercise all ten examples through the actual checkpoint, compare the
 serving path with a frozen evaluator prediction and shared preprocessing, check
 invalid image handling, and click the app's controls with Streamlit AppTest.
 They do not alter any frozen reports, configurations, or weights.
 
 Verified locally on 16 November 2026 with Python 3.13.15, Streamlit 1.66.0,
-PyTorch 2.11.0+cpu and torchvision 0.26.0+cpu: all six demo tests passed,
-`pip check` passed, and a headless Chrome session checked both examples,
+PyTorch 2.11.0+cpu and torchvision 0.26.0+cpu: all six demo tests passed
+(including all ten examples through inference and AppTest), `pip check`
+passed, and a headless Chrome session checked the Birman and Pug examples,
 file upload, invalid-file feedback, moving sprites, and a 390-pixel viewport
 without horizontal overflow or JavaScript errors. Community Cloud deployment
 itself has not been performed; follow the steps above in your account.
