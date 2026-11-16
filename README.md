@@ -9,14 +9,7 @@ retained core checkpoints, and frozen experimental reports.
 An English-language Streamlit app with photo upload, live breed predictions,
 ten built-in examples, short breed descriptions, and walking pixel pets:
 
-```powershell
-python -m pip install -r demo/requirements.txt
-git lfs pull --include="deliverables/c1/runs/lr_1e-4/seed_42/best.pt"
-python -m streamlit run demo/app.py
-```
-
-Use a separate Python 3.13 environment for the demo. See the
-[local launch, presentation walkthrough, and Streamlit Cloud deployment guide](docs/streamlit_demo.md).
+Entrypoint: `demo/app.py`.
 
 ## Fresh clone and published-result checks
 

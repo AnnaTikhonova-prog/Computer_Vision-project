@@ -62,8 +62,18 @@ class DemoChecks(unittest.TestCase):
         image = Image.new("RGB", (10, 10))
         buffer = io.BytesIO()
         image.save(buffer, format="PNG")
-        with patch("demo.inference.MAX_PIXELS", 50), self.assertRaisesRegex(ValueError, "megapixels"):
+        with patch("demo.inference.MAX_SOURCE_PIXELS", 50), self.assertRaisesRegex(ValueError, "megapixels"):
             read_image(buffer.getvalue())
+
+    def test_large_camera_photo_is_resized(self):
+        # Same dimensions as the reported 30 MP upload; no private image committed.
+        buffer = io.BytesIO()
+        with Image.new("RGB", (6720, 4480), (90, 120, 80)) as image:
+            image.save(buffer, format="JPEG")
+        result = read_image(buffer.getvalue())
+        self.assertLessEqual(max(result.size), 2048)
+        self.assertAlmostEqual(result.width / result.height, 1.5, places=2)
+        self.assertEqual(result.mode, "RGB")
 
     def test_phone_orientation_and_rgb_conversion(self):
         image = Image.new("RGB", (20, 10))

@@ -16,11 +16,12 @@ ROOT = Path(__file__).resolve().parents[1]
 CHECKPOINT = ROOT / "deliverables/c1/runs/lr_1e-4/seed_42/best.pt"
 CHECKPOINT_SHA256 = "d4cda19030d5ee60eb2c8b7ec79a3444cf366f5922d1a9f09acdac2a61ec1384"
 MAX_BYTES = 10 * 1024 * 1024
-MAX_PIXELS = 20_000_000
+MAX_SOURCE_PIXELS = 64_000_000
+MAX_IMAGE_SIDE = 2048
 
 
 def read_image(data: bytes) -> Image.Image:
-    """Validate bytes, apply phone orientation, and return an independent RGB image."""
+    """Decode camera photos at a bounded size, preserving orientation and aspect ratio."""
     if not data or len(data) > MAX_BYTES:
         raise ValueError("Please choose an image smaller than 10 MB.")
     try:
@@ -29,8 +30,12 @@ def read_image(data: bytes) -> Image.Image:
             with Image.open(io.BytesIO(data)) as image:
                 if image.format not in {"JPEG", "PNG", "WEBP"}:
                     raise ValueError("Please choose a JPG, PNG, or WebP image.")
-                if image.width * image.height > MAX_PIXELS:
-                    raise ValueError("Please choose an image under 20 megapixels.")
+                if image.width * image.height > MAX_SOURCE_PIXELS:
+                    raise ValueError("This image is too large to process. Please use a photo under 64 megapixels.")
+                # JPEG draft reduces decode memory before thumbnailing. Other
+                # formats use the same final bound without changing model transforms.
+                image.draft("RGB", (MAX_IMAGE_SIDE, MAX_IMAGE_SIDE))
+                image.thumbnail((MAX_IMAGE_SIDE, MAX_IMAGE_SIDE), Image.Resampling.LANCZOS)
                 return ImageOps.exif_transpose(image).convert("RGB")
     except (UnidentifiedImageError, OSError, Image.DecompressionBombWarning,
             Image.DecompressionBombError) as exc:
@@ -40,7 +45,7 @@ def read_image(data: bytes) -> Image.Image:
 def load_predictor():
     """Load one fixed, hash-verified checkpoint without downloading ImageNet weights."""
     if not CHECKPOINT.is_file():
-        raise FileNotFoundError("Model weights are missing. Follow docs/streamlit_demo.md to download them.")
+        raise FileNotFoundError("Model weights are missing. Download the demo checkpoint with Git LFS.")
     with CHECKPOINT.open("rb") as handle:
         digest = hashlib.file_digest(handle, "sha256").hexdigest()
     if digest != CHECKPOINT_SHA256:

@@ -29,7 +29,7 @@ no ownership of their photographs is claimed here.
 The ten bundled photographs in `demo/examples/` are unchanged source photographs
 from the training manifest under the dataset terms above. Original image IDs
 are preserved in their filenames; `demo/breeds.py` maps them to breed names.
-Attribution and source/license links are retained here and in the demo guide.
+Attribution and source/license links are retained in this notice.
 Pixel pets in `demo/pets.html` are original SVG/CSS drawings.
 
 ## Runtime dependencies and pretrained weights

@@ -5,6 +5,7 @@ from __future__ import annotations
 import html
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 import streamlit as st
 
@@ -18,7 +19,9 @@ from demo.inference import load_predictor, predict, read_image
 ASSETS = Path(__file__).resolve().parent
 
 st.set_page_config(page_title="Pet / A little breed finder", page_icon="🐾", layout="centered")
-st.markdown(f"<style>{(ASSETS / 'style.css').read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
+style = (ASSETS / "style.css").read_text(encoding="utf-8")
+paws = quote((ASSETS / "paws.svg").read_text(encoding="utf-8"), safe="")
+st.markdown(f'<style>{style.replace("PAW_PATTERN", paws)}</style>', unsafe_allow_html=True)
 
 
 @st.cache_resource(show_spinner=False)

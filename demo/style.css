@@ -1,4 +1,5 @@
 .block-container { max-width: 940px; padding-top: 3.5rem; padding-bottom: 1rem; }
+[data-testid="stAppViewContainer"] { background-image: url("data:image/svg+xml,PAW_PATTERN"); background-repeat: repeat; background-size: 380px 380px; }
 h1 { font-size: clamp(2.2rem, 6vw, 3.4rem) !important; font-weight: 650 !important; letter-spacing: -.055em; }
 [data-testid="stCaptionContainer"] { color: #6c756e; }
 [data-testid="stImage"] img { border-radius: 12px; max-height: 360px; object-fit: contain; background: #f0efe9; }
